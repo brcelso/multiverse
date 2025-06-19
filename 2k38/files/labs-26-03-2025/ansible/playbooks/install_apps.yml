@@ -1,0 +1,60 @@
+---
+- name: Instalação de aplicativos no Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Atualizar pacotes
+      apt:
+        update_cache: yes
+
+    - name: Instalar dependências
+      apt:
+        name: 
+          - wget
+          - apt-transport-https
+          - software-properties-common
+          - snapd
+        state: present
+
+    - name: Adicionar chave do repositório do Google Chrome
+      apt_key:
+        url: https://dl.google.com/linux/linux_signing_key.pub
+        state: present
+
+    - name: Adicionar repositório do Google Chrome
+      apt_repository:
+        repo: 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+        state: present
+
+    - name: Adicionar repositório do Visual Studio Code
+      apt_repository:
+        repo: 'deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main'
+        state: present
+
+    - name: Adicionar chave do repositório do Visual Studio Code
+      apt_key:
+        url: https://packages.microsoft.com/keys/microsoft.asc
+        state: present
+
+    - name: Instalar aplicativos via APT
+      apt:
+        name: 
+          - code
+          - google-chrome-stable
+          - git
+        state: latest
+
+    - name: Instalar Discord via Snap
+      snap:
+        name: discord
+        state: present
+
+    - name: Instalar Spotify via Snap
+      snap:
+        name: spotify
+        state: present
+
+    - name: Limpar cache do apt
+      apt:
+        autoremove: yes
+        autoclean: yes

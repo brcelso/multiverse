@@ -1,0 +1,29 @@
+stages:
+  - build
+
+variables:
+  DOCKER_IMAGE: registry.gitlab.com/governanca-de-software/ansible:latest
+  SSH_PRIVATE_KEY: $SSH_PRIVATE_KEY
+  GLCR_PAT: $GLCR_PAT
+
+before_script:
+  - echo "$SSH_PRIVATE_KEY" > private_key
+  - chmod 600 private_key
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - mv private_key ~/.ssh/id_rsa
+  - ssh-keyscan gitlab.com >> ~/.ssh/known_hosts
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    # Modifique a URL para o formato SSH
+    - echo $GLCR_PAT | docker login registry.gitlab.com -u gitlab-ci-token --password-stdin
+    - docker build -t $DOCKER_IMAGE .
+    - docker push $DOCKER_IMAGE
+  only:
+    - main
+  when: manual

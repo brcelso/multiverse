@@ -1,0 +1,52 @@
+---
+- hosts: localhost
+  gather_facts: no
+  become: yes  #or true Elevar privilégios para verificar o arquivo e outros comandos
+  vars_files:
+    - "./secrets.yml"
+  tasks:
+
+  - name: Obter informações do sistema, verificar pacotes e ISLAlwaysOn
+    shell: |
+      echo "Hostname: $(hostname)"
+
+      # Verificando o sistema operacional a partir de /etc/os-release
+      if [ -f /etc/os-release ]; then
+        . /etc/os-release
+        echo "Sistema Operacional: $NAME $VERSION"
+      else
+        echo "Não foi possível identificar o sistema operacional."
+      fi
+
+      # Verificando se net-tools está instalado
+      if command -v netstat >/dev/null; then
+        echo "net-tools está instalado."
+      else
+        echo "net-tools não está instalado."
+      fi
+
+      # Verificando se Google Chrome está instalado
+      if command -v google-chrome >/dev/null; then
+        echo "Google Chrome está instalado."
+      else
+        echo "Google Chrome não está instalado."
+      fi
+
+      # Verificando se Remmina está instalado
+      if command -v remmina >/dev/null; then
+        echo "Remmina está instalado."
+      else
+        echo "Remmina não está instalado."
+      fi
+
+      # Verificando se o arquivo ISLAlwaysOn existe
+      if [ -f /opt/ISLOnline/ISLAlwaysOn/ISLAlwaysOn ]; then
+        echo "O arquivo ISLAlwaysOn existe!"
+      else
+        echo "O arquivo ISLAlwaysOn não existe."
+      fi
+    register: resultado
+
+  - name: Exibir informações da máquina
+    debug:
+      msg: "{{ resultado.stdout_lines }}"

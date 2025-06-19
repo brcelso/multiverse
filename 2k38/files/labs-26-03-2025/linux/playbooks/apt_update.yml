@@ -1,0 +1,8 @@
+    - name: Atualizar a lista de pacotes
+      ansible.builtin.apt:
+        update_cache: yes  # Atualiza o cache do apt
+      register: apt_update_result
+
+    - name: Mostrar resultado do apt update
+      debug:
+        msg: "{{ apt_update_result }}"

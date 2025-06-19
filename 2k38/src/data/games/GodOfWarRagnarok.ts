@@ -1,0 +1,44 @@
+export const godOfWarRagnarok = {
+  launchDate: '2022-11-09',
+
+  Brazil: {
+    'January 2025': [
+      { edition: 'Deluxe', price: 199.75, currency: 'R$', discount: 50 },
+    ],
+    'March 2025': [
+      { edition: 'Standard PS5', price: 174.95, currency: 'R$', discount: 50 },
+      { edition: 'Standard PS4', price: 125.95, currency: 'R$', discount: 58 },
+    ],
+    'November 2022': [
+      { edition: 'Deluxe', price: 399.9, currency: 'R$' },
+      { edition: 'Standard PS5', price: 349.9, currency: 'R$' },
+      { edition: 'Standard PS4', price: 299.9, currency: 'R$' },
+    ],
+  },
+
+  UnitedStates: {
+    'January 2025': [
+      { edition: 'Deluxe', price: 39.99, currency: '$', discount: 50 },
+    ],
+    'March 2025': [
+      { edition: 'Standard PS5', price: 29.39, currency: '$', discount: 58 },
+      { edition: 'Standard PS4', price: 25.19, currency: '$', discount: 58 },
+    ],
+    'November 2022': [
+      { edition: 'Deluxe', price: 79.99, currency: '$' },
+      { edition: 'Standard PS5', price: 69.99, currency: '$' },
+      { edition: 'Standard PS4', price: 59.99, currency: '$' },
+    ],
+  },
+
+  UnitedKingdom: {
+    'March 2025': [
+      { edition: 'Standard PS5', price: 34.99, currency: '£', discount: 50 },
+      { edition: 'Standard PS4', price: 25.19, currency: '£', discount: 58 },
+    ],
+    'November 2022': [
+      { edition: 'Complete PS5', price: 69.99, currency: '£' },
+      { edition: 'Standard PS4', price: 59.99, currency: '£' },
+    ],
+  },
+};

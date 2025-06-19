@@ -1,0 +1,20 @@
+---
+- name: Copiar e executar Netskope
+  hosts: localhost
+  become: yes
+  vars_files:
+    - "./secrets.yml"
+  tasks:
+    - name: Copiar arquivo NSClient
+      copy:
+        src: "./NSClient.run"
+        dest: "/tmp/NSClient.run"
+        mode: '0755'  # Define as permissões para executável
+
+    - name: Executar NSClient
+      command: /tmp/NSClient.run
+      register: comando_resultado
+
+    - name: Exibir resultado do comando
+      debug:
+        var: comando_resultado.stdout

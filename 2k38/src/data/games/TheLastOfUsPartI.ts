@@ -1,0 +1,39 @@
+export const theLastOfUsPartI = {
+  launchDate: '2022-09-27',
+
+  Brazil: {
+    'March 2025': [
+      { edition: 'Standard Edition', price: 146.95, currency: 'R$', discount: 58 },
+    ],
+    'February 2025': [
+      { edition: 'Deluxe Edition', price: 299.62, currency: 'R$', discount: 25 },
+      { edition: 'Standard Edition', price: 248.42, currency: 'R$', discount: 29 },
+    ],
+    'September 2022': [
+      { edition: 'Deluxe Edition', price: 399.5, currency: 'R$' },
+      { edition: 'Standard Edition', price: 349.9, currency: 'R$' },
+      { edition: 'PS4', price: 99.9, currency: 'R$' },
+      { edition: 'PS4', price: 49.75, currency: 'R$', discount: 50 },
+    ],
+  },
+
+  UnitedStates: {
+    'January 2025': [
+      { edition: 'Standard Edition', price: 49.59, currency: '$', discount: 38 },
+    ],
+    'February 2025': [
+      { edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
+      { edition: 'Standard Edition', price: 69.99, currency: '$' },
+    ],
+    'September 2022': [
+      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
+    ],
+  },
+
+  Europe: {
+    'May 2025': [
+      { edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
+      { edition: 'Standard Edition', price: 89.99, currency: '€' },
+    ],
+  },
+};

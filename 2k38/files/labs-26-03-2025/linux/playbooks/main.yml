@@ -1,0 +1,67 @@
+---
+- name: Menu interativo para selecionar playbook
+  hosts: all
+  become: true
+  become_method: sudo
+  gather_facts: yes
+  vars_prompt:
+    - name: playbook_choice
+      prompt: "Escolha um playbook para executar \n
+      1 - Validar e Instalar PatchManager \n
+      2 - Remover PatchManager \n
+      3 - Instalar DS Agent \n
+      4 - Atualizar Apt \n
+      5 - Coletar Dados \n
+      6 - Realizar Ping \n
+      7 - Validar e Instalar Automatos \n
+      8 - Reiniciar Serviços Automatos \n
+      9 - Obter Dados \n
+      10 - Padronizado [GFL] \n
+      "
+      private: no
+
+  tasks:
+    - name: Validar a escolha do usuário
+      fail:
+        msg: "Escolha inválida. Digite um número de 1 a 10"
+      when: playbook_choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+
+    - name: Executar Playbook 1
+      include_tasks: patch.yml
+      when: playbook_choice == "1"
+
+    - name: Executar Playbook 2
+      include_tasks: removePatch.yml
+      when: playbook_choice == "2"
+
+    - name: Executar Playbook 3
+      include_tasks: dsagent.yml
+      when: playbook_choice == "3"
+
+    - name: Executar Playbook 4
+      include_tasks: apt_update.yml
+      when: playbook_choice == "4"
+
+    - name: Executar Playbook 5
+      include_tasks: coletar.yml
+      when: playbook_choice == "5"
+
+    - name: Executar Playbook 6
+      include_tasks: host_ping.yml
+      when: playbook_choice == "6"
+
+    - name: Executar Playbook 7
+      include_tasks: automatos.yml
+      when: playbook_choice == "7"
+
+    - name: Executar Playbook 8
+      include_tasks: services.yml
+      when: playbook_choice == "8"
+
+    - name: Executar Playbook 9
+      include_tasks: obterdadosv2.yml
+      when: playbook_choice == "9"
+
+    - name: Executar Playbook 10
+      include_tasks: padronizado.yml
+      when: playbook_choice == "10"

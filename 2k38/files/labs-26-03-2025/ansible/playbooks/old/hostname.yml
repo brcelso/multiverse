@@ -1,0 +1,40 @@
+---
+name: Alterar o hostname dos hosts Ubuntu
+  - hosts: all
+  become: true
+
+  vars:
+    new_hostname: "WNLX6051003"  # Defina o novo hostname aqui
+
+  tasks:
+    - name: Definir o novo hostname
+      hostname:
+        name: "{{ new_hostname }}"
+
+    - name: Atualizar o arquivo /etc/hostname
+      lineinfile:
+        path: /etc/hostname
+        line: "{{ new_hostname }}"
+        create: yes
+
+    - name: Atualizar o arquivo /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        regexp: '127.0.1.1'
+        line: "127.0.1.1   {{ new_hostname }}"
+        create: yes
+        state: present
+
+#    - name: Reiniciar o serviço hostname
+#      service:
+#        name: hostname
+#        state: restarted
+#      when: ansible_distribution_version is version('18.04', '>=')  # Para versões 18.04 e superiores
+
+    - name: Reiniciar a máquina para aplicar mudanças (se necessário)
+      reboot:
+        msg: "Reiniciando para aplicar mudanças no hostname"
+        pre_reboot_delay: 5
+        post_reboot_delay: 30
+        reboot_timeout: 300
+#     when: ansible_distribution_version is version('18.04', '<')

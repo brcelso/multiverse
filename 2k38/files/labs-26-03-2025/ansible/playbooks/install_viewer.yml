@@ -1,0 +1,20 @@
+---
+- name: Copiar e executar Automatos Remote Control Viewer
+  hosts: localhost
+  become: yes
+  vars_files:
+    - "./secrets.yml"
+  tasks:
+    - name: Copiar arquivo Automatos Remote Control Viewer
+      copy:
+        src: "./Automatos Remote Control Viewer.4.2332.117"
+        dest: "/tmp/Automatos Remote Control Viewer.4.2332.117"
+        mode: '0755'  # Define as permissões para executável
+
+    - name: Executar Automatos Remote Control Viewer 
+      command: /tmp/Automatos\ Remote\ Control\ Viewer.4.2332.117
+      register: comando_resultado
+
+    - name: Exibir resultado do comando
+      debug:
+        var: comando_resultado.stdout

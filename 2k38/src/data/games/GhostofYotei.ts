@@ -1,0 +1,32 @@
+export const ghostOfYotei = {
+  launchDate: '2025-10-02',
+
+  Brazil: {
+    'June 2025': [
+      { edition: 'Standard Edition', price: 287.93, discount: 28, currency: 'R$', exchangeTax: 4.62 },
+      { edition: 'Deluxe Edition', price: 499.9, currency: 'R$', exchangeTax: 5.62 },
+      { edition: 'Standard Edition', price: 399.9, currency: 'R$', exchangeTax: 5.71 },
+    ],
+  },
+
+  UnitedStates: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
+      { edition: 'Standard Edition', price: 69.99, currency: '$' },
+    ],
+  },
+
+  Europe: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 89.99, currency: '€' },
+      { edition: 'Standard Edition', price: 79.99, currency: '€' },
+    ],
+  },
+
+  UnitedKingdom: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 79.99, currency: '£' },
+      { edition: 'Standard Edition', price: 69.99, currency: '£' },
+    ],
+  },
+};

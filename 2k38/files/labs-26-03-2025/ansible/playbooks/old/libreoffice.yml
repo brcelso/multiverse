@@ -1,0 +1,21 @@
+- name: Instalar o LibreOffice
+  hosts: all
+  become: true
+  tasks:
+    - name: Atualizar o repositório de pacotes
+      apt:
+        update_cache: yes
+
+    - name: Instalar o LibreOffice
+      apt:
+        name:
+          - libreoffice
+          - libreoffice-common
+          - libreoffice-writer
+          - libreoffice-calc
+          - libreoffice-impress
+          - libreoffice-draw
+          - libreoffice-base
+          - libreoffice-math
+        state: latest
+

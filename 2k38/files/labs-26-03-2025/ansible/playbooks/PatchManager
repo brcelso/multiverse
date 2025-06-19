@@ -1,0 +1,32 @@
+#************ MANAGEENGINE ENDPOINTCENTRAL AGENT INSTALLATION ************
+
+# Valores fornecidos aqui são os argumentos padrão. Modifique esses valores conforme necessário ao executar o script.
+param(
+    [string]$ExeFileName = "DefaultRemoteOffice_Agent_Windows.exe",  # Nome do arquivo de instalação
+    [string]$InstallSource = "Local"  # Alterado para "Local" ao invés de GPO
+)
+
+$errorActionPreference = "Stop"  # Parar em caso de erro
+
+# Verifique a arquitetura do sistema (64-bit ou 32-bit)
+if ([System.Environment]::Is64BitOperatingSystem) {
+    $regkey = 'HKLM:SOFTWARE\Wow6432Node\AdventNet\DesktopCentral\DCAgent'
+    Write-Output "Arquitetura 64-bit detectada"
+} else {
+    $regkey = 'HKLM:SOFTWARE\AdventNet\DesktopCentral\DCAgent'
+    Write-Output "Arquitetura 32-bit detectada"
+}
+
+# Verifique se o agente já está instalado
+if (Test-Path $regkey) {
+    $agentVersion = (Get-ItemProperty $regkey).DCAgentVersion
+}
+
+# Se a versão do agente não for encontrada, instale o agente
+if (-not $agentVersion) {
+    # Definir o comando de instalação com parâmetros adequados
+    [string]$InstallCmd = "$PSScriptRoot\$ExeFileName -s -r -f1""%systemroot%\temp\install.iss"" /silent INSTALLSOURCE=$InstallSource"
+    
+    # Executar o comando de instalação via cmd
+    cmd /c $InstallCmd
+}

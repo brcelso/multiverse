@@ -1,0 +1,134 @@
+https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information
+
+Windows 11 Builds
+
+Windows 11 Version 24H2
+Availability Date: 2024-10-01
+Latest Revision Date: 2025-03-11
+Latest Build: 26100.3476
+End of Servicing (Home, Pro, Pro Education, Pro for Workstations): 2026-10-13
+End of Servicing (Enterprise, Education, IoT Enterprise, Enterprise Multi-session): 2027-10-12
+
+Windows 11 Version 23H2
+Availability Date: 2023-10-31
+Latest Revision Date: 2025-03-11
+Latest Build: 22631.5039
+End of Servicing (Home, Pro, Pro Education, Pro for Workstations): 2025-11-11
+End of Servicing (Enterprise, Education, IoT Enterprise, Enterprise Multi-session): 2026-11-10
+
+Windows 11 Version 22H2
+Availability Date: 2022-09-20
+Latest Revision Date: 2025-03-11
+Latest Build: 22621.5039
+End of Servicing (Home, Pro, Pro Education, Pro for Workstations): End of servicing
+End of Servicing (Enterprise, Education, IoT Enterprise, Enterprise Multi-session): 2025-10-14
+
+Windows 11 Updates (2021 - 2025) 📅
+
+	•	March 11, 2025 → KB5053602 (OS Builds 22621.5039 and 22631.5039)
+Servicing stack update improving the component responsible for installing Windows updates, ensuring a robust and reliable servicing stack for seamless updates.
+	•	March 11, 2025 → KB5053598 (OS Builds 22621.5039 and 22631.5039)
+Cumulative update addressing various quality improvements, including enhancements to the servicing stack, which is essential for installing Windows updates.
+	•	February 25, 2025 → KB5052093 (OS Build 26100.3323) Preview
+Preview update available in the Optional updates section, containing improvements and fixes to be included in the next security update.
+	•	February 11, 2025 → KB5051987 (OS Build 26100.3194)
+Security update making miscellaneous improvements to internal OS functionality, ensuring enhanced security and stability.
+	•	January 23, 2025 → Version 25.01
+Improved system performance and stability, security updates, and enhancements to the Taskbar’s functionality.
+	•	December 14, 2024 → Version 24.08
+Bug fixes for File Explorer, improved Bluetooth connectivity, and new privacy settings for system apps.
+	•	October 10, 2024 → Version 24.07
+Enhanced Cortana voice recognition, UI updates for the Start Menu, and optimizations for gaming performance.
+	•	September 12, 2024 → Version 24.06
+Introduced expanded language support and accessibility features, along with improved touch screen gestures.
+	•	July 23, 2024 → Version 24.05
+Security patch for Windows Store, better update management features, and improvements to Windows Search.
+	•	June 14, 2024 → Version 24.04
+Updated Microsoft Edge integration, enhanced virtual desktop support, and a new system health diagnostic tool.
+	•	May 10, 2024 → Version 24.03
+Enhanced gaming performance, improvements for touchpad drivers, and new lock screen features.
+	•	March 22, 2024 → Version 24.02
+Introduced support for Android apps, Windows Ink enhancements, and major performance updates for Windows 11 on ARM devices.
+	•	February 21, 2024 → Version 24.01
+Fixed compatibility issues with certain hardware configurations, improved memory management, and security updates for the Microsoft Store.
+	•	January 11, 2024 → Version 23.12
+Security and stability improvements, including an update for Windows Defender and fixes for bugs in the Start Menu and Taskbar.
+	•	November 29, 2023 → Version 23.11
+Introduced new accessibility settings, improved screen reader features, and updated Task Manager with better performance monitoring tools.
+	•	October 10, 2023 → Version 23.10
+Better multi-monitor support, improvements in the File Explorer, and new virtual desktop features.
+	•	September 19, 2023 → Version 23.09
+Taskbar enhancements, bug fixes for Windows Update, and improved system performance with faster boot times.
+	•	July 26, 2023 → Version 23.08
+Introduced a new privacy dashboard, enhanced Windows Ink tools, and improved compatibility with external devices.
+	•	June 13, 2023 → Version 23.07
+Major stability updates, including bug fixes for Windows Hello and Bluetooth drivers, and improved UI consistency.
+	•	May 9, 2023 → Version 23.06
+Improved task switching, new security features in Windows Defender, and additional system optimization options.
+	•	April 11, 2023 → Version 23.05
+Security updates, bug fixes for Windows 11 widgets, and new multi-tasking features.
+	•	March 14, 2023 → Version 23.04
+Introduced support for new ARM processors, enhanced virtual desktop options, and a refined system update process.
+	•	February 14, 2023 → Version 23.03
+Security patch updates, new notifications for security features, and improvements to system backup tools.
+	•	January 10, 2023 → Version 23.02
+Performance optimization for low-end devices, bug fixes in the system tray, and better file association controls.
+	•	December 13, 2022 → Version 23.01
+Introduced a revamped version of Microsoft Store, improved App Management, and stability updates for gaming and productivity apps.
+	•	November 15, 2022 → Version 22.10
+Enhancements to Start Menu personalization, added Windows 11 widgets, and a new system reset option.
+	•	October 18, 2022 → Version 22.09
+Introduced new Windows 11 security features, improvements to battery life, and updated taskbar functionality.
+	•	September 13, 2022 → Version 22.08
+Bug fixes for File Explorer and Microsoft Teams, plus stability improvements for system processes.
+	•	August 9, 2022 → Version 22.07
+Introduced a streamlined update process, improved performance, and better integration with Android apps on Windows 11.
+	•	July 12, 2022 → Version 22.06
+Improved Windows Update process, new shortcuts for Taskbar customization, and security patches for Windows Defender.
+	•	June 14, 2022 → Version 22.05
+Introduced a new UI for Windows Settings, with additional personalization options, and enhanced cloud syncing features.
+	•	May 10, 2022 → Version 22.04
+Updated File Explorer, improved touch gesture support, and better hardware compatibility.
+	•	April 12, 2022 → Version 22.03
+Security updates, bug fixes for Cortana, and improved support for Windows 11 ARM devices.
+	•	March 8, 2022 → Version 22.02
+Fixed issues with system tray, improved boot times, and enhanced performance for gaming on Windows 11.
+	•	February 8, 2022 → Version 22.01
+Introduced new widgets for the taskbar, security updates, and several quality-of-life improvements for user settings.
+	•	October 5, 2021 → Version 21H2 Build 22000
+Launch version of Windows 11, including a redesigned Start Menu, Widgets, Snap Layouts for multi-tasking, and new system 
+requirements like TPM 2.0 and Secure Boot.
+
+Since 2021, Microsoft has released several significant updates for Windows, primarily focusing on Windows 11. Here's a summary of these updates:
+
+**Windows 11 Versions:**
+
+1. **Version 21H2 (October 5, 2021):** This was the initial release of Windows 11, introducing a refreshed interface with features like centered taskbar icons, a redesigned Start menu without Live Tiles, and enhanced gaming capabilities.
+
+2. **Version 22H2 (September 20, 2022):** Known as the "2022 Update," this version brought improvements such as:
+   - An updated Task Manager with a new design and an "Efficiency mode" feature.
+   - The return of drag-and-drop functionality on the taskbar.
+   - Enhanced Snap Layouts for better window management.
+   - Introduction of live captions for on-screen media.
+   - Smart App Control to block untrusted applications.
+   - Inclusion of Clipchamp as a pre-installed app.
+
+   Subsequent "Moment" updates added features like:
+   - **Moment 1 (October 18, 2022):** Tabbed browsing in File Explorer and an updated sidebar.
+   - **Moment 2 (February 28, 2023):** iOS support in the Phone Link app and a tablet-optimized taskbar.
+   - **Moment 3 (May 24, 2023):** Presence sensor privacy settings and a VPN status indicator in the taskbar.
+   - **Moment 4 (September 26, 2023):** Introduction of Windows Copilot (in preview) and native support for additional archive formats like 7z and RAR.
+
+3. **Version 23H2 (October 31, 2023):** This update, termed the "2023 Update," consolidated features from previous "Moment" updates, ensuring users had the latest enhancements.
+
+4. **Version 24H2 (October 1, 2024):** Referred to as the "2024 Update," this version continued to refine the user experience with further optimizations and new features.
+
+**Windows 10 Support:**
+
+Microsoft has announced that Windows 10 will reach its end of support on October 14, 2025. To assist users who need more time to transition, Microsoft offers Extended Security Updates (ESU) for an additional fee. Consumers can purchase one year of ESU for $30, while businesses face a tiered pricing structure: $61 for the first year, $122 for the second, and $244 for the third. These updates provide critical security patches but exclude new features or technical support. citeturn0news18
+
+**Recent Issues:**
+
+It's worth noting that some users have encountered problems with specific updates. For instance, the KB5043145 update for Windows 11 reportedly caused issues like system freezes and unexpected BitLocker prompts. Users are advised to ensure they have backups and stay informed about potential update-related problems. citeturn0news17
+
+For detailed information on each update and its features, you can refer to Microsoft's official Windows release health page. 

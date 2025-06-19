@@ -1,0 +1,38 @@
+Git
+
+Git config
+
+git config --global user.name "Seu Nome"
+git config --global user.email "Seu Email"
+git config --global --list
+
+Crie o Projeto no GitLab e
+na sua máquina local, vá até a pasta onde estão os
+arquivos do projeto e use os comandos abaixo para subir os arquivos no repo GitLab
+
+git init
+git add .
+git commit -m "initial"
+git remote add origin git@gitlab.com:governanca-de-software/nomedoprojeto.git
+git push --set-upstream origin --all
+(o push acima sobe todas as branches)
+
+caso quiser criar uma nova branch, use:
+git checkout -b nova-branch
+
+caso quiser alterar a branch onde vai fazer o push, use:
+git switch nome-da-branch
+
+-----------
+
+Clone um projeto já existente
+
+Na sua máquina local, vá até o local onde deseja salvar
+o repositório com os arquivos e use os comandos abaixo:
+
+git clone git@gitlab.com:governanca-de-software/nomedoprojeto.git
+
+
+
+
+

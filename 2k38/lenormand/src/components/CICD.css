@@ -1,0 +1,40 @@
+.cicd-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os botões */
+    padding: 20px;
+  }
+  
+  /* Estilo dos botões */
+  .cicd-button {
+    width: 100px;  /* Largura igual às mini cartas */
+    height: 140px; /* Altura igual às mini cartas */
+    border: 3px solid transparent; /* Largura da borda com cor transparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 2em; /* Aumenta o tamanho da fonte para os emojis */
+    cursor: pointer;
+    display: flex; /* Para centralizar o texto */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    transition: transform 0.2s, border-color 0.2s; /* Transição suave para a borda */
+    background-color: transparent; /* Remove a cor de fundo */
+  }
+  
+  /* Estilos para os diferentes estados dos botões */
+  .todo {
+    border-color: red; /* Borda vermelha para "To Do" */
+  }
+  
+  .doing {
+    border-color: yellow; /* Borda amarela para "Doing" */
+  }
+  
+  .done {
+    border-color: green; /* Borda verde para "Done" */
+  }
+  
+  /* Efeito hover */
+  .cicd-button:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão ao passar o mouse */
+  }
+  

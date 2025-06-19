@@ -1,0 +1,46 @@
+---
+- hosts: localhost
+  gather_facts: no
+  become: true
+  tasks:
+
+    #Ping host
+    - name: Ping the machine
+      ansible.builtin.ping:
+
+    #Validar arquivo ADA no destino
+    - name: Verificar se o arquivo ADA existe
+      stat:
+        path: /opt/automatos/ada/bin
+      register: ada_result
+
+    #Copiar novo arquivo ADA
+    - name: Copiar arquivo ada.deb para o Hostname
+      copy:
+        src: ada-1.9.1-en.i386.lin.deb
+        dest: /tmp/ada-1.9.1-en.i386.lin.deb
+      when: not ada_result.stat.exists
+
+    #Instalar lib
+    - name: Instalar lib
+      become: yes
+      become_method: sudo
+      shell: 
+        sudo apt-get -y install libc6-i386
+      when: not ada_result.stat.exists
+
+    #Instalar Novo ADA
+    - name: Instalar pacote ADA.deb
+      become: yes
+      become_method: sudo
+      command: dpkg -i /tmp/ada-1.9.1-en.i386.lin.deb
+      when: not ada_result.stat.exists
+
+    #Configurar novo servidor Almaden
+    - name: Configurando Ada Agent após a instalação
+      become: yes
+      become_method: sudo
+      shell: |
+        cd /opt/automatos/ada/bin
+        sudo ./asetup -s -a -s -iautomatos@magazineluiza.com.br -bLINUX -ca127.0.0.1:1999 -crssl:lad1-receiver.almaden.app:443
+      when: not ada_result.stat.exists

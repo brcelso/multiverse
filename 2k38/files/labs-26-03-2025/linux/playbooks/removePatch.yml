@@ -1,0 +1,27 @@
+    - name: Verificar se o arquivo RemoveUEMSAgent.sh existe
+      stat:
+        path: /usr/local/manageengine/uems_agent/RemoveUEMSAgent.sh
+      register: dir_stats
+
+    - name: Exibir mensagem caso o arquivo não seja encontrado
+      debug:
+        msg: "Arquivo RemoveUEMSAgent.sh não encontrado"
+      when: not dir_stats.stat.exists
+
+    - name: Dar permissão 775 ao arquivo RemoveUEMSAgent.sh se existir
+      file:
+        path: /usr/local/manageengine/uems_agent/RemoveUEMSAgent.sh
+        mode: '0775'
+      when: dir_stats.stat.exists
+
+    - name: Executar o arquivo RemoveUEMSAgent.sh
+      command: ./RemoveUEMSAgent.sh
+      register: comando_resultado
+      args:
+        chdir: /usr/local/manageengine/uems_agent
+      when: dir_stats.stat.exists
+
+    - name: Exibir resultado do comando
+      debug:
+        var: comando_resultado.stdout
+    

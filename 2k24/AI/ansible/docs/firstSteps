@@ -1,0 +1,49 @@
+instalar vscode
+instalar git
+criar uma chave SSH privada e publica
+mover as chaves para a pasta .ssh
+add a chave privada ao SSH agent do Linux
+copiar a chave publica para o GitHub
+criar o repositorio no GitHub (caso nao exista)
+clonar repositorio via SSH pelo terminal 
+configurar git no vscode
+----------
+instalar ansible
+criar o arquivo inventory com os ips destino
+criar o arquivo ansible.cfg e apontar dentro
+dele o inventory e a chave privada
+enviar a chave publica para os ips destino
+testar ansible e ansible-playbook
+----------
+melhorias encontradas:
+a chave privada mesmo que vazada, e necessario
+a senha para funcionar o playbook ou para
+acessar ou clonar o repositorio padrao
+a chave publica pode ser compartilhada o arquivo
+ou somente a criptografia via ssh copy id
+evita colocar usuario e senhas ssh 
+no arquivo inventory
+nao precisa mais informar o usuario quando
+executar o script ansible
+toda estrutura do ansible fica fora da maquina
+isso contribui para instalar ou configurar
+em outras maquinas quando precisar
+(modulos, arquivos, chaves, inventario, 
+scripts e playbooks)
+
+pontos a melhorar:
+como proteger a chave privada?
+onde armazenar a senha para tarefas que
+necessitam de permissao sudo?
+
+proximos passos:
+organizar os arquivos e scripts 
+da maneira correta,
+garantir que nenhum arquivo importante
+esteja no repositorio
+aprimorar os scripts de hardening,
+com validacao e alteracao de estado de servicos
+
+
+
+

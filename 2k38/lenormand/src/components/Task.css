@@ -1,0 +1,57 @@
+.task-list {
+    display: flex;
+    flex-direction: column; /* Empilha as tarefas uma em cima da outra */
+    gap: 20px; /* Espaço entre as tarefas */
+    margin: 20px;
+  }
+  
+  .task-container {
+    padding: 15px;
+    border: 1px solid #cccccc; /* Borda leve para separar as tarefas */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #333333; /* Cor de fundo cinza escuro */
+  }
+  
+  .task-name {
+    margin-bottom: 10px;
+    font-size: 1.5em; /* Tamanho da fonte do nome da tarefa */
+    
+  }
+  
+  /* Estilo dos botões */
+  .cicd-container {
+    display: flex;
+    justify-content: space-around; /* Espaço igual entre os botões */
+  }
+  
+  .cicd-button {
+    width: 100px; /* Largura dos botões */
+    height: 140px; /* Altura dos botões */
+    border: 3px solid transparent; /* Borda com cor transparente */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 2em; /* Tamanho da fonte dos emojis */
+    cursor: pointer;
+    display: flex; /* Para centralizar o texto */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    background-color: transparent; /* Fundo transparente */
+    transition: transform 0.2s, border-color 0.2s; /* Transição suave para a borda */
+  }
+  
+  .todo {
+    border-color: rgb(197, 54, 54); /* Borda vermelha para "To Do" */
+  }
+  
+  .doing {
+    border-color: rgb(182, 182, 53); /* Borda amarela para "Doing" */
+  }
+  
+  .done {
+    border-color: rgb(11, 110, 11); /* Borda verde para "Done" */
+  }
+  
+  /* Efeito de seleção */
+  .selected {
+    box-shadow: 0 0 10px rgba(255, 0, 191, 0.5); /* Sombra ao redor do botão selecionado */
+  }
+  

@@ -1,0 +1,33 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  become: true
+  vars_files:
+    - "./secrets.yml"
+  tasks:
+    #- name: Mostrar usuário e senha
+    #  debug:
+    #    msg: "Usuário: {{ ansible_ssh }} | Senha SSH: {{ ansible_ssh_pass }} | Senha Sudo: {{ become_password }}"
+
+    - name: Atualizar lista de pacotes
+      become: yes
+      become_method: sudo
+      ansible.builtin.shell: apt-get update
+      register: update_output
+
+    - name: Mostrar resumo do apt-get update
+      debug:
+        msg: "{{ update_output.stdout_lines | select('search', '^Hit|^Get|^Ign') | list }}"
+
+    - name: Mostrar o hostname
+      ansible.builtin.hostname:
+        name: "{{ inventory_hostname }}"  # ou você pode usar 'hostname' para coletar o nome real da máquina.
+      register: hostname_result
+
+    - name: Exibir hostname
+      debug:
+        msg: "O hostname é: {{ hostname_result.name }}"
+
+    # Ping host
+    - name: Ping the machine
+      ansible.builtin.ping:

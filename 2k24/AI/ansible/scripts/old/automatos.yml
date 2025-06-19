@@ -1,0 +1,61 @@
+---
+- name: Script Deploy
+  hosts: all
+  gather_facts: no
+  become: true
+  tasks:
+
+  - name: Ping the machine
+    ansible.builtin.ping:
+
+  #Validar arquivo ADA no destino
+  - name: Verificar se o arquivo ADA existe
+    stat:
+      path: /opt/automatos/ada/bin
+    register: resultado_stat  
+
+  #Mostrar aengine Status
+  - name: Mostrar aengine status
+    become: yes
+    become_method: sudo
+    shell: |
+      cd /opt/automatos/ada/bin
+      sudo ./aengine -status | grep -E  "AgentPID|AgentVer|Started|TmpPath|User ID|UIDdigest|MachineID|Relay" | tr ',' '\n'
+    register: aengine_status
+
+  - name: aengine status
+    debug:
+      msg: "{{ aengine_status.stdout_lines }}"
+    when: resultado_stat.stat.exists 
+
+  #Mostrar arelay Status
+  - name: Mostrar arelay status
+    become: yes
+    become_method: sudo
+    shell: |
+      cd /opt/automatos/ada/bin
+      sudo ./arelay -status | grep -E "TX"
+    register: arelay_status
+
+  - name: arelay status
+    debug:
+      msg: "{{ arelay_status.stdout_lines }}"
+    when: resultado_stat.stat.exists 
+
+  - name: Ping Server Almaden
+    shell: |
+      ping -w 3 http.vip.automatos.com  | grep -E "packets"
+    register: ping_result
+    ignore_errors: true
+    
+  - name: Mostrar Ping Server Almaden
+    debug:
+      msg: "{{ ping_result.stdout_lines }}"
+    when: ping_result.rc == 0
+
+
+
+
+  
+    
+

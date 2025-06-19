@@ -1,0 +1,26 @@
+- name: Copiar e executar PatchManager
+  hosts: localhost
+  become: yes
+  become_method: sudo
+
+  tasks:
+    
+    - name: Executar chmod UEMS
+      command: chmod +x UEMS_LinuxAgent.bin
+      register: comando_resultado
+      args:
+        chdir: ./files/Patchmanager  # Define o diretório para execução do comando
+
+    - name: Executar Patchmanager binário
+      command: yes | ./UEMS_LinuxAgent.bin
+      register: comando_resultado
+      args:
+        chdir: ./files/Patchmanager  # Define o diretório para execução do comando
+
+    - name: Exibir resultado do comando
+      debug:
+        var: comando_resultado.stdout
+
+    - name: Exibir erros do comando
+      debug:
+        var: comando_resultado.stderr

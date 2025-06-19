@@ -1,0 +1,15 @@
+    - name: Obter hostname sem usar ansible_hostname
+      command: hostname
+      register: hostname_output
+
+    - name: Imprimir hostname, IP e sistema operacional
+      ansible.builtin.debug:
+        msg:
+          - "Hostname: {{ hostname_output.stdout }}"
+          - "IP da Máquina: {{ ansible_default_ipv4.address }}"
+          - "Sistema Operacional: {{ ansible_os_family }} {{ ansible_distribution }} {{ ansible_distribution_version }}"
+          - "Fabricante: {{ ansible_system_vendor }}"
+          - "Modelo: {{ ansible_product_name }}"
+          - "Número de Série: {{ ansible_product_serial }}"
+          - "Data da BIOS: {{ ansible_bios_date }}"
+          - "Arquitetura: {{ ansible_architecture }}"
