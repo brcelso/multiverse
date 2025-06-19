@@ -1,5 +1,0 @@
-#192.168.15.11
-#192.168.2.101
-#[all:vars]
-#ansible_ssh=Administrador
-#ansible_ssh_pass=Senha
