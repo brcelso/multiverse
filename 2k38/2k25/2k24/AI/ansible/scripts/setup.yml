@@ -1,0 +1,9 @@
+- name: Coletar fatos do sistema
+  hosts: all 
+  tasks:
+    - name: Coletar informações da máquina
+      setup:
+
+    - name: Mostrar todas as informações coletadas
+      debug:
+        var: ansible_facts

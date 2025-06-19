@@ -1,0 +1,40 @@
+SSH e Login Glab
+
+Gerar Chave Privada e Pública
+ssh-keygen -t rsa -b 4096 -C "seu_email@example.com"
+
+Local onde as chaves estão armazenadas
+Linux
+cat ~/.ssh/id_rsa.pub
+Windows
+C:\Users\SeuUsuario\.ssh\id_rsa
+
+copiar a chave pública para o SSH Keys do GitLab
+
+Instalar Glab
+Linux
+sudo apt update
+sudo apt install glab
+
+Windows
+Instalar o Chocolatey via Powershell(administrador)
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+choco install glab
+
+Logar Glab
+glab auth login
+
+Configurar o SSH Agent(opcional)
+Linux
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+ssh-add -l
+
+Windows (via PowerShell)
+Start-Service ssh-agent
+ssh-add C:\Users\SeuUsuario\.ssh\id_rsa
+ssh-add -l
+
+Testar Conexão
+ssh -T git@gitlab.com

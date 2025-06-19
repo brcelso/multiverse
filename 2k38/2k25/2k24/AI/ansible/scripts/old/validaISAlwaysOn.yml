@@ -1,0 +1,17 @@
+---
+- name: Checar se o ISAlwaysOn existe no diretório
+  hosts: MTM
+  become: yes
+  tasks:
+    - name: Checar se o arquivo existe
+      stat:
+        path: /opt/ISLOnline/ISLAlwaysOn/ISLAlwaysOn
+      register: file_result
+    - name: Mostrar mensagem se o arquivo existe
+      debug:
+        msg: "O arquivo existe!"
+      when: file_result.stat.exists  # Mostra caso exista
+    - name: Monstrar mensagem se o arquivo não existe
+      debug:
+        msg: "O arquivo não existe"
+      when: not file_result.stat.exists  # Mostrar caso não exista

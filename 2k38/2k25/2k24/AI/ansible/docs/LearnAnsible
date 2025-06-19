@@ -1,0 +1,929 @@
+[SSH]
+
+#MANUAL SSH KEY USING PASSPHRASE
+
+#use TMUX to work using multiple servers
+
+#create a sshkey
+ssh-keygen -t ed25519 -C "celso default"
+#enter / enter passphrase
+
+#ssh directory
+ls -la .ssh
+
+#shows content of public key
+cat .ssh/id_ed25519.pub
+
+#copy public key to server
+ssh-copy-id -i ~/.ssh/id_ed25519.pub ipdestino
+
+#cache your SSH passphrase (works until close terminal)
+eval $(ssh-agent)
+ps aux | grep 2362
+ssh-add (and the key)
+
+#create alias
+alias ssha ='eval $(ssh-agent) && ssh-add'
+ssha
+nano .bashrc
+# ssh agent
+alias ssha ='eval $(ssh-agent) && ssh-add'
+
+#AUTOMATED SSH KEY USING NO-PASSPHRASE
+
+#ssh key exclusive for ansible
+ssh-keygen -t ed25519 -C "ansible"
+#change the ssh name
+/home/celso/.ssh/ansible
+#no passphrase required
+
+#copy public key to server
+ssh-copy-id -i ~/.ssh/ansible.pub ipdestino
+
+#show authorized keys on server
+cat .ssh/authorized_keys
+
+#access server using SSH 
+ssh -i ~./ssh/ansible ipdestino
+
+[SSH]
+--------------------------------------------
+[GITHUB]
+
+#install GIT
+sudo apt update
+sudo apt install git
+which git
+git
+
+#create a repository in github
+sign in github
+create a repository with readme
+go to profile, setting, SSH and GPG keys
+create a new ssh key
+copy entire ssh public key and paste
+go to repository
+click in code, clone with SSH and copy
+
+#clone the repository in terminal
+git clone (paste the ssh key)
+
+#config git
+git config --global user.name "brcelso"
+git config --global user.email "celso.sjunior@outlook.com"
+cat ~/.gitconfig
+
+#push changes
+git status
+git diff README.md (nano README.md)
+git status
+git commit -m "updated readme file"
+git push origin master
+history
+
+[GITHUB]
+--------------------------------------------
+[AD-HOC COMMANDS]
+
+#install ansible
+sudo apt update
+sudo apt install ansible
+
+#create an inventory (inside repository directory)
+nano inventory
+ipdestino
+ipdestino
+ipdestino
+
+#add inventory to git
+git status
+git add inventory
+git status
+git commit -m "first v of inventory"
+git push origin master
+
+#ansible ping using ssh
+ansible all --key-file ~./.ssh/ansible -i inventory -m ping
+
+#config ansible.cfg
+nano ansible.cfg
+[defaults]
+inventory = inventory
+private_key_file = ~/.ssh/ansible
+
+#ansible ping with ansible.cfg set
+ansible all -m ping
+
+#listar hosts
+ansible all --list-hosts
+
+#gather info 
+ansible all -m gather_facts
+ansible all -m gather_facts --limit ipdestino
+
+#synchronize git
+git status
+git add ansible.cfg
+git status
+git commit -m "first v ansible.cfg"
+git push origin master
+
+[AD-HOC COMMANDS]
+--------------------------------------------
+[AD-HOC ELEVATED COMMANDS]
+
+#show apt update from servers
+ansible all -m apt -a update_cache=true
+ansible all -m apt -a update_cache=true --become --ask-become-pass
+
+#install a package in all servers
+ansible all -m apt -a name=vim-nox --become --ask-become-pass
+ansible all -m apt -a name=tmux --become --ask-become-pass
+ansible all -m apt -a name=snapd --become --ask-become-pass
+ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass
+ansible all -m apt -a "upgrade-dist" --become --ask-become-pass
+
+#in server check files
+which vim
+apt search vim-nox
+sudo apt dist-upgrade
+
+#history.log
+cd /var/log
+ls
+cd apt
+ls
+cat history.log
+
+[AD-HOC ELEVATED COMMANDS]
+--------------------------------------------
+[PLAYBOOK]
+
+#create a playbook (inside repository)
+nano install_apache.yml
+---
+-  hosts: all
+   become: true
+   tasks:
+
+   - name: update repository index
+   apt:
+     update_cache: yes
+
+   - name: install apache2 package
+   apt:
+     name: apache2
+     state: latest
+    
+   - name: add php support for apache
+   apt:
+     name: libapache2-mod-php
+     state: latest
+
+#run playbook
+ansible-playbook --ask-become-pass install_apache.yml
+
+#copy playbook and change the state
+cp install_apache.yml remove_apache.yml
+nano remove_apache.yml
+
+nano install_apache.yml
+---
+-  hosts: all
+   become: true
+   tasks:
+
+   - name: update repository index
+   apt:
+     update_cache: yes
+
+   - name: remove apache2 package
+   apt:
+     name: apache2
+     state: absent
+    
+   - name: remove php support for apache
+   apt:
+     name: libapache2-mod-php
+     state: absent
+
+#add all to git
+git add .
+git status
+git commit -m "added playbook"
+git status
+git push origin master
+
+[PLAYBOOK]
+--------------------------------------------
+[THE 'when' CONDITIONAL ]
+
+#git best practices
+git pull
+
+#add 1 more host
+nano inventory
+ipdestino
+
+#get os-release
+cat /etc/os-release
+
+#add when to yml
+nano install_apache.yml
+---
+-  hosts: all
+   become: true
+   tasks:
+
+   - name: update repository index
+   apt: #dnf 
+     update_cache: yes
+   when: ansible_distribution == "Ubuntu" # in ["Debian", "Ubuntu"]
+   #ansible_distribution == "Ubuntu" and
+   #ansible distribution_version == "22.04"
+
+   - name: install apache2 package
+   apt:
+     name: apache2 #httpd
+     state: latest
+   when: ansible_distribution == "Ubuntu"
+
+   - name: add php support for apache
+   apt: #dnf
+     name: libapache2-mod-php #php
+     state: latest
+   when: ansible_distribution == "Ubuntu"
+
+#conditional ways
+ansible all -m gather_facts --limit ipdestino | grep ansible_distribution
+
+#centOS start httpd and port 80
+systemctl status httpd
+sudo systemctl start httpd
+sudo firewall-cmd --add-port-80/tcp
+
+[THE 'when' CONDITIONAL ]
+--------------------------------------------
+[IMPROVE PLAYBOOK]
+
+#refactoring and optimizing playbook
+nano install_apache.yml
+---
+-  hosts: all
+   become: true
+   tasks:
+
+   - name: install apache and php
+   package:
+     name: 
+       - "{{ apache_package }}"
+       - "{{ php_package }}"
+     state: latest
+     update_cache: yes
+
+#declare variables added to playbook in inventory
+nano inventory
+#Ubuntu
+ip destino apache_package=apache2 php_package=libapache2-mod-php
+#CentOS
+ip destino apache_package=httpd php_package=php
+
+[IMPROVE PLAYBOOK]
+--------------------------------------------
+[TARGETING SPECIFIC NODES]
+
+#grouping hosts
+nano inventory
+
+[web_servers]
+ipdestino
+
+[db_servers]
+ipdestino
+
+[file_servers]
+ipdestino
+
+#copy yml
+cp install_apache.yml site.yml
+
+#change site.yml
+nano site.yml
+
+---
+-  hosts: all
+   become: true
+   pre_tasks:
+
+ - name: update repo cache (CentOS) #install updates 
+   tags: always
+   dnf:
+     #update_only: yes
+     update_cache: yes
+   changed_when: false
+   when: ansible_distribution == "CentOS"
+
+ - name: update repo cache (Ubuntu) #install updates
+   tags: always
+   apt:
+     #upgrade_dist: yes
+     update_cache: yes
+     changed_when: false
+   when: ansible_distribution == "Ubuntu"
+
+-  hosts: all
+   become: true
+   tasks:
+
+   - name: create simone user
+     tags: always
+     user:
+       name: simone
+       groups: root
+
+   - name: add ssh key for simone
+   tags: always
+   authorized_key:
+     user: simone
+     key: "xxxxxxxxxxxxxxxxxxxxxx"
+
+   - name: add sudoers file for simone
+   tags: always
+   copy: 
+     src: sudoer_simone
+     dest: /etc/sudoers.d/simone
+     owner: root
+     group: root
+     mode: 0440
+
+-  hosts: workstations
+   become: true
+   tasks:
+
+   - name: install unzip
+     package:
+       name: unzip 
+
+   - name: install terraform 
+     unarchive:
+       src: https://releases/terraform.zip
+       dest: /usr/local/bin
+       remote_src: yes
+       mode: 0755
+       owner: root
+       group: root
+      
+-  hosts: web_servers
+   become: true
+   tasks:
+
+   - name: install apache2 and php package (Ubuntu)
+     tags: apache,apache2,ubuntu
+     apt:
+       name: 
+       - apache2
+       - libapache2-mod-php
+       state: latest
+     when: ansible_distribution == "Ubuntu"
+
+   - name: install httpd and php package (CentOS)
+   tags: apache,centos,httpd
+   dnf:
+     name: 
+     - httpd
+     - php
+     state: latest
+   when: ansible_distribution == "CentOS"
+
+ - name: start httpd (CentOS)
+   tags: apache,centos,httpd
+   service:
+     name: httpd
+     state: started
+     enabled: yes
+   when: ansible_distribution == "CentOS"
+
+ - name: change e-mail address for admin
+   tags: apache,centos,httpd
+   lineinfile: 
+     path: /etc/httpd/conf/httpd.conf
+     regexp: "^ServerAdmin'
+     line: ServerAdmin celso.sjunior@outlook.com
+   when: ansible_distribution == "CentOS"
+   register: httpd
+
+ - name: restart httpd (CentOS)
+   tags: apache,centos,httpd
+   service:
+     name: httpd
+     state: restarted
+   when: httpd.changed
+
+ - name: copy default html file for site
+   tags: apache,apache2,httpd
+   copy:
+     src: default_site.html 
+     dest: /var/www/html/index.html
+     owner: root
+     group: root
+     mode: 0644
+
+-  hosts: db_servers
+   become: true
+   tasks:
+
+   - name: install mariadb package (CentOS)
+   tags: centos,db,mariadb
+   dnf:
+     name: 
+     - mariadb
+     state: latest
+   when: ansible_distribution == "CentOS"
+
+   - name: install mariadb package (Ubuntu)
+   tags: db,mariadb,ubuntu
+   apt:
+     name: 
+     - mariadb-server
+     state: latest
+   when: ansible_distribution == "Ubuntu"
+
+-  hosts: file_servers
+   become: true
+   tasks:
+
+   - name: install samba package
+   tags: samba
+   package:
+     name: samba
+     state: latest
+
+[TARGETING SPECIFIC NODES]
+--------------------------------------------
+[TAGS]
+
+#added tags to site.yml
+
+#list tags
+ansible-playbook --list-tags site.yml
+
+#run a specific tag or more
+ansible-playbook --tags centos --ask-become-pass site.yml #"apache,db"
+
+[TAGS]
+--------------------------------------------
+[MANAGING FILES]
+
+#creating file
+nano files/default_site.html
+
+#added copy to site.yml
+
+#added new host
+sudo nano inventory
+[workstations]
+ipdestino
+
+#copy using ssh and ansible key
+ssh-copy-id -i ~/.ssh/ansible.pub ipdestino
+
+[MANAGING FILES]
+--------------------------------------------
+[MANAGING SERVICES]
+
+#added start service httpd to site.yml
+
+#service is stopped in CentOS
+sudo systemctl start httpd
+
+#change httpd.conf +89
+vim /etc/https/conf/httpd.conf +89
+#ServerAdmin root@localhost
+#check the line
+cat /etc/httpd/conf/https.conf |grep ServerAdmin
+
+[MANAGING SERVICES]
+--------------------------------------------
+[ADDING USERS AND BOOTSTRAPING]
+
+#added a line to create user in site.yml
+
+#check users
+cat /etc/passwd
+
+#get ssh key to add site.yml
+cat ~/.ssh/ansible.pub
+
+#create file sudoer_simone
+cd files/ 
+nano sudoer_simone
+
+#directory to copy (check users)
+ls -l /etc/sudoers.d
+sudo cat /etc/sudoers.d/simone
+
+#check ip
+ip a
+
+#send ssh to server
+ssh -i ~/.ssh/ansible simone@ipdestino
+
+simone ALL=(ALL) NOPASSWD: ALL
+
+#check user running
+whoami
+
+#check authorized keys
+cat .ssh/authorized_keys
+
+#edit ansible.cfg to run using no passphrase
+#inside repository
+sudo nano ansible.cfg
+#add line
+remote_user = simone
+#run playbook as simone
+ansible-playbook site.yml
+
+#create a bootstrap playbook to set up the server
+cp site.yml bootstrap.yml 
+
+#remove from site.yml
+#creante simone user
+#add sudoers file for simone
+
+#remove from bootstrap.yml
+#all lines below 0440
+
+#remove from site.yml
+update_only: yes
+upgrade:dist
+
+#add changed_when to site.yml
+
+#run bootstrap.yml (pretend it's a new server)
+#run site.yml using no permission (assume simone works)
+
+#keep aad ssh key for simone in site.yml to repo
+#if add a new one, change simone to state: absent 
+#and this not need to remove the task
+
+[ADDING USERS AND BOOTSTRAPING]
+--------------------------------------------
+[ROLES]
+
+#copy yml
+cp site.yml site_before_roles.yml
+
+---
+-  hosts: all
+   become: true
+   pre_tasks:
+
+ - name: update repo cache (CentOS) 
+   tags: always
+   dnf:
+     update_cache: yes
+   changed_when: false
+   when: ansible_distribution == "CentOS"
+
+ - name: update repo cache (Ubuntu) 
+   tags: always
+   apt:
+     update_cache: yes
+     changed_when: false
+   when: ansible_distribution == "Ubuntu"
+
+-  hosts: all
+   become: true
+   roles: 
+     - base
+
+-  hosts: workstations
+   become: true
+   roles:
+     - workstations
+
+-  hosts: web_servers
+   become: true
+   roles:
+     - web_servers
+
+-  hosts: db_servers
+   become: true
+   roles:
+     - db_servers
+
+-  hosts: file_servers
+   become: true
+   roles:
+     - file_servers   
+
+#create folder roles (inside repository)
+mkdir roles
+cd roles
+
+#create folder sub-roles inside roles
+mkdir base
+mkdir db_servers
+mkdir file_servers
+mkdir web_servers
+mkdir workstations
+
+#create tasks to sub-roles
+mkdir base/tasks
+mkdir db_servers/tasks
+mkdir file_servers/tasks
+mkdir web_servers/tasks
+mkdir workstations/tasks
+
+#create a yml file inside tasks
+cd base/
+cd tasks/
+ls
+nano main.yml
+
+#add ssh key for simone
+nano main.yml
+- name: add ssh key for simone
+authorized_key:
+  user: simone
+  key: "xxxxxxxxxxxxxxxxxxxxxx"
+
+#create a yml file inside db_servers tasks
+cd db_servers/
+cd tasks/
+ls
+nano main.yml
+
+#add install mariadb server package (CentOS and Ubuntu)
+nano main.yml
+- name: install mariadb package (CentOS)
+   tags: centos,db,mariadb
+   dnf:
+     name: 
+     - mariadb
+     state: latest
+   when: ansible_distribution == "CentOS"
+
+- name: install mariadb package (Ubuntu)
+   tags: db,mariadb,ubuntu
+   apt:
+     name: 
+     - mariadb-server
+     state: latest
+   when: ansible_distribution == "Ubuntu"
+
+#create a yml file inside file_servers tasks
+cd file_servers/
+cd tasks/
+ls
+nano main.yml
+
+#add install samba package 
+- name: install samba package
+  tags: samba
+  package:
+    name: samba
+    state: latest
+
+#create a yml file inside web_servers tasks
+cd web_servers/
+cd tasks/
+ls
+nano main.yml
+
+#create a folder files
+mkdir files
+cp ../../default_site.html files/
+
+#add install packages, start services and change email
+nano main.yml
+- name: install httpd and php package (CentOS)
+   tags: apache,centos,httpd
+   dnf:
+     name: 
+     - httpd
+     - php
+     state: latest
+   when: ansible_distribution == "CentOS"
+
+- name: start and enable httpd (CentOS)
+   tags: apache,centos,httpd
+   service:
+     name: httpd
+     state: started
+     enabled: yes
+   when: ansible_distribution == "CentOS"
+
+- name: install apache2 and php package (Ubuntu)
+     tags: apache,apache2,ubuntu
+     apt:
+       name: 
+       - apache2
+       - libapache2-mod-php
+       state: latest
+     when: ansible_distribution == "Ubuntu"
+
+- name: change e-mail address for admin
+   tags: apache,centos,httpd
+   lineinfile: 
+     path: /etc/httpd/conf/httpd.conf
+     regexp: "^ServerAdmin'
+     line: ServerAdmin celso.sjunior@outlook.com
+   when: ansible_distribution == "CentOS"
+   register: httpd
+
+ - name: restart httpd (CentOS)
+   tags: apache,centos,httpd
+   service:
+     name: httpd
+     state: restarted
+   when: httpd.changed
+
+ - name: copy default html file for site
+   tags: apache,apache2,httpd
+   copy:
+     src: default_site.html 
+     dest: /var/www/html/index.html
+     owner: root
+     group: root
+     mode: 0644
+
+#create a yml file inside web_servers tasks
+cd workstations/
+cd tasks/
+ls
+nano main.yml
+
+#add install tasks
+nano main.yml
+
+- name: install unzip
+  package:
+    name: unzip 
+
+- name: install terraform 
+  unarchive:
+    src: https://releases/terraform.zip
+    dest: /usr/local/bin
+    remote_src: yes
+    mode: 0755
+    owner: root
+    group: root
+
+[ROLES]
+--------------------------------------------
+
+[HOST VARIABLES AND HANDLERS]
+
+#create in the root depository
+mkdir host_vars
+
+#go to folder
+cd host_vars
+cat ../inventory
+
+#create a yml using the ip address (web_servers)
+nano ipdestino.yml
+apache_package_name: apache2
+apache_service: apache2
+php_package_name: libapache2-mod-php
+
+#copy yml file
+cp ipdestino.yml ipdestino.yml #(web_servers) - (db_servers)
+cp ipdestino.yml ipdestino.yml #(web_servers) - (file_servers)
+cp ipdestino.yml ipdestino.yml #(web_servers) - (web_servers(CentOS)
+
+#open the CentOS yml file
+apache_package_name: httpd
+apache_service: httpd
+php_package_name: php
+
+#show host variables files
+ls -l host_vars
+
+#open web_servers yml
+nano roles/web_servers/tasks/main.yml
+nano main.yml
+- name: start and enable apache service
+   tags: apache,httpd,php
+   package:
+     name: 
+     - "{{ apache_package_name}} "
+     - "{{ php_package_name }}"
+     state: latest
+
+- name: start and enable apache service
+   tags: apache,httpd
+   service:
+     name: "{{ apache_service }}"
+     state: started
+     enabled: yes
+
+- name: change e-mail address for admin
+   tags: apache,centos,httpd
+   lineinfile: 
+     path: /etc/httpd/conf/httpd.conf
+     regexp: "^ServerAdmin'
+     line: ServerAdmin celso.sjunior@outlook.com
+   when: ansible_distribution == "CentOS"
+   notify: restart_apache  #register: httpd
+
+# - name: restart httpd
+#   tags: apache,httpd
+#   service:
+#     name: "{{ apache_service }}"
+#     state: restarted
+#   when: apache.changed
+
+ - name: copy hmtl file for site
+   tags: apache,apache,apache2,httpd
+   copy:
+     src: default_site.html 
+     dest: /var/www/html/index.html
+     owner: root
+     group: root
+     mode: 0644
+
+#remove the restart task and change register
+
+#create a folder and yml handlers inside web_servers
+mkdir handlers
+cd handlers
+nano main.yml
+ - name: restart_apache
+ service:
+   name: "{{ apache_service }}"
+   state: restarted
+
+#change email in main.yml to test restart apache service
+line: ServerAdmin celso.sjunior@outlook.com.br #add br
+
+
+[HOST VARIABLES AND HANDLERS]
+--------------------------------------------
+
+[TEMPLATES]
+
+#show sshd_config file
+nano /etc/ssh/sshd_config
+
+#create templates inside base directory and copy sshd_config
+cd /roles/base
+mkdir templates
+cd templates/
+cp /etc/ssh/sshd_config sshd_config_ubuntu.j2
+
+#copy sshd_config from CentOS
+scp ipdestino(CentOS):/etc/ssh/sshd_config sshd_config_centos.j2
+
+#give permission in CentOS for copy
+shdo chmod a+r /etc/ssh/sshd_config
+shdo chmod o-r /etc/ssh/sshd_config
+
+#change Centos and Ubuntu config file 
+nano sshd_confing_centos.j2
+nano sshd_confing_ubuntu.j2
+#add line above Hostkey
+AllowUsers {{ ssh_users }}
+
+#change all host_vars files
+cd host_vars
+ls
+vim * #open all files 
+#add lines 
+ssh_users: "celso simone"
+ssh_template_file: sshd_config_ubuntu.j2 #centos.j2 for centos 
+
+#add host_vars to workstations
+cd /host_vars
+cp ipdestino.yml ipdestino.yml #web_server to workstations
+
+#change roles/base/tasks main.yml
+cd roles/base
+ls
+cd tasks/
+nano main.yml
+#add task
+- name: generate sshd_config file from template
+  tags:ssh
+  template:
+    src: "{{ ssh_template_file }}"
+    dest: /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode: 0644
+  notify: restart_sshd
+
+#create handles inside roles/base
+mkdir handlers
+cd handlers/
+nano main.yml
+#create task
+- name: restart_sshd
+  service:
+    name: sshd
+    state: restarted
+
+[TEMPLATES]
+--------------------------------------------

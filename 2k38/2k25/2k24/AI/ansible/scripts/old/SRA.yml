@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+    - name: Copie o script para o host
+      copy:
+        src: SRAAUTOMATOS.46
+        dest: /tmp/SRAAUTOMATOS.46
+        mode: 0755
+    - name: Execute o script
+      become: yes
+      become_method: sudo
+      command: /tmp/SRAAUTOMATOS.46

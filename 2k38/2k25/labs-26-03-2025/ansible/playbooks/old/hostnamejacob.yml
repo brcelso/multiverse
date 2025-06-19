@@ -1,0 +1,29 @@
+- name: Alterar hostname e atualizar /etc/hosts
+  hosts: 192.168.2.101
+  become: yes
+  gather_facts: no
+  tasks:
+    - name: Definir novo hostname
+      ansible.builtin.hostname:
+        name: "WNLX6051003"
+
+    - name: Adicionar entrada no /etc/hosts
+      ansible.builtin.lineinfile:
+        path: /etc/hosts
+        line: "127.0.0.1 {{ novo_hostname }}"
+      vars:
+        novo_hostname: "WNLX6051003"
+
+    - name: Substituir entrada antiga no /etc/hosts
+      ansible.builtin.replace:
+        path: /etc/hosts
+        regexp: "^127.0.1.1 {{ antigo_hostname }}"
+        replace: "127.0.0.1 {{ novo_hostname }}"
+      vars:
+        antigo_hostname: "wnlxgfl001"
+        novo_hostname: "WNLX6051003"
+        backup: yes  # Adicionamos esta linha para criar backups dos arquivos modificados
+
+    - name: Atualizar cache DNS
+      ansible.builtin.shell:
+        cmd: "systemctl restart systemd-resolved"

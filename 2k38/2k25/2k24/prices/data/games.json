@@ -1,0 +1,83 @@
+{
+  "2024": [
+    {
+      "title": "Silent Hill 2",
+      "release_date": "October 8, 2024"
+    },
+    {
+      "title": "Astro Bot",
+      "release_date": "September 6, 2024"
+    },
+    {
+      "title": "Black Myth: Wukong",
+      "release_date": "August 20, 2024"
+    },
+    {
+      "title": "Stellar Blade",
+      "release_date": "April 26, 2024"
+    },
+    {
+      "title": "Final Fantasy VII Rebirth",
+      "release_date": "February 29, 2024"
+    },
+    {
+      "title": "Helldivers 2",
+      "release_date": "February 8, 2024"
+    }
+  ],
+  "2023": [
+    {
+      "title": "Marvel's Spider-Man 2",
+      "release_date": "October 20, 2023"
+    },
+    {
+      "title": "Final Fantasy XVI",
+      "release_date": "June 22, 2023",
+      "added_to_ps_plus_game_catalog": "March 7, 2024"
+    },
+    {
+      "title": "Street Fighter 6",
+      "release_date": "June 2, 2023",
+      "added_to_ps_plus_game_catalog": "January 16, 2024"
+    },
+    {
+      "title": "Resident Evil 4 Remake",
+      "release_date": "March 24, 2023",
+      "added_to_ps_plus_game_catalog": "May 9, 2024"
+    },
+    {
+      "title": "Hogwarts Legacy",
+      "release_date": "February 10, 2023"
+    }
+  ],
+  "2022": [
+    {
+      "title": "God of War Ragnarök",
+      "release_date": "November 9, 2022",
+      "added_to_ps_plus_game_catalog": "January 2025"
+    },
+    {
+      "title": "The Last of Us Part I",
+      "release_date": "September 2, 2022",
+      "added_to_ps_plus_game_catalog": "September 26, 2024"
+    },
+    {
+      "title": "Stray",
+      "release_date": "July 19, 2022",
+      "added_to_ps_plus_extra_and_premium": "July 18, 2023"
+    },
+    {
+      "title": "Gran Turismo 7",
+      "release_date": "March 4, 2022"
+    },
+    {
+      "title": "Elden Ring",
+      "release_date": "February 25, 2022"
+    },
+    {
+      "title": "Horizon Forbidden West",
+      "release_date": "February 18, 2022",
+      "added_to_ps_plus_game_catalog": "January 2025"
+    }
+  ]
+}

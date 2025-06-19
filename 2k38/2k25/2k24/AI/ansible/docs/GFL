@@ -1,0 +1,8 @@
+01 > validar a ISO em 2 maquinas 
+02 > testar script para alteração hostname (depois automatizar)
+03 > testar na operação
+04 > preparar 2 servers Linux em Jundiaí e Osasco
+05 > criar o ambiente Ansible em Jundiai e Osasco
+06 > testar scripts no ambiente
+07 > validar se as maquinas estao subindo para o Automatos
+08 > criar acompanhamento de troca de maquinas
