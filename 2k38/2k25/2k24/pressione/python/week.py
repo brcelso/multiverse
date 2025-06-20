@@ -47,8 +47,8 @@ def count_weeks(start_date, end_date):
         print(f"Week {week_number:02d}: {first_day_of_week.strftime('%d-%m-%Y')} - {last_day_of_week.strftime('%d-%m-%Y')}")
 
 # Example usage (assuming today's date is 14-05-2024)
-start_date = "08-05-2024"
-end_date = "19-01-2025"
+start_date = "20-04-2024"
+end_date = "19-01-2026"
 
 count_weeks(start_date, end_date)
 
