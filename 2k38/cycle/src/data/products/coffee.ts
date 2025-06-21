@@ -11,7 +11,7 @@ export const cafe = {
       },
       {
         edition: 'Melitta 500g',
-        price: 34.90,
+        price: 32.99,
         discount: 25,
         currency: 'R$'
       },
