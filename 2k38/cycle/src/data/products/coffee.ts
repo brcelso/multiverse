@@ -4,12 +4,18 @@ export const cafe = {
   Brazil: {
     'June 2025': [
       {
-        edition: 'Coffee 500g',
-        price: 34.99,
+        edition: 'Brasileiro 500g',
+        price: 28.49,
+        discount: 40,
+        currency: 'R$'
+      },
+      {
+        edition: 'Melitta 500g',
+        price: 34.90,
         discount: 25,
         currency: 'R$'
       },
-    {
+      {
         edition: 'Coffee Index',
         price: 311,
         discount: 28.5,
@@ -18,13 +24,13 @@ export const cafe = {
     ],
     'May 2025': [
       {
-        edition: 'Coffee 500g',
+        edition: 'Pilao 500g',
         price: 47.99,
         increase: 500,
         currency: 'R$'
       },
       {
-        edition: 'Coffee 1kg',
+        edition: 'Pilao 1kg',
         price: 125.90,
         increase: 0,
         currency: 'R$'
