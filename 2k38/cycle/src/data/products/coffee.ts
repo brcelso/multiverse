@@ -55,6 +55,13 @@ export const cafe = {
         increase: 400,
         currency: '$'
       },
+    'January 2025': [
+      {
+        edition: 'Melitta 500g',
+        price: 26.99,
+        increase: 220,
+        currency: 'R$'
+      },
     ],
     'January 2022': [
       {
