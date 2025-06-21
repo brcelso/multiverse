@@ -1,4 +1,4 @@
-export const coffee = {
+export const cafe = {
   launchDate: '00-00-00',
 
   Brazil: {
