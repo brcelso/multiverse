@@ -70,6 +70,7 @@ export const cafe = {
         discount: 20,
         currency: 'R$'
       },
+    ],
     'January 2022': [
       {
         edition: 'Coffee 500g',
