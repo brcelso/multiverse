@@ -4,7 +4,8 @@ export const donkeyKongBananza = {
 
   Brazil: {
     'June 2025': [
-      { price: 439.9, currency: 'R$', exchangeTax: 6.28 },
+      { price: 408.27, discount: 7, currency: 'R$', exchangeTax: 6.28 },
+      { price: 439.90, currency: 'R$', exchangeTax: 6.28 },
     ],
   },
 
