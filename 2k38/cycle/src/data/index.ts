@@ -75,7 +75,7 @@ import { ps5 } from './consoles/ps5';
 
 //products
 import { bionatural } from './products/bionatural';
-import { cafe } from '.products/coffee';
+import { cafe } from './products/coffee';
 import { icecream } from './products/icecream';
 
 //coins
