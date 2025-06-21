@@ -63,6 +63,13 @@ export const cafe = {
         currency: 'R$'
       },
     ],
+    'May 2022': [
+      {
+        edition: '3 Coracoes 500g',
+        price: 17.99,
+        discount: 20,
+        currency: 'R$'
+      },
     'January 2022': [
       {
         edition: 'Coffee 500g',
