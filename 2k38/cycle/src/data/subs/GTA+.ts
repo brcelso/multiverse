@@ -2,11 +2,15 @@ export const gtaplus = {
   launchDate: '2022-03-29',
   Brazil: {
     'April 2025': [
-      { price: 42.90, increase: 35, currency: 'R$', 
+      { price: 42.90, increase: 35, currency: 'R$',
+        basePrice: 5.99, exchangeTax2: 5.36,
+        realPrice: 45.38, exchangeTax3: 5.68, 
         edition: "GTA+ 1 Year" },
       ],
     'March 2022': [
       { price: 31.90, currency: 'R$',
+        basePrice: 5.99, exchangeTax2: 5.32,
+        realPrice: 28.39, exchangeTax3: 4.74, 
         edition: "GTA+ 1 Year" },
       ],
       },

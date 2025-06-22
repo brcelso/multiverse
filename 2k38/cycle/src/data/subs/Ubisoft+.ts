@@ -1,5 +1,5 @@
 export const ubisoftplus = {
-  launchDate: '2022-03-29',
+  launchDate: '2020-10-27',
   Brazil: {
     'March 2025': [
       { price: 359.99, discount: 50, currency: 'R$', 
@@ -9,20 +9,28 @@ export const ubisoftplus = {
       ],
     'January 2024': [
       { price: 599.99, discount: 17, currency: 'R$', 
+        basePrice: 179.99, exchangeTax2: 3.33,
+        realPrice: 872.95, exchangeTax3: 4.85,
         edition: "Ubisoft+ Premium Yearly" },
-      { price: 269.99, discount: 17, currency: 'R$', 
+      { price: 269.99, discount: 17, currency: 'R$',
+        basePrice: 79.99, exchangeTax2: 3.37,
+        realPrice: 387.95, exchangeTax3: 4.85, 
         edition: "Ubisoft+ Classics Yearly" },
       { price: 719.88, currency: 'R$', 
         edition: "Ubisoft+ Premium Yearly" },
       { price: 323.88, currency: 'R$', 
         edition: "Ubisoft+ Classics Yearly" },
-      { price: 59.99, increase: 20, currency: 'R$', 
+      { price: 59.99, increase: 20, currency: 'R$',
+        basePrice: 17.99, exchangeTax2: 3.33,
+        realPrice: 87.25, exchangeTax3: 4.85, 
         edition: "Ubisoft+ Premium Monthly" },
       { price: 26.99, currency: 'R$',
         edition: "Ubisoft+ Classics Monthly" },
       ],
     'October 2021': [
       { price: 49.90, currency: 'R$', 
+        basePrice: 14.99, exchangeTax2: 3.32,
+        realPrice: 101.64, exchangeTax3: 5.65,
         edition: "Ubisoft+ Access Monthly" },
       ],
       },
