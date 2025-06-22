@@ -2,6 +2,8 @@
 import { deluxeOrPremium } from './subs/CardSubs';
 import { extra } from './subs/CardSubs';
 import { essential } from './subs/CardSubs';
+import { gtaplus } from './subs/GTA+';
+import { ubisoftplus } from './subs/Ubisoft+';
 
 //games
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
@@ -86,6 +88,8 @@ export const subs = {
   'Deluxe or Premium': deluxeOrPremium,
   'Extra': extra,
   'Essential': essential,
+  'GTA+': gtaplus,
+  'Ubisoft+': ubisoftplus,
 } as const;
 
 //games
