@@ -5,9 +5,9 @@ export const dualsensetlou = {
     'June 2025': [
       {
         edition: 'Dual Sense TLOU',
-        price: 1499,
+        price: 1799,
         currency: 'R$',
-        increase: 150,
+        increase: 200,
       },
       ],
     'April 2025': [
