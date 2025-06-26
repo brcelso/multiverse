@@ -78,8 +78,8 @@ export const psgiftcard = {
         edition: 'PS Gift Card R$250',
         price: 250,
         currency: 'R$',
-        basePrice2: 125,
-        exchangeTax2: 2.00,
+        basePrice2: 100,
+        exchangeTax2: 2.50,
       },
       {
         edition: 'PS Gift Card R$100',
