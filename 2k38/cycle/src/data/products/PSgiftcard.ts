@@ -8,7 +8,7 @@ export const psgiftcard = {
         price: 424,
         discount: 20,
         currency: 'R$', 
-        exchangeTax2: 2.12
+        exchangeTax2: 2.12,
         realPrice: 1100,
         exchangeTax3: 5.50
       },
@@ -17,7 +17,7 @@ export const psgiftcard = {
         price: 530,
         currency: 'R$', 
         basePrice2: 250,
-        exchangeTax2: 2.12
+        exchangeTax2: 2.12,
         realPrice: 1375,
         exchangeTax3: 5.50
       },
