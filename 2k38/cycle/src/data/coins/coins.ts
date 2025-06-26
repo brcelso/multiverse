@@ -3,6 +3,7 @@ export const coin = {
 
   Europe: {
     'June 2025': [
+      { edition: 'Euro', increase: 25, price: 7.87, currency: 'R$' }, 
       { edition: 'Euro', increase: 28, price: 6.30, currency: 'R$' }, 
     ],
     'November 2022': [
@@ -43,6 +44,7 @@ export const coin = {
   },
   UnitedStates: {
     'June 2025': [
+      { edition: 'Dolar', increase: 25, price: 6.82, currency: 'R$' },
       { edition: 'Dolar', discount: 13.5, price: 5.46, currency: 'R$' },
     ],
     'December 2024': [
