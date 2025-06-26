@@ -72,6 +72,23 @@ export const psgiftcard = {
         exchangeTax2: 3.50,
       },
     ],
+
+    'December 2013': [
+      {
+        edition: 'PS Gift Card R$250',
+        price: 250,
+        currency: 'R$',
+        basePrice2: 125,
+        exchangeTax2: 2.00,
+      },
+      {
+        edition: 'PS Gift Card R$100',
+        price: 100,
+        currency: 'R$',
+        basePrice2: 50,
+        exchangeTax2: 2.00,
+      },
+    ],
   },
 
   UnitedStates: {
@@ -114,6 +131,19 @@ export const psgiftcard = {
       {
         edition: 'PS Gift Card $10',
         price: 10,
+        currency: '$',
+      },
+    ],
+
+    'December 2013': [
+      {
+        edition: 'PS Gift Card $100',
+        price: 100,
+        currency: '$',
+      },
+      {
+        edition: 'PS Gift Card $50',
+        price: 50,
         currency: '$',
       },
     ],
