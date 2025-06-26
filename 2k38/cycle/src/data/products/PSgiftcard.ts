@@ -1,5 +1,5 @@
 export const psgiftcard = {
-  launchDate: '2025-06-2025',
+  launchDate: '2025-06-25',
 
   Brazil: {
     'June 2025': [
