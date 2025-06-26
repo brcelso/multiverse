@@ -70,7 +70,7 @@ import { vwNivus } from './cars/vwnivus';
 import { vwTera } from './cars/vwtera';
 
 //consoles and acessories
-import { dualsensetlou } from './consoles/dualsenseTLOU';
+import { dualsensetlou } from './consoles/dualSenseTLOU';
 import { ns2 } from './consoles/ns2';
 import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
