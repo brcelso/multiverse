@@ -69,7 +69,8 @@ import { untilDawn } from './games/UntilDawn';
 import { vwNivus } from './cars/vwnivus';
 import { vwTera } from './cars/vwtera';
 
-//consoles
+//consoles and acessories
+import { dualsensetlou } from './consoles/dualsenseTLOU';
 import { ns2 } from './consoles/ns2';
 import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
@@ -164,6 +165,7 @@ export const games = {
 
 //consoles
   export const consoles = {
+'Dual Sense TLOU': dualsensetlou,
 'Nintendo Switch 2': ns2,
 'Playstation 3': ps3,
 'Playstation 4': ps4,
