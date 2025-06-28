@@ -66,6 +66,12 @@ export const bigmac = {
   },
   UnitedStates: {
     'June 2025': [
+      {
+        edition: 'Big Mac Combo',
+        price: 5,
+        currency: '$',
+        discount: 20
+      }, 
        {
         edition: 'Big Mac Combo',
         price: 5.99,
