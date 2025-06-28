@@ -56,6 +56,13 @@ export const bigmac = {
         currency: 'R$'
       },
     ],
+    'April 1998': [
+      {
+        edition: 'Big Mac',
+        price: 2.95,
+        currency: 'R$'
+      },
+    ],
     'February 1979': [
       {
         edition: 'Big Mac',
