@@ -5,6 +5,12 @@ export const icecream = {
     'June 2025': [
       {
         edition: 'Casquinha McDonalds',
+        price: 3,
+        discount: 50,
+        currency: 'R$'
+      },
+      {
+        edition: 'Casquinha McDonalds',
         price: 6,
         increase: 20,
         currency: 'R$'
