@@ -6,10 +6,11 @@ type GameData = {
     [monthYear: string]: {
       edition: string;
       price: number;
-      realPrice?: number; // ✅ Novo campo adicionado
+      realPrice?: number; 
       currency: string;
       discount?: number;
       increase?: number;
+      totalIncrease?: number; 
       exchangeTax?: number;
       basePrice2?: number;
       exchangeTax2?: number;
@@ -61,6 +62,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         currency: string;
         discount?: number;
         increase?: number;
+        totalIncrease?: number;
         exchangeTax?: number;
         basePrice2?: number;
         exchangeTax2?: number;
@@ -123,6 +125,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
               currency: string;
               discount?: number;
               increase?: number;
+              totalIncrease?: number;
               exchangeTax?: number;
               basePrice2?: number;
               exchangeTax2?: number;
@@ -172,6 +175,9 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                               )}
                               {entry.increase !== undefined && (
                                 <span style={styles.increase}> [+{entry.increase}%]</span>
+                              )}
+                              {entry.totalIncrease !== undefined && (
+                                <span style={styles.totalIncrease}> [+{entry.totalIncrease}%]</span>
                               )}
                             </div>
                             {entry.realPrice !== undefined && (
@@ -303,6 +309,10 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginLeft: '0.5rem',
   },
   increase: {
+    color: '#4ec9b0',
+    marginLeft: '0.5rem',
+  },
+  totalncrease: {
     color: '#4ec9b0',
     marginLeft: '0.5rem',
   },

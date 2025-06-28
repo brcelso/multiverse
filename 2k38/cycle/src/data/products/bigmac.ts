@@ -6,7 +6,8 @@ export const bigmac = {
       {
         edition: 'Big Mac',
         price: 5.79,
-        increase: 1186.67,
+        totalIncrease: 1186.67,
+        increase: 160,
         currency: '$'
       },
     ],
@@ -14,7 +15,7 @@ export const bigmac = {
       {
         edition: 'Big Mac',
         price: 2.24,
-        increase: 397.78,
+        totalIncrease: 397.78,
         currency: '$',
       },
     ],
@@ -22,7 +23,7 @@ export const bigmac = {
       {
         edition: 'Big Mac',
         price: 1.60,
-        increase: 255.56,
+        totalIncrease: 255.56,
         currency: '$',
       },
     ],
