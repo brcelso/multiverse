@@ -1,14 +1,26 @@
 28-06-2025
 
+status mama [level 1]
+
+UP 1 
+ON 3 5 6 7 8 9 10
+OFF 1 2 4 
+
+status celso [level 0]
+
+UP 8 9
+ON 1 2 3 5 10
+OFF 1 2 4 6 7 8 9
+
 27-06-2025
 
-status celso
+status celso [level 0]
 
 UP 1 2
 ON 3 5 10
 OFF 1 2 4 6 7 8 9
 
-status ana
+status ana [level 0]
 
 UP 8
 ON 2 3 7 9 10
@@ -33,4 +45,11 @@ geral para avanco da fase.
 8 Masculino
 9 Corpo
 10 Existencia
+----
+
+3 branco
+2 rosa
+1 roxo
+0 azul
+- vermelho
 
