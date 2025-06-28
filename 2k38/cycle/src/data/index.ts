@@ -77,6 +77,7 @@ import { ps4 } from './consoles/ps4';
 import { ps5 } from './consoles/ps5';
 
 //products
+import { bigmac } from './products/bigmac';
 import { bionatural } from './products/bionatural';
 import { cafe } from './products/coffee';
 import { icecream } from './products/icecream';
@@ -175,6 +176,7 @@ export const games = {
 
 //products
   export const products = {
+'Big Mac': bigmac,
 'Ice Cream': icecream,
 'Bionatural': bionatural,
 'Coffee': cafe,
