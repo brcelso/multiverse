@@ -68,7 +68,7 @@ export const GameSelector = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.header}>🧭 VS Code Item Selector</h2>
+      <h2 style={styles.header}> Pick a Shoe</h2>
 
       {dataGroups.map(({ label, type, items, emoji }) => (
         <div key={type} style={styles.group}>

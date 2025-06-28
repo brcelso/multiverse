@@ -71,6 +71,7 @@ import { vwTera } from './cars/vwtera';
 
 //consoles and acessories
 import { dualsensetlou } from './consoles/dualSenseTLOU';
+import { dualsenseds2 } from './consoles/dualSenseDS2';
 import { ns2 } from './consoles/ns2';
 import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
@@ -166,6 +167,7 @@ export const games = {
 
 //consoles
   export const consoles = {
+'Dual Sense DS2': dualsenseds2,
 'Dual Sense TLOU': dualsensetlou,
 'Nintendo Switch 2': ns2,
 'Playstation 3': ps3,

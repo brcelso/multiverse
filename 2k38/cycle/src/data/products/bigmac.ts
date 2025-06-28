@@ -4,6 +4,45 @@ export const bigmac = {
   Brazil: {
     'June 2025': [
       {
+        edition: 'Big Mac Combo',
+        price: 36.75,
+        discount: 38.5,
+        totalIncrease: 0,
+        increase: 0,
+        basePrice2: 3.68,
+        exchangeTax2: 9.98,
+        currency: 'R$'
+      },
+      {
+        edition: 'Big Mac Combo',
+        price: 59.99,
+        basePrice2: 5.99,
+        exchangeTax2: 6.13,
+        currency: 'R$'
+      },
+    ],
+    'February 1979': [
+      {
+        edition: 'Big Mac',
+        price: 10,
+        currency: 'Cr$'
+      },
+    ],
+  },
+  UnitedStates: {
+    'June 2025': [
+       {
+        edition: 'Big Mac Combo',
+        price: 5.99,
+        currency: '$'
+      }, 
+      {
+        edition: 'Big Mac Solo',
+        price: 3.99,
+        discount: 30,
+        currency: '$'
+      },
+      {
         edition: 'Big Mac',
         price: 5.79,
         totalIncrease: 1186.67,
@@ -27,7 +66,21 @@ export const bigmac = {
         currency: '$',
       },
     ],
+    'April 1979': [
+      {
+        edition: 'Big Mac',
+        price: 0.95,
+        totalIncrease: 110,
+        currency: '$',
+      },
+    ],
     'April 1967': [
+      {
+        edition: 'Big Mac',
+        price: 0.29,
+        discount: 35,
+        currency: '$',
+      },
       {
         edition: 'Big Mac',
         price: 0.45,
