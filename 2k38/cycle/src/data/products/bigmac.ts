@@ -20,6 +20,13 @@ export const bigmac = {
         exchangeTax2: 6.13,
         currency: 'R$'
       },
+      {
+        edition: 'Big Mac',
+        price: 23.90,
+        basePrice2: 3.99,
+        exchangeTax2: 5.98,
+        currency: 'R$'
+      },
     ],
     'February 1979': [
       {
