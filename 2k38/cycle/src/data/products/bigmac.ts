@@ -28,6 +28,34 @@ export const bigmac = {
         currency: 'R$'
       },
     ],
+    'November 2024': [
+      {
+        edition: 'Big Mac',
+        price: 7,
+        currency: 'R$'
+      },
+    ],
+    'November 2021': [
+      {
+        edition: 'Big Mac',
+        price: 0.90,
+        currency: 'R$'
+      },
+    ],
+    'April 2020': [
+      {
+        edition: 'Big Mac',
+        price: 3.45,
+        currency: 'R$'
+      },
+    ],
+    'April 2017': [
+      {
+        edition: 'Big Mac Combo',
+        price: 19.90,
+        currency: 'R$'
+      },
+    ],
     'February 1979': [
       {
         edition: 'Big Mac',
