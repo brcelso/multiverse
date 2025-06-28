@@ -10,7 +10,7 @@ status celso [level 0]
 
 UP 8 9
 ON 1 2 3 5 10
-OFF 1 2 4 6 7 8 9
+OFF 4 6 7 8 9
 
 27-06-2025
 
