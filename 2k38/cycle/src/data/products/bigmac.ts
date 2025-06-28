@@ -30,6 +30,11 @@ export const bigmac = {
     ],
     'November 2024': [
       {
+        edition: 'Big Mac Combo',
+        price: 26.90,
+        currency: 'R$'
+      },
+      {
         edition: 'Big Mac',
         price: 7,
         currency: 'R$'
