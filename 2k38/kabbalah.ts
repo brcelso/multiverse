@@ -1,7 +1,7 @@
 29-06-2025
 
 status celso [level 2]
-
+7 rosa e 4 off = id problema
 UP 1 2 3 4 5 6 7 [all 2]
 ON 1 2 3 4 5 6 8 9 10 [all 1]
 OFF 7
@@ -22,7 +22,7 @@ OFF 7 8 9
 29-06-2025
 
 status celso [level 1]
-
+id problema 4 e 7 estao azuis e nao roxos
 UP 1 2 3 5 8 9 10 [all 1]
 UP 4[0] 7[0]
 ON 1 2 3 5 6 8 9 10
