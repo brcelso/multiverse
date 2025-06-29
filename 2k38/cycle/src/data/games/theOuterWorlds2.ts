@@ -3,6 +3,7 @@ export const theouterworlds2 = {
 
   Brazil: {
     'June 2025': [
+      { edition: 'Premium', price: 569.90, increase: 35, currency: 'R$', exchangeTax: 5.70 },
       { edition: 'Premium', price: 499.50, increase: 18, currency: 'R$', exchangeTax: 4.99 },
       { edition: 'Standard', price: 455.90, increase: 14, currency: 'R$', exchangeTax: 5.69 },
       { edition: 'Premium', price: 424.00, currency: 'R$', exchangeTax: 4.24 },
