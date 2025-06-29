@@ -134,7 +134,7 @@ export const games = {
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
   'Lost Soul Aside': lostSoulAside,
-  'Metal Gear Snake Eater Remake': msg3,
+  'Metal Gear Snake Eater Remake': mgs3,
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
   'NFL College Football 2k26': nflCollegeFootball2026,
