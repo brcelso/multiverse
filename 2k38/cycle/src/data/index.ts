@@ -40,6 +40,7 @@ import { hogwartsLegacy } from './games/HogwartsLegacy';
 import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { lostSoulAside } from './games/LostSoulAside';
+import { mgs3 } from './games/MetalGearSnakeEaterRemke';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
@@ -59,6 +60,7 @@ import { starWarsOutlaws } from './games/StarWarsOutlaws';
 import { theLastOfUs } from './games/TheLastOfUsI';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
+import { theouterworlds2 } from './games/TheOuterWorlds2';
 import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
@@ -132,6 +134,7 @@ export const games = {
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
   'Lost Soul Aside': lostSoulAside,
+  'Metal Gear Snake Eater Remake': msg3,
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
   'NFL College Football 2k26': nflCollegeFootball2026,
@@ -151,6 +154,7 @@ export const games = {
   'The Last Of Us I': theLastOfUs,
   'The Last Of Us Part I': theLastOfUsPartI,
   'The Last Of Us Part II': theLastOfUsPart2,
+  'The Outer Worlds 2': theouterworlds2,
   'Tony Hawk 1+2': tonyHawk12,
   'Tony Hawk 3+4': tonyHawk3Plus4,
   'Tomb Raider': tombRaider,
