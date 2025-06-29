@@ -40,7 +40,7 @@ import { hogwartsLegacy } from './games/HogwartsLegacy';
 import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { lostSoulAside } from './games/LostSoulAside';
-import { mgs3 } from './games/MetalGearSolidSnakeEaterRmake';
+import { mgs3 } from './games/MetalGearSnakeEaterRmake';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
