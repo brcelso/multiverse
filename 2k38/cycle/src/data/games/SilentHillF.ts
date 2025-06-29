@@ -10,7 +10,9 @@ export const silenthillf = {
 
   Brazil: {
     'June 2025': [
-      { edition: "Deluxe Edition", price: 399.5, currency: 'R$', exchangeTax: 4.99 },
+      { edition: "Deluxe Edition", price: 455.90, currency: 'R$', exchangeTax: 5.69 },
+      { edition: "Standard Edition", price: 399.50, currency: 'R$', exchangeTax: 5.70 },
+      { edition: "Deluxe Edition", price: 399.50, currency: 'R$', exchangeTax: 4.99 },
       { edition: "Standard Edition", price: 349.9, currency: 'R$', exchangeTax: 4.99 },
     ],
   },
