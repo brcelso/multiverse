@@ -60,7 +60,7 @@ import { starWarsOutlaws } from './games/StarWarsOutlaws';
 import { theLastOfUs } from './games/TheLastOfUsI';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
-import { theouterworlds2 } from './games/TheOuterWorlds2';
+import { theouterworlds2 } from './games/theOuterWorlds2';
 import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
