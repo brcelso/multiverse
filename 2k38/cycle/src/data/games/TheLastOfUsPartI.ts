@@ -3,7 +3,7 @@ export const theLastOfUsPartI = {
 
   Brazil: {
     'June 2025': [
-      { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$' 
+      { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$' }, 
     ],
     'March 2025': [
       { edition: 'Standard Edition', price: 146.95, currency: 'R$', discount: 58 },
