@@ -1,34 +1,23 @@
 29-06-2025
 
-status mama [level 1]
+status celso [level 1]
 
-UP 
-ON 1 3 5 6 7 8 9 10
-OFF 2 4 
-
-status ana [level 0]
-checar pos sessao
-UP 
-ON 2 3 7 9 8 10
-OFF 1 4 5 6 
-
-status celso [level 0]
-
-UP 
-ON 1 2 3 5 8 9 10
-OFF 4 6 7 
+UP 1 2 3 5 8 9 10 [all 1]
+UP 4[0] 7[0]
+ON 1 2 3 5 6 8 9 10
+OFF 4 7 
 
 28-06-2025
 
 status mama [level 1]
 
 UP 1 
-ON 3 5 6 7 8 9 10
+ON 3 5 6[2] 7 8 9 10
 OFF 1 2 4 
 
 status celso [level 0]
 
-UP 8 9
+UP 6[1] 8 9 [key reboot]
 ON 1 2 3 5 10
 OFF 4 6 7 8 9
 
