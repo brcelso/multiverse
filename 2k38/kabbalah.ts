@@ -7,7 +7,8 @@ ON 1 2 3 4 5 6 8 9 10 [all 1]
 OFF 7
 
 status ana [level 2]
-
+ligou 8 apagou 7 e 8
+restante subiu de nivel
 UP 6 [2]
 UP 1 2 3 4 5 9 10 [all 1]
 ON 1 2 3 4 5 6 9 10
