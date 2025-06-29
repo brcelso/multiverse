@@ -15,7 +15,7 @@ ON 1 2 3 4 5 6 9 10
 OFF 7 8
 
 status mama [level 2]
-
+ligou 1 desligou 7 8 9
 UP 2 3 4 5 [all 2]
 ON 1 2 3 4 5 6 10 [all 2]
 OFF 7 8 9
