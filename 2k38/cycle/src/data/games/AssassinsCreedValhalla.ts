@@ -3,7 +3,7 @@ export const assassinsCreedValhalla = {
 
   Brazil: {
     'November 2020': [
-      { edition: 'Ultimate Edition', price: 149.97, currency: 'R$', discount: 75 },
+      { edition: 'Complete Edition', price: 149.97, currency: 'R$', discount: 75, exchangeTax2: 4.28 },
       { edition: 'Complete Edition', price: 89.98, currency: 'R$', discount: 85 },
       { edition: 'Complete Edition', price: 599.90, currency: 'R$' },
       { edition: 'Ultimate Edition', price: 111.96, currency: 'R$', discount: 78.5 },
