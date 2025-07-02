@@ -4,7 +4,7 @@ export const ghostOfYotei = {
   Brazil: {
     'June 2025': [
       { edition: 'Standard Edition', price: 287.93, discount: 28, currency: 'R$', exchangeTax: 4.62 },
-      { edition: 'Deluxe Edition', price: 499.9, currency: 'R$', exchangeTax: 5.62 },
+      { edition: 'Deluxe Edition', price: 449.9, currency: 'R$', exchangeTax: 5.62 },
       { edition: 'Standard Edition', price: 399.9, currency: 'R$', exchangeTax: 5.71 },
     ],
   },
