@@ -58,6 +58,7 @@ import { spidermanMilesMorales } from './games/SpidermanMiles';
 import { spidermanRemastered } from './games/Spiderman';
 import { starWarsOutlaws } from './games/StarWarsOutlaws';
 import { theLastOfUs } from './games/TheLastOfUsI';
+import { tloucomplete } from './games/TheLastOfUsComplete';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
 import { theouterworlds2 } from './games/theOuterWorlds2';
@@ -154,6 +155,7 @@ export const games = {
   'The Last Of Us I': theLastOfUs,
   'The Last Of Us Part I': theLastOfUsPartI,
   'The Last Of Us Part II': theLastOfUsPart2,
+  'The Last Of Us Complete': tloucomplete,
   'The Outer Worlds 2': theouterworlds2,
   'Tony Hawk 1+2': tonyHawk12,
   'Tony Hawk 3+4': tonyHawk3Plus4,
