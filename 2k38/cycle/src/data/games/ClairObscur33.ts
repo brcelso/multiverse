@@ -12,6 +12,9 @@ export const clairObscurExpedition33 = {
   },
 
   UnitedStates: {
+    'July 2025': [
+      { edition: 'Deluxe', price: 53.99, discount: 10, currency: '$' },
+    ],
     'April 2025': [
       { edition: 'Deluxe', price: 59.99, currency: '$' },
       { edition: 'Standard', price: 49.99, currency: '$' },
