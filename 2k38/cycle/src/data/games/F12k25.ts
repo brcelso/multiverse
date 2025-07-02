@@ -2,6 +2,9 @@ export const f125 = {
   launchDate: '2025-05-30',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Iconic Edition', price: 359.60, discount: 20, currency: 'R$', exchangeTax: 3.90 },
+    ],
     'June 2025': [
       { edition: 'Standard Edition', price: 273.53, discount: 22, currency: 'R$', exchangeTax: 3.90 },
     ],
@@ -12,6 +15,9 @@ export const f125 = {
   },
 
   UnitedStates: {
+    'July 2025': [
+      { edition: 'Iconic Edition', price: 71.99, discount: 20, currency: '$' },
+    ],
     'May 2025': [
       { edition: 'Iconic Edition', price: 89.99, currency: '$' },
       { edition: 'Standard Edition', price: 69.99, currency: '$' },
@@ -19,6 +25,9 @@ export const f125 = {
   },
 
   Europe: {
+    'July 2025': [
+      { edition: 'Iconic Edition', price: 79.99, discount: 20, currency: '€' },
+    ],
     'May 2025': [
       { edition: 'Iconic Edition', price: 99.99, currency: '€' },
       { edition: 'Standard Edition', price: 79.99, currency: '€' },
@@ -26,6 +35,9 @@ export const f125 = {
   },
 
   UnitedKingdom: {
+     'July 2025': [
+      { edition: 'Iconic Edition', price: 71.99, discount: 20, currency: '£' },
+    ],
     'May 2025': [
       { edition: 'Deluxe Edition', price: 89.99, currency: '£' },
       { edition: 'Standard Edition', price: 69.99, currency: '£' },

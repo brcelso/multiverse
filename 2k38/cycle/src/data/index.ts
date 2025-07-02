@@ -8,6 +8,8 @@ import { ubisoftplus } from './subs/Ubisoft+';
 //games
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
 import { assassinsCreedValhalla } from './games/AssassinsCreedValhalla';
+import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
+import { assassinsCreedMirage } from './games/AssassinsCreedMirage';
 import { astroBot } from './games/AstroBot';
 import { blackMythWukong } from './games/BlackMythWukong';
 import { borderlands4 } from './games/Borderlands4';
@@ -103,6 +105,8 @@ export const subs = {
 export const games = {
   'Assassins Creed Shadows': assassinsCreedShadows,
   'Assassins Creed Valhalla': assassinsCreedValhalla,
+  'Assassins Creed Black Flag': assassinsCreedBlackFlag,
+  'Assassins Creed Mirage': assassinsCreedMirage, 
   'Astro Bot': astroBot,
   'Black Myth Wukong': blackMythWukong,
   'Borderlands 4': borderlands4,
