@@ -10,9 +10,8 @@ export const grandTheftAutoV = {
       { edition: 'PS4', price: 79.95, currency: 'R$', discount: 50 },
     ],
     'September 2013': [
-      { edition: 'Standard Edition', price: 199.90, currency: 'R$' },
+      { edition: 'Standard Edition', price: 199.90, currency: 'R$' , exchangeTax: 3.33},
       { edition: 'Standard Edition', price: 214.90, currency: 'R$' },
-      { edition: 'Standard Edition', price: 299.90, currency: 'R$' },
     ],
   },
 
