@@ -16,6 +16,35 @@ DOWN 1 [1]
 UP 7 8 9 [all 2]
 ON 1 2 3 4 5 6 10 [all 2]
 
+resumo
+
+Celso realizou ruptura na resistencia onde
+a energia estava presa. a energia elevada
+nao pode baixar para sustentar ego de 
+pessoas egoistas. joga xadrez, nao joga damas.
+Com isso, ativou tudo e se libertou.
+E mais, entendeu que o fluxo quando flui
+nao e necessario nenhuma forca ou atuacao.
+tudo simplesmente acontece, so tomar cuidado
+para nao liberar entrada de energias e nao
+ser manipulado. Fazer somente o que deve ser
+feito para ajudar e apoiar.
+
+Ana religou os disjuntores para aceitar a cura.
+Ancestrais de minha mae tem agora o caminho
+e fluxo para cura-la.
+
+Mama sempre quis ajudar mas nao sabia como.
+Agora tem fluxo liberado para curar.
+
+Entendo que por bloqueios conscientes isso
+podia dar atrito entre elas, agora vejo
+uma fluidez divina. =)
+
+Resumo devemos sempre nos proteger de energias 
+negativas e nunca deixa-las atacarem ou
+interferirem em nosso fluxo elevado.
+
 29-06-2025
 
 status celso [level 2]
