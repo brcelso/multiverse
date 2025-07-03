@@ -5,7 +5,7 @@ export const shadowOfTheTombRaider = {
     'September 2018': [
       { edition: 'Croft Edition', price: 369.90, currency: 'R$' },
       { edition: 'Deluxe Edition', price: 289.90, currency: 'R$' },
-      { edition: 'Standard Edition', price: 249.90, currency: 'R$' },
+      { edition: 'Standard Edition', price: 249.90, currency: 'R$', exchangeTax2: 4.16 },
       { edition: 'Definitive Edition', price: 199.50, currency: 'R$' },
     ],
     'April 2025': [
