@@ -1,8 +1,20 @@
 03-07-2025
 
 status celso [level 2]
+
 UP 7 8 9 10 [all 2]
 ON 1 2 3 4 5 6 [all 2]
+
+status ana [level 2]
+
+UP 7 8 [1]
+ON 1 2 3 4 5 6 9 10 [all 2]
+
+status mama [level 2]
+
+DOWN 1 [1]
+UP 7 8 9 [all 2]
+ON 1 2 3 4 5 6 10 [all 2]
 
 29-06-2025
 
