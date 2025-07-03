@@ -10,15 +10,15 @@ export const residentevil9 = {
 
   Brazil: {
     'June 2025': [
-      { edition: "Deluxe Edition", price: 455.90, currency: 'R$', exchangeTax: 5.69 },
-      { edition: "Standard Edition", price: 399.50, currency: 'R$', exchangeTax: 5.70 },
+      { edition: "Deluxe Edition", price: 665.90, currency: 'R$', exchangeTax: 6.66 },
+      { edition: "Standard Edition", price: 565.90, currency: 'R$', exchangeTax: 6.66 },
     ],
   },
 
   UnitedStates: {
     'June 2025': [
-      { edition: "Deluxe Edition", price: 79.99, currency: '$' },
-      { edition: "Standard Edition", price: 69.99, currency: '$' },
+      { edition: "Deluxe Edition", price: 99.99, currency: '$' },
+      { edition: "Standard Edition", price: 84.99, currency: '$' },
     ],
   },
 
