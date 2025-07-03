@@ -45,7 +45,7 @@ export const coin = {
   UnitedStates: {
     'June 2025': [
       { edition: 'Dolar', increase: 25, price: 6.82, currency: 'R$' },
-      { edition: 'Dolar', discount: 13.5, price: 5.46, currency: 'R$' },
+      { edition: 'Dolar', discount: 14, price: 5.41, currency: 'R$' },
     ],
     'December 2024': [
       { edition: 'Dolar', increase: 38, price: 6.31, currency: 'R$' },
