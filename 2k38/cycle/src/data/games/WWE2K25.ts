@@ -1,4 +1,4 @@
-export const nflCollegeFootball2026 = {
+export const wwe2k25 = {
   launchDate: '2025-03-13',
 
   Brazil: {
