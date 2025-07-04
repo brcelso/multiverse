@@ -69,6 +69,7 @@ import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
 import { tombRaiderRemasteredIVVVI } from './games/TombRaiderRemasteredIVVVI';
 import { untilDawn } from './games/UntilDawn';
+import { wwe2k25 } from './games/WWE2K25';
 
 //cars
 import { vwNivus } from './cars/vwnivus';
@@ -166,6 +167,7 @@ export const games = {
   'Tomb Raider': tombRaider,
   'Tomb Raider Remastered IV-V-VI': tombRaiderRemasteredIVVVI,
   'Until Dawn': untilDawn,
+  'WWE 2K25': wwe2k25,
 
 } as const;
 
