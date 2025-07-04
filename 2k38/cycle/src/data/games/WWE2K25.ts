@@ -9,7 +9,7 @@ export const wwe2k25 = {
     'March 2025': [
       { edition: 'Deadline', price: 649.90, currency: 'R$', exchangeTax2: 4.99 },
       { edition: 'Deadman', price: 499.9, currency: 'R$', exchangeTax2: 5 },
-      { edition: 'Standard', price: 379.90, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: 'Standard', price: 379.90, currency: 'R$', exchangeTax2: 5.42 },
     ],
   },
   Europe: {
