@@ -3,7 +3,8 @@ export const assassinsCreedShadows = {
 
   Brazil: {
     'June 2025': [
-      { edition: 'Standard Edition', price: 273.53, discount: 22, currency: 'R$', exchangeTax: 3.90 },
+      { edition: 'Physical Media', price: 234.70, discount: 33, currency: 'R$', exchangeTax: 3.90 },
+      { edition: 'Physical Media', price: 273.53, discount: 22, currency: 'R$', exchangeTax: 3.90 },
     ],
     'March 2025': [
       { edition: 'Deluxe Edition', price: 449.9, currency: 'R$', exchangeTax: 4.99 },
