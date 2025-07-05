@@ -2,6 +2,10 @@ export const eldenRingNightreign = {
   launchDate: '2025-05-30',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Deluxe Edition', price: 219.79, discount: 20, currency: 'R$', exchangeTax: 3.58 },
+      { edition: 'Standard Edition', price: 134.02, discount: 33, currency: 'R$', exchangeTax: 3.58 },
+    ],
     'June 2025': [
       { edition: 'Standard Edition', price: 143.28, discount: 28, currency: 'R$', exchangeTax: 3.58 },
     ],
