@@ -15,19 +15,22 @@ export const riseOfTheTombRaider = {
 
   UnitedStates: {
     'April 2025': [
-      { edition: 'Standard', price: 5.99, currency: '$', discount: 80 },
+      { edition: 'Definitive Edition', price: 5.99, currency: '$', discount: 80 },
     ],
     'May 2025': [
-      { edition: 'Standard', price: 5.99, currency: '$', discount: 80 },
+      { edition: 'Definitive Edition', price: 5.99, currency: '$', discount: 80 },
     ],
     'October 2024': [
-      { edition: 'Standard', price: 4.49, currency: '$', discount: 85 },
+      { edition: 'Definitive Edition', price: 4.49, currency: '$', discount: 85 },
     ],
     'March 2025': [
-      { edition: 'Standard', price: 4.49, currency: '$', discount: 92.5 },
+      { edition: 'Definitive Edition', price: 4.49, currency: '$', discount: 92.5 },
+    ],
+    'February 2021': [
+      { edition: 'Definitive Edition', price: 3.79, currency: '$', discount: 94 },
     ],
     'September 2019': [
-      { edition: 'Standard', price: 5.39, currency: '$', discount: 90 },
+      { edition: 'Definitive Edition', price: 5.39, currency: '$', discount: 90 },
     ],
     'December 2017': [
       { edition: 'Standard', price: 19.79, currency: '$', discount: 67 },
