@@ -24,10 +24,12 @@ export const shadowOfTheTombRaider = {
   },
 
   Europe: {
-    'September 2018': [
-      { edition: 'Standard Edition', price: 69.99, currency: '€' },
+    'November 2019': [
       { edition: 'Definitive Edition', price: 39.99, currency: '€' },
       { edition: 'Definitive Edition', price: 7.99, currency: '€', discount: 80 },
+    ],
+    'September 2018': [
+      { edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
 
