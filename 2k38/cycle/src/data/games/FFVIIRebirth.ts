@@ -2,10 +2,14 @@ export const finalFantasyVIIRebirth = {
   launchDate: '2024-02-29',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Twin Pack', price: 284.71, currency: 'R$', discount: 43 },
+      { edition: 'Deluxe Edition', price: 269.70, currency: 'R$', discount: 40 },
+    ],
     'February 2024': [
       { edition: 'Deluxe Twin Pack', price: 599.5, currency: 'R$' },
       { edition: 'Twin Pack', price: 499.5, currency: 'R$' },
-      { edition: 'Deluxe Edition', price: 499.5, currency: 'R$' },
+      { edition: 'Deluxe Edition', price: 449.50, currency: 'R$' },
       { edition: 'Standard Edition', price: 349.9, currency: 'R$' },
     ],
     'March 2025': [
