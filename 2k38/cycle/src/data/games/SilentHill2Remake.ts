@@ -2,6 +2,16 @@ export const silentHill2Remake = {
   launchDate: '2024-08-10',
 
   Brazil: {
+    'July 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 174.95,
+        discount: 50,
+        currency: 'R$',
+        basePrice: 349.50,
+        exchangeTax: 4.99,
+      },
+    ],
     'June 2025': [
       {
         edition: 'Deluxe Edition',
