@@ -2,6 +2,10 @@ export const assassinsCreedShadows = {
   launchDate: '2025-03-20',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Deluxe Edition', price: 337.42, currency: 'R$', discount: 25, exchangeTax: 4.99 },
+      { edition: 'Standard Edition', price: 262.42, currency: 'R$', discount: 25, exchangeTax: 4.98 },
+    ],
     'June 2025': [
       { edition: 'Physical Media', price: 234.70, discount: 33, currency: 'R$', exchangeTax: 3.90 },
       { edition: 'Physical Media', price: 273.53, discount: 22, currency: 'R$', exchangeTax: 3.90 },
