@@ -59,6 +59,7 @@ import { spiderman2 } from './games/Spiderman2';
 import { spidermanMilesMorales } from './games/SpidermanMiles';
 import { spidermanRemastered } from './games/Spiderman';
 import { starWarsOutlaws } from './games/StarWarsOutlaws';
+import { thecallistoprotocol } from './games/theCallistoProtocol';
 import { theLastOfUs } from './games/TheLastOfUsI';
 import { tloucomplete } from './games/TheLastOfUsComplete';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
@@ -157,6 +158,7 @@ export const games = {
   'Spiderman 2': spiderman2,
   'Spiderman Miles Morales': spidermanMilesMorales,
   'Star Wars Outlaws': starWarsOutlaws,
+  'The Callisto Protocol': thecallistoprotocol,
   'The Last Of Us I': theLastOfUs,
   'The Last Of Us Part I': theLastOfUsPartI,
   'The Last Of Us Part II': theLastOfUsPart2,
