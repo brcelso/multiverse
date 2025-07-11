@@ -21,8 +21,8 @@ export const assassinsCreedValhalla = {
       { edition: 'Complete Edition', price: 14.99, currency: '$', discount: 75 },
     ],
     'May 2024': [
-      { edition: 'Complete Edition', price: 20.99, currency: '$', discount: 85 },
-      { edition: 'Complete Edition', price: 11.99, currency: '$', discount: 80 },
+      { edition: 'Complete Edition', price: 20.99, currency: '$', discount: 80 },
+      { edition: 'Complete Edition', price: 11.99, currency: '$', discount: 85 },
     ],
     'March 2021': [
       { edition: 'Complete Edition', price: 44.99, currency: '$', discount: 25 },
