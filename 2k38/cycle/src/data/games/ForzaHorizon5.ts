@@ -13,6 +13,10 @@ export const forzaHorizon5 = {
   },
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Premium Edition', price: 299.25, discount: 25, currency: 'R$' },
+      { edition: 'Standard Edition', price: 186.75, discount: 25, currency: 'R$' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 247.20, discount: 20, currency: 'R$' },
     ],
