@@ -2,6 +2,9 @@ export const elderScrollsOblivionRemastered = {
   launchDate: '2025-04-22',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Standard Edition', price: 211.92, discount: 20, currency: 'R$', exchangeTax: 5.29 },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 255.92, discount: 20, currency: 'R$', exchangeTax: 5.33 },
       { edition: 'Standard Edition', price: 211.92, discount: 20, currency: 'R$', exchangeTax: 5.29 },
