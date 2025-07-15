@@ -2,6 +2,9 @@ export const theLastOfUsPartI = {
   launchDate: '2022-09-27',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 60 },
+    ],
     'June 2025': [
       { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$' }, 
     ],
