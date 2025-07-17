@@ -29,6 +29,7 @@ import { eldenRingDLC } from './games/EldenRingDLC';
 import { eldenRingNightreign } from './games/EldenRingNightReign';
 import { f125 } from './games/F12k25';
 import { fc25 } from './games/FC25';
+import { fc26 } from './games/FC26';
 import { finalFantasyVIIRemake } from './games/FFVIIRemake';
 import { finalFantasyVIIRebirth } from './games/FFVIIRebirth';
 import { finalFantasyXVI } from './games/FFXVI';
@@ -128,6 +129,7 @@ export const games = {
   'Elden Ring Nightreign': eldenRingNightreign,
   'F1 25': f125,
   'FC 25': fc25,
+  'FC 26': fc26,
   'Final Fantasy VII Rebirth': finalFantasyVIIRebirth,
   'Final Fantasy VII Remake': finalFantasyVIIRemake,
   'Final Fantasy XVI': finalFantasyXVI,
