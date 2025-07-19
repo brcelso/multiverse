@@ -2,12 +2,15 @@ export const codbo6 = {
   launchDate: '2024-10-25',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Cross-Gen', price: 186.45, discount: 45, currency: 'R$' },
+    ],
     'June 2025': [
       { edition: 'Vault Edition', price: 311.35, discount: 35, currency: 'R$' },
     ],
     'October 2024': [
       { edition: 'Vault Edition', price: 479.0, currency: 'R$' },
-      { edition: 'MultiGeneration', price: 339.0, currency: 'R$' },
+      { edition: 'Cross-Gen', price: 339.0, currency: 'R$' },
     ],
     'February 2025': [
       { edition: 'Vault Edition', price: 359.25, currency: 'R$', discount: 50 },
