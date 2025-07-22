@@ -3,11 +3,18 @@ export const theLastOfUsPart2 = {
 
   Brazil: {
     'February 2025': [
-      { edition: 'Standard Edition Remastered', price: 199.6, currency: 'R$', discount: 20 },
+      { edition: 'Remastered Edition', price: 199.6, currency: 'R$', discount: 20 },
+    ],
+    'December 2023': [
+      { edition: 'Remastered Edition', price: 249.90, currency: 'R$', },
     ],
     'June 2020': [
-      { edition: 'Standard Edition Remastered', price: 249.9, currency: 'R$' },
-      { edition: 'Standard Edition', price: 199.9, currency: 'R$' },
+      { edition: 'Standard Edition', price: 279.90, currency: 'R$', increase: 12 },
+    ],
+    'September 2019': [
+      { edition: 'Deluxe Edition', price: 289.99, currency: 'R$' },
+      { edition: 'Standard Edition', price: 249.99, currency: 'R$', increase: 25 },
+      { edition: 'Standard Edition', price: 199.99, currency: 'R$' },
     ],
   },
 
