@@ -2,6 +2,9 @@ export const theouterworlds2 = {
   launchDate: '2025-10-29',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Standard', price: 399.90, discount: 12.5, currency: 'R$', exchangeTax: 5.71 }
+],
     'June 2025': [
       { edition: 'Premium', price: 569.90, increase: 35, currency: 'R$', exchangeTax: 5.70 },
       { edition: 'Premium', price: 499.50, increase: 18, currency: 'R$', exchangeTax: 4.99 },
@@ -23,6 +26,9 @@ export const theouterworlds2 = {
     ],
   },
   UnitedStates: {
+    'July 2025': [
+      { edition: 'Standard', price: 69.99, discount: 12.5, currency: '$' },
+    ],
     'June 2025': [
       { edition: 'Premium', price: 99.99, currency: '$' },
       { edition: 'Standard', price: 79.99, currency: '$' },
