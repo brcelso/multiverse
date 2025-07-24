@@ -2,6 +2,9 @@ export const theLastOfUsPart2 = {
   launchDate: '2020-06-19',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Remastered Edition', price: 179.90, currency: 'R$', discount: 28 },
+    ],
     'February 2025': [
       { edition: 'Remastered Edition', price: 199.6, currency: 'R$', discount: 20 },
     ],
