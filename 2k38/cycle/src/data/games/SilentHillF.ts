@@ -12,7 +12,7 @@ export const silenthillf = {
     'July 2025': [
       { edition: "Deluxe Edition PC", price: 287.00, discount: 28, currency: 'R$', exchangeTax: 3.69 },
       { edition: "Standard Edition PC", price: 251.92, discount: 28, currency: 'R$', exchangeTax: 3.69 },
-      { edition: "Standard Edition", price: 339.89, discount: 28, currency: 'R$', exchangeTax: 3.69 },
+      { edition: "Standard Edition", price: 339.89, discount: 15, currency: 'R$', exchangeTax: 4.85 },
     ],
     'June 2025': [
       { edition: "Deluxe Edition", price: 455.90, currency: 'R$', exchangeTax: 5.69 },
