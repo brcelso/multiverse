@@ -97,6 +97,14 @@ export const silentHill2Remake = {
   },
 
   UnitedStates: {
+    'July 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 34.99,
+        discount: 50,
+        currency: '$',
+      },
+    ],
     'June 2025': [
       {
         edition: 'Deluxe Edition',
