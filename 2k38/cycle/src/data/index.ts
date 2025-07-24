@@ -11,6 +11,7 @@ import { assassinsCreedValhalla } from './games/AssassinsCreedValhalla';
 import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
 import { assassinsCreedMirage } from './games/AssassinsCreedMirage';
 import { astroBot } from './games/AstroBot';
+import { bf6 } from './games/Battlefield6';
 import { blackMythWukong } from './games/BlackMythWukong';
 import { borderlands4 } from './games/Borderlands4';
 import { callOfDutyModernWarfareIII } from './games/CallOfDutyModernWarfareIII';
@@ -111,6 +112,7 @@ export const games = {
   'Assassins Creed Black Flag': assassinsCreedBlackFlag,
   'Assassins Creed Mirage': assassinsCreedMirage, 
   'Astro Bot': astroBot,
+  'Battlefield 6': bf6,
   'Black Myth Wukong': blackMythWukong,
   'Borderlands 4': borderlands4,
   'Call Of Duty Black Ops 6': codbo6,
