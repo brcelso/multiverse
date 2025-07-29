@@ -3,11 +3,12 @@ export const wwe2k25 = {
 
   Brazil: {
     'July 2025': [
-      { edition: 'Deadline', price: 428.93, discount: 34, currency: 'R$', exchangeTax2: 4.99 },
-      { edition: 'Standard', price: 227.94, discount: 40, currency: 'R$', exchangeTax2: 5.42 },
+      { edition: 'Bloodline', price: 389.94, discount: 40, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: 'Deadman', price: 299.94, discount: 40, currency: 'R$', exchangeTax2: 5 },
+      { edition: 'Standard', price: 189.95, discount: 40, currency: 'R$', exchangeTax2: 5.42 },
     ],
     'March 2025': [
-      { edition: 'Deadline', price: 649.90, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: 'Bloodline', price: 649.90, currency: 'R$', exchangeTax2: 4.99 },
       { edition: 'Deadman', price: 499.9, currency: 'R$', exchangeTax2: 5 },
       { edition: 'Standard', price: 379.90, currency: 'R$', exchangeTax2: 5.42 },
     ],
@@ -37,6 +38,7 @@ export const wwe2k25 = {
   UnitedStates: {
     'July 2025': [
       { edition: 'Deadline', price: 85.79, discount: 34, currency: '$' },
+      { edition: 'Deadman', price: 59.99, discount: 40, currency: '$' },
       { edition: 'Standard', price: 41.99, discount: 40, currency: '$' },
     ],
     'March 2025': [
