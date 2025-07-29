@@ -2,6 +2,10 @@ export const nba2k25 = {
   launchDate: '2024-09-03',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'All-Star Edition', price: 99.99, currency: 'R$', discount: 80 },
+      { edition: 'Tournament Edition', price: 79.90, currency: 'R$', discount: 80 },
+    ],
     'February 2025': [
       { edition: 'All-Star Edition', price: 164.83, currency: 'R$', discount: 63 },
       { edition: 'Standard Edition', price: 104.97, currency: 'R$', discount: 70 },
@@ -23,6 +27,9 @@ export const nba2k25 = {
   },
 
   UnitedStates: {
+    'July 2025': [
+      { edition: 'Tournament Edition', price: 15.99, currency: '$', discount: 80 },
+    ],
     'April 2025': [
       { edition: 'Bundle Top Spin', price: 34.99, currency: '$', discount: 65 },
       { edition: 'Tournament Edition', price: 23.99, currency: '$', discount: 70 },

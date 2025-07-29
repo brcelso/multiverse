@@ -2,6 +2,9 @@ export const hogwartsLegacy = {
   launchDate: '2023-02-10',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'PS5 Deluxe', price: 74.97, currency: 'R$', discount: 80 },
+    ],
     'June 2025': [
       { edition: 'PS5 Deluxe', price: 87.47, currency: 'R$', discount: 75 },
     ],
@@ -21,6 +24,9 @@ export const hogwartsLegacy = {
   },
 
   UnitedStates: {
+    'July 2025': [
+      { edition: 'PS5 Deluxe', price: 15.99, currency: '$', discount: 80 },
+    ],
     'February 2023': [
       { edition: 'PS5 Deluxe', price: 19.99, currency: '$', discount: 75 },
       { edition: 'PS5 Deluxe', price: 79.99, currency: '$' },
