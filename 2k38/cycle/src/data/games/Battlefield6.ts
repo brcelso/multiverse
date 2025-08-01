@@ -3,15 +3,15 @@ export const bf6 = {
 
   Brazil: {
     'July 2025': [
-      { edition: 'Phantom Edition', price: 625.00, currency: 'R$', exchangeTax: 5.71 },
-      { edition: 'Standard Edition', price: 455.00, currency: 'R$', exchangeTax: 5.71 },
+      { edition: 'Phantom Edition', price: 499.50, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Standard Edition', price: 349.90, currency: 'R$', exchangeTax: 5 },
     ],
   },
 
   UnitedStates: {
     'July 2025': [
-      { edition: 'Phantom Edition', price: 109.99, currency: '$' },
-      { edition: 'Standard Edition', price: 79.99, currency: '$' },
+      { edition: 'Phantom Edition', price: 99.99, currency: '$' },
+      { edition: 'Standard Edition', price: 69.99, currency: '$' },
     ],
   },
 
