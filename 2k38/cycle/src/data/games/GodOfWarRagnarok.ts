@@ -21,6 +21,14 @@ export const godOfWarRagnarok = {
     ],
   },
 
+  Europe: {
+    'November 2022': [
+      { edition: 'Deluxe', price: 89.99, currency: '€' },
+      { edition: 'Standard PS5', price: 79.99, currency: '€' },
+      { edition: 'Standard PS4', price: 69.99, currency: '€' },
+    ],
+  },
+
   UnitedStates: {
     'January 2025': [
       { edition: 'Deluxe', price: 39.99, currency: '$', discount: 50 },
