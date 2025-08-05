@@ -2,6 +2,9 @@ export const godOfWarRagnarok = {
   launchDate: '2022-11-09',
 
   Brazil: {
+    'July 2025': [
+      { edition: 'Deluxe', price: 455.90, currency: 'R$', increase: 14 },
+    ],
     'January 2025': [
       { edition: 'Deluxe', price: 199.75, currency: 'R$', discount: 50 },
     ],
