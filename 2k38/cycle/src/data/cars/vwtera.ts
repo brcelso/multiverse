@@ -2,6 +2,32 @@ export const vwTera = {
   launchDate: '2025-05-25',
 
   Brazil: {
+    'August 2025': [
+      {
+        edition: 'VW Tera High AT',
+        price: 141890,
+        currency: 'R$',
+        increase: 1.3
+      },
+      {
+        edition: 'VW Tera Comfort AT',
+        price: 128890,
+        currency: 'R$',
+        increase: 1.5
+      },
+      {
+        edition: 'VW Tera TSI',
+        price: 118890,
+        currency: 'R$',
+        increase: 1.6
+      },
+      {
+        edition: 'VW Tera MPI',
+        price: 105890,
+        currency: 'R$',
+        increase: 1.8
+      },
+    ],
     'May 2025': [
       {
         edition: 'VW Tera Outfit The Town AT',
