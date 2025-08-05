@@ -4,6 +4,8 @@ export const godOfWarRagnarok = {
   Brazil: {
     'July 2025': [
       { edition: 'Deluxe', price: 455.90, currency: 'R$', increase: 14 },
+      { edition: 'Standard PS5', price: 134.91, currency: 'R$', discount: 61.5 },
+      { edition: 'Standard PS4', price: 89.91, currency: 'R$', discount: 70 },
     ],
     'January 2025': [
       { edition: 'Deluxe', price: 199.75, currency: 'R$', discount: 50 },
