@@ -1,6 +1,10 @@
 export const vwNivus = {
   launchDate: '2020-06-25',
   Brazil: {
+    'July 2025': [
+      { edition: 'Highline', price: 146490, discount: 10.3, currency: 'R$', note: '+73%' },
+      { edition: 'Highline', price: 163290, increase: 1.5, currency: 'R$', note: '2025-2025 [-9%]' },
+    ],
     'May 2025': [
       { edition: 'Highline', price: 139990, discount: 13, currency: 'R$', note: '2k25/2k26' },
       { edition: 'GTS 250 TSI', price: 174990, currency: 'R$', note: '2k25/2k26' },
@@ -11,7 +15,7 @@ export const vwNivus = {
       { edition: 'Sense', price: 119990, currency: 'R$', note: '2k25/2k26' },
     ],
     'March 2025': [
-      { edition: 'HighLine', price: 148570, discount: 7.5, currency: 'R$', note: '+73%' },
+      { edition: 'Highline', price: 148570, discount: 7.5, currency: 'R$', note: '+73%' },
       { edition: 'ComfortLine', price: 135540, discount: 6, currency: 'R$', note: '2025-2025 [-9%]' },
     ],
     'February 2025': [
