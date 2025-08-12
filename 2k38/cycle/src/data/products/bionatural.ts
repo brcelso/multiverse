@@ -2,6 +2,16 @@ export const bionatural = {
   launchDate: '2024-08-13',
 
   Brazil: {
+    'August 2025': [
+      {
+        edition: 'Bionatural Prime Senior Frango 15kg',
+        price: 250.00,
+        currency: 'R$',
+        discount: 3,
+        basePrice: 45.83,
+        exchangeTax2: 5.67
+      },
+    ],
     'June 2025': [
       {
         edition: 'Bionatural Prime Senior Frango 15kg',
