@@ -7,9 +7,11 @@ export const tloucomplete = {
     ],
   },
   Brazil: {
+    'August 2025': [
+      { edition: "Complete Edition", price: 455.92, discount: 20, currency: 'R$', exchangeTax: 5.69 },
+    ],
     'July 2025': [
       { edition: "Complete Edition", price: 569.90, increase: 14, currency: 'R$', exchangeTax: 5.69 },
-
     ],
     'April 2025': [
       { edition: "Complete Edition", price: 499.50, currency: 'R$', exchangeTax: 4.99 },
