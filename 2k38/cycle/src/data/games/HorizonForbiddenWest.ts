@@ -2,6 +2,12 @@ export const horizonForbiddenWest = {
   launchDate: '2022-02-18',
 
   Brazil: {
+    'August 2025': [
+      { edition: 'Complete Edition', price: 224.33, currency: 'R$', discount: 34 },
+    ],
+    'July 2025': [
+      { edition: 'Complete Edition', price: 339.90, currency: 'R$', increase: 13 },
+    ],
     'February 2025': [
       { edition: 'Complete Edition', price: 197.93, currency: 'R$', discount: 34 },
       { edition: 'Standard Edition', price: 149.7, currency: 'R$', discount: 40 },
