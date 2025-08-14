@@ -13,6 +13,7 @@ import { assassinsCreedMirage } from './games/AssassinsCreedMirage';
 import { astroBot } from './games/AstroBot';
 import { bf6 } from './games/Battlefield6';
 import { blackMythWukong } from './games/BlackMythWukong';
+import { bloodborne } from './games/Bloodborne';
 import { borderlands4 } from './games/Borderlands4';
 import { callOfDutyModernWarfareIII } from './games/CallOfDutyModernWarfareIII';
 import { clairObscurExpedition33 } from './games/ClairObscur33';
@@ -115,6 +116,7 @@ export const games = {
   'Astro Bot': astroBot,
   'Battlefield 6': bf6,
   'Black Myth Wukong': blackMythWukong,
+  'Bloodborne': bloodborne,
   'Borderlands 4': borderlands4,
   'Call Of Duty Black Ops 6': codbo6,
   'Call Of Duty Cold War': codcoldwar,
