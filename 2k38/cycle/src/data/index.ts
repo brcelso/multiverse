@@ -50,6 +50,7 @@ import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
 import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
+import { residentevil4 } from './games/ResidentEvil4';
 import { residentevil7 } from './games/ResidentEvil7';
 import { residentevil9 } from './games/ResidentEvil9';
 import { residentevilvillage } from './games/ResidentEvilVillage';
@@ -151,6 +152,7 @@ export const games = {
   'NFL College Football 2k26': nflCollegeFootball2026,
   'Red Dead Redemption 2': redDeadRedemption2,
   'Red Dead Redemption I': redDeadRedemptionI,
+  "Resident Evil 4": residentevil4,
   'Resident Evil 7': residentevil7,
   'Resident Evil 9 Requiem': residentevil9,
   'Resident Evil Village': residentevilvillage,

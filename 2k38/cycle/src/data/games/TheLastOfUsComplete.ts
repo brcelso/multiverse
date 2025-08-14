@@ -18,17 +18,26 @@ export const tloucomplete = {
     ],
   },
   Europe: {
+    'August 2025': [
+      { edition: "Complete Edition", price: 87.99, discount: 20,  currency: '€' },
+    ],
     'April 2025': [
       { edition: "Complete Edition", price: 109.99, currency: '€' },
     ],
   },
 
   UnitedKingdom: {
+    'August 2025': [
+      { edition: "Complete Edition", price: 75.99, discount: 20, currency: '£' },
+    ],
     'April 2025': [
       { edition: "Complete Edition", price: 94.99, currency: '£' },
     ],
   },
   UnitedStates: {
+    'August 2025': [
+      { edition: "Complete Edition", price: 79.99, discount: 20, currency: '$' },
+    ],
     'April 2025': [
       { edition: "Complete Edition", price: 99.99, currency: '$' },
     ],
