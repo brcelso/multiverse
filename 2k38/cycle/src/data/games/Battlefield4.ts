@@ -3,7 +3,7 @@ export const bf4 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Premium Edition', price: 19.07, discount: 88, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Premium Edition', price: 19.07, discount: 88, currency: 'R$', exchangeTax: 3.98 },
       { edition: 'Standard Edition', price: 24.87, discount: 75, currency: 'R$', exchangeTax: 5 },
     ],
     'November 2013': [
