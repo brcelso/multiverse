@@ -6,6 +6,7 @@ export const vwNivus = {
       { edition: 'ComfortLine 2023/2024', price: 105990, discount: 12, currency: 'R$', basePrice: 119990 },
     ],
     'July 2025': [
+      { edition: 'GTS 250 TSI', price: 179990, increase: 2.9, currency: 'R$', note: '2k25/2k26' },
       { edition: 'Highline', price: 146490, discount: 10.3, currency: 'R$', note: '+73%' },
       { edition: 'Highline', price: 163290, increase: 1.5, currency: 'R$', note: '2025-2025 [-9%]' },
     ],
