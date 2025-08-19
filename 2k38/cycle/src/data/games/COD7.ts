@@ -3,7 +3,7 @@ export const cod7 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Vault Edition', price: 479.90, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Vault Edition', price: 479.90, currency: 'R$', exchangeTax: 4.79 },
       { edition: 'Standard Edition', price: 349.90, currency: 'R$', exchangeTax: 5 },
     ],
   },
