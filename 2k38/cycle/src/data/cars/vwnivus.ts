@@ -2,6 +2,7 @@ export const vwNivus = {
   launchDate: '2020-06-25',
   Brazil: {
     'August 2025': [
+      { edition: 'ComfortLine 2025/2026', price: 131900, discount: 8, currency: 'R$', basePrice: 143490 },
       { edition: 'ComfortLine 2023/2024', price: 105990, discount: 17, currency: 'R$', basePrice: 127390 },
       { edition: 'ComfortLine 2023/2024', price: 105990, discount: 12, currency: 'R$', basePrice: 119990 },
     ],
