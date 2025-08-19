@@ -45,6 +45,9 @@ export const vwNivus = {
     'July 2024': [
       { edition: 'Sense', price: 119990, currency: 'R$' },
     ],
+     'June 2024': [
+      { edition: 'ComfortLine 2022/2023', price: 99990, discount: 21, currency: 'R$', },
+    ],
     'August 2023': [
       { edition: 'Highline', price: 147890, increase: 0.5, currency: 'R$', note: 'Nivus 2024' },
       { edition: 'ComfortLine', price: 130890, increase: 1, currency: 'R$', note: 'Nivus 2024' },
