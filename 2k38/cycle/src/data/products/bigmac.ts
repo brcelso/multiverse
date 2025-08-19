@@ -2,7 +2,7 @@ export const bigmac = {
   launchDate: '1967-04-22',
 
   Brazil: {
-    'Augusr 2025': [
+    'August 2025': [
       {
         edition: 'Big Mac Combo',
         price: 29.70,
@@ -13,6 +13,7 @@ export const bigmac = {
         exchangeTax2: 9.98,
         currency: 'R$'
       },
+      ],
     'June 2025': [
       {
         edition: 'Big Mac Combo',
