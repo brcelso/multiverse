@@ -19,6 +19,7 @@ import { borderlands4 } from './games/Borderlands4';
 import { callOfDutyModernWarfareIII } from './games/CallOfDutyModernWarfareIII';
 import { clairObscurExpedition33 } from './games/ClairObscur33';
 import { codbo6 } from './games/CODBO6';
+import { cod7 } from './games/COD7';
 import { codcoldwar } from './games/CallOfDutyColdWar';
 import { crash4ItsAboutTime } from './games/Crash4';
 import { crashTrilogy } from './games/CrashTrilogy';
@@ -121,6 +122,7 @@ export const games = {
   'Bloodborne': bloodborne,
   'Borderlands 4': borderlands4,
   'Call Of Duty Black Ops 6': codbo6,
+  'Call Of Duty Black Ops 7': cod7,
   'Call Of Duty Cold War': codcoldwar,
   'Call of Duty Modern Warfare III': callOfDutyModernWarfareIII,
   'Clair Obscur Expedition 33': clairObscurExpedition33,
