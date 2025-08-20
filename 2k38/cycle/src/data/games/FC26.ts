@@ -3,7 +3,7 @@ export const fc26 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Ultimate Edition', price: 449.50, discount: 10, currency: 'R$' },
+      { edition: 'Ultimate Edition', price: 449.55, discount: 10, currency: 'R$' },
     ],
     'July 2025': [
       { edition: 'Ultimate Edition', price: 499.50, currency: 'R$' },
