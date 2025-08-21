@@ -64,15 +64,15 @@ export const ps5 = {
   },
   Europe: {
     'May 2025': [
-      { edition: 'PS5 Pro', price: 749, currency: '€', discount: 6 },
-      { edition: 'PS5 Standard[old]', price: 449, currency: '€', discount: 10 },
-      { edition: 'PS5 Digital', price: 399, currency: '€', discount: 20 },
+      { edition: 'PS5 Pro', price: 749.99, currency: '€', discount: 6 },
+      { edition: 'PS5 Standard[old]', price: 449.99, currency: '€', discount: 10 },
+      { edition: 'PS5 Digital', price: 399.99, currency: '€', discount: 20 },
     ],
     'April 2025': [
-      { edition: 'PS5 Digital', price: 499, currency: '€', increase: 11.1, totalIncrease: 25},
+      { edition: 'PS5 Digital', price: 499.99, currency: '€', increase: 11.1, totalIncrease: 25},
     ],
     'November 2024': [
-      { edition: 'PS5 Pro', price: 799, currency: '€' },
+      { edition: 'PS5 Pro', price: 799.99, currency: '€' },
     ],
     'November 2023': [
       { edition: 'PS5 Digital', price: 449, currency: '€' },
@@ -88,14 +88,14 @@ export const ps5 = {
 
   UnitedKingdom: {
     'May 2025': [
-      { edition: 'PS5 Pro', price: 649, currency: '£', discount: 7 },
-      { edition: 'PS5 Digital', price: 339, currency: '£', discount: 21 },
+      { edition: 'PS5 Pro', price: 649.99, currency: '£', discount: 7 },
+      { edition: 'PS5 Digital', price: 339.99, currency: '£', discount: 21 },
     ],
     'April 2025': [
-      { edition: 'PS5 Digital', price: 429, currency: '£', increase: 10.5, totalIncrease: 20 },
+      { edition: 'PS5 Digital', price: 429.99, currency: '£', increase: 10.5, totalIncrease: 20 },
     ],
     'November 2024': [
-      { edition: 'PS5 Pro', price: 699, currency: '£' },
+      { edition: 'PS5 Pro', price: 699.99, currency: '£' },
     ],
     'November 2023': [
       { edition: 'PS5 Digital', price: 389, currency: '£' },
@@ -116,11 +116,11 @@ export const ps5 = {
       { edition: 'PS5 Digital', price: 499.99, currency: '$', increase: 10, totalIncrease: 25 },
     ],
     'May 2025': [
-      { edition: 'PS5 Pro', price: 649, currency: '$', discount: 7 },
-      { edition: 'PS5 Digital', price: 379, currency: '$', discount: 15.5 },
+      { edition: 'PS5 Pro', price: 649.99, currency: '$', discount: 7 },
+      { edition: 'PS5 Digital', price: 379.99, currency: '$', discount: 15.5 },
     ],
     'November 2024': [
-      { edition: 'PS5 Pro', price: 699, currency: '$' },
+      { edition: 'PS5 Pro', price: 699.99, currency: '$' },
     ],
     'November 2023': [
       { edition: 'PS5 Digital', price: 449, currency: '$', increase: 12.5 },
