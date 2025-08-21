@@ -69,7 +69,7 @@ export const ps5 = {
       { edition: 'PS5 Digital', price: 399, currency: '€', discount: 20 },
     ],
     'April 2025': [
-      { edition: 'PS5 Digital', price: 499, currency: '€', increase: 11.1 },
+      { edition: 'PS5 Digital', price: 499, currency: '€', increase: 11.1, totalIncrease: 25},
     ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 799, currency: '€' },
@@ -92,7 +92,7 @@ export const ps5 = {
       { edition: 'PS5 Digital', price: 339, currency: '£', discount: 21 },
     ],
     'April 2025': [
-      { edition: 'PS5 Digital', price: 429, currency: '£', increase: 10.5 },
+      { edition: 'PS5 Digital', price: 429, currency: '£', increase: 10.5, totalIncrease: 20 },
     ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 699, currency: '£' },
