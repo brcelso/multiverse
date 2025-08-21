@@ -312,8 +312,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#4ec9b0',
     marginLeft: '0.5rem',
   },
-  totalncrease: {
-    color: '#4ec9b0',
+  totalIncrease: {
+    color: '#ff69b4',
     marginLeft: '0.5rem',
   },
   exchange: {
