@@ -26,7 +26,33 @@ export const theLastOfUsPartI = {
       { edition: 'PS4', price: 49.75, currency: 'R$', discount: 50 },
     ],
   },
-
+  Europe: {
+    'August 2025': [
+      { edition: 'Standard Edition', price: 49.99, currency: '€', discount: 38 },
+    ],
+    'November 2023': [
+      { edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
+    ],
+    'September 2022': [
+      { edition: 'Standard Edition', price: 79.99, currency: '€' },
+    ],
+  },
+  Paraguay: {
+    'August 2025': [
+      { edition: 'Standard Edition', price: 42, currency: '$', discount: 40 },
+    ],
+  },
+  UnitedKingdom: {
+    'August 2025': [
+      { edition: 'Standard Edition', price: 39.99, currency: '£', discount: 43 },
+    ],
+    'November 2023': [
+      { edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
+    ],
+    'September 2022': [
+      { edition: 'Standard Edition', price: 69.99, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'January 2025': [
       { edition: 'Standard Edition', price: 49.59, currency: '$', discount: 38 },
@@ -37,13 +63,6 @@ export const theLastOfUsPartI = {
     ],
     'September 2022': [
       { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
-    ],
-  },
-
-  Europe: {
-    'May 2025': [
-      { edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
-      { edition: 'Standard Edition', price: 89.99, currency: '€' },
     ],
   },
 };
