@@ -33,6 +33,9 @@ export const theLastOfUsPart2 = {
     'November 2023': [
       { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 66 },
     ],
+    'July 2023': [
+      { edition: 'Standard Edition', price: 39.99, currency: '$' , discount: 33 },
+    ],
     'June 2020': [
       { edition: 'Ellie Edition', price: 229.99, currency: '$' },
       { edition: "Collector's Edition", price: 169.99, currency: '$' },
