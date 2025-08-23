@@ -28,6 +28,14 @@ export const dualsensetlou = {
   },
 
   UnitedStates: {
+    'June 2025': [
+      {
+        edition: 'Dual Sense TLOU',
+        price: 64,
+        currency: '$',
+        discount: 24
+      },
+    ],
     'April 2025': [
       {
         edition: 'Dual Sense TLOU',
