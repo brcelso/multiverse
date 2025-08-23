@@ -17,6 +17,9 @@ export const theLastOfUsPart2 = {
     'June 2020': [
       { edition: 'Standard Edition', price: 279.90, currency: 'R$', increase: 12 },
     ],
+    'November 2022': [
+      { edition: 'Standard Edition', price: 49.87, currency: 'R$', discount: 75 },
+    ],
     'September 2019': [
       { edition: 'Deluxe Edition', price: 289.99, currency: 'R$' },
       { edition: 'Standard Edition', price: 249.99, currency: 'R$', increase: 25 },
