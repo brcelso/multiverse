@@ -33,6 +33,9 @@ export const theLastOfUsPart2 = {
     ],
   },
   UnitedStates: {
+    'January 2024': [
+      { edition: 'Remastered Edition', price: 49.99, currency: '$' },
+    ],
     'November 2023': [
       { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 66 },
     ],
