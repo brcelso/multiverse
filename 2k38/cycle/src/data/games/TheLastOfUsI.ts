@@ -12,8 +12,11 @@ export const theLastOfUs = {
   },
 
   UnitedStates: {
+    'February 2023': [
+      { edition: 'Remastered PS4', price: 9.99, currency: '$' , discount: 50},
+    ],
     'July 2014': [
-      { edition: 'Remastered PS4', price: 49.99, currency: '$' },
+      { edition: 'Remastered PS4', price: 19.99, currency: '$' },
     ],
     'June 2013': [
       { edition: 'Survival Edition', price: 79.99, currency: '$' },
