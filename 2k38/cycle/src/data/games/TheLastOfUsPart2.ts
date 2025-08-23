@@ -23,21 +23,22 @@ export const theLastOfUsPart2 = {
       { edition: 'Standard Edition', price: 199.99, currency: 'R$' },
     ],
   },
-
+  Europe: {
+    'May 2025': [
+      { edition: 'Remastered', price: 39.99, currency: '€', discount: 20 },
+      { edition: 'Remastered', price: 49.99, currency: '€' },
+    ],
+  },
   UnitedStates: {
+    'November 2023': [
+      { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 66 },
+    ],
     'June 2020': [
       { edition: 'Ellie Edition', price: 229.99, currency: '$' },
       { edition: "Collector's Edition", price: 169.99, currency: '$' },
       { edition: 'Special Edition', price: 79.99, currency: '$' },
       { edition: 'Deluxe Digital', price: 69.99, currency: '$' },
       { edition: 'Standard Edition', price: 59.99, currency: '$' },
-    ],
-  },
-
-  Europe: {
-    'May 2025': [
-      { edition: 'Remastered', price: 39.99, currency: '€', discount: 20 },
-      { edition: 'Remastered', price: 49.99, currency: '€' },
     ],
   },
 };
