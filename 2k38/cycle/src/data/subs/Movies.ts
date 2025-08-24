@@ -3,17 +3,17 @@ export const movies = {
   Brazil: {
     'August 2025': [
       { price: 69.90, currency: 'R$', exchangeTax: 2.79, 
-        edition: "Buy" },
+        edition: "F1 2025 Buy" },
       { price: 49.90, currency: 'R$', exchangeTax: 2.50, 
-        edition: "Rent" },
+        edition: "F1 2025 Rent" },
       ],
       },
   UnitedStates: {
     'August 2025': [
       { price: 24.99, currency: '$', 
-        edition: "Buy" },
+        edition: "F1 2025 Buy" },
       { price: 19.99, currency: '$', 
-        edition: "Rent" },
+        edition: "F1 2025 Rent" },
       ],
       },
     }

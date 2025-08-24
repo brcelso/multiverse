@@ -1,5 +1,5 @@
 export const appletv = {
-  launchDate: '2025-08-23',
+  launchDate: '2019-11-01',
   Brazil: {
     'August 2025': [
       { price: 29.90, increase: 30, totalIncrease: 200,
