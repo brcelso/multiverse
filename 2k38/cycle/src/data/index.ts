@@ -98,6 +98,7 @@ import { bionatural } from './products/bionatural';
 import { cafe } from './products/coffee';
 import { icecream } from './products/icecream';
 import { psgiftcard } from './products/PSgiftcard';
+import { trips } from './products/trips';
 
 //coins
 import { coin } from './coins/coins';
@@ -212,7 +213,8 @@ export const games = {
 'Ice Cream': icecream,
 'Bionatural': bionatural,
 'Coffee': cafe,
-'PS Gift Card': psgiftcard
+'PS Gift Card': psgiftcard,
+'Trips': trips,
 
 } as const;
 
