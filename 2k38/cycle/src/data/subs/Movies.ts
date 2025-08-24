@@ -4,8 +4,6 @@ export const movies = {
     'August 2025': [
       { price: 69.90, currency: 'R$', exchangeTax: 2.79, 
         edition: "Buy" },
-      ],
-    'August 2025': [
       { price: 49.90, currency: 'R$', exchangeTax: 2.50, 
         edition: "Rent" },
       ],
@@ -14,8 +12,6 @@ export const movies = {
     'August 2025': [
       { price: 25, currency: '$', 
         edition: "Buy" },
-      ],
-    'August 2025': [
       { price: 20, currency: '$', 
         edition: "Rent" },
       ],
