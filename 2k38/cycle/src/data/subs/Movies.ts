@@ -10,9 +10,9 @@ export const movies = {
       },
   UnitedStates: {
     'August 2025': [
-      { price: 25, currency: '$', 
+      { price: 24.99, currency: '$', 
         edition: "Buy" },
-      { price: 20, currency: '$', 
+      { price: 19.99, currency: '$', 
         edition: "Rent" },
       ],
       },
