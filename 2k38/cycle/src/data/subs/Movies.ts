@@ -8,6 +8,22 @@ export const movies = {
         edition: "F1 2025 Rent" },
       ],
       },
+  Europe: {
+    'August 2025': [
+      { price: 24.99, currency: '€', 
+        edition: "F1 2025 Buy" },
+      { price: 19.99, currency: '€', 
+        edition: "F1 2025 Rent" },
+      ],
+      },
+  UnitedKingdom: {
+    'August 2025': [
+      { price: 19.99, currency: '£', 
+        edition: "F1 2025 Buy" },
+      { price: 15.99, currency: '£', 
+        edition: "F1 2025 Rent" },
+      ],
+      },
   UnitedStates: {
     'August 2025': [
       { price: 24.99, currency: '$', 
