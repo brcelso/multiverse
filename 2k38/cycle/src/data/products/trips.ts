@@ -6,7 +6,9 @@ export const trips = {
       {
         edition: 'New York - Buenos Aires - 1 person',
         price: 1524.84,
-        exchangeTax2: 2.02,
+        exchangeTax: 2.03,
+        exchangeTax2: 5.5,
+        realPrice: 4125,
         currency: 'R$'
       },
     ],
@@ -15,7 +17,7 @@ export const trips = {
     'August 2025': [
       {
         edition: 'New York - Buenos Aires - 1 person',
-        price: 751,
+        price: 750,
         currency: '$',
       }, 
     ]
