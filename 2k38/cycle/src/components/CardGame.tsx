@@ -11,6 +11,7 @@ type GameData = {
       discount?: number;
       increase?: number;
       totalIncrease?: number; 
+      totalDiscount?: number;   // ⬅️ Novo campo
       exchangeTax?: number;
       basePrice2?: number;
       exchangeTax2?: number;
@@ -34,7 +35,8 @@ const regionFlags: Record<string, string> = {
   Japan: 'https://flagcdn.com/w40/jp.png',
   India: 'https://flagcdn.com/w40/in.png',
   Canada: 'https://flagcdn.com/w40/ca.png',
-  China: 'https://flagcdn.com/w40/cn.png'
+  China: 'https://flagcdn.com/w40/cn.png',
+  Paraguay: "https://flagcdn.com/w40/py.png"
 };
 
 function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
@@ -63,6 +65,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         discount?: number;
         increase?: number;
         totalIncrease?: number;
+        totalDiscount?: number;   // ⬅️ Novo campo
         exchangeTax?: number;
         basePrice2?: number;
         exchangeTax2?: number;
@@ -126,6 +129,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
               discount?: number;
               increase?: number;
               totalIncrease?: number;
+              totalDiscount?: number;   // ⬅️ Novo campo
               exchangeTax?: number;
               basePrice2?: number;
               exchangeTax2?: number;
@@ -179,6 +183,9 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                               {entry.totalIncrease !== undefined && (
                                 <span style={styles.totalIncrease}> [+{entry.totalIncrease}%]</span>
                               )}
+                              {entry.totalDiscount !== undefined && (
+                                <span style={styles.totalDiscount}> [-{entry.totalDiscount}%]</span>
+                              )}
                             </div>
                             {entry.realPrice !== undefined && (
                               <div style={styles.realPrice}>
@@ -228,7 +235,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#1e1e1e',
     minHeight: '100vh',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    textAlign: 'center', // ⬅️ Centraliza todo o conteúdo por padrão
+    textAlign: 'center',
   },
   card: {
     background: '#252526',
@@ -239,19 +246,19 @@ const styles: { [key: string]: React.CSSProperties } = {
     maxWidth: '600px',
     boxShadow: '0 0 10px rgba(0,0,0,0.3)',
     overflowY: 'auto',
-    textAlign: 'center', // ⬅️ Centraliza o conteúdo do card
+    textAlign: 'center',
   },
   title: {
     fontSize: '1.5rem',
     marginBottom: '0.5rem',
     color: '#569cd6',
-    textAlign: 'center', // ⬅️ Centraliza o título
+    textAlign: 'center',
   },
   launch: {
     fontSize: '0.85rem',
     color: '#6a9955',
     marginBottom: '1rem',
-    textAlign: 'center', // ⬅️ Centraliza a data
+    textAlign: 'center',
   },
   regionSection: {
     marginBottom: '1.5rem',
@@ -259,7 +266,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: '6px',
     padding: '0.75rem',
     backgroundColor: '#1e1e1e',
-    textAlign: 'center', // ⬅️ Centraliza tudo dentro da região
+    textAlign: 'center',
   },
   regionTitle: {
     color: '#9cdcfe',
@@ -268,7 +275,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginBottom: '0.75rem',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center', // ⬅️ Centraliza os elementos (flag + nome)
+    justifyContent: 'center',
     fontWeight: 'bold',
     textAlign: 'center',
   },
@@ -287,7 +294,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     listStyle: 'none',
     padding: 0,
     margin: '0 auto',
-    textAlign: 'center', // ⬅️ Centraliza a lista
+    textAlign: 'center',
   },
   priceItem: {
     background: '#2d2d30',
@@ -295,14 +302,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: '4px',
     marginBottom: '0.5rem',
     border: '1px solid #3c3c3c',
-    textAlign: 'center', // ⬅️ Centraliza o conteúdo de cada item
+    textAlign: 'center',
   },
   edition: {
     display: 'block',
     fontSize: '0.95rem',
     marginBottom: '0.2rem',
     color: '#dcdcaa',
-    textAlign: 'center', // ⬅️ Centraliza o nome da edição
+    textAlign: 'center',
   },
   discount: {
     color: '#d16969',
@@ -316,11 +323,15 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#ff69b4',
     marginLeft: '0.5rem',
   },
+  totalDiscount: {          // ⬅️ Novo estilo
+    color: '#ffa500',
+    marginLeft: '0.5rem',
+  },
   exchange: {
     color: '#b5cea8',
     fontSize: '0.7rem',
     display: 'block',
-    textAlign: 'center', // ⬅️ Centraliza as linhas de exchange
+    textAlign: 'center',
   },
   secondaryLine: {
     marginTop: '0.25rem',
@@ -329,11 +340,11 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#ce9178',
     fontSize: '0.75rem',
     marginTop: '0.25rem',
-    textAlign: 'center', // ⬅️ Centraliza o realPrice
+    textAlign: 'center',
   },
   editionSelector: {
     marginBottom: '1rem',
-    textAlign: 'center', // ⬅️ Centraliza o seletor de edição
+    textAlign: 'center',
   },
   editionRadios: {
     display: 'flex',
@@ -347,6 +358,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#d4d4d4',
     cursor: 'pointer',
     userSelect: 'none',
-    textAlign: 'center', // ⬅️ Centraliza o label de cada radio
+    textAlign: 'center',
   },
 };

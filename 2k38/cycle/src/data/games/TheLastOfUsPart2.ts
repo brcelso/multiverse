@@ -12,10 +12,18 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered Edition', price: 199.6, currency: 'R$', discount: 20 },
     ],
     'January 2024': [
-      { edition: 'Remastered Edition', price: 249.90, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Remastered Edition', price: 249.90, currency: 'R$', exchangeTax: 5, increase: 25 },
+    ],
+    'July 2021': [
+      { edition: 'Deluxe Edition', price: 249.50, currency: 'R$', discount: 28.7 },
+      { edition: 'Standard Edition', price: 199.50, currency: 'R$', discount: 33.5 },
+    ],
+    'September 2020': [
+      { edition: 'Deluxe Edition', price: 349.90, currency: 'R$', increase: 20.5 },
+      { edition: 'Standard Edition', price: 299.90, currency: 'R$', increase: 7, totalIncrease: 50 },
     ],
     'June 2020': [
-      { edition: 'Standard Edition', price: 279.90, currency: 'R$', increase: 12 },
+      { edition: 'Standard Edition', price: 279.90, currency: 'R$', increase: 12, totalIncrease: 40 },
     ],
     'November 2022': [
       { edition: 'Standard Edition', price: 49.87, currency: 'R$', discount: 75 },
@@ -34,16 +42,16 @@ export const theLastOfUsPart2 = {
   },
   UnitedStates: {
     'January 2024': [
-      { edition: 'Remastered Edition', price: 49.99, currency: '$' },
+      { edition: 'Remastered Edition', price: 49.99, increase: 25, currency: '$' },
     ],
     'November 2023': [
-      { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 66 },
+      { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 50, totalDiscount: 66 },
     ],
     'July 2023': [
       { edition: 'Standard Edition', price: 39.99, currency: '$' , discount: 33 },
     ],
     'November 2022': [
-      { edition: 'Standard Edition', price: 9.99, currency: '$' , discount: 75 },
+      { edition: 'Standard Edition', price: 9.99, currency: '$' , discount: 75, totalDiscount: 83.3 },
     ],
     'October 2020': [
       { edition: 'Standard Edition', price: 39.99, currency: '$' , discount: 33 },
