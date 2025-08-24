@@ -4,6 +4,8 @@ import { extra } from './subs/CardSubs';
 import { essential } from './subs/CardSubs';
 import { gtaplus } from './subs/GTA+';
 import { ubisoftplus } from './subs/Ubisoft+';
+import { appletv } from './subs/AppleTV';
+import { movies } from './subs/Movies';
 
 //games
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
@@ -107,6 +109,8 @@ export const subs = {
   'Essential': essential,
   'GTA+': gtaplus,
   'Ubisoft+': ubisoftplus,
+  'Apple TV+': appletv,
+  'Movies': movies
 } as const;
 
 //games
