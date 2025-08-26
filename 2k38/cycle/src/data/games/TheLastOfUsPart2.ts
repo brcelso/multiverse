@@ -40,6 +40,20 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered', price: 49.99, currency: '€' },
     ],
   },
+  UnitedKingdom: {
+    'May 2025': [
+      { edition: 'Remastered', price: 35.99, currency: '£', discount: 20 },
+      { edition: 'Remastered', price: 44.99, currency: '£' },
+    ],
+    'September 2020': [
+      { edition: 'Deluxe', price: 44.99, currency: '£', discount: 30},
+      { edition: 'Standard', price: 34.99, currency: '£', discount: 36.5},
+    ],
+    'June 2020': [
+      { edition: 'Deluxe', price: 64.99, currency: '£'},
+      { edition: 'Standard', price: 54.99, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'January 2024': [
       { edition: 'Remastered Edition', price: 49.99, increase: 25, currency: '$' },
