@@ -30,19 +30,11 @@ export const forzaHorizon5 = {
       { edition: 'Standard Edition', price: 249.0, currency: 'R$', exchangeTax: 4.15 },
     ],
   },
-
-  UnitedStates: {
-    'June 2025': [
-      { edition: 'Deluxe Edition', price: 63.99, discount: 20, currency: '$' },
-    ],
-    'April 2025': [
-      { edition: 'Premium Edition', price: 99.99, currency: '$' },
-      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
-      { edition: 'Standard Edition', price: 59.99, currency: '$' },
-    ],
-  },
-
   Europe: {
+    'August 2025': [
+      { edition: 'Premium Edition', price: 69.99, discount: 30, currency: '€' },
+      { edition: 'Standard Edition', price: 41.99, discount: 30, currency: '€' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 63.99, discount: 20, currency: '€' },
     ],
@@ -53,8 +45,11 @@ export const forzaHorizon5 = {
       { edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
-
   UnitedKingdom: {
+    'August 2025': [
+      { edition: 'Premium Edition', price: 59.49, discount: 30, currency: '£' },
+      { edition: 'Standard Edition', price: 38.49, discount: 30, currency: '£' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 55.99, discount: 20, currency: '£' },
     ],
@@ -62,6 +57,20 @@ export const forzaHorizon5 = {
       { edition: 'Premium Edition', price: 84.99, currency: '£' },
       { edition: 'Deluxe Edition', price: 69.99, currency: '£' },
       { edition: 'Standard Edition', price: 54.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'August 2025': [
+      { edition: 'Premium Edition', price: 69.99, discount: 30, currency: '$' },
+      { edition: 'Standard Edition', price: 41.99, discount: 30, currency: '$' },
+    ],
+    'June 2025': [
+      { edition: 'Deluxe Edition', price: 63.99, discount: 20, currency: '$' },
+    ],
+    'April 2025': [
+      { edition: 'Premium Edition', price: 99.99, currency: '$' },
+      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
+      { edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
   },
 };
