@@ -30,7 +30,7 @@ export const redDeadRedemption2 = {
   },
   UnitedKingdom: {
     'October 2018': [
-      { edition: 'Standard Edition', price: 14.99, currency: '£' discount: 75 },
+      { edition: 'Standard Edition', price: 14.99, currency: '£', discount: 75 },
       { edition: 'Standard Edition', price: 59.99, currency: '£' },
     ],
   },
