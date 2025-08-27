@@ -3,6 +3,7 @@ export const residentevil4 = {
 
   Brazil: {
     'August 2025': [
+      { edition: 'Gold Edition', price: 149.70, discount: 40, currency: 'R$', exchangeTax: 5 },
       { edition: 'Standard Edition', price: 99.75, discount: 50, currency: 'R$', exchangeTax: 5 },
     ],
     'March 2023': [
@@ -13,6 +14,7 @@ export const residentevil4 = {
 
   UnitedStates: {
     'August 2025': [
+      { edition: 'Gold Edition', price: 29.99, discount: 40, currency: '$' },
       { edition: 'Standard Edition', price: 19.99, discount: 50, currency: '$' },
     ],
     'March 2023': [
@@ -23,6 +25,7 @@ export const residentevil4 = {
 
   Europe: {
     'August 2025': [
+      { edition: 'Gold Edition', price: 29.99, discount: 40, currency: '€' },
       { edition: 'Standard Edition', price: 19.99, discount: 50, currency: '€' },
     ],
     'March 2023': [
@@ -33,6 +36,7 @@ export const residentevil4 = {
 
   UnitedKingdom: {
     'August 2025': [
+      { edition: 'Gold Edition', price: 26.99, discount: 40, currency: '£' },
       { edition: 'Standard Edition', price: 17.49, discount: 50, currency: '£' },
     ],
     'March 2023': [
