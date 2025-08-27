@@ -10,7 +10,7 @@ export const deluxeOrPremium = {
       { price: 154900, currency: 'ARS', basePriceUSD: 124.99, exchangeTax: 154900 / 124.99, edition: "Deluxe" },
       { price: 264999, discount: 12, currency: 'ARS', basePriceUSD: 124.99, exchangeTax: 264999 / 124.99, edition: "Deluxe" },
       { price: 299999, currency: 'ARS', basePriceUSD: 124.99, exchangeTax: 299999 / 124.99, edition: "Deluxe" },
-      { price: 124.99, increase: 17, currency: 'USD', edition: "Deluxe" }],
+      { price: 124.99, increase: 17, totalIncrease: 62.5, currency: 'USD', edition: "Deluxe" }],
     'March 2025': [
       { price: 95490, discount: 3, currency: 'ARS', edition: "Deluxe" },
       { price: 98490, currency: 'ARS', edition: "Deluxe" },
