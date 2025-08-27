@@ -1,16 +1,19 @@
 export const allprices = {
-  launchDate: '2025-06-05',
+  launchDate: '2013-06-14',
 
   Brazil: {
-    'June 2025': [
-      { price: 408.27, discount: 7, currency: 'R$', exchangeTax: 6.28 },
-      { price: 439.90, currency: 'R$', exchangeTax: 6.28 },
+    'June 2013': [
+      { edition: "PS3", price: 149.99, currency: 'R$', exchangeTax: 2.5 },
+      { edition: "PS3", price: 119.99, currency: 'R$', exchangeTax: 2 },
+      { edition: "PS3", price: 99.99, currency: 'R$', exchangeTax: 5 },
     ],
   },
 
   UnitedStates: {
-    'June 2025': [
-      { price: 69.99, currency: '$' },
+    'June 2013': [
+      { edition: "PS3", price: 59.99, currency: '$' },
+      { edition: "PS3", price: 19.99, currency: '$' },
     ],
   },
 };
+
