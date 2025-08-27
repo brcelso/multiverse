@@ -216,7 +216,7 @@ export const deluxeOrPremium = {
       { price: 49.99, currency: '$', edition: "Premium" },
       { price: 17.99, currency: '$', edition: "Premium" }],  
     'August 2023': [
-      { price: 159.99, increase: 33, currency: '$', edition: "Premium" },
+      { price: 159.99, increase: 33, totalIncrease: 220, currency: '$', edition: "Premium" },
       { price: 49.99, currency: '$', edition: "Premium" },
       { price: 17.99, currency: '$', edition: "Premium" }],
     'November 2022 Black Friday': [
@@ -224,7 +224,7 @@ export const deluxeOrPremium = {
       { price: 49.99, currency: '$', edition: "Premium" },
       { price: 17.99, currency: '$', edition: "Premium" }],
     'June 2022': [
-      { price: 119.99, increase: 100, currency: '$', edition: "Premium" },
+      { price: 119.99, increase: 100, totalIncrease: 140, currency: '$', edition: "Premium" },
       { price: 49.99, currency: '$', edition: "Premium" },
       { price: 17.99, currency: '$', edition: "Premium" }],
     'November 2021 Black Friday': [
