@@ -86,9 +86,7 @@ export const allprices = {
   ],
 },
   UnitedStates: {
-  'December 2025': [
-    { edition: "PS5", price: 219.99, increase: 37, totalIncrease: 1000, currency: '$' },
-  ],
+
     'July 2025': [
       { edition: "PS5", price: 149.99, increase: 50, totalIncrease: 650, currency: '$' },
       { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '$' },
