@@ -30,7 +30,41 @@ export const allprices = {
       { edition: "PS3", price: 99.99, currency: 'R$', exchangeTax2: 5 },
     ],
   },
-
+  Europe: {
+  'July 2025': [
+    { edition: "PS5", price: 109.99, increase: 10, totalIncrease: 450, currency: '€' },
+    { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '€' },
+    { edition: "PS5", price: 89.99, increase: 13, totalIncrease: 350, currency: '€' },
+  ],
+  'June 2025': [
+    { edition: "PS5", price: 79.99, increase: 14, totalIncrease: 300, currency: '€' },
+  ],
+  'November 2020': [
+    { edition: "PS5", price: 69.99, increase: 17, totalIncrease: 250, currency: '€' },
+    { edition: "PS4", price: 59.99, currency: '€' },
+  ],
+  'June 2013': [
+    { edition: "PS3", price: 59.99, totalIncrease: 200, currency: '€' },
+    { edition: "PS3", price: 19.99, currency: '€' },
+  ],
+},
+  UnitedKingdom: {
+  'July 2025': [
+    { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '£' },
+    { edition: "PS5", price: 89.99, increase: 13, totalIncrease: 350, currency: '£' },
+  ],
+  'June 2025': [
+    { edition: "PS5", price: 79.99, increase: 14, totalIncrease: 300, currency: '£' },
+  ],
+  'November 2020': [
+    { edition: "PS5", price: 69.99, increase: 17, totalIncrease: 250, currency: '£' },
+    { edition: "PS4", price: 59.99, currency: '£' },
+  ],
+  'June 2013': [
+    { edition: "PS3", price: 59.99, totalIncrease: 200, currency: '£' },
+    { edition: "PS3", price: 19.99, currency: '£' },
+  ],
+},
   UnitedStates: {
     'July 2025': [
       { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '$' },
