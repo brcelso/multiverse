@@ -1,4 +1,4 @@
-export const astroBot = {
+export const allprices = {
   launchDate: '2025-02-28',
 
   Brazil: {
