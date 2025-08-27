@@ -8,6 +8,7 @@ import { appletv } from './subs/AppleTV';
 import { movies } from './subs/Movies';
 
 //games
+import { currency } from './games/#currency';
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
 import { assassinsCreedValhalla } from './games/AssassinsCreedValhalla';
 import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
@@ -116,6 +117,7 @@ export const subs = {
 
 //games
 export const games = {
+  'Currency': currency,
   'Assassins Creed Shadows': assassinsCreedShadows,
   'Assassins Creed Valhalla': assassinsCreedValhalla,
   'Assassins Creed Black Flag': assassinsCreedBlackFlag,
