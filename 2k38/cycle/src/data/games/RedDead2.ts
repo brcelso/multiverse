@@ -22,7 +22,18 @@ export const redDeadRedemption2 = {
       { edition: 'PS4', price: 248.9, currency: 'R$' },
     ],
   },
-
+  Europe: {
+    'October 2018': [
+      { edition: 'Standard Edition', price: 14.99, currency: '€', discount: 75 },
+      { edition: 'Standard Edition', price: 59.99, currency: '€' },
+    ],
+  },
+  UnitedKingdom: {
+    'October 2018': [
+      { edition: 'Standard Edition', price: 14.99, currency: '£' discount: 75 },
+      { edition: 'Standard Edition', price: 59.99, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'May 2025': [
       { edition: 'Definitive Edition', price: 19.99, currency: '$', discount: 80 },
@@ -33,13 +44,6 @@ export const redDeadRedemption2 = {
     'October 2018': [
       { edition: 'Definitive Edition', price: 99.99, currency: '$' },
       { edition: 'PS4', price: 59.99, currency: '$' },
-    ],
-  },
-
-  Europe: {
-    'October 2018': [
-      { edition: 'Standard Edition', price: 14.99, currency: '€', discount: 75 },
-      { edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
 };
