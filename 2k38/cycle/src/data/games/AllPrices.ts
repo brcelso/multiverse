@@ -58,10 +58,11 @@ export const allprices = {
   ],
   'November 2020': [
     { edition: "PS5", price: 69.99, increase: 17, totalIncrease: 250, currency: '£' },
-    { edition: "PS4", price: 59.99, currency: '£' },
+    { edition: "PS4", price: 59.99, increase: 20, totalIncrease: 200, currency: '£' },
   ],
   'June 2013': [
-    { edition: "PS3", price: 59.99, totalIncrease: 200, currency: '£' },
+    { edition: "PS4", price: 49.99, increase: 25, totalIncrease: 150, currency: '£' },
+    { edition: "PS3", price: 39.99, totalIncrease: 100, currency: '£' },
     { edition: "PS3", price: 19.99, currency: '£' },
   ],
 },
