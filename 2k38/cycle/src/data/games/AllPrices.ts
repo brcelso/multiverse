@@ -2,6 +2,15 @@ export const allprices = {
   launchDate: '2013-06-14',
 
   Brazil: {
+    '2025': [
+      { edition: "PS5", price: 1099.90, increase: 5, totalIncrease: 1000, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 1049.90, increase: 5, totalIncrease: 950, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 999.90, increase: 5, totalIncrease: 900, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 949.90, increase: 5, totalIncrease: 850, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 899.90, increase: 6, totalIncrease: 800, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 849.90, increase: 6, totalIncrease: 750, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 799.90, increase: 7, totalIncrease: 700, currency: 'R$', exchangeTax2: 5 },
+    ],
     'July 2025': [
       { edition: "PS5", price: 749.50, increase: 35, totalIncrease: 650, currency: 'R$', exchangeTax2: 5 },
       { edition: "PS5", price: 569.90, increase: 14, totalIncrease: 470, currency: 'R$', exchangeTax2: 5.69 },
@@ -33,6 +42,9 @@ export const allprices = {
     ],
   },
   Europe: {
+  '2025': [
+    { edition: "PS5", price: 219.99, increase: 37, totalIncrease: 1000, currency: '€' },
+  ],
   'July 2025': [
     { edition: "PS5", price: 159.99, increase: 45, totalIncrease: 700, currency: '€' },
     { edition: "PS5", price: 109.99, increase: 10, totalIncrease: 450, currency: '€' },
@@ -52,6 +64,9 @@ export const allprices = {
   ],
 },
   UnitedKingdom: {
+  '2025': [
+    { edition: "PS5", price: 219.99, increase: 37, totalIncrease: 1000, currency: '£' },
+  ],
   'July 2025': [
     { edition: "PS5", price: 139.99, increase: 40, totalIncrease: 600, currency: '£' },
     { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '£' },
@@ -71,6 +86,9 @@ export const allprices = {
   ],
 },
   UnitedStates: {
+  '2025': [
+    { edition: "PS5", price: 219.99, increase: 37, totalIncrease: 1000, currency: '$' },
+  ],
     'July 2025': [
       { edition: "PS5", price: 149.99, increase: 50, totalIncrease: 650, currency: '$' },
       { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '$' },
