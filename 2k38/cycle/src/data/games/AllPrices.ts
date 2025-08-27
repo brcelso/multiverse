@@ -10,6 +10,9 @@ launchDate: '2013-06-14',
   },
 
   UnitedStates: {
+    'November 2020': [
+      { price: 69.99, currency: '$', increase: 17 },
+    ],
     'June 2013': [
       { price: 59.99, currency: '$' },
       { price: 19.99, currency: '$' },
