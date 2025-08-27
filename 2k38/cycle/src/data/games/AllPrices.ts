@@ -1,21 +1,19 @@
-export const allprices = {
-launchDate: '2013-06-14',
+export const astroBot = {
+  launchDate: '2025-02-28',
 
   Brazil: {
-    'June 2013': [
-      { price: 149.99, currency: 'R$', exchangeTax: 2.5 },
-      { price: 119.99, currency: 'R$', exchangeTax: 2 },
-      { price: 99.99, currency: 'R$', exchangeTax: 5 },
+    'February 2025': [
+      { edition: 'Deluxe Edition', price: 248.91, currency: 'R$', discount: 17 },
+      { edition: 'Deluxe Edition', price: 297.41, currency: 'R$', discount: 15 },
+      { edition: 'Standard Edition', price: 349.9, currency: 'R$' },
+      { edition: 'Standard Edition', price: 299.9, currency: 'R$' },
     ],
   },
 
   UnitedStates: {
-    'November 2020': [
-      { price: 69.99, currency: '$', increase: 17 },
-    ],
-    'June 2013': [
-      { price: 59.99, currency: '$' },
-      { price: 19.99, currency: '$' },
+    'February 2025': [
+      { edition: 'Standard Edition', price: 49.79, currency: '$', discount: 17 },
+      { edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
   },
 };
