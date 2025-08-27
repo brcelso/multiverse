@@ -47,4 +47,12 @@ export const hogwartsLegacy = {
       { edition: 'PS4 Standard', price: 69.99, currency: '€' },
     ],
   },
+  UnitedKingdom: {
+    'August 2025': [
+      { edition: 'PS5 Standard', discount: 80, price: 12.99, currency: '£' },
+      { edition: 'PS4 Standard', discount: 80, price: 11.99, currency: '£' },
+      { edition: 'PS5 Standard', price: 64.99, currency: '£' },
+      { edition: 'PS4 Standard', price: 59.99, currency: '£' },
+    ],
+  },
 };
