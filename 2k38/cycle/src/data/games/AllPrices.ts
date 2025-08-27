@@ -3,6 +3,8 @@ export const allprices = {
 
   Brazil: {
     'July 2025': [
+      { edition: "PS5", price: 749.50, increase: 35, totalIncrease: 650, currency: 'R$', exchangeTax2: 5 },
+      { edition: "PS5", price: 569.90, increase: 14, totalIncrease: 470, currency: 'R$', exchangeTax2: 5.69 },
       { edition: "PS5", price: 499.50, increase: 11.5, totalIncrease: 400, currency: 'R$', exchangeTax2: 5 },
     ],
     'June 2025': [
@@ -32,6 +34,7 @@ export const allprices = {
   },
   Europe: {
   'July 2025': [
+    { edition: "PS5", price: 159.99, increase: 45, totalIncrease: 700, currency: '€' },
     { edition: "PS5", price: 109.99, increase: 10, totalIncrease: 450, currency: '€' },
     { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '€' },
     { edition: "PS5", price: 89.99, increase: 13, totalIncrease: 350, currency: '€' },
@@ -50,6 +53,7 @@ export const allprices = {
 },
   UnitedKingdom: {
   'July 2025': [
+    { edition: "PS5", price: 139.99, increase: 40, totalIncrease: 600, currency: '£' },
     { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '£' },
     { edition: "PS5", price: 89.99, increase: 13, totalIncrease: 350, currency: '£' },
   ],
@@ -68,6 +72,7 @@ export const allprices = {
 },
   UnitedStates: {
     'July 2025': [
+      { edition: "PS5", price: 149.99, increase: 50, totalIncrease: 650, currency: '$' },
       { edition: "PS5", price: 99.99, increase: 12, totalIncrease: 400, currency: '$' },
       { edition: "PS5", price: 89.99, increase: 13, totalIncrease: 350, currency: '$' },
     ],
