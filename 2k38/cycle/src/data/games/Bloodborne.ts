@@ -3,6 +3,7 @@ export const bloodborne = {
 
   Brazil: {
     'August 2025': [
+      { edition: 'Old Hunters', price: 57.45, discount: 50, currency: 'R$', exchangeTax: 5.74},
       { edition: 'Standard Edition', price: 57.45, discount: 50, currency: 'R$', exchangeTax: 5.74},
     ],
     'June 2025': [
@@ -19,6 +20,7 @@ export const bloodborne = {
 
   UnitedStates: {
       'August 2025': [
+        { edition: 'Old Hunters', price: 9.99, discount: 50, currency: '$' },
         { edition: 'Standard Edition', price: 9.99, discount: 50, currency: '$' },
         ],
         'June 2021': [
@@ -34,6 +36,7 @@ export const bloodborne = {
   },
     Europe: {
         'August 2025': [
+        { edition: 'Old Hunters', price: 9.99, discount: 50, currency: '€' },
         { edition: 'Standard Edition', price: 9.99, discount: 50, currency: '€' },
         ],
         'June 2021': [
@@ -49,6 +52,7 @@ export const bloodborne = {
     },
     UnitedKingdom: {
         'August 2025': [
+        { edition: 'Old Hunters', price: 7.99, discount: 50, currency: '£' },
         { edition: 'Standard Edition', price: 7.99, discount: 50, currency: '£' },
         ],
         'June 2021': [
