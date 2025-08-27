@@ -2,6 +2,9 @@ export const codbo6 = {
   launchDate: '2024-10-25',
 
   Brazil: {
+    'August 2025': [
+      { edition: 'Cross Gen Bundle', price: 38.49, discount: 45, currency: '£' },
+    ],
     'July 2025': [
       { edition: 'Cross-Gen', price: 186.45, discount: 45, currency: 'R$' },
     ],
@@ -21,6 +24,9 @@ export const codbo6 = {
   },
 
   UnitedStates: {
+    'August 2025': [
+      { edition: 'Cross Gen Bundle', price: 38.49, discount: 45, currency: '$' },
+    ],
     'June 2025': [
       { edition: 'Vault Edition', price: 64.99, discount: 35, currency: '$' },
     ],
@@ -38,6 +44,9 @@ export const codbo6 = {
   },
 
   Europe: {
+    'August 2025': [
+      { edition: 'Cross Gen Bundle', price: 43.99, discount: 45, currency: '€' },
+    ],
     'June 2025': [
       { edition: 'Vault Edition', price: 71.49, discount: 35, currency: '€' },
     ],
