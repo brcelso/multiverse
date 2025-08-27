@@ -1,4 +1,4 @@
-export const allprices {
+export const allprices = {
 launchDate: '2013-06-14',
 
   Brazil: {
