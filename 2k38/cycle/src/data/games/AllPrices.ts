@@ -3,7 +3,7 @@ export const allprices = {
 
   Brazil: {
     'October 2023': [
-      { edition: "PS5", price: 349.90, currency: 'R$', exchangeTax: 5 },
+      { edition: "PS5", price: 349.90, increase: 17, totalIncrease: 250, currency: 'R$', exchangeTax: 5 },
     ],
     'November 2022': [
       { edition: "PS4", price: 299.90, increase: 20, totalIncrease: 200, currency: 'R$', exchangeTax: 4.28 },
