@@ -46,15 +46,19 @@ export const finalFantasyVIIRebirth = {
   },
 
   UnitedKingdom: {
+    'August 2025': [
+      { edition: 'Twin Pack', price: 56.99, currency: '£', discount: 40 },
+      { edition: 'Deluxe Edition', price: 50.99, currency: '£', discount: 40 },
+    ],
+    'March 2025': [
+      { edition: 'Standard Edition', price: 48.99, currency: '£', discount: 30 },
+      { edition: 'Twin Pack', price: 66.49, currency: '£', discount: 30 },
+    ],
     'February 2024': [
       { edition: 'Deluxe Twin Pack', price: 109.99, currency: '£' },
       { edition: 'Twin Pack', price: 94.99, currency: '£' },
       { edition: 'Deluxe Edition', price: 84.99, currency: '£' },
       { edition: 'Standard Edition', price: 69.99, currency: '£' },
-    ],
-    'March 2025': [
-      { edition: 'Standard Edition', price: 48.99, currency: '£', discount: 30 },
-      { edition: 'Twin Pack', price: 66.49, currency: '£', discount: 30 },
     ],
   },
 };
