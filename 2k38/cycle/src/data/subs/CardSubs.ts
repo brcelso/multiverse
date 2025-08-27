@@ -48,7 +48,7 @@ export const deluxeOrPremium = {
         basePrice3: 17.99, exchangeTax3: 5.58,
         edition: "Deluxe 1 Month" }],
     'April 2025': [
-      { price: 691.90, increase: 28.4, currency: 'R$',
+      { price: 691.90, increase: 28.4, totalIncrease: 592, currency: 'R$',
         realPrice: 892.74, 
         basePrice: 159.99, exchangeTax: 4.32, 
         basePrice2: 107.19, exchangeTax2: 4.51,
@@ -75,7 +75,7 @@ export const deluxeOrPremium = {
       { price: 159.90, currency: 'R$', basePrice: 49.99, exchangeTax: 3.19, edition: "Deluxe" },
       { price: 59.90, currency: 'R$', basePrice: 17.99, exchangeTax: 3.32, edition: "Deluxe" }],
     'August 2023': [
-      { price: 538.90, increase: 38.3, currency: 'R$', basePrice: 159.99, exchangeTax: 3.36, edition: "Deluxe" },
+      { price: 538.90, increase: 38.3, totalIncrease: 440, currency: 'R$', basePrice: 159.99, exchangeTax: 3.36, edition: "Deluxe" },
       { price: 159.90, currency: 'R$', basePrice: 49.99, exchangeTax: 3.19, edition: "Deluxe" },
       { price: 59.90, currency: 'R$', basePrice: 17.99, exchangeTax: 3.32, edition: "Deluxe" }],
     'November 2022 Black Friday': [
@@ -83,17 +83,17 @@ export const deluxeOrPremium = {
       { price: 159.90, currency: 'R$', basePrice: 49.99, exchangeTax: 3.19, edition: "Deluxe" },
       { price: 59.90, currency: 'R$', basePrice: 17.99, exchangeTax: 3.32, edition: "Deluxe" }],
     'June 2022': [
-      { price: 389.90, increase: 95, currency: 'R$', basePrice: 119.99, exchangeTax: 3.24, edition: "Deluxe" },
+      { price: 389.90, increase: 95, totalIncrease: 290, currency: 'R$', basePrice: 119.99, exchangeTax: 3.24, edition: "Deluxe" },
       { price: 159.90, currency: 'R$', basePrice: 49.99, exchangeTax: 3.19, edition: "Deluxe" },
       { price: 59.90, currency: 'R$', basePrice: 17.99, exchangeTax: 3.32, edition: "Deluxe" }],
     'November 2021 Black Friday': [
       { price: 133.20, discount: 33, currency: 'R$', basePrice: 39.99, exchangeTax: 3.33, edition: "Deluxe" }],
     'July 2021': [
-      { price: 199.90, increase: 25, currency: 'R$', basePrice: 59.99, exchangeTax: 3.33, edition: "Deluxe" }],
+      { price: 199.90, increase: 25, totalIncrease: 100, currency: 'R$', basePrice: 59.99, exchangeTax: 3.33, edition: "Deluxe" }],
     'November 2019 Black Friday': [
       { price: 111.90, discount: 25, currency: 'R$', basePrice: 39.99, exchangeTax: 2.79, edition: "Deluxe" }],
     'August 2019': [
-      { price: 149.90, increase: 15, currency: 'R$', basePrice: 59.99, exchangeTax: 2.50, edition: "Deluxe" }],
+      { price: 149.90, increase: 15, totalIncrease: 50, currency: 'R$', basePrice: 59.99, exchangeTax: 2.50, edition: "Deluxe" }],
     'January 2019': [
       { price: 97.49, discount: 25, currency: 'R$', basePrice: 44.99, exchangeTax: 2.16, edition: "Deluxe" }],
     'September 2016': [
