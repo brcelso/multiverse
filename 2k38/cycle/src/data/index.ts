@@ -29,6 +29,7 @@ import { crashTrilogy } from './games/CrashTrilogy';
 import { cyberpunk } from './games/CyberPunk';
 import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
+import { donkeyKongBananza } from './games/DonkeyKongBananza';
 import { doomTheDarkAges } from './games/DoomTheDarkAges';
 import { elderScrollsOblivionRemastered } from './games/ElderScrollsOblivionRem';
 import { eldenRing } from './games/ElderRing';
@@ -138,6 +139,7 @@ export const games = {
   'Cyber Punk 2077': cyberpunk,
   'Death Stranding': deathStranding,
   'Death Stranding 2': deathStranding2OnTheBeach,
+  'Donkey Kong Bananza': donkeyKongBananza,
   'Doom The Dark Ages': doomTheDarkAges,
   'Elder Scrolls Oblivion Remastered': elderScrollsOblivionRemastered,
   'Elden Ring': eldenRing,
