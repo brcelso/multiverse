@@ -26,7 +26,7 @@ export const allprices = {
     ],
     'June 2013': [
       { edition: "PS3", price: 149.99, increase: 25, totalIncrease: 50, currency: 'R$', exchangeTax2: 2.5 },
-      { edition: "PS3", price: 119.99, increase: 20, currency: 'R$', exchangeTax2: 2 },
+      { edition: "PS3", price: 119.99, totalIncrease: 20, currency: 'R$', exchangeTax2: 2 },
       { edition: "PS3", price: 99.99, currency: 'R$', exchangeTax2: 5 },
     ],
   },
@@ -44,7 +44,7 @@ export const allprices = {
       { edition: "PS4", price: 59.99, currency: '$' },
     ],
     'June 2013': [
-      { edition: "PS3", price: 59.99, increase: 200, currency: '$' },
+      { edition: "PS3", price: 59.99, totalIncrease: 200, currency: '$' },
       { edition: "PS3", price: 19.99, currency: '$' },
     ],
   },
