@@ -8,7 +8,7 @@ export const lostSoulAside = {
     ],
     'June 2025': [
       { edition: "Deluxe Edition", price: 399.90, increase: 14.5, currency: 'R$', exchangeTax: 5.71 },
-      { edition: "Standard Edition", price: 339.90, increase: 13.5, currency: 'R$', exchangeTax: 6.79 },
+      { edition: "Standard Edition", price: 339.90, increase: 13.5, currency: 'R$', exchangeTax: 5.66 },
       { edition: 'Standard Edition', price: 215.93, discount: 28, currency: 'R$', exchangeTax: 4.85 },
     ],
     'May 2025': [
@@ -20,21 +20,21 @@ export const lostSoulAside = {
   UnitedStates: {
     'May 2025': [
       { edition: 'Deluxe Edition', price: 69.99, currency: '$' },
-      { edition: 'Standard Edition', price: 49.99, currency: '$' },
+      { edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
   },
 
   Europe: {
     'May 2025': [
       { edition: 'Deluxe Edition', price: 79.99, currency: '€' },
-      { edition: 'Standard Edition', price: 59.99, currency: '€' },
+      { edition: 'Standard Edition', price: 69.99, currency: '€' },
     ],
   },
 
   UnitedKingdom: {
     'May 2025': [
       { edition: 'Deluxe Edition', price: 69.99, currency: '£' },
-      { edition: 'Standard Edition', price: 49.99, currency: '£' },
+      { edition: 'Standard Edition', price: 59.99, currency: '£' },
     ],
   },
 };
