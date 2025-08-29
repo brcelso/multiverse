@@ -2,6 +2,10 @@ export const lostSoulAside = {
   launchDate: '2025-05-30',
 
   Brazil: {
+    'August 2025': [
+      { edition: 'Deluxe Edition', price: 349.9, discount: 12, currency: 'R$', exchangeTax: 4.99 },
+      { edition: 'Standard Edition', price: 299.9, discount: 12, currency: 'R$', exchangeTax: 4.99 },
+    ],
     'June 2025': [
       { edition: "Deluxe Edition", price: 399.90, increase: 14.5, currency: 'R$', exchangeTax: 5.71 },
       { edition: "Standard Edition", price: 339.90, increase: 13.5, currency: 'R$', exchangeTax: 6.79 },
