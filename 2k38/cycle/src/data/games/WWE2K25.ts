@@ -3,7 +3,7 @@ export const wwe2k25 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Deadman', price: 249.50, discount: 50, currency: 'R$', exchangeTax2: 5 },
+      { edition: 'Deadman', price: 249.95, discount: 50, currency: 'R$', exchangeTax2: 5 },
     ],
     'July 2025': [
       { edition: 'Bloodline', price: 389.94, discount: 40, currency: 'R$', exchangeTax2: 4.99 },
