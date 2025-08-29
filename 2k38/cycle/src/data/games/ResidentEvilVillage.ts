@@ -2,9 +2,12 @@ export const residentevilvillage = {
   launchDate: '2022-10-28',
 
   Brazil: {
+    'August 2025': [
+      { edition: 'Standard Edition', price: 46.12, discount: 75, currency: 'R$', exchangeTax: 5 },
+    ],
     'June 2025': [
       { edition: 'Gold Edition Bundle', price: 96.12, discount: 75, currency: 'R$', exchangeTax: 5 },
-      { edition: 'Gold Edition', price: 46.12, discount: 75, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Gold Edition', price: 57.37, discount: 75, currency: 'R$', exchangeTax: 5 },
       { edition: 'Standard Edition', price: 68.85, discount: 60, currency: 'R$', exchangeTax: 5 },
     ],
     'October 2022': [
