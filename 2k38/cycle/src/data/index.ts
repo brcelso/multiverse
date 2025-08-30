@@ -49,6 +49,8 @@ import { granTurismo7 } from './games/GT7';
 import { grandTheftAutoV } from './games/GTAV';
 import { gtavi } from './games/GrandTheftAutoVI';
 import { hogwartsLegacy } from './games/HogwartsLegacy';
+import { hollowknightsilksong } from './games/HollowKnightSilkSong';
+import { hollowknightvoidheartedition } from './games/HollowKnightVoidHeartEdition';
 import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { lostSoulAside } from './games/LostSoulAside';
@@ -160,6 +162,8 @@ export const games = {
   'Grand Theft Auto V': grandTheftAutoV,
   'Grand Theft Auto VI': gtavi,
   'Hogwarts Legacy': hogwartsLegacy,
+  'Hollow Knight Silksong': hollowknightsilksong;
+  'Hollow Knight Void Heart Edition': hollowknightvoidheartedition;
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
   'Lost Soul Aside': lostSoulAside,
