@@ -35,7 +35,7 @@ export const hollowknightvoidheartedition = {
   },
   UnitedStates: {
     'August 2025': [
-      { edition: "Voidheart Edition", price: 7.39, discount: 50, currency: '$' },
+      { edition: "Voidheart Edition", price: 7.49, discount: 50, currency: '$' },
     ],
     'September 2018': [
       { edition: "Voidheart Edition", price: 14.99, currency: '$' },
