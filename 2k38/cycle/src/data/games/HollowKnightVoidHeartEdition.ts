@@ -1,6 +1,9 @@
 export const hollowknightvoidheartedition = {
   launchDate: '2018-09-25',
   Brazil: {
+    'August 2025': [
+      { edition: "Voidheart Edition", price: 23.49, discount: 50, currency: 'R$', exchangeTax2: 4.27 },
+    ],
     'June 2025': [
       { edition: "Voidheart Edition", price: 85.50, increase: 36, totalIncrease: 87, currency: 'R$', exchangeTax2: 4.27 },
     ],
@@ -15,6 +18,9 @@ export const hollowknightvoidheartedition = {
     ],
   },
   Europe: {
+    'August 2025': [
+      { edition: "Voidheart Edition", price: 7.39, discount: 50, currency: '€' },
+    ],
     'September 2018': [
       { edition: "Voidheart Edition", price: 14.99, currency: '€' },
     ],
