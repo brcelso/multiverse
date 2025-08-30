@@ -20,4 +20,4 @@ export const hollowknightsilksong = {
       { edition: "Voidheart Edition", price: 14.99, currency: '$' },
     ],
   },
-}
+};
