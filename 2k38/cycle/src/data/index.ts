@@ -162,8 +162,8 @@ export const games = {
   'Grand Theft Auto V': grandTheftAutoV,
   'Grand Theft Auto VI': gtavi,
   'Hogwarts Legacy': hogwartsLegacy,
-  'Hollow Knight Silksong': hollowknightsilksong;
-  'Hollow Knight Void Heart Edition': hollowknightvoidheartedition;
+  'Hollow Knight Silksong': hollowknightsilksong,
+  'Hollow Knight Void Heart Edition': hollowknightvoidheartedition,
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
   'Lost Soul Aside': lostSoulAside,
