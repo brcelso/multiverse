@@ -7,12 +7,12 @@ export const hollowknightsilksong = {
   },
   Europe: {
     'September 2025': [
-      { edition: "Silksong", price: 29.99, currency: '€' },
+      { edition: "Silksong", price: 19.50, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'September 2025': [
-      { edition: "Silksong", price: 19.99, currency: '£' },
+      { edition: "Silksong", price: 16.75, currency: '£' },
     ],
   },
   UnitedStates: {
