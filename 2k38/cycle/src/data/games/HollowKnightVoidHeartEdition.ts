@@ -22,7 +22,7 @@ export const hollowknightvoidheartedition = {
       { edition: "Voidheart Edition", price: 7.39, discount: 50, currency: '€' },
     ],
     'September 2018': [
-      { edition: "Voidheart Edition", price: 14.99, currency: '€' },
+      { edition: "Voidheart Edition", price: 14.49, currency: '€' },
     ],
   },
   UnitedKingdom: {
@@ -30,7 +30,7 @@ export const hollowknightvoidheartedition = {
       { edition: "Voidheart Edition", price: 6.39, discount: 50, currency: '£' , basePrice: 12.79},
     ],
     'September 2018': [
-      { edition: "Voidheart Edition", price: 11.99, currency: '£' },
+      { edition: "Voidheart Edition", price: 11.59, currency: '£' },
     ],
   },
   UnitedStates: {
