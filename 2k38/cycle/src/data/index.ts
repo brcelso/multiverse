@@ -6,6 +6,7 @@ import { gtaplus } from './subs/GTA+';
 import { ubisoftplus } from './subs/Ubisoft+';
 import { appletv } from './subs/AppleTV';
 import { movies } from './subs/Movies';
+import { disney } from './games/Disney+';
 
 //games
 import { allprices } from './games/AllPrices';
@@ -116,7 +117,8 @@ export const subs = {
   'GTA+': gtaplus,
   'Ubisoft+': ubisoftplus,
   'Apple TV+': appletv,
-  'Movies': movies
+  'Movies': movies,
+  'Disney+': disney
 } as const;
 
 //games
