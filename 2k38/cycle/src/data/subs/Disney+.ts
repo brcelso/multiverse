@@ -1,39 +1,90 @@
-Disney+
-
-# Premium
-
-[Brazil] 
-R$19,90 March 2025 [-68,5%] 4 months discount
-R$527,90 February 2025 - June 2024 [-30%] [R$43,99] [R$62,90] [R$754,80] (annual discount = -30%)
-R$559,90 December 2023 [R$55,90] [R$559,90] [R$670,80]
-R$333,90 May 2023 [R$27,82] [R$33,90] [R$406,80]
-R$279,90 2022 [R$27,90]
-R$279,90 November 2020 [R$23,32] [R$27,90]
-R$237,90 November 2020 [R$19,82] [R$23,79]
-
-[UnitedStates] 
-$159.99 June 2024 [$13.33] [$15.99] [$191.88]
-$139.99 October 2023 [$11.66] [$13.99] [$167.88]
-$109,99 September 2022 [$9.16] [$10.99] [$131.88]
-$79.99 March 2021 [$6.66] [$7.99] [$95.88]
-$69.99 November 2020 [$83.88]
-$69.99 November 2019 [$5.83] [$6.99] 
-
-# Standard Ads Free 
-
-[Brazil]
-R$14,90 March 2025 [-68,5%] 4 months discount
-R$368,90 June 2024 [-30%] [R$30,74] [R$43,90] [R$526,80] (annual discount = -30%)
-
-# Standard w/ Ads
-
-[Brazil]
-R$9,90 March 2025 [-68,5%] 4 months discount
-R$27,99 March 2025 [monthly]
-
-[UnitedStates]
-
-$9.99 monthly October 2024 
-$7.99 monthly 2022 New Plan
-
+export const disney = {
+  launchDate: '2019-11-12',
+  Brazil: {
+    'March 2025': [
+      { price: 14.90, discount: 68.5, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Standard Ads Free Monthly 4 months" },
+      { price: 9.90, discount: 68.5, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Standard w/Ads Monthly 4 months" },
+      { price: 19.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly 4 months" },
+      { price: 27.99, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Standard w/Ads Monthly" },
+      ],
+    'June 2024': [
+      { price: 368.90, discount: 30, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Standard Ads Free Yearly" },
+      { price: 527.90, discount: 30, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Yearly" },
+      { price: 629.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Yearly" },
+      { price: 62.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly" },
+      ],
+    'May 2023': [
+      { price: 670.80, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Yearly" },
+      { price: 55.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly" },
+      ],
+    'April 2023': [
+      { price: 459.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Yearly" },
+      { price: 333.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Premium Yearly" },
+      { price: 45.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly" },
+      { price: 33.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly" },
+      ],
+    'November 2020': [
+      { price: 279.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Premium Yearly" },
+      { price: 237.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Premium Yearly" },
+      { price: 27.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+        edition: "Combo+ Monthly" },
+      ],
+      },
+  UnitedStates: {
+    'October 2024': [
+      { price: 7.99, currency: '$', 
+        edition: "Standard w/Ads Monthly" },
+      ],
+    'June 2024': [
+      { price: 159.99, currency: '$', 
+        edition: "Premium Yearly" },
+      { price: 15.99, currency: '$', 
+        edition: "Premium Monthly" },
+      { price: 7.99, currency: '$', 
+        edition: "Standard w/Ads Monthly" },
+      ],
+    'October 2023': [
+      { price: 139.99, currency: '$', 
+        edition: "Premium Yearly" },
+      { price: 13.99, currency: '$', 
+        edition: "Premium Monthly" },
+      ],
+    'September 2022': [
+      { price: 109.99, currency: '$', 
+        edition: "Premium Yearly" },
+      { price: 10.99, currency: '$', 
+        edition: "Premium Monthly" },
+      { price: 7.99, currency: '$', 
+        edition: "Standard w/Ads Monthly" },
+      ],
+    'March 2021': [
+      { price: 79.99, currency: '$', 
+        edition: "Premium Yearly" },
+      { price: 7.99, currency: '$', 
+        edition: "Premium Monthly" },
+      ],
+    'November 2019': [
+      { price: 69.99, currency: '$', 
+        edition: "Premium Yearly" },
+      { price: 6.99, currency: '$', 
+        edition: "Premium Monthly" },
+      ],
+      },
+    }
 
