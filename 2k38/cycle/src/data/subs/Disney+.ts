@@ -86,5 +86,5 @@ export const disney = {
         edition: "Premium Monthly" },
       ],
       },
-    }
+    };
 
