@@ -2,7 +2,7 @@ export const disney = {
   launchDate: '2019-11-12',
   Brazil: {
     'June 2025': [
-      { price: 66.90, currency: 'R$', exchangeTax: 2.79, exchangeTax2: 5.5, realPrice: 137.44,
+      { price: 66.90, currency: 'R$', exchangeTax: 4.18,
         edition: "Combo+ Monthly" },
       { price: 46.90, currency: 'R$', 
         edition: "Standard Ads Free Monthly" },
