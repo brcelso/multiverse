@@ -26,13 +26,13 @@ export const youtube = {
       },
   UnitedStates: {
     'July 2023': [
-      { price: 13.99, currency: '$', 
+      { price: 13.99, increase: 17, totalIncrease: 40, currency: '$', 
         edition: "Standard Monthly" },
-      { price: 7.99, currency: '$', 
+      { price: 7.99, increase: 14.5, currency: '$', 
         edition: "Student Monthly" },
       ],
     'October 2022': [
-      { price: 22.99, currency: '$', 
+      { price: 22.99, increase: 28, totalIncrease: 54, currency: '$', 
         edition: "Familiar Monthly" },
       ],
     'November 2018': [
@@ -40,11 +40,11 @@ export const youtube = {
         edition: "Student Monthly" },
       ],
     'June 2018': [
-      { price: 17.99, currency: '$', 
+      { price: 17.99, increase: 20, currency: '$', 
         edition: "Familiar Monthly" },
       { price: 14.99, currency: '$', 
         edition: "Familiar Monthly" },
-      { price: 11.99, currency: '$', 
+      { price: 11.99, increase: 20, currency: '$', 
         edition: "Standard Monthly" },
       { price: 9.99, currency: '$', 
         edition: "Standard Monthly" },
