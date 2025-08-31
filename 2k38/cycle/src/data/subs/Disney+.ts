@@ -2,7 +2,7 @@ export const disney = {
   launchDate: '2019-11-12',
   Brazil: {
     'June 2025': [
-      { price: 66.90, currency: 'R$', exchangeTax: 4.18,
+      { price: 66.90, increase: 6.5, totalIncrease: 140, currency: 'R$', exchangeTax: 4.18,
         edition: "Combo+ Monthly" },
       { price: 46.90, currency: 'R$', 
         edition: "Standard Ads Free Monthly" },
@@ -24,13 +24,13 @@ export const disney = {
         edition: "Combo+ Yearly" },
       { price: 629.90, currency: 'R$', exchangeTax: 4.40, 
         edition: "Combo+ Yearly" },
-      { price: 62.90, currency: 'R$', exchangeTax: 4.49, 
+      { price: 62.90, increase: 13, totalIncrease: 126, currency: 'R$', exchangeTax: 4.49, 
         edition: "Combo+ Monthly" },
       ],
     'May 2023': [
       { price: 550.90, currency: 'R$', exchangeTax: 5.08, 
         edition: "Combo+ Yearly" },
-      { price: 55.90, currency: 'R$', exchangeTax: 5.08,
+      { price: 55.90, increase: 22, totalIncrease: 100, currency: 'R$', exchangeTax: 5.08,
         edition: "Combo+ Monthly" },
       ],
     'April 2023': [
@@ -38,9 +38,9 @@ export const disney = {
         edition: "Combo+ Yearly" },
       { price: 333.90, currency: 'R$', exchangeTax: 3.08,
         edition: "Premium Yearly" },
-      { price: 45.90, currency: 'R$', exchangeTax: 4.17,
+      { price: 45.90, increase: 33, totalIncrease: 65, currency: 'R$', exchangeTax: 4.17,
         edition: "Combo+ Monthly" },
-      { price: 33.90, currency: 'R$', exchangeTax: 3.08,
+      { price: 33.90, increase: 22, currency: 'R$', exchangeTax: 3.08,
         edition: "Premium Monthly" },
       ],
     'November 2020': [
