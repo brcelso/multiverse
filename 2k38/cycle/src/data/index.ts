@@ -6,7 +6,7 @@ import { gtaplus } from './subs/GTA+';
 import { ubisoftplus } from './subs/Ubisoft+';
 import { appletv } from './subs/AppleTV';
 import { movies } from './subs/Movies';
-import { disney } from './games/Disney+';
+import { disney } from './subs/Disney+';
 
 //games
 import { allprices } from './games/AllPrices';
