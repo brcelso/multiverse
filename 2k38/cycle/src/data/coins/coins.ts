@@ -1,6 +1,5 @@
 export const coin = {
   launchDate: '1994-01-07',
-
   Europe: {
     'June 2025': [
       { edition: 'Euro', increase: 25, price: 7.87, currency: 'R$' }, 
@@ -27,22 +26,28 @@ export const coin = {
   },
   UnitedKingdom: {
     'June 2025': [
-      { edition: 'Libra', increase: 35.5, price: 7.50, currency: 'R$' },
+      { edition: 'Pound', increase: 35.5, price: 7.50, currency: 'R$' },
     ],
     'September 2022': [
-      { edition: 'Libra', increase: 21, price: 5.54, currency: 'R$' },
+      { edition: 'Pound', increase: 21, price: 5.54, currency: 'R$' },
     ],
     'July 2019': [
-      { edition: 'Libra', increase: 21, price: 4.58, currency: 'R$' },
+      { edition: 'Pound', increase: 21, price: 4.58, currency: 'R$' },
     ],
     'March 2017': [
-      { edition: 'Libra', increase: 53.5, price: 3.79, currency: 'R$' },
+      { edition: 'Pound', increase: 53.5, price: 3.79, currency: 'R$' },
     ],
     'July 2011': [
-      { edition: 'Libra', increase: 40, price: 2.47, currency: 'R$' },
+      { edition: 'Pound', increase: 40, price: 2.47, currency: 'R$' },
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Dolar', totalIncrease: 137900, price: 1379, currency: 'ARS' },
+    ],
+    'August 2025': [
+      { edition: 'Dolar', discount: 14.5, price: 5.39, currency: 'R$' },
+    ],
     'June 2025': [
       { edition: 'Dolar', increase: 25, price: 6.82, currency: 'R$' },
       { edition: 'Dolar', discount: 14, price: 5.41, currency: 'R$' },
