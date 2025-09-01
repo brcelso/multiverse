@@ -9,10 +9,10 @@ export const theLastOfUs = {
       { edition: 'Remastered PS4', price: 99.50, discount: 45, currency: 'R$' },
     ],
     'July 2014': [
-      { edition: 'Remastered PS4', price: 179.90, currency: 'R$', exchangeTax: 3.59 },
+      { edition: 'Remastered PS4', price: 179.90, currency: 'R$', exchangeTax2: 3.59 },
     ],
     'June 2013': [
-      { edition: 'Physical Media', price: 149.90, currency: 'R$', exchangeTax: 2.49},
+      { edition: 'Physical Media', price: 149.90, currency: 'R$', exchangeTax2: 2.49},
       { edition: 'Digital Edition', price: 119.90, currency: 'R$', exchangeTax2: 2.00 },
     ],
   },
