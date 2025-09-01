@@ -3,7 +3,7 @@ export const theLastOfUs = {
 
   Brazil: {
     'November 2024': [
-      { edition: 'Remastered PS4', price: 23.97, discount: 76, totalDiscount: 87, currency: '$', exchangeTax2: 2.39 },
+      { edition: 'Remastered PS4', price: 23.97, discount: 76, totalDiscount: 87, currency: 'R$', exchangeTax2: 2.39 },
     ],
     'November 2015': [
       { edition: 'Remastered PS4', price: 99.50, discount: 45, currency: 'R$' },
