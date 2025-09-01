@@ -16,17 +16,17 @@ Argentina: {
     { edition: 'Trendline 200TSI AT', price: 32.035.500, currency: '$' },
     { edition: '170 TSI MT', price: 30.179.700, currency: '$' },
   ],
-  'January 2022': [
-    { edition: 'HighLine Hero 200TSI AT', price: 4.708.250, currency: '$' },
-    { edition: 'HighLine 200TSI AT', price: 4.635.250, currency: '$' },
-    { edition: 'ComfortLine 200TSI AT', price: 3.360.700, currency: '$' },
-    { edition: '170 TSI MT', price: 3.149.744, currency: '$' },
-  ],
-  'November 2020': [
-    { edition: 'HighLine Pack Hero 200TSI AT', price: 2.065.500, currency: '$' },
-    { edition: 'HighLine 200TSI AT', price: 2.065.500, currency: '$' },
-    { edition: 'ComfortLine 200TSI AT', price: 1.804.650, currency: '$' },
-  ],
+'January 2022': [
+  { edition: 'HighLine Hero 200TSI AT', price: 4.708.250, increase: 128.0, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 4.635.250, increase: 124.4, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 3.360.700, increase: 86.2, currency: '$' },
+  { edition: '170 TSI MT', price: 3.149.744, currency: '$' },
+],
+'November 2020': [
+  { edition: 'HighLine Pack Hero 200TSI AT', price: 2.065.500, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 2.065.500, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 1.804.650, currency: '$' },
+],
 },
   Brazil: {
     'August 2025': [
