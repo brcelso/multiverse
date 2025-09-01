@@ -2,6 +2,14 @@ export const ns2 = {
   launchDate: '2025-06-05',
 
   Brazil: {
+    'September 2025': [
+      {
+        edition: 'NS2 Mario Kart Bundle',
+        price: 4099,
+        currency: 'R$',
+        discount: 14.5,
+      },
+    ],
     'June 2025': [
       {
         edition: 'NS2 Standard',
