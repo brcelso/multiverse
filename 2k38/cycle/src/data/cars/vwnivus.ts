@@ -1,5 +1,14 @@
 export const vwNivus = {
   launchDate: '2020-06-25',
+  Argentina: {
+    'July 2025': [
+  { edition: 'Outfit 200TSI', price: 40.488.540, increase: 8.2, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 39.579.200, increase: 8.1, totalIncrease: 1816, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 36.655.200, increase: 8.1, totalIncrease: 1931, currency: '$' },
+  { edition: 'Trendline 200TSI AT', price: 34.646.000, increase: 8.1, currency: '$' },
+  { edition: '170 TSI MT', price: 32.639.100, increase: 8.1, currency: '$' },
+    ],
+  },
   Brazil: {
     'August 2025': [
       { edition: 'ComfortLine 2025/2026', price: 131900, discount: 8, currency: 'R$', basePrice: 143490 },
