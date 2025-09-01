@@ -22,7 +22,7 @@ export const vwNivus = {
   { edition: '170 TSI MT', price: 3.149.744, currency: '$' },
 ],
 'November 2020': [
-  { edition: 'HighLine Pack Hero 200TSI AT', price: 2.065.500, currency: '$' },
+  { edition: 'HighLine Hero 200TSI AT', price: 2.065.500, currency: '$' },
   { edition: 'HighLine 200TSI AT', price: 2.065.500, currency: '$' },
   { edition: 'ComfortLine 200TSI AT', price: 1.804.650, currency: '$' },
 ],
