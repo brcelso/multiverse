@@ -8,6 +8,24 @@ export const vwNivus = {
   { edition: 'Trendline 200TSI AT', price: 34646.000, increase: 8.1, currency: '$' },
   { edition: '170 TSI MT', price: 32639.100, increase: 8.1, currency: '$' },
     ],
+  'February 2025': [
+  { edition: 'Outfit 200TSI', price: 37431.300, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 36596.900, increase: 690, totalIncrease: 1671, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 33893.300, increase: 908, totalIncrease: 1777, currency: '$' },
+  { edition: 'Trendline 200TSI AT', price: 32035.500, currency: '$' },
+  { edition: '170 TSI MT', price: 30179.700, increase: 859, currency: '$' },
+    ],
+  'January 2022': [
+  { edition: 'HighLine Hero 200TSI AT', price: 4708.250, increase: 128.0, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 4635.250, increase: 124.4, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 3360.700, increase: 86.2, currency: '$' },
+  { edition: '170 TSI MT', price: 3149.744, currency: '$' },
+  ],
+  'November 2020': [
+  { edition: 'HighLine Hero 200TSI AT', price: 2065.500, currency: '$' },
+  { edition: 'HighLine 200TSI AT', price: 2065.500, currency: '$' },
+  { edition: 'ComfortLine 200TSI AT', price: 1804.650, currency: '$' },
+    ],
   },
   Brazil: {
     'August 2025': [
