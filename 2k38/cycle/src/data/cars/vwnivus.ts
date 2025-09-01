@@ -1,32 +1,5 @@
 export const vwNivus = {
   launchDate: '2020-06-25',
-  Argentina: {
-'July 2025': [
-  { edition: 'Outfit 200TSI', price: 40.488.540, increase: 8.2, currency: '$' },
-  { edition: 'HighLine 200TSI AT', price: 39.579.200, increase: 8.1, totalIncrease: 1816, currency: '$' },
-  { edition: 'ComfortLine 200TSI AT', price: 36.655.200, increase: 8.1, totalIncrease: 1931, currency: '$' },
-  { edition: 'Trendline 200TSI AT', price: 34.646.000, increase: 8.1, currency: '$' },
-  { edition: '170 TSI MT', price: 32.639.100, increase: 8.1, currency: '$' },
-],
-'February 2025': [
-  { edition: 'Outfit 200TSI', price: 37.431.300, currency: '$' },
-  { edition: 'HighLine 200TSI AT', price: 36.596.900, increase: 690, totalIncrease: 1671, currency: '$' },
-  { edition: 'ComfortLine 200TSI AT', price: 33.893.300, increase: 908, totalIncrease: 1777, currency: '$' },
-  { edition: 'Trendline 200TSI AT', price: 32.035.500, currency: '$' },
-  { edition: '170 TSI MT', price: 30.179.700, increase: 859, currency: '$' },
-],
-'January 2022': [
-  { edition: 'HighLine Hero 200TSI AT', price: 4.708.250, increase: 128.0, currency: '$' },
-  { edition: 'HighLine 200TSI AT', price: 4.635.250, increase: 124.4, currency: '$' },
-  { edition: 'ComfortLine 200TSI AT', price: 3.360.700, increase: 86.2, currency: '$' },
-  { edition: '170 TSI MT', price: 3.149.744, currency: '$' },
-],
-'November 2020': [
-  { edition: 'HighLine Hero 200TSI AT', price: 2.065.500, currency: '$' },
-  { edition: 'HighLine 200TSI AT', price: 2.065.500, currency: '$' },
-  { edition: 'ComfortLine 200TSI AT', price: 1.804.650, currency: '$' },
-],
-},
   Brazil: {
     'August 2025': [
       { edition: 'ComfortLine 2025/2026', price: 131900, discount: 8, currency: 'R$', basePrice: 143490 },
