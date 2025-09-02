@@ -4,7 +4,8 @@ export const netflix = {
     'January 2025': [
       { price: 59.90, increase: 7.1, totalIncrease: 300, currency: 'R$', edition: "Premium Monthly" },
       { price: 44.90, increase: 12.5, totalIncrease: 60, currency: 'R$', edition: "Standard Monthly" },
-      { price: 20.90, increase: 10.5, totalIncrease: 10, currency: 'R$', edition: "Standard w/Ads Monthly" },
+      { price: 20.90, increase: 10.5, totalIncrease: 10, currency: 'R$', 
+        edition: "Standard w/Ads Monthly", exchangeTax2: 2.61 },
     ],
     'July 2021': [
       { price: 55.90, increase: 22, currency: 'R$', edition: "Premium Monthly" },
@@ -13,19 +14,19 @@ export const netflix = {
     ],
     'March 2019': [
       { price: 45.90, increase: 21, currency: 'R$', edition: "Premium Monthly" },
-      { price: 32.90, increase: 18, currency: 'R$', edition: "Standard Monthly" },
+      { price: 32.90, increase: 18, currency: 'R$', edition: "Standard Monthly", exchangeTax2: 2.53},
       { price: 21.90, increase: 10, currency: 'R$', edition: "Basic Monthly" },
     ],
     'July 2018': [
       { price: 37.90, increase: 124, currency: 'R$', edition: "Premium Monthly [Ultra]" },
-      { price: 27.90, increase: 40, currency: 'R$', edition: "Standard Monthly" },
-      { price: 19.90, increase: 18, currency: 'R$', edition: "Basic Monthly" },
+      { price: 27.90, currency: 'R$', edition: "Standard Monthly" },
+      { price: 19.90, currency: 'R$', edition: "Basic Monthly" },
     ],
     'August 2013': [
-      { price: 16.90, increase: 13, currency: 'R$', edition: "Premium Monthly" },
+      { price: 16.90, increase: 13, currency: 'R$', edition: "Premium Monthly", exchangeTax2: 2.11},
     ],
     'September 2011': [
-      { price: 14.99, currency: 'R$', edition: "Premium Monthly" },
+      { price: 14.99, currency: 'R$', edition: "Premium Monthly", exchangeTax2: 1.87 },
     ],
   },
   UnitedStates: {
@@ -35,7 +36,7 @@ export const netflix = {
       { price: 7.99, increase: 14.3, totalIncrease: 0, currency: '$', edition: "Standard w/Ads Monthly" },
     ],
     'October 2023': [
-      { price: 22.99, increase: 76.9, currency: '$', edition: "Premium Monthly" },
+      { price: 22.99, totalIncrease: 76.9, currency: '$', edition: "Premium Monthly" },
       { price: 15.99, increase: 60, currency: '$', edition: "Standard Monthly" },
       { price: 6.99, currency: '$', edition: "Standard w/Ads Monthly" },
     ],
@@ -48,42 +49,42 @@ export const netflix = {
   },
   Europe: {
     'October 2023': [
-      { price: 19.99, increase: 186, currency: '€', edition: "Premium Monthly" },
+      { price: 19.99, totalIncrease: 186, currency: '€', edition: "Premium Monthly" },
       { price: 5.99, currency: '€', edition: "Standard w/Ads Monthly" },
     ],
     'January 2012': [
       { price: 6.99, currency: '€', edition: "Premium Monthly" },
     ],
   },
-  UK: {
+  UnitedKingdom: {
     'February 2025': [
       { price: 18.99, increase: 5.5, totalIncrease: 217, currency: '£', edition: "Premium Monthly" },
       { price: 12.99, increase: 18.2, totalIncrease: 62, currency: '£', edition: "Standard Monthly" },
-      { price: 5.99, increase: 20, totalIncrease: 0, currency: '£', edition: "Standard w/Ads Monthly" },
+      { price: 5.99, increase: 20, currency: '£', edition: "Standard w/Ads Monthly" },
     ],
     'October 2023': [
-      { price: 17.99, increase: 28.6, currency: '£', edition: "Premium Monthly" },
-      { price: 10.99, increase: 10, currency: '£', edition: "Standard Monthly" },
+      { price: 17.99, increase: 28.6, totalIncrease: 200, currency: '£', edition: "Premium Monthly" },
+      { price: 10.99, increase: 10, totalIncrease: 38, currency: '£', edition: "Standard Monthly" },
       { price: 4.99, currency: '£', edition: "Standard w/Ads Monthly" },
     ],
     '2021': [
-      { price: 13.99, increase: 16.7, currency: '£', edition: "Premium Monthly" },
-      { price: 9.99, increase: 11.1, currency: '£', edition: "Standard Monthly" },
+      { price: 13.99, increase: 16.7, totalIncrease: 134, currency: '£', edition: "Premium Monthly" },
+      { price: 9.99, increase: 11.1, totalIncrease: 25, currency: '£', edition: "Standard Monthly" },
       { price: 5.99, currency: '£', edition: "Basic Monthly" },
     ],
     '2019': [
-      { price: 11.99, increase: 20, currency: '£', edition: "Premium Monthly" },
+      { price: 11.99, increase: 20, totalIncrease: 100, currency: '£', edition: "Premium Monthly" },
       { price: 8.99, increase: 12.5, currency: '£', edition: "Standard Monthly" },
     ],
     '2017': [
-      { price: 9.99, increase: 33.6, currency: '£', edition: "Premium Monthly" },
-      { price: 7.99, increase: 14.3, currency: '£', edition: "Standard Monthly" },
+      { price: 9.99, increase: 33.6, totalIncrease: 67, currency: '£', edition: "Premium Monthly" },
+      { price: 7.99, currency: '£', edition: "Standard Monthly" },
     ],
     '2016': [
-      { price: 7.49, increase: 7.1, currency: '£', edition: "Premium Monthly" },
+      { price: 7.49, increase: 7.1, totalIncrease: 25, currency: '£', edition: "Premium Monthly" },
     ],
     '2014': [
-      { price: 6.99, currency: '£', edition: "Premium Monthly" },
+      { price: 6.99, increase: 17, currency: '£', edition: "Premium Monthly" },
     ],
     'January 2012': [
       { price: 5.99, currency: '£', edition: "Premium Monthly" },
