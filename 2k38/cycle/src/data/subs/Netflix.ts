@@ -2,8 +2,10 @@ export const netflix = {
   launchDate: '2011-09-05',
   Brazil: {
     'January 2025': [
-      { price: 59.90, increase: 7.1, totalIncrease: 300, currency: 'R$', edition: "Premium Monthly" },
-      { price: 44.90, increase: 12.5, totalIncrease: 60, currency: 'R$', edition: "Standard Monthly" },
+      { price: 59.90, increase: 7.1, totalIncrease: 300, currency: 'R$', 
+        edition: "Premium Monthly", exchangeTax2: 2.39 },
+      { price: 44.90, increase: 12.5, totalIncrease: 60, currency: 'R$', 
+        edition: "Standard Monthly", exchangeTax2: 2.49 },
       { price: 20.90, increase: 10.5, totalIncrease: 10, currency: 'R$', 
         edition: "Standard w/Ads Monthly", exchangeTax2: 2.61 },
     ],
