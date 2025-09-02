@@ -35,7 +35,7 @@ export const netflix = {
     'January 2025': [
       { price: 24.99, increase: 8.7, totalIncrease: 213, currency: '$', edition: "Premium Monthly" },
       { price: 17.99, increase: 12.5, totalIncrease: 150, currency: '$', edition: "Standard Monthly" },
-      { price: 7.99, increase: 14.3, totalIncrease: 0, currency: '$', edition: "Standard w/Ads Monthly" },
+      { price: 7.99, increase: 14.3, currency: '$', edition: "Standard w/Ads Monthly" },
     ],
     'October 2023': [
       { price: 22.99, totalIncrease: 76.9, currency: '$', edition: "Premium Monthly" },
