@@ -133,17 +133,17 @@ export const deluxeOrPremium = {
       { price: 49.99, currency: '€', edition: "Premium" },
       { price: 16.99, currency: '€', edition: "Premium" }],
     'August 2023': [
-      { price: 151.99, increase: 26.5, currency: '€', edition: "Premium" },
+      { price: 151.99, increase: 26.5, totalIncrease: 204, currency: '€', edition: "Premium" },
       { price: 49.99, currency: '€', edition: "Premium" },
       { price: 16.99, currency: '€', edition: "Premium" }],
     'June 2022': [
-      { price: 119.99, increase: 100, currency: '€', edition: "Premium" },
+      { price: 119.99, increase: 100, totalIncrease: 140, currency: '€', edition: "Premium" },
       { price: 49.99, currency: '€', edition: "Premium" },
       { price: 16.99, currency: '€', edition: "Premium" }],
     'November 2021 Black Friday': [
       { price: 40.19, discount: 33, currency: '€', edition: "Premium" }],
     'September 2016': [
-      { price: 59.99, increase:20, currency: '€', edition: "Premium" }],
+      { price: 59.99, increase: 20, currency: '€', edition: "Premium" }],
     'June 2010': [
       { price: 49.99, currency: '€', edition: "Premium" }]
   },
@@ -176,7 +176,7 @@ export const deluxeOrPremium = {
       { price: 39.99, currency: '£', edition: "Premium" },
       { price: 13.49, currency: '£', edition: "Premium" }],
     'August 2023': [
-      { price: 119.99, increase: 20, currency: '£', edition: "Premium" },
+      { price: 119.99, increase: 20, totalIncrease: 200, currency: '£', edition: "Premium" },
       { price: 39.99, currency: '£', edition: "Premium" },
       { price: 13.49, currency: '£', edition: "Premium" }],
     'November 2022 Black Friday': [
@@ -184,7 +184,7 @@ export const deluxeOrPremium = {
       { price: 39.99, currency: '£', edition: "Premium" },
       { price: 13.49, currency: '£', edition: "Premium" }],
     'June 2022': [
-      { price: 99.99, currency: '£', edition: "Premium" },
+      { price: 99.99, increase: 100, totalIncrease: 150, currency: '£', edition: "Premium" },
       { price: 39.99, currency: '£', edition: "Premium" },
       { price: 13.49, currency: '£', edition: "Premium" }],
     '2017': [
