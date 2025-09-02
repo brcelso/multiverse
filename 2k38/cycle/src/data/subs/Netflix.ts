@@ -6,7 +6,7 @@ export const netflix = {
         edition: "Premium Monthly", exchangeTax2: 2.39 },
       { price: 44.90, increase: 12.5, totalIncrease: 60, currency: 'R$', 
         edition: "Standard Monthly", exchangeTax2: 2.49 },
-      { price: 20.90, increase: 10.5, totalIncrease: 10, currency: 'R$', 
+      { price: 20.90, increase: 10.5, currency: 'R$', 
         edition: "Standard w/Ads Monthly", exchangeTax2: 2.61 },
     ],
     'July 2021': [
