@@ -8,6 +8,7 @@ import { appletv } from './subs/AppleTV';
 import { movies } from './subs/Movies';
 import { disney } from './subs/Disney+';
 import { youtube } from './subs/Youtube';
+import { netflix } from './subs/Netflix';
 
 //games
 import { allprices } from './games/AllPrices';
@@ -120,7 +121,8 @@ export const subs = {
   'Apple TV+': appletv,
   'Movies': movies,
   'Disney+': disney,
-  'Youtube Premium': youtube
+  'Youtube Premium': youtube,
+  'Netflix': netflix
 } as const;
 
 //games
