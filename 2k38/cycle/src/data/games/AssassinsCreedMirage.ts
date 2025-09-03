@@ -10,7 +10,7 @@ export const assassinsCreedMirage = {
     ],
     'May 2023': [
       { edition: 'Master Assassin Edition', price: 429.90, currency: 'R$', exchangeTax: 4.77 },
-      { edition: 'Bundle Edition', price: 469.90, currency: 'R$' },
+      { edition: 'Bundle Edition', price: 429.90, currency: 'R$' },
       { edition: 'Deluxe Edition', price: 299.90, currency: 'R$', exchangeTax: 4.79 },
       { edition: 'Standard Edition', price: 239.90, currency: 'R$', exchangeTax: 4.79 },
     ],
