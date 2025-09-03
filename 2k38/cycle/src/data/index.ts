@@ -11,6 +11,7 @@ import { youtube } from './subs/Youtube';
 import { netflix } from './subs/Netflix';
 
 //games
+import { firstlight } from './games/007FirstLight';
 import { allprices } from './games/AllPrices';
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
 import { assassinsCreedValhalla } from './games/AssassinsCreedValhalla';
@@ -127,6 +128,7 @@ export const subs = {
 
 //games
 export const games = {
+  '007 First Light': firstlight,
   'All Prices': allprices,
   'Assassins Creed Shadows': assassinsCreedShadows,
   'Assassins Creed Valhalla': assassinsCreedValhalla,
