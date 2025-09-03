@@ -37,10 +37,6 @@ Europe: {
     ],
   },
   UnitedStates: {
-    'September 2025': [
-      { edition: 'MVP Bundle', price: 119.99, discount: 20, currency: '$' },
-      { edition: 'Deluxe', price: 74.99, discount: 25, currency: '$' },
-    ],
     'July 2025': [
       { edition: 'MVP Bundle', price: 149.99, currency: '$' },
       { edition: 'Deluxe', price: 99.99, currency: '$' },
