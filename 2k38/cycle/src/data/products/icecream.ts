@@ -2,6 +2,15 @@ export const icecream = {
   launchDate: '2016-06-30',
 
   Brazil: {
+    'September 2025': [
+      {
+        edition: 'Casquinha McDonalds',
+        price: 4.90,
+        increase: 63,
+        totalIncrease: 390,
+        currency: 'R$'
+      },
+    ],
     'June 2025': [
       {
         edition: 'Casquinha McDonalds',
@@ -13,6 +22,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 6,
         increase: 20,
+        totalIncrease: 500,
         currency: 'R$'
       },
     ],
@@ -21,6 +31,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 5,
         increase: 43,
+        totalIncrease: 400,,
         currency: 'R$'
       },
     ],
@@ -29,6 +40,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 3.50,
         increase: 133,
+        totalIncrease: 250,
         currency: 'R$'
       },
     ],
