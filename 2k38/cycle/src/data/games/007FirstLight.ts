@@ -1,4 +1,4 @@
-export const 007firstlight = {
+export const firstlight = {
   launchDate: '2026-03-26',
   Brazil: {
     'March 2026': [
