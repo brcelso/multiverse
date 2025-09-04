@@ -30,6 +30,7 @@ import { cod7 } from './games/COD7';
 import { codcoldwar } from './games/CallOfDutyColdWar';
 import { crash4ItsAboutTime } from './games/Crash4';
 import { crashTrilogy } from './games/CrashTrilogy';
+import { cronos } from './games/CronosTheNewDawn';
 import { cyberpunk } from './games/CyberPunk';
 import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
@@ -147,6 +148,7 @@ export const games = {
   'Clair Obscur Expedition 33': clairObscurExpedition33,
   'Crash 4 About Time': crash4ItsAboutTime,
   'Crash Trilogy': crashTrilogy,
+  'Cronos The New Dawn': cronos,
   'Cyber Punk 2077': cyberpunk,
   'Death Stranding': deathStranding,
   'Death Stranding 2': deathStranding2OnTheBeach,
