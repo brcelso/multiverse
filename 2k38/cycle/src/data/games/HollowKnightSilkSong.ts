@@ -1,5 +1,11 @@
 export const hollowknightsilksong = {
   launchDate: '2025-09-04',
+  Argentina: {
+    'September 2025': [
+      { edition: "Silksong", price: 6.99, currency: '$' },
+      { edition: "Silksong", price: 284, currency: 'ARS' },
+    ],
+  },
   Japan: {
     'September 2025': [
       { edition: "Silksong", price: 2300, currency: '¥' },
