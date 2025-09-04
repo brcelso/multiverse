@@ -13,6 +13,7 @@ export const hollowknightsilksong = {
   },
   Brazil: {
     'September 2025': [
+      { edition: "Silksong", price: 114.90, currency: 'R$', exchangeTax2: 5.74 },
       { edition: "Silksong", price: 74.95, currency: 'R$', exchangeTax2: 3.74 },
       { edition: "Silksong", price: 59.99, currency: 'R$', exchangeTax2: 3 },
     ],
