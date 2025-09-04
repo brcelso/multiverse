@@ -1,0 +1,27 @@
+export const cronos = {
+  launchDate: '2025-09-05',
+  Brazil: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 399.90, currency: 'R$', exchangeTax: 5.71 },
+      { edition: 'Standard Edition', price: 339.90, currency: 'R$', exchangeTax: 5.66 },
+    ],
+  },
+  Europe: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 69.99, currency: '€' },
+      { edition: 'Standard Edition', price: 59.99, currency: '€' },
+    ],
+  },
+  UnitedKingdom: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 54.99, currency: '£' },
+      { edition: 'Standard Edition', price: 49.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 69.99, currency: '$' },
+      { edition: 'Standard Edition', price: 59.99, currency: '$' },
+    ],
+  },
+};
