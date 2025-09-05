@@ -1,6 +1,5 @@
 export const borderlands4 = {
   launchDate: '2025-09-12',
-
   Brazil: {
     'September 2025': [
       { edition: 'Standard Edition', price: 283.81, discount: 25, currency: 'R$', exchangeTax: 4.05 },
@@ -14,7 +13,6 @@ export const borderlands4 = {
       { edition: 'Standard Edition', price: 379.90, currency: 'R$', exchangeTax: 5.42 },
     ],
   },
-
   Europe: {
     'June 2025': [
       { edition: 'Super Deluxe Edition', price: 129.99, currency: '€' },
@@ -22,7 +20,6 @@ export const borderlands4 = {
       { edition: 'Standard Edition', price: 79.99, currency: '€' },
     ],
   },
-  
   UnitedKingdom: {
     'June 2025': [
       { edition: 'Super Deluxe Edition', price: 119.99, currency: '£' },
@@ -30,7 +27,6 @@ export const borderlands4 = {
       { edition: 'Standard Edition', price: 69.99, currency: '£' },
     ],
   },
-
   UnitedStates: {
     'June 2025': [
       { edition: 'Super Deluxe Edition', price: 129.99, currency: '$' },
