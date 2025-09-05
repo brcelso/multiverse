@@ -7,7 +7,7 @@ export const indianajones = {
     ],
     'April 2025': [
       { edition: "Premium Edition", price: 499.50, currency: 'R$', exchangeTax: 4.99 },
-      { edition: "Standard Edition", price: 499.50, currency: 'R$', exchangeTax: 4.99 },
+      { edition: "Standard Edition", price: 349.90, currency: 'R$', exchangeTax: 4.99 },
     ],
   },
   Europe: {
