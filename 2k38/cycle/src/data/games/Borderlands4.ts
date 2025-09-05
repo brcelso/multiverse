@@ -3,7 +3,7 @@ export const borderlands4 = {
 
   Brazil: {
     'September 2025': [
-      { edition: 'Standard Edition', price: 283.81, discount: 25, currency: 'R$', exchangeTax: 4.38 },
+      { edition: 'Standard Edition', price: 283.81, discount: 25, currency: 'R$', exchangeTax: 4.05 },
     ],
     'August 2025': [
       { edition: 'Standard Edition', price: 306.99, discount: 19, currency: 'R$', exchangeTax: 4.38 },
