@@ -1,5 +1,5 @@
 export const lostSoulAside = {
-  launchDate: '2025-05-30',
+  launchDate: '2025-08-29',
 
   Brazil: {
     'September 2025': [
