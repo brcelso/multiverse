@@ -19,6 +19,9 @@ export const lostSoulAside = {
       { edition: 'Deluxe Edition', price: 349.9, currency: 'R$', exchangeTax: 4.99 },
       { edition: 'Standard Edition', price: 299.9, currency: 'R$', exchangeTax: 4.99 },
     ],
+    'February 2025': [
+      { edition: 'Standard Edition', price: 208.28, discount: 30.5, currency: 'R$', exchangeTax: 4.99 },
+    ],
   },
 
   UnitedStates: {
