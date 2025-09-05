@@ -58,6 +58,7 @@ import { hollowknightsilksong } from './games/HollowKnightSilkSong';
 import { hollowknightvoidheartedition } from './games/HollowKnightVoidHeartEdition';
 import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
+import { indianajones } from './games/IndianaJones';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
 import { nba2k25 } from './games/nba2k25';
@@ -176,6 +177,7 @@ export const games = {
   'Hollow Knight Void Heart Edition': hollowknightvoidheartedition,
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
+  'Indiana Jones and The Great Circle': indianajones,
   'Lost Soul Aside': lostSoulAside,
   'Metal Gear Snake Eater Remake': mgs3,
   'NBA 2k25': nba2k25,
