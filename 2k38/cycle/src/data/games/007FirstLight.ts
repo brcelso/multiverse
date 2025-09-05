@@ -1,5 +1,5 @@
 export const firstlight = {
-  launchDate: '2026-03-26',
+  launchDate: '2026-03-27',
   Brazil: {
     'March 2026': [
       { edition: "Deluxe Edition", price: 0, currency: 'R$', exchangeTax2: 0 },
