@@ -60,6 +60,7 @@ import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { indianajones } from './games/IndianaJones';
 import { lostSoulAside } from './games/LostSoulAside';
+import { mafia } from './games/Mafia';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
@@ -179,6 +180,7 @@ export const games = {
   'Horizon Zero Dawn': horizonZeroDawn,
   'Indiana Jones and The Great Circle': indianajones,
   'Lost Soul Aside': lostSoulAside,
+  'Mafia The Old Country': mafia,
   'Metal Gear Snake Eater Remake': mgs3,
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
