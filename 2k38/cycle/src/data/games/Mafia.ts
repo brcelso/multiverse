@@ -8,7 +8,7 @@ export const mafia = {
   },
   Europe: {
     'August 2025': [
-      { edition: "Deluxe Edition", price: 59.90, currency: '€' },
+      { edition: "Deluxe Edition", price: 59.99, currency: '€' },
       { edition: "Standard Edition", price: 49.99, currency: '€' },
     ],
   },
