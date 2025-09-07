@@ -3,16 +3,16 @@ export const theLastOfUsPart2 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Remastered Edition', price: 134.91, currency: 'R$', discount: 46 },
+      { edition: 'Remastered', price: 134.91, currency: 'R$', discount: 46 },
     ],
     'July 2025': [
-      { edition: 'Remastered Edition', price: 179.90, currency: 'R$', discount: 28 },
+      { edition: 'Remaster es', price: 179.90, currency: 'R$', discount: 28 },
     ],
     'February 2025': [
-      { edition: 'Remastered Edition', price: 199.6, currency: 'R$', discount: 20 },
+      { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20 },
     ],
     'January 2024': [
-      { edition: 'Remastered Edition', price: 249.90, currency: 'R$', exchangeTax: 5, increase: 25 },
+      { edition: 'Remastered', price: 249.90, currency: 'R$', exchangeTax: 5, increase: 25 },
     ],
     'July 2021': [
       { edition: 'Deluxe Edition', price: 249.50, currency: 'R$', discount: 28.7 },
@@ -46,17 +46,17 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered', price: 44.99, currency: '£' },
     ],
     'September 2020': [
-      { edition: 'Deluxe', price: 44.99, currency: '£', discount: 30},
-      { edition: 'Standard', price: 34.99, currency: '£', discount: 36.5},
+      { edition: 'Deluxe Edition', price: 44.99, currency: '£', discount: 30},
+      { edition: 'Standard Edition', price: 34.99, currency: '£', discount: 36.5},
     ],
     'June 2020': [
-      { edition: 'Deluxe', price: 64.99, currency: '£'},
-      { edition: 'Standard', price: 54.99, currency: '£' },
+      { edition: 'Deluxe Edition', price: 64.99, currency: '£'},
+      { edition: 'Standard Edition', price: 54.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'January 2024': [
-      { edition: 'Remastered Edition', price: 49.99, increase: 25, currency: '$' },
+      { edition: 'Remastered', price: 49.99, increase: 25, currency: '$' },
     ],
     'November 2023': [
       { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 50, totalDiscount: 66 },
@@ -74,7 +74,7 @@ export const theLastOfUsPart2 = {
       { edition: 'Ellie Edition', price: 229.99, currency: '$' },
       { edition: "Collector's Edition", price: 169.99, currency: '$' },
       { edition: 'Special Edition', price: 79.99, currency: '$' },
-      { edition: 'Deluxe Digital', price: 69.99, currency: '$' },
+      { edition: 'Deluxe Edition', price: 69.99, currency: '$' },
       { edition: 'Standard Edition', price: 44.99, currency: '$', discount: 25},
       { edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
