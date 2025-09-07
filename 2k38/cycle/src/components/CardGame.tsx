@@ -11,7 +11,7 @@ type GameData = {
       discount?: number;
       increase?: number;
       totalIncrease?: number; 
-      totalDiscount?: number;   // ⬅️ Novo campo
+      totalDiscount?: number;
       exchangeTax?: number;
       basePrice2?: number;
       exchangeTax2?: number;
@@ -176,22 +176,24 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                               {entry.currency} {entry.price.toFixed(2)}
                               {entry.discount !== undefined && (
                                 <span style={styles.discount}>
-                                  ⬇️ [-{entry.discount}%]
+                                  [-{entry.discount}%] <span style={{ color: 'red' }}>↓</span>
                                 </span>
                               )}
                               {entry.increase !== undefined && (
                                 <span style={styles.increase}>
-                                  ⬆️ [+{entry.increase}%]
+                                  [+{entry.increase}%] <span style={{ color: 'limegreen' }}>↑</span>
                                 </span>
                               )}
                               {entry.totalIncrease !== undefined && (
                                 <span style={styles.totalIncrease}>
-                                  ⬆️⬆️ [+{entry.totalIncrease}%]
+                                  [+{entry.totalIncrease}%]{' '}
+                                  <span style={{ color: 'limegreen', fontWeight: 'bold' }}>↑↑</span>
                                 </span>
                               )}
                               {entry.totalDiscount !== undefined && (
                                 <span style={styles.totalDiscount}>
-                                  ⬇️⬇️ [-{entry.totalDiscount}%]
+                                  [-{entry.totalDiscount}%]{' '}
+                                  <span style={{ color: 'red', fontWeight: 'bold' }}>↓↓</span>
                                 </span>
                               )}
                             </div>
@@ -328,12 +330,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginLeft: '0.5rem',
   },
   totalIncrease: {
-    color: '#ff69b4',
+    color: '#4ec9b0',
     marginLeft: '0.5rem',
+    fontWeight: 'bold',
   },
   totalDiscount: {
-    color: '#ffa500',
+    color: '#d16969',
     marginLeft: '0.5rem',
+    fontWeight: 'bold',
   },
   exchange: {
     color: '#b5cea8',
