@@ -111,13 +111,13 @@ export const GameSelector = () => {
 
   return (
     <div style={styles.container}>
-      {/* Navbar with Home button left and title center */}
+      {/* Navbar */}
       <div style={styles.navbar}>
         <button onClick={goHome} style={styles.homeButton}>🏠 Home</button>
         <h2 style={styles.navTitle}>👟 Pick a Shoe</h2>
       </div>
 
-      {/* Filters (only on Home / All Items screen) */}
+      {/* Filters */}
       {selected.type === 'all' && (
         <div style={styles.filterContainer}>
           <div>
@@ -195,11 +195,14 @@ export const GameSelector = () => {
       {/* Rendered Cards */}
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
-          ? allItems.map(([title, data]) => (
-              <div key={title} style={{ marginBottom: '0.5rem' }}>
-                <CardGame gameTitle={title} data={data as any} />
-              </div>
-            ))
+          ? allItems
+              .slice()
+              .sort(([a], [b]) => a.localeCompare(b)) // ordenação alfabética
+              .map(([title, data]) => (
+                <div key={title} style={{ marginBottom: '0.5rem' }}>
+                  <CardGame gameTitle={title} data={data as any} />
+                </div>
+              ))
           : getData(selected.type, selected.title!) && (
               <CardGame
                 gameTitle={selected.title!}
