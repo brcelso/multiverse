@@ -182,7 +182,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   borderRadius: '8px',
   padding: '1.5rem 1rem', 
   width: '100%',
-  maxWidth: '300px',
+  maxWidth: '250px',
   boxShadow: '0 0 10px rgba(0,0,0,0.3)',
   overflowY: 'auto',
   textAlign: 'center',

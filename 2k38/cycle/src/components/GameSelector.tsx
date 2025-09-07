@@ -128,8 +128,11 @@ export const GameSelector = () => {
               onChange={(e) => setGroupFilter(e.target.value)}
             >
               <option value="All">All</option>
-              {dataGroups.map((group) => (
-                <option key={group.label} value={group.label}>{group.label}</option>
+              {dataGroups
+                .slice()
+                .sort((a, b) => a.label.localeCompare(b.label))
+                .map((group) => (
+                  <option key={group.label} value={group.label}>{group.label}</option>
               ))}
             </select>
           </div>
@@ -151,7 +154,10 @@ export const GameSelector = () => {
       )}
 
       {/* Normal Groups */}
-      {dataGroups.map(({ label, type, items, emoji }) => (
+      {dataGroups
+        .slice()
+        .sort((a, b) => a.label.localeCompare(b.label))
+        .map(({ label, type, items, emoji }) => (
         <div key={type} style={styles.group}>
           <button
             onClick={() => toggleGroup(type)}
@@ -189,13 +195,11 @@ export const GameSelector = () => {
       {/* Rendered Cards */}
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
-          ? allItems
-              .sort(([aTitle], [bTitle]) => aTitle.localeCompare(bTitle))
-              .map(([title, data]) => (
-                <div key={title} style={{ marginBottom: '0.5rem' }}>
-                  <CardGame gameTitle={title} data={data as any} />
-                </div>
-              ))
+          ? allItems.map(([title, data]) => (
+              <div key={title} style={{ marginBottom: '0.5rem' }}>
+                <CardGame gameTitle={title} data={data as any} />
+              </div>
+            ))
           : getData(selected.type, selected.title!) && (
               <CardGame
                 gameTitle={selected.title!}
@@ -211,7 +215,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: '0.75rem',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '500px',
+    maxWidth: '400px',
     margin: 'auto',
     color: '#d4d4d4',
     backgroundColor: '#1e1e1e',
