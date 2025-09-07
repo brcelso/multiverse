@@ -53,7 +53,7 @@ export const coin = {
       { edition: 'Dolar', discount: 14, price: 5.41, currency: 'R$' },
     ],
     'December 2024': [
-      { edition: 'Dolar', increase: 38, price: 6.31, currency: 'R$' },
+      { edition: 'Dolar', increase: 38, totalIncrease: 670, price: 6.31, currency: 'R$' },
     ],
     'April 2025': [
       { edition: 'Dolar', increase: 50, price: 1204, currency: 'ARS' },
@@ -65,13 +65,13 @@ export const coin = {
       { edition: 'Dolar', increase: 35000, price: 350, currency: 'ARS' },
     ],
     'April 2022': [
-      { edition: 'Dolar', increase: 26, price: 4.58, currency: 'R$' },
+      { edition: 'Dolar', increase: 26, totalIncrease: 459, price: 4.58, currency: 'R$' },
     ],
     'October 2018': [
-      { edition: 'Dolar', increase: 20, price: 3.64, currency: 'R$' },
+      { edition: 'Dolar', increase: 20, totalIncrease: 345, price: 3.64, currency: 'R$' },
     ],
     'February 2017': [
-      { edition: 'Dolar', increase: 100, price: 3.04, currency: 'R$' },
+      { edition: 'Dolar', increase: 100, totalIncrease: 271, price: 3.04, currency: 'R$' },
     ],
     'July 2011': [
       { edition: 'Dolar', price: 1.53, currency: 'R$' },
@@ -83,7 +83,7 @@ export const coin = {
       { edition: 'Dolar', increase: 288, price: 3.88, currency: 'ARS' },
     ],
     'April 2002': [
-      { edition: 'Dolar', increase: 38, price: 2.17, currency: 'R$' },
+      { edition: 'Dolar', increase: 38, totalIncrease: 165, price: 2.17, currency: 'R$' },
     ],
     'April 1999': [
       { edition: 'Dolar', increase: 92, price: 1.57, currency: 'R$' },
