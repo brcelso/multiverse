@@ -6,12 +6,12 @@ type GameData = {
     [monthYear: string]: {
       edition: string;
       price: number;
-      realPrice?: number; 
+      realPrice?: number;
       currency: string;
       discount?: number;
       increase?: number;
-      totalIncrease?: number; 
-      totalDiscount?: number;   
+      totalIncrease?: number;
+      totalDiscount?: number;
       exchangeTax?: number;
       basePrice2?: number;
       exchangeTax2?: number;
@@ -23,7 +23,7 @@ type GameData = {
 
 type Props = {
   gameTitle: string;
-  data: GameData;
+  data: GameData & { currentRegion?: string; currentMonthYear?: string; editionData?: any };
 };
 
 const regionFlags: Record<string, string> = {
@@ -36,7 +36,7 @@ const regionFlags: Record<string, string> = {
   India: 'https://flagcdn.com/w40/in.png',
   Canada: 'https://flagcdn.com/w40/ca.png',
   China: 'https://flagcdn.com/w40/cn.png',
-  Paraguay: "https://flagcdn.com/w40/py.png"
+  Paraguay: 'https://flagcdn.com/w40/py.png',
 };
 
 function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
@@ -52,30 +52,12 @@ function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
 
 export const CardGame = ({ gameTitle, data }: Props) => {
   const { launchDate, ...regionsData } = data;
-  const regions = Object.keys(regionsData);
+  const regions = Object.keys(regionsData).filter((r) => r !== 'currentRegion' && r !== 'currentMonthYear');
 
   const editionsSet = new Set<string>();
   regions.forEach((region) => {
-    const monthsData = regionsData[region] as {
-      [monthYear: string]: {
-        edition: string;
-        price: number;
-        realPrice?: number;
-        currency: string;
-        discount?: number;
-        increase?: number;
-        totalIncrease?: number;
-        totalDiscount?: number;   
-        exchangeTax?: number;
-        basePrice2?: number;
-        exchangeTax2?: number;
-        basePrice3?: number;
-        exchangeTax3?: number;
-      }[];
-    };
-    Object.values(monthsData).forEach((arr) =>
-      arr.forEach((entry) => editionsSet.add(entry.edition))
-    );
+    const monthsData = regionsData[region] as { [monthYear: string]: { edition: string; price: number }[] };
+    Object.values(monthsData).forEach((arr) => arr.forEach((entry) => editionsSet.add(entry.edition)));
   });
   const editions = Array.from(editionsSet);
 
@@ -120,23 +102,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         )}
 
         {regions.map((region) => {
-          const monthsData = regionsData[region] as {
-            [monthYear: string]: {
-              edition: string;
-              price: number;
-              realPrice?: number;
-              currency: string;
-              discount?: number;
-              increase?: number;
-              totalIncrease?: number;
-              totalDiscount?: number;   
-              exchangeTax?: number;
-              basePrice2?: number;
-              exchangeTax2?: number;
-              basePrice3?: number;
-              exchangeTax3?: number;
-            }[];
-          };
+          const monthsData = regionsData[region] as { [monthYear: string]: any[] };
 
           return (
             <section key={region} style={styles.regionSection}>
@@ -159,10 +125,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                   return parsedA.hasMonth === parsedB.hasMonth ? 0 : parsedA.hasMonth ? -1 : 1;
                 })
                 .map(([month, entries]) => {
-                  const filteredEntries = selectedEdition
-                    ? entries.filter((e) => e.edition === selectedEdition)
-                    : entries;
-
+                  const filteredEntries = selectedEdition ? entries.filter((e) => e.edition === selectedEdition) : entries;
                   if (filteredEntries.length === 0) return null;
 
                   return (
@@ -174,26 +137,10 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                             <strong style={styles.edition}>{entry.edition}</strong>
                             <div>
                               {entry.currency} {entry.price.toFixed(2)}
-                              {entry.discount !== undefined && (
-                                <span style={styles.discount}>
-                                  <b>[-{entry.discount}%]</b> 👇🏼
-                                </span>
-                              )}
-                              {entry.increase !== undefined && (
-                                <span style={styles.increase}>
-                                  <b>[+{entry.increase}%]</b> 👆🏼
-                                </span>
-                              )}
-                              {entry.totalIncrease !== undefined && (
-                                <span style={styles.totalIncrease}>
-                                  <b>[+{entry.totalIncrease}%]</b> 👆🏼👆🏼
-                                </span>
-                              )}
-                              {entry.totalDiscount !== undefined && (
-                                <span style={styles.totalDiscount}>
-                                  <b>[-{entry.totalDiscount}%]</b> 👇🏼👇🏼
-                                </span>
-                              )}
+                              {entry.discount !== undefined && <span style={styles.discount}>[-{entry.discount}%]</span>}
+                              {entry.increase !== undefined && <span style={styles.increase}>[+{entry.increase}%]</span>}
+                              {entry.totalIncrease !== undefined && <span style={styles.totalIncrease}>[+{entry.totalIncrease}%]</span>}
+                              {entry.totalDiscount !== undefined && <span style={styles.totalDiscount}>[-{entry.totalDiscount}%]</span>}
                             </div>
                             {entry.realPrice !== undefined && (
                               <div style={styles.realPrice}>
@@ -201,22 +148,16 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                               </div>
                             )}
                             {entry.exchangeTax !== undefined && (
-                              <small style={styles.exchange}>
-                                Exchange LATAM: {entry.exchangeTax.toFixed(2)}
-                              </small>
+                              <small style={styles.exchange}>Exchange LATAM: {entry.exchangeTax.toFixed(2)}</small>
                             )}
                             {entry.exchangeTax2 !== undefined && (
                               <div style={styles.secondaryLine}>
-                                <small style={styles.exchange}>
-                                  Exchange US: {entry.exchangeTax2.toFixed(2)}
-                                </small>
+                                <small style={styles.exchange}>Exchange US: {entry.exchangeTax2.toFixed(2)}</small>
                               </div>
                             )}
                             {entry.exchangeTax3 !== undefined && (
                               <div style={styles.secondaryLine}>
-                                <small style={styles.exchange}>
-                                  Exchange RealPrice: {entry.exchangeTax3.toFixed(2)}
-                                </small>
+                                <small style={styles.exchange}>Exchange RealPrice: {entry.exchangeTax3.toFixed(2)}</small>
                               </div>
                             )}
                           </li>
@@ -234,17 +175,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
 };
 
 const styles: { [key: string]: React.CSSProperties } = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    padding: '1rem',
-    backgroundColor: '#1e1e1e',
-    minHeight: '100vh',
-    fontFamily: '"Fira Code", "Courier New", monospace',
-    textAlign: 'center',
-  },
+  container: { display: 'flex', justifyContent: 'center', flexDirection: 'column', padding: '1rem', backgroundColor: '#1e1e1e', minHeight: '100vh', fontFamily: '"Fira Code", monospace', textAlign: 'center' },
   card: {
   background: '#252526',
   color: '#d4d4d4',

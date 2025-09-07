@@ -13,7 +13,7 @@ type ItemType = 'game' | 'sub' | 'car' | 'console' | 'product' | 'coin';
 
 interface Selection {
   type: ItemType | 'all';
-  title?: string; // undefined quando type === 'all'
+  title?: string;
 }
 
 const dataGroups: {
@@ -31,7 +31,7 @@ const dataGroups: {
 ];
 
 export const GameSelector = () => {
-  const [selected, setSelected] = useState<Selection | null>(null);
+  const [selected, setSelected] = useState<Selection>({ type: 'all' });
   const [openGroups, setOpenGroups] = useState<Record<ItemType, boolean>>({
     sub: false,
     game: false,
@@ -40,6 +40,8 @@ export const GameSelector = () => {
     product: false,
     coin: false,
   });
+  const [regionFilter, setRegionFilter] = useState<string>('All');
+  const [groupFilter, setGroupFilter] = useState<string>('All');
 
   const toggleGroup = (type: ItemType) => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
@@ -61,42 +63,94 @@ export const GameSelector = () => {
     closeAllGroups();
   };
 
-  const handleSelectAll = () => {
+  const goHome = () => {
     setSelected({ type: 'all' });
+    setRegionFilter('All');
+    setGroupFilter('All');
     closeAllGroups();
   };
 
   const getData = (type: ItemType, title: string) => {
     switch (type) {
-      case 'game':
-        return games[title as GameTitle];
-      case 'sub':
-        return subs[title as SubTitle];
-      case 'car':
-        return cars[title as CarTitle];
-      case 'console':
-        return consoles[title as ConsoleTitle];
-      case 'product':
-        return products[title as ProductTitle];
-      case 'coin':
-        return coins[title as CoinTitle];
-      default:
-        return null;
+      case 'game': return games[title as GameTitle];
+      case 'sub': return subs[title as SubTitle];
+      case 'car': return cars[title as CarTitle];
+      case 'console': return consoles[title as ConsoleTitle];
+      case 'product': return products[title as ProductTitle];
+      case 'coin': return coins[title as CoinTitle];
+      default: return null;
     }
   };
 
+  const allRegions = Array.from(
+    new Set(
+      dataGroups.flatMap((group) =>
+        Object.values(group.items)
+          .flatMap((item: any) =>
+            Object.keys(item).filter((key) => key !== 'launchDate')
+          )
+      )
+    )
+  ).sort();
+
+  const allItems = dataGroups
+    .filter((group) => groupFilter === 'All' || group.label === groupFilter)
+    .flatMap((group) =>
+      Object.entries(group.items)
+        .map(([title, data]) => {
+          if (regionFilter === 'All') return [title, data] as const;
+          const filteredData = Object.fromEntries(
+            Object.entries(data as any).filter(
+              ([region]) => region !== 'launchDate' && region === regionFilter
+            )
+          );
+          return [title, filteredData] as const;
+        })
+        .filter(([_, data]) => Object.keys(data).length > 0)
+    );
+
   return (
     <div style={styles.container}>
-      <h2 style={styles.header}>Pick a Card</h2>
-
-      {/* Botão para mostrar todos os cards */}
-      <div style={{ marginBottom: '1rem' }}>
-        <button onClick={handleSelectAll} style={{ ...styles.groupButton }}>
-          📋 All Items
-        </button>
+      {/* Navbar with Home button left and title center */}
+      <div style={styles.navbar}>
+        <button onClick={goHome} style={styles.homeButton}>🏠 Home</button>
+        <h2 style={styles.navTitle}>👟 Pick a Shoe</h2>
       </div>
 
-      {/* Grupos normais */}
+      {/* Filters (only on Home / All Items screen) */}
+      {selected.type === 'all' && (
+        <div style={styles.filterContainer}>
+          <div>
+            <label htmlFor="group">Filter by Group: </label>
+            <select
+              id="group"
+              value={groupFilter}
+              onChange={(e) => setGroupFilter(e.target.value)}
+            >
+              <option value="All">All</option>
+              {dataGroups.map((group) => (
+                <option key={group.label} value={group.label}>{group.label}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="region">Filter by Region: </label>
+            <select
+              id="region"
+              value={regionFilter}
+              onChange={(e) => setRegionFilter(e.target.value)}
+            >
+              <option value="All">All</option>
+              {allRegions.map((region) => (
+                <option key={region} value={region}>{region}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      )}
+
+      {/* Normal Groups */}
       {dataGroups.map(({ label, type, items, emoji }) => (
         <div key={type} style={styles.group}>
           <button
@@ -108,53 +162,42 @@ export const GameSelector = () => {
           >
             {emoji} {label}
           </button>
-
           {openGroups[type] && (
             <ul style={styles.itemList}>
-              {Object.keys(items)
-                .sort()
-                .map((title) => (
-                  <li key={`${type}|${title}`}>
-                    <button
-                      onClick={() => handleSelect(type, title)}
-                      style={{
-                        ...styles.itemButton,
-                        ...(selected &&
-                        selected.type === type &&
-                        selected.title === title
-                          ? styles.itemButtonSelected
-                          : {}),
-                      }}
-                    >
-                      {title}
-                    </button>
-                  </li>
-                ))}
+              {Object.keys(items).sort().map((title) => (
+                <li key={`${type}|${title}`}>
+                  <button
+                    onClick={() => handleSelect(type, title)}
+                    style={{
+                      ...styles.itemButton,
+                      ...(selected && selected.type === type && selected.title === title
+                        ? styles.itemButtonSelected
+                        : {}),
+                    }}
+                  >
+                    {title}
+                  </button>
+                </li>
+              ))}
             </ul>
           )}
         </div>
       ))}
 
-      {/* Cards renderizados */}
+      {/* Rendered Cards */}
       <div style={styles.cardWrapper}>
-        {selected &&
-          (selected.type === 'all'
-            ? dataGroups.map(({ type, items }) =>
-                Object.keys(items).map((title) => (
-                  <div key={`${type}|${title}`} style={{ marginBottom: '1rem' }}>
-                    <CardGame
-                      gameTitle={title}
-                      data={getData(type, title)!}
-                    />
-                  </div>
-                ))
-              )
-            : getData(selected.type as ItemType, selected.title!) && (
-                <CardGame
-                  gameTitle={selected.title!}
-                  data={getData(selected.type as ItemType, selected.title!)!}
-                />
-              ))}
+        {selected.type === 'all'
+          ? allItems.map(([title, data]) => (
+              <div key={title} style={{ marginBottom: '1rem' }}>
+                <CardGame gameTitle={title} data={data as any} />
+              </div>
+            ))
+          : getData(selected.type, selected.title!) && (
+              <CardGame
+                gameTitle={selected.title!}
+                data={getData(selected.type, selected.title!)!}
+              />
+            )}
       </div>
     </div>
   );
@@ -172,10 +215,35 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: '0 0 6px rgba(0,0,0,0.4)',
     textAlign: 'center',
   },
-  header: {
-    color: '#627d8fff',
-    fontSize: '1.25rem',
-    marginBottom: '0.75rem',
+  navbar: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    background: '#333333',
+    padding: '0.75rem 1rem',
+    borderRadius: '5px',
+    marginBottom: '1rem',
+    position: 'sticky',
+    top: 0,
+    zIndex: 100,
+    gap: '1rem',
+  },
+  navTitle: {
+    margin: 0,
+    fontSize: '1.3rem',
+    flexGrow: 1,
+    textAlign: 'left',
+  },
+  homeButton: {
+    background: '#555555',
+    border: 'none',
+    color: '#ffffff',
+    padding: '0.4rem 0.75rem',
+    borderRadius: '5px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+    transition: 'background 0.2s',
+    flexShrink: 0,
   },
   group: {
     marginBottom: '0.75rem',
@@ -227,6 +295,13 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   cardWrapper: {
     marginTop: '1rem',
-    display: 'block', // Cards empilhados verticalmente
+    display: 'block',
+  },
+  filterContainer: {
+    display: 'flex',
+    gap: '1rem',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 };
