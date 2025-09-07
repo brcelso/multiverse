@@ -111,13 +111,11 @@ export const GameSelector = () => {
 
   return (
     <div style={styles.container}>
-      {/* Navbar */}
       <div style={styles.navbar}>
         <button onClick={goHome} style={styles.homeButton}>🏠 Home</button>
         <h2 style={styles.navTitle}>👟 Pick a Shoe</h2>
       </div>
 
-      {/* Filters */}
       {selected.type === 'all' && (
         <div style={styles.filterContainer}>
           <div>
@@ -153,56 +151,56 @@ export const GameSelector = () => {
         </div>
       )}
 
-      {/* Normal Groups */}
       {dataGroups
         .slice()
         .sort((a, b) => a.label.localeCompare(b.label))
-        .map(({ label, type, items, emoji }) => (
-        <div key={type} style={styles.group}>
-          <button
-            onClick={() => toggleGroup(type)}
-            style={{
-              ...styles.groupButton,
-              ...(openGroups[type] ? styles.groupButtonActive : {}),
-            }}
-          >
-            {emoji} {label}
-          </button>
-          {openGroups[type] && (
-            <ul style={styles.itemList}>
-              {Object.keys(items)
-                .sort((a, b) => a.localeCompare(b))
-                .map((title) => (
-                  <li key={`${type}|${title}`}>
-                    <button
-                      onClick={() => handleSelect(type, title)}
-                      style={{
-                        ...styles.itemButton,
-                        ...(selected && selected.type === type && selected.title === title
-                          ? styles.itemButtonSelected
-                          : {}),
-                      }}
-                    >
-                      {title}
-                    </button>
-                  </li>
-                ))}
-            </ul>
-          )}
-        </div>
-      ))}
+        .map(({ label, type, items, emoji }) => {
+          // Contagem correta: apenas o número de itens no grupo
+          const itemCount = Object.keys(items).length;
 
-      {/* Rendered Cards */}
+          return (
+            <div key={type} style={styles.group}>
+              <button
+                onClick={() => toggleGroup(type)}
+                style={{
+                  ...styles.groupButton,
+                  ...(openGroups[type] ? styles.groupButtonActive : {}),
+                }}
+              >
+                {emoji} {label} ({itemCount})
+              </button>
+              {openGroups[type] && (
+                <ul style={styles.itemList}>
+                  {Object.keys(items)
+                    .sort((a, b) => a.localeCompare(b))
+                    .map((title) => (
+                      <li key={`${type}|${title}`}>
+                        <button
+                          onClick={() => handleSelect(type, title)}
+                          style={{
+                            ...styles.itemButton,
+                            ...(selected && selected.type === type && selected.title === title
+                              ? styles.itemButtonSelected
+                              : {}),
+                          }}
+                        >
+                          {title}
+                        </button>
+                      </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          );
+        })}
+
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
-          ? allItems
-              .slice()
-              .sort(([a], [b]) => a.localeCompare(b)) // ordenação alfabética
-              .map(([title, data]) => (
-                <div key={title} style={{ marginBottom: '0.5rem' }}>
-                  <CardGame gameTitle={title} data={data as any} />
-                </div>
-              ))
+          ? allItems.map(([title, data]) => (
+              <div key={title} style={{ marginBottom: '0.5rem' }}>
+                <CardGame gameTitle={title} data={data as any} />
+              </div>
+            ))
           : getData(selected.type, selected.title!) && (
               <CardGame
                 gameTitle={selected.title!}
@@ -256,9 +254,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: 'background 0.2s',
     flexShrink: 0,
   },
-  group: {
-    marginBottom: '0.375rem',
-  },
+  group: { marginBottom: '0.375rem' },
   groupButton: {
     width: '100%',
     background: '#333333',
@@ -273,9 +269,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '0.85rem',
     transition: 'background 0.2s',
   },
-  groupButtonActive: {
-    background: '#444444',
-  },
+  groupButtonActive: { background: '#444444' },
   itemList: {
     listStyle: 'none',
     margin: 0,
@@ -300,14 +294,8 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '0.8rem',
     transition: 'background 0.2s, color 0.2s',
   },
-  itemButtonSelected: {
-    background: '#3c3c3c',
-    color: '#9cdcfe',
-  },
-  cardWrapper: {
-    marginTop: '0.5rem',
-    display: 'block',
-  },
+  itemButtonSelected: { background: '#3c3c3c', color: '#9cdcfe' },
+  cardWrapper: { marginTop: '0.5rem', display: 'block' },
   filterContainer: {
     display: 'flex',
     flexDirection: 'column',
