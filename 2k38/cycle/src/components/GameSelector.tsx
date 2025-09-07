@@ -216,7 +216,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: '0.75rem',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '600px',
+    maxWidth: '800px',
     margin: 'auto',
     color: '#d4d4d4',
     backgroundColor: '#1e1e1e',

@@ -1,5 +1,24 @@
 export const coin = {
   launchDate: '1994-01-07',
+  Brazil: {
+    'September 2025': [
+      { edition: 'Real', increase: 17.5, totalIncrease: 252, discount: 14.7, price: 5.38, currency: 'R$' }, 
+      { edition: 'DXY', totalIncrease: 37, discount: 16, price: 96.768, currency: '$' }, 
+    ],
+    'December 2024': [
+      { edition: 'Real', increase: 37.8, totalIncrease: 313, price: 6.31, currency: 'R$' },  
+    ],
+    'September 2022': [ 
+      { edition: 'Real', increase: 200, price: 4.58, currency: 'R$' }, 
+      { edition: 'DXY', totalIncrease: 62, price: 114.778, currency: '$' }, 
+    ],
+    'June 2011': [
+      { edition: 'Real', price: 1.53, currency: 'R$' },  
+    ],
+    'March 2008': [ 
+      { edition: 'DXY', price: 70.698, currency: '$' }, 
+    ],
+  },
   Europe: {
     'June 2025': [
       { edition: 'Euro', increase: 25, price: 7.87, currency: 'R$' }, 
