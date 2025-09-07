@@ -1,3 +1,7 @@
+Perfeito 🚀
+Vou aplicar a Opção 3 → usar ⬆️⬆️ para totalIncrease e ⬇️⬇️ para totalDiscount.
+Aqui está o código completo já ajustado:
+
 import React, { useState } from 'react';
 
 type GameData = {
@@ -65,7 +69,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         discount?: number;
         increase?: number;
         totalIncrease?: number;
-        totalDiscount?: number;   // ⬅️ Novo campo
+        totalDiscount?: number;
         exchangeTax?: number;
         basePrice2?: number;
         exchangeTax2?: number;
@@ -129,7 +133,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
               discount?: number;
               increase?: number;
               totalIncrease?: number;
-              totalDiscount?: number;   // ⬅️ Novo campo
+              totalDiscount?: number;
               exchangeTax?: number;
               basePrice2?: number;
               exchangeTax2?: number;
@@ -175,16 +179,24 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                             <div>
                               {entry.currency} {entry.price.toFixed(2)}
                               {entry.discount !== undefined && (
-                                <span style={styles.discount}> [-{entry.discount}%]</span>
+                                <span style={styles.discount}>
+                                  ⬇️ [-{entry.discount}%]
+                                </span>
                               )}
                               {entry.increase !== undefined && (
-                                <span style={styles.increase}> [+{entry.increase}%]</span>
+                                <span style={styles.increase}>
+                                  ⬆️ [+{entry.increase}%]
+                                </span>
                               )}
                               {entry.totalIncrease !== undefined && (
-                                <span style={styles.totalIncrease}> [+{entry.totalIncrease}%]</span>
+                                <span style={styles.totalIncrease}>
+                                  ⬆️⬆️ [+{entry.totalIncrease}%]
+                                </span>
                               )}
                               {entry.totalDiscount !== undefined && (
-                                <span style={styles.totalDiscount}> [-{entry.totalDiscount}%]</span>
+                                <span style={styles.totalDiscount}>
+                                  ⬇️⬇️ [-{entry.totalDiscount}%]
+                                </span>
                               )}
                             </div>
                             {entry.realPrice !== undefined && (
@@ -323,7 +335,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#ff69b4',
     marginLeft: '0.5rem',
   },
-  totalDiscount: {          // ⬅️ Novo estilo
+  totalDiscount: {
     color: '#ffa500',
     marginLeft: '0.5rem',
   },
@@ -361,3 +373,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: 'center',
   },
 };
+
+
+⸻
+
+Agora:
+	•	Increase usa ⬆️
+	•	Discount usa ⬇️
+	•	TotalIncrease usa ⬆️⬆️
+	•	TotalDiscount usa ⬇️⬇️
+
+Quer que eu também coloque uma tooltip (ex: ao passar o mouse mostrar “Aumento acumulado” / “Desconto acumulado”)?
