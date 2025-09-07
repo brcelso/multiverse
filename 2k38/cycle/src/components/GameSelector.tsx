@@ -130,7 +130,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: 'center',
   },
   header: {
-    color: '#569cd6',
+    color: '#627d8fff',
     fontSize: '1.25rem',              // ⬅️ Título menor
     marginBottom: '0.75rem',
   },
