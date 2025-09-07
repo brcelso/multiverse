@@ -239,7 +239,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
-    padding: '1rem 2rem',
+    padding: '1rem',
     backgroundColor: '#1e1e1e',
     minHeight: '100vh',
     fontFamily: '"Fira Code", "Courier New", monospace',
