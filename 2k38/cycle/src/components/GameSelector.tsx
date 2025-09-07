@@ -12,8 +12,8 @@ type CoinTitle = keyof typeof coins;
 type ItemType = 'game' | 'sub' | 'car' | 'console' | 'product' | 'coin';
 
 interface Selection {
-  type: ItemType;
-  title: string;
+  type: ItemType | 'all';
+  title?: string; // undefined quando type === 'all'
 }
 
 const dataGroups: {
@@ -32,17 +32,16 @@ const dataGroups: {
 
 export const GameSelector = () => {
   const [selected, setSelected] = useState<Selection | null>(null);
-  const [openGroups, setOpenGroups] = useState<Record<ItemType | 'all', boolean>>({
+  const [openGroups, setOpenGroups] = useState<Record<ItemType, boolean>>({
     sub: false,
     game: false,
     car: false,
     console: false,
     product: false,
     coin: false,
-    all: false,
   });
 
-  const toggleGroup = (type: ItemType | 'all') => {
+  const toggleGroup = (type: ItemType) => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
   };
 
@@ -54,81 +53,47 @@ export const GameSelector = () => {
       console: false,
       product: false,
       coin: false,
-      all: false,
     });
   };
 
   const handleSelect = (type: ItemType, title: string) => {
     setSelected({ type, title });
-    closeAllGroups(); // 👈 fecha os menus ao selecionar
+    closeAllGroups();
   };
 
-  const getData = () => {
-    if (!selected) return null;
+  const handleSelectAll = () => {
+    setSelected({ type: 'all' });
+    closeAllGroups();
+  };
 
-    switch (selected.type) {
+  const getData = (type: ItemType, title: string) => {
+    switch (type) {
       case 'game':
-        return games[selected.title as GameTitle];
+        return games[title as GameTitle];
       case 'sub':
-        return subs[selected.title as SubTitle];
+        return subs[title as SubTitle];
       case 'car':
-        return cars[selected.title as CarTitle];
+        return cars[title as CarTitle];
       case 'console':
-        return consoles[selected.title as ConsoleTitle];
+        return consoles[title as ConsoleTitle];
       case 'product':
-        return products[selected.title as ProductTitle];
+        return products[title as ProductTitle];
       case 'coin':
-        return coins[selected.title as CoinTitle];
+        return coins[title as CoinTitle];
       default:
         return null;
     }
   };
 
-  const getAllItems = () => {
-    return dataGroups.flatMap(({ type, items }) =>
-      Object.keys(items).map((title) => ({ type, title }))
-    );
-  };
-
   return (
     <div style={styles.container}>
-      <h2 style={styles.header}> Pick a Shoe</h2>
+      <h2 style={styles.header}>Pick a Card</h2>
 
-      {/* Botão para "All Items" */}
-      <div style={styles.group}>
-        <button
-          onClick={() => toggleGroup('all')}
-          style={{
-            ...styles.groupButton,
-            ...(openGroups.all ? styles.groupButtonActive : {}),
-          }}
-        >
-          📂 All Items
+      {/* Botão para mostrar todos os cards */}
+      <div style={{ marginBottom: '1rem' }}>
+        <button onClick={handleSelectAll} style={{ ...styles.groupButton }}>
+          📋 All Items
         </button>
-
-        {openGroups.all && (
-          <ul style={styles.itemList}>
-            {getAllItems()
-              .sort((a, b) => a.title.localeCompare(b.title))
-              .map(({ type, title }) => (
-                <li key={`${type}|${title}`}>
-                  <button
-                    onClick={() => handleSelect(type, title)}
-                    style={{
-                      ...styles.itemButton,
-                      ...(selected &&
-                      selected.type === type &&
-                      selected.title === title
-                        ? styles.itemButtonSelected
-                        : {}),
-                    }}
-                  >
-                    {title} <span style={{ opacity: 0.6 }}>({type})</span>
-                  </button>
-                </li>
-              ))}
-          </ul>
-        )}
       </div>
 
       {/* Grupos normais */}
@@ -170,11 +135,27 @@ export const GameSelector = () => {
         </div>
       ))}
 
-      {selected && getData() && (
-        <div style={styles.cardWrapper}>
-          <CardGame gameTitle={selected.title} data={getData()!} />
-        </div>
-      )}
+      {/* Cards renderizados */}
+      <div style={styles.cardWrapper}>
+        {selected &&
+          (selected.type === 'all'
+            ? dataGroups.map(({ type, items }) =>
+                Object.keys(items).map((title) => (
+                  <div key={`${type}|${title}`} style={{ marginBottom: '1rem' }}>
+                    <CardGame
+                      gameTitle={title}
+                      data={getData(type, title)!}
+                    />
+                  </div>
+                ))
+              )
+            : getData(selected.type as ItemType, selected.title!) && (
+                <CardGame
+                  gameTitle={selected.title!}
+                  data={getData(selected.type as ItemType, selected.title!)!}
+                />
+              ))}
+      </div>
     </div>
   );
 };
@@ -183,7 +164,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: '0.75rem',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '400px',
+    maxWidth: '800px',
     margin: 'auto',
     color: '#d4d4d4',
     backgroundColor: '#1e1e1e',
@@ -246,5 +227,6 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   cardWrapper: {
     marginTop: '1rem',
+    display: 'block', // Cards empilhados verticalmente
   },
 };
