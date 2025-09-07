@@ -164,21 +164,23 @@ export const GameSelector = () => {
           </button>
           {openGroups[type] && (
             <ul style={styles.itemList}>
-              {Object.keys(items).sort().map((title) => (
-                <li key={`${type}|${title}`}>
-                  <button
-                    onClick={() => handleSelect(type, title)}
-                    style={{
-                      ...styles.itemButton,
-                      ...(selected && selected.type === type && selected.title === title
-                        ? styles.itemButtonSelected
-                        : {}),
-                    }}
-                  >
-                    {title}
-                  </button>
-                </li>
-              ))}
+              {Object.keys(items)
+                .sort((a, b) => a.localeCompare(b))
+                .map((title) => (
+                  <li key={`${type}|${title}`}>
+                    <button
+                      onClick={() => handleSelect(type, title)}
+                      style={{
+                        ...styles.itemButton,
+                        ...(selected && selected.type === type && selected.title === title
+                          ? styles.itemButtonSelected
+                          : {}),
+                      }}
+                    >
+                      {title}
+                    </button>
+                  </li>
+                ))}
             </ul>
           )}
         </div>
@@ -187,11 +189,13 @@ export const GameSelector = () => {
       {/* Rendered Cards */}
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
-          ? allItems.map(([title, data]) => (
-              <div key={title} style={{ marginBottom: '0.5rem' }}>
-                <CardGame gameTitle={title} data={data as any} />
-              </div>
-            ))
+          ? allItems
+              .sort(([aTitle], [bTitle]) => aTitle.localeCompare(bTitle))
+              .map(([title, data]) => (
+                <div key={title} style={{ marginBottom: '0.5rem' }}>
+                  <CardGame gameTitle={title} data={data as any} />
+                </div>
+              ))
           : getData(selected.type, selected.title!) && (
               <CardGame
                 gameTitle={selected.title!}
@@ -207,7 +211,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: '0.75rem',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '400px',
+    maxWidth: '500px',
     margin: 'auto',
     color: '#d4d4d4',
     backgroundColor: '#1e1e1e',
@@ -256,7 +260,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '0.2rem 0.375rem',
     borderRadius: '5px',
     fontWeight: 'bold',
-    textAlign: 'left',
+    textAlign: 'center',
     cursor: 'pointer',
     userSelect: 'none',
     fontSize: '0.85rem',
