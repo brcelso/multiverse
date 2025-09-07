@@ -11,7 +11,7 @@ type GameData = {
       discount?: number;
       increase?: number;
       totalIncrease?: number; 
-      totalDiscount?: number;
+      totalDiscount?: number;   
       exchangeTax?: number;
       basePrice2?: number;
       exchangeTax2?: number;
@@ -65,7 +65,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         discount?: number;
         increase?: number;
         totalIncrease?: number;
-        totalDiscount?: number;
+        totalDiscount?: number;   
         exchangeTax?: number;
         basePrice2?: number;
         exchangeTax2?: number;
@@ -129,7 +129,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
               discount?: number;
               increase?: number;
               totalIncrease?: number;
-              totalDiscount?: number;
+              totalDiscount?: number;   
               exchangeTax?: number;
               basePrice2?: number;
               exchangeTax2?: number;
@@ -176,24 +176,22 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                               {entry.currency} {entry.price.toFixed(2)}
                               {entry.discount !== undefined && (
                                 <span style={styles.discount}>
-                                  [-{entry.discount}%] <span style={{ color: 'red' }}>↓</span>
+                                  [-{entry.discount}%] 👇🏼
                                 </span>
                               )}
                               {entry.increase !== undefined && (
                                 <span style={styles.increase}>
-                                  [+{entry.increase}%] <span style={{ color: 'limegreen' }}>↑</span>
+                                  [+{entry.increase}%] 👆🏼
                                 </span>
                               )}
                               {entry.totalIncrease !== undefined && (
                                 <span style={styles.totalIncrease}>
-                                  [+{entry.totalIncrease}%]{' '}
-                                  <span style={{ color: 'limegreen', fontWeight: 'bold' }}>↑↑</span>
+                                  [+{entry.totalIncrease}%] 👆🏼👆🏼
                                 </span>
                               )}
                               {entry.totalDiscount !== undefined && (
                                 <span style={styles.totalDiscount}>
-                                  [-{entry.totalDiscount}%]{' '}
-                                  <span style={{ color: 'red', fontWeight: 'bold' }}>↓↓</span>
+                                  [-{entry.totalDiscount}%] 👇🏼👇🏼
                                 </span>
                               )}
                             </div>
@@ -334,7 +332,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginLeft: '0.5rem',
     fontWeight: 'bold',
   },
-  totalDiscount: {
+  totalDiscount: {          
     color: '#d16969',
     marginLeft: '0.5rem',
     fontWeight: 'bold',
