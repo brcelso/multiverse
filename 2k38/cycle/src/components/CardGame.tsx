@@ -125,7 +125,9 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                   return parsedA.hasMonth === parsedB.hasMonth ? 0 : parsedA.hasMonth ? -1 : 1;
                 })
                 .map(([month, entries]) => {
-                  const filteredEntries = selectedEdition ? entries.filter((e) => e.edition === selectedEdition) : entries;
+                  const filteredEntries = selectedEdition
+                    ? entries.filter((e) => e.edition === selectedEdition)
+                    : entries;
                   if (filteredEntries.length === 0) return null;
 
                   return (
@@ -137,27 +139,54 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                             <strong style={styles.edition}>{entry.edition}</strong>
                             <div>
                               {entry.currency} {entry.price.toFixed(2)}
-                              {entry.discount !== undefined && <span style={styles.discount}>[-{entry.discount}%]</span>}
-                              {entry.increase !== undefined && <span style={styles.increase}>[+{entry.increase}%]</span>}
-                              {entry.totalIncrease !== undefined && <span style={styles.totalIncrease}>[+{entry.totalIncrease}%]</span>}
-                              {entry.totalDiscount !== undefined && <span style={styles.totalDiscount}>[-{entry.totalDiscount}%]</span>}
+
+                              {entry.increase !== undefined && (
+                                <span style={styles.increase}>
+                                  <b>[+{entry.increase}%]</b> 👆🏼
+                                </span>
+                              )}
+                              {entry.discount !== undefined && (
+                                <span style={styles.discount}>
+                                  <b>[-{entry.discount}%]</b> 👇🏼
+                                </span>
+                              )}
+                              {entry.totalIncrease !== undefined && (
+                                <span style={styles.totalIncrease}>
+                                  <b>[+{entry.totalIncrease}%]</b> 👆🏼👆🏼
+                                </span>
+                              )}
+                              {entry.totalDiscount !== undefined && (
+                                <span style={styles.totalDiscount}>
+                                  <b>[-{entry.totalDiscount}%]</b> 👇🏼👇🏼
+                                </span>
+                              )}
                             </div>
+
                             {entry.realPrice !== undefined && (
                               <div style={styles.realPrice}>
                                 Real Price: {entry.currency} {entry.realPrice.toFixed(2)}
                               </div>
                             )}
+
                             {entry.exchangeTax !== undefined && (
-                              <small style={styles.exchange}>Exchange LATAM: {entry.exchangeTax.toFixed(2)}</small>
+                              <small style={styles.exchange}>
+                                Exchange LATAM: {entry.exchangeTax.toFixed(2)}
+                              </small>
                             )}
+
                             {entry.exchangeTax2 !== undefined && (
                               <div style={styles.secondaryLine}>
-                                <small style={styles.exchange}>Exchange US: {entry.exchangeTax2.toFixed(2)}</small>
+                                <small style={styles.exchange}>
+                                  Exchange US: {entry.exchangeTax2.toFixed(2)}
+                                </small>
                               </div>
                             )}
+
                             {entry.exchangeTax3 !== undefined && (
                               <div style={styles.secondaryLine}>
-                                <small style={styles.exchange}>Exchange RealPrice: {entry.exchangeTax3.toFixed(2)}</small>
+                                <small style={styles.exchange}>
+                                  Exchange RealPrice: {entry.exchangeTax3.toFixed(2)}
+                                </small>
                               </div>
                             )}
                           </li>
@@ -177,15 +206,15 @@ export const CardGame = ({ gameTitle, data }: Props) => {
 const styles: { [key: string]: React.CSSProperties } = {
   container: { display: 'flex', justifyContent: 'center', flexDirection: 'column', padding: '1rem', backgroundColor: '#1e1e1e', minHeight: '100vh', fontFamily: '"Fira Code", monospace', textAlign: 'center' },
   card: {
-  background: '#252526',
-  color: '#d4d4d4',
-  borderRadius: '8px',
-  padding: '1.5rem 1rem', 
-  width: '100%',
-  maxWidth: '270px',
-  boxShadow: '0 0 10px rgba(0,0,0,0.3)',
-  overflowY: 'auto',
-  textAlign: 'center',
+    background: '#252526',
+    color: '#d4d4d4',
+    borderRadius: '8px',
+    padding: '1.5rem 1rem', 
+    width: '100%',
+    maxWidth: '270px',
+    boxShadow: '0 0 10px rgba(0,0,0,0.3)',
+    overflowY: 'auto',
+    textAlign: 'center',
   },
   title: { fontSize: '1.5rem', marginBottom: '0.5rem', color: '#627d8fff', textAlign: 'center' },
   launch: { fontSize: '0.85rem', color: '#6a9955', fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center' },
