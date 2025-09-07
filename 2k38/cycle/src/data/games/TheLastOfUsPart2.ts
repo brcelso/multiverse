@@ -6,7 +6,7 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered', price: 134.91, currency: 'R$', discount: 46 },
     ],
     'July 2025': [
-      { edition: 'Remaster es', price: 179.90, currency: 'R$', discount: 28 },
+      { edition: 'Remastered', price: 179.90, currency: 'R$', discount: 28 },
     ],
     'February 2025': [
       { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20 },
