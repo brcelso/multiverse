@@ -1,7 +1,3 @@
-Perfeito 🚀
-Vou aplicar a Opção 3 → usar ⬆️⬆️ para totalIncrease e ⬇️⬇️ para totalDiscount.
-Aqui está o código completo já ajustado:
-
 import React, { useState } from 'react';
 
 type GameData = {
@@ -373,14 +369,3 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: 'center',
   },
 };
-
-
-⸻
-
-Agora:
-	•	Increase usa ⬆️
-	•	Discount usa ⬇️
-	•	TotalIncrease usa ⬆️⬆️
-	•	TotalDiscount usa ⬇️⬇️
-
-Quer que eu também coloque uma tooltip (ex: ao passar o mouse mostrar “Aumento acumulado” / “Desconto acumulado”)?
