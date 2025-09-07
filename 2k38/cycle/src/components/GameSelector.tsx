@@ -188,7 +188,7 @@ export const GameSelector = () => {
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
           ? allItems.map(([title, data]) => (
-              <div key={title} style={{ marginBottom: '1rem' }}>
+              <div key={title} style={{ marginBottom: '0.5rem' }}>
                 <CardGame gameTitle={title} data={data as any} />
               </div>
             ))
@@ -217,28 +217,28 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   navbar: {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     background: '#333333',
-    padding: '0.75rem 1rem',
+    padding: '0.375rem 0.5rem',
     borderRadius: '5px',
-    marginBottom: '1rem',
+    marginBottom: '0.5rem',
     position: 'sticky',
     top: 0,
     zIndex: 100,
-    gap: '1rem',
+    gap: '0.5rem',
   },
   navTitle: {
     margin: 0,
     fontSize: '1.3rem',
     flexGrow: 1,
-    textAlign: 'left',
+    textAlign: 'center',
   },
   homeButton: {
     background: '#555555',
     border: 'none',
     color: '#ffffff',
-    padding: '0.4rem 0.75rem',
+    padding: '0.2rem 0.375rem',
     borderRadius: '5px',
     fontWeight: 'bold',
     cursor: 'pointer',
@@ -246,14 +246,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     flexShrink: 0,
   },
   group: {
-    marginBottom: '0.75rem',
+    marginBottom: '0.375rem',
   },
   groupButton: {
     width: '100%',
     background: '#333333',
     border: 'none',
     color: '#ffffff',
-    padding: '0.4rem 0.75rem',
+    padding: '0.2rem 0.375rem',
     borderRadius: '5px',
     fontWeight: 'bold',
     textAlign: 'left',
@@ -268,12 +268,12 @@ const styles: { [key: string]: React.CSSProperties } = {
   itemList: {
     listStyle: 'none',
     margin: 0,
-    paddingLeft: '0.5rem',
+    paddingLeft: '0.25rem',
     maxHeight: '150px',
     overflowY: 'auto',
     background: '#252526',
     borderRadius: '4px',
-    marginTop: '0.25rem',
+    marginTop: '0.125rem',
     border: '1px solid #333',
     textAlign: 'left',
   },
@@ -282,7 +282,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     background: 'transparent',
     border: 'none',
     color: '#cccccc',
-    padding: '0.25rem 0.5rem',
+    padding: '0.125rem 0.25rem',
     textAlign: 'left',
     cursor: 'pointer',
     borderRadius: '4px',
@@ -294,14 +294,14 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#9cdcfe',
   },
   cardWrapper: {
-    marginTop: '1rem',
+    marginTop: '0.5rem',
     display: 'block',
   },
   filterContainer: {
     display: 'flex',
-    gap: '1rem',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    gap: '0.5rem',
+    marginBottom: '0.5rem',
     alignItems: 'center',
   },
 };
