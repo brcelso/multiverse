@@ -7,7 +7,7 @@ export const astroBot = {
     ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 399.90, currency: 'R$' },
-      { edition: 'Standard Edition', price: 339.90, currency: 'R$' 
+      { edition: 'Standard Edition', price: 339.90, currency: 'R$' },
       { edition: 'Standard Edition', price: 166.50, currency: 'R$', discount: 44.5 },
     ],
     'February 2025': [
