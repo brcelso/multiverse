@@ -32,17 +32,35 @@ const dataGroups: {
 
 export const GameSelector = () => {
   const [selected, setSelected] = useState<Selection | null>(null);
-  const [openGroups, setOpenGroups] = useState<Record<ItemType, boolean>>({
+  const [openGroups, setOpenGroups] = useState<Record<ItemType | 'all', boolean>>({
     sub: false,
     game: false,
     car: false,
     console: false,
     product: false,
     coin: false,
+    all: false,
   });
 
-  const toggleGroup = (type: ItemType) => {
+  const toggleGroup = (type: ItemType | 'all') => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
+  };
+
+  const closeAllGroups = () => {
+    setOpenGroups({
+      sub: false,
+      game: false,
+      car: false,
+      console: false,
+      product: false,
+      coin: false,
+      all: false,
+    });
+  };
+
+  const handleSelect = (type: ItemType, title: string) => {
+    setSelected({ type, title });
+    closeAllGroups(); // 👈 fecha os menus ao selecionar
   };
 
   const getData = () => {
@@ -66,10 +84,54 @@ export const GameSelector = () => {
     }
   };
 
+  const getAllItems = () => {
+    return dataGroups.flatMap(({ type, items }) =>
+      Object.keys(items).map((title) => ({ type, title }))
+    );
+  };
+
   return (
     <div style={styles.container}>
       <h2 style={styles.header}> Pick a Shoe</h2>
 
+      {/* Botão para "All Items" */}
+      <div style={styles.group}>
+        <button
+          onClick={() => toggleGroup('all')}
+          style={{
+            ...styles.groupButton,
+            ...(openGroups.all ? styles.groupButtonActive : {}),
+          }}
+        >
+          📂 All Items
+        </button>
+
+        {openGroups.all && (
+          <ul style={styles.itemList}>
+            {getAllItems()
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map(({ type, title }) => (
+                <li key={`${type}|${title}`}>
+                  <button
+                    onClick={() => handleSelect(type, title)}
+                    style={{
+                      ...styles.itemButton,
+                      ...(selected &&
+                      selected.type === type &&
+                      selected.title === title
+                        ? styles.itemButtonSelected
+                        : {}),
+                    }}
+                  >
+                    {title} <span style={{ opacity: 0.6 }}>({type})</span>
+                  </button>
+                </li>
+              ))}
+          </ul>
+        )}
+      </div>
+
+      {/* Grupos normais */}
       {dataGroups.map(({ label, type, items, emoji }) => (
         <div key={type} style={styles.group}>
           <button
@@ -89,7 +151,7 @@ export const GameSelector = () => {
                 .map((title) => (
                   <li key={`${type}|${title}`}>
                     <button
-                      onClick={() => setSelected({ type, title })}
+                      onClick={() => handleSelect(type, title)}
                       style={{
                         ...styles.itemButton,
                         ...(selected &&
@@ -121,17 +183,17 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     padding: '0.75rem',
     fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '400px',               // ⬅️ Reduzido
+    maxWidth: '400px',
     margin: 'auto',
     color: '#d4d4d4',
     backgroundColor: '#1e1e1e',
-    borderRadius: '6px',             // ⬅️ Cantos um pouco menores
+    borderRadius: '6px',
     boxShadow: '0 0 6px rgba(0,0,0,0.4)',
     textAlign: 'center',
   },
   header: {
     color: '#627d8fff',
-    fontSize: '1.25rem',              // ⬅️ Título menor
+    fontSize: '1.25rem',
     marginBottom: '0.75rem',
   },
   group: {
@@ -142,13 +204,13 @@ const styles: { [key: string]: React.CSSProperties } = {
     background: '#333333',
     border: 'none',
     color: '#ffffff',
-    padding: '0.4rem 0.75rem',        // ⬅️ Menos padding
+    padding: '0.4rem 0.75rem',
     borderRadius: '5px',
     fontWeight: 'bold',
     textAlign: 'left',
     cursor: 'pointer',
     userSelect: 'none',
-    fontSize: '0.85rem',              // ⬅️ Menor
+    fontSize: '0.85rem',
     transition: 'background 0.2s',
   },
   groupButtonActive: {
@@ -158,7 +220,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     listStyle: 'none',
     margin: 0,
     paddingLeft: '0.5rem',
-    maxHeight: '150px',               // ⬅️ Menor altura
+    maxHeight: '150px',
     overflowY: 'auto',
     background: '#252526',
     borderRadius: '4px',
@@ -171,11 +233,11 @@ const styles: { [key: string]: React.CSSProperties } = {
     background: 'transparent',
     border: 'none',
     color: '#cccccc',
-    padding: '0.25rem 0.5rem',         // ⬅️ Menor padding
+    padding: '0.25rem 0.5rem',
     textAlign: 'left',
     cursor: 'pointer',
     borderRadius: '4px',
-    fontSize: '0.8rem',                // ⬅️ Texto menor
+    fontSize: '0.8rem',
     transition: 'background 0.2s, color 0.2s',
   },
   itemButtonSelected: {
@@ -183,6 +245,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#9cdcfe',
   },
   cardWrapper: {
-    marginTop: '1rem',                // ⬅️ Menor margem
+    marginTop: '1rem',
   },
 };
