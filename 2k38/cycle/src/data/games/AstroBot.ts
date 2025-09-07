@@ -21,20 +21,20 @@ export const astroBot = {
   },
   Europe: {
     'November 2024': [
-      { edition: 'Standard Edition', price: 49.99, discount: 28, currency: '$' },
+      { edition: 'Standard Edition', price: 49.99, discount: 28, currency: '€' },
     ],
     'September 2024': [
-      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
-      { edition: 'Standard Edition', price: 69.99, currency: '$' },
+      { edition: 'Deluxe Edition', price: 79.99, currency: '€' },
+      { edition: 'Standard Edition', price: 69.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'November 2024': [
-      { edition: 'Standard Edition', price: 43.99, discount: 27, currency: '$' },
+      { edition: 'Standard Edition', price: 43.99, discount: 27, currency: '£' },
     ],
     'September 2024': [
-      { edition: 'Deluxe Edition', price: 69.99, currency: '$' },
-      { edition: 'Standard Edition', price: 59.99, currency: '$' },
+      { edition: 'Deluxe Edition', price: 69.99, currency: '£' },
+      { edition: 'Standard Edition', price: 59.99, currency: '£' },
     ],
   },
   UnitedStates: {
