@@ -249,7 +249,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   background: '#252526',
   color: '#d4d4d4',
   borderRadius: '8px',
-  padding: '1.5rem 4.5rem', 
+  padding: '1.5rem 5rem', 
   width: '100%',
   maxWidth: '600px',
   boxShadow: '0 0 10px rgba(0,0,0,0.3)',
