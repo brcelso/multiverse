@@ -72,7 +72,7 @@ export const theLastOfUsPart2 = {
     ],
     'June 2020': [
       { edition: 'Ellie Edition', price: 229.99, currency: '$' },
-      { edition: "Collector's Edition", price: 169.99, currency: '$' },
+      { edition: "Collector Edition", price: 169.99, currency: '$' },
       { edition: 'Special Edition', price: 79.99, currency: '$' },
       { edition: 'Deluxe Edition', price: 69.99, currency: '$' },
       { edition: 'Standard Edition', price: 44.99, currency: '$', discount: 25},

@@ -4,7 +4,7 @@ export const thecallistoprotocol = {
   Brazil: {
     'July 2025': [
       { edition: "Deluxe Edition PS5", price: 72.43, discount: 85, currency: 'R$', exchangeTax: 3.69 },
-      { edition: "Dexuxe Edition PS4", price: 64.48, discount: 85, currency: 'R$', exchangeTax: 3.69 },
+      { edition: "Deluxe Edition PS4", price: 64.48, discount: 85, currency: 'R$', exchangeTax: 3.69 },
     ],
     'December 2022': [
       { edition: "Deluxe Edition PS5", price: 482.50, increase: 7.5, currency: 'R$', exchangeTax: 4.99 },

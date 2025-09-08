@@ -8,21 +8,21 @@ export const firstlight = {
   },
   Europe: {
     'March 2026': [
-      { edition: "Collector's Edition", price: 299.99, currency: '€' },
+      { edition: "Collector Edition", price: 299.99, currency: '€' },
       { edition: "Deluxe Edition", price: 79.99, currency: '€' },
       { edition: "Standard Edition", price: 69.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'March 2026': [
-      { edition: "Collector's Edition", price: 259.99, currency: '£' },
+      { edition: "Collector Edition", price: 259.99, currency: '£' },
       { edition: "Deluxe Edition", price: 69.99, currency: '£' },
       { edition: "Standard Edition", price: 59.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'March 2026': [
-      { edition: "Collector's Edition", price: 299.99, currency: '$' },
+      { edition: "Collectos Edition", price: 299.99, currency: '$' },
       { edition: "Deluxe Edition", price: 79.99, currency: '$' },
       { edition: "Standard Edition", price: 69.99, currency: '$' },
     ],
