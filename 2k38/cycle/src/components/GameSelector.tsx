@@ -1,4 +1,3 @@
-// GameSelector.tsx
 import { useState } from 'react';
 import { CardGame } from './CardGame';
 import { games, subs, cars, consoles, products, coins } from '../data';
@@ -39,6 +38,7 @@ export const GameSelector = () => {
   const [groupFilter, setGroupFilter] = useState<string>('All');
   const [regionFilter, setRegionFilter] = useState<string>('All');
   const [editionFilter, setEditionFilter] = useState<string>('All');
+  const [platformFilter, setPlatformFilter] = useState<string>('All');
   const [launchDateStart, setLaunchDateStart] = useState<string>('');
   const [launchDateEnd, setLaunchDateEnd] = useState<string>('');
   const [minPrice, setMinPrice] = useState<number | ''>('');
@@ -49,7 +49,7 @@ export const GameSelector = () => {
   const handleSelect = (type: ItemType, title: string) => { setSelected({ type, title }); closeAllGroups(); };
   const goHome = () => {
     setSelected({ type: 'all' });
-    setGroupFilter('All'); setRegionFilter('All'); setEditionFilter('All');
+    setGroupFilter('All'); setRegionFilter('All'); setEditionFilter('All'); setPlatformFilter('All');
     setLaunchDateStart(''); setLaunchDateEnd('');
     setMinPrice(''); setMaxPrice('');
     closeAllGroups();
@@ -83,6 +83,17 @@ export const GameSelector = () => {
     ))
   )).sort();
 
+  // Todas as plataformas únicas
+  const allPlatforms = Array.from(new Set(
+    dataGroups.flatMap(g => Object.values(g.items).flatMap((item:any) =>
+      Object.entries(item as Record<string, any>)
+        .filter(([region]) => region!=='launchDate')
+        .flatMap(([_, regionData]) => Object.values(regionData as Record<string, any>)
+          .flatMap((arr:any) => Array.isArray(arr) ? arr.map(x=>x.platform).filter(Boolean):[])
+        )
+    ))
+  )).sort();
+
   // Filtragem completa
   const allItems = dataGroups
     .filter(g => groupFilter==='All' || g.label===groupFilter)
@@ -96,7 +107,17 @@ export const GameSelector = () => {
         const monthFiltered: Record<string, any> = {};
         for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
           if(!Array.isArray(items)) continue;
-          let filteredItems = editionFilter==='All' ? items : items.filter((x:any)=>x.edition===editionFilter);
+          let filteredItems = items;
+
+          // Filtro de edição
+          if(editionFilter!=='All'){
+            filteredItems = filteredItems.filter((x:any)=>x.edition===editionFilter);
+          }
+
+          // Filtro de plataforma
+          if(platformFilter!=='All'){
+            filteredItems = filteredItems.filter((x:any)=>x.platform===platformFilter);
+          }
 
           // Filtro de preço
           filteredItems = filteredItems.filter((x:any)=>{
@@ -122,7 +143,6 @@ export const GameSelector = () => {
         }
       }
 
-      // Só incluir se houver meses/regiões com itens
       const hasItems = Object.entries(filteredData).some(([r, rData]) => r!=='launchDate' && Object.keys(rData).length>0);
       if(!hasItems) return null;
 
@@ -178,6 +198,15 @@ export const GameSelector = () => {
           <select value={editionFilter} onChange={e=>setEditionFilter(e.target.value)}>
             <option value="All">All</option>
             {allEditions.map(e=><option key={e} value={e}>{e}</option>)}
+          </select>
+        </div>
+
+        {/* Platform */}
+        <div style={styles.filterEdition}>
+          <label>Platform: </label>
+          <select value={platformFilter} onChange={e=>setPlatformFilter(e.target.value)}>
+            <option value="All">All</option>
+            {allPlatforms.map(p=><option key={p} value={p}>{p}</option>)}
           </select>
         </div>
 
