@@ -1,3 +1,4 @@
+// GameSelector.tsx
 import { useState } from 'react';
 import { CardGame } from './CardGame';
 import { games, subs, cars, consoles, products, coins } from '../data';
@@ -120,11 +121,10 @@ export const GameSelector = () => {
       Object.entries(group.items).map(([title, data]) => {
         const dataObj = data as Record<string, any>;
 
-        // Filtrar por região
+        // Filtrar por região (mantendo launchDate)
         const filteredByRegion: Record<string, any> = {};
         for (const [region, regionData] of Object.entries(dataObj)) {
-          if (region === 'launchDate') continue;
-          if (regionFilter !== 'All' && region !== regionFilter) continue;
+          if (regionFilter !== 'All' && region !== regionFilter && region !== 'launchDate') continue;
           filteredByRegion[region] = regionData;
         }
 
@@ -133,6 +133,10 @@ export const GameSelector = () => {
 
         const filteredByEdition: Record<string, any> = {};
         for (const [region, regionData] of Object.entries(filteredByRegion)) {
+          if (region === 'launchDate') {
+            filteredByEdition[region] = regionData;
+            continue;
+          }
           const regionFiltered: Record<string, any> = {};
           for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
             if (Array.isArray(items)) {
@@ -274,110 +278,19 @@ export const GameSelector = () => {
   );
 };
 
+// estilos permanecem os mesmos
 const styles: { [key: string]: React.CSSProperties } = {
-  container: {
-    padding: '0.75rem',
-    fontFamily: '"Fira Code", "Courier New", monospace',
-    maxWidth: '800px',
-    margin: 'auto',
-    color: '#d4d4d4',
-    backgroundColor: '#1e1e1e',
-    borderRadius: '6px',
-    boxShadow: '0 0 6px rgba(0,0,0,0.4)',
-    textAlign: 'center',
-  },
-  navbar: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    background: '#333333',
-    padding: '0.375rem 0.5rem',
-    borderRadius: '5px',
-    marginBottom: '0.5rem',
-    position: 'sticky',
-    top: 0,
-    zIndex: 100,
-    gap: '0.5rem',
-  },
-  navTitle: {
-    margin: 0,
-    fontSize: '1.3rem',
-    flexGrow: 1,
-    textAlign: 'center',
-  },
-  homeButton: {
-    background: '#555555',
-    border: 'none',
-    color: '#ffffff',
-    padding: '0.2rem 0.375rem',
-    borderRadius: '5px',
-    fontWeight: 'bold',
-    cursor: 'pointer',
-    transition: 'background 0.2s',
-    flexShrink: 0,
-  },
+  container: { padding: '0.75rem', fontFamily: '"Fira Code", "Courier New", monospace', maxWidth: '800px', margin: 'auto', color: '#d4d4d4', backgroundColor: '#1e1e1e', borderRadius: '6px', boxShadow: '0 0 6px rgba(0,0,0,0.4)', textAlign: 'center' },
+  navbar: { display: 'flex', justifyContent: 'flex-start', alignItems: 'center', background: '#333333', padding: '0.375rem 0.5rem', borderRadius: '5px', marginBottom: '0.5rem', position: 'sticky', top: 0, zIndex: 100, gap: '0.5rem' },
+  navTitle: { margin: 0, fontSize: '1.3rem', flexGrow: 1, textAlign: 'center' },
+  homeButton: { background: '#555555', border: 'none', color: '#ffffff', padding: '0.2rem 0.375rem', borderRadius: '5px', fontWeight: 'bold', cursor: 'pointer', transition: 'background 0.2s', flexShrink: 0 },
   group: { marginBottom: '0.375rem' },
-  groupButton: {
-    width: '100%',
-    background: '#333333',
-    border: 'none',
-    color: '#ffffff',
-    padding: '0.2rem 0.375rem',
-    borderRadius: '5px',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    cursor: 'pointer',
-    userSelect: 'none',
-    fontSize: '0.85rem',
-    transition: 'background 0.2s',
-  },
+  groupButton: { width: '100%', background: '#333333', border: 'none', color: '#ffffff', padding: '0.2rem 0.375rem', borderRadius: '5px', fontWeight: 'bold', textAlign: 'center', cursor: 'pointer', userSelect: 'none', fontSize: '0.85rem', transition: 'background 0.2s' },
   groupButtonActive: { background: '#444444' },
-  itemList: {
-    listStyle: 'none',
-    margin: 0,
-    paddingLeft: '0.25rem',
-    maxHeight: '150px',
-    overflowY: 'auto',
-    background: '#252526',
-    borderRadius: '4px',
-    marginTop: '0.125rem',
-    border: '1px solid #333',
-    textAlign: 'left',
-  },
-  itemButton: {
-    width: '100%',
-    background: 'transparent',
-    border: 'none',
-    color: '#cccccc',
-    padding: '0.125rem 0.25rem',
-    textAlign: 'left',
-    cursor: 'pointer',
-    borderRadius: '4px',
-    fontSize: '0.8rem',
-    transition: 'background 0.2s, color 0.2s',
-  },
+  itemList: { listStyle: 'none', margin: 0, paddingLeft: '0.25rem', maxHeight: '150px', overflowY: 'auto', background: '#252526', borderRadius: '4px', marginTop: '0.125rem', border: '1px solid #333', textAlign: 'left' },
+  itemButton: { width: '100%', background: 'transparent', border: 'none', color: '#cccccc', padding: '0.125rem 0.25rem', textAlign: 'left', cursor: 'pointer', borderRadius: '4px', fontSize: '0.8rem', transition: 'background 0.2s, color 0.2s' },
   itemButtonSelected: { background: '#3c3c3c', color: '#9cdcfe' },
-  cardWrapper: {
-    marginTop: '0.5rem',
-    display: 'block',      // um card por vez
-    minHeight: '500px',
-    width: '100%',
-    overflowY: 'auto',
-    overflowX: 'auto',
-    paddingBottom: '0.5rem',
-  },
-  filterContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '0.5rem',
-    marginBottom: '0.5rem',
-    alignItems: 'center',
-  },
-  filterEdition: {
-    marginBottom: '0.5rem',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '0.25rem',
-  },
+  cardWrapper: { marginTop: '0.5rem', display: 'block', minHeight: '500px', width: '100%', overflowY: 'auto', overflowX: 'auto', paddingBottom: '0.5rem' },
+  filterContainer: { display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem', alignItems: 'center' },
+  filterEdition: { marginBottom: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.25rem' },
 };
