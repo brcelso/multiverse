@@ -9,10 +9,10 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered', price: 179.90, currency: 'R$', discount: 28 },
     ],
     'June 2025': [
-      { edition: 'Remastered', price: 284.90, currency: 'R$', increase: 14 },
+      { edition: 'Remastered', price: 284.90, currency: 'R$', increase: 14, exchangeTax2: 5.69 },
     ],
     'February 2025': [
-      { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20 },
+      { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20, exchangeTax2: 5},
     ],
     'January 2024': [
       { edition: 'Remastered', price: 249.90, currency: 'R$', exchangeTax: 5 },
@@ -40,12 +40,16 @@ export const theLastOfUsPart2 = {
   Europe: {
     'May 2025': [
       { edition: 'Remastered', price: 39.99, currency: '€', discount: 20 },
+    ],
+    'January 2024': [
       { edition: 'Remastered', price: 49.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'May 2025': [
       { edition: 'Remastered', price: 35.99, currency: '£', discount: 20 },
+      ],
+    'January 2024': [
       { edition: 'Remastered', price: 44.99, currency: '£' },
     ],
     'September 2020': [
@@ -58,6 +62,9 @@ export const theLastOfUsPart2 = {
     ],
   },
   UnitedStates: {
+    'March 2025': [
+      { edition: 'Remastered', price: 39.99, discount: 20, currency: '$' },
+    ],
     'January 2024': [
       { edition: 'Remastered', price: 49.99, increase: 25, currency: '$' },
     ],
