@@ -2,24 +2,26 @@ import React from 'react';
 
 type GameData = {
   launchDate: string;
-  [region: string]: {
-    [monthYear: string]: {
-      platform?: string; 
-      edition: string;
-      price: number;
-      realPrice?: number;
-      currency: string;
-      discount?: number;
-      increase?: number;
-      totalIncrease?: number;
-      totalDiscount?: number;
-      exchangeTax?: number;
-      basePrice2?: number;
-      exchangeTax2?: number;
-      basePrice3?: number;
-      exchangeTax3?: number;
-    }[];
-  } | string;
+  [region: string]:
+    | {
+        [monthYear: string]: {
+          edition: string;
+          price: number;
+          realPrice?: number;
+          currency: string;
+          platform?: string; // 👈 adicionado aqui
+          discount?: number;
+          increase?: number;
+          totalIncrease?: number;
+          totalDiscount?: number;
+          exchangeTax?: number;
+          basePrice2?: number;
+          exchangeTax2?: number;
+          basePrice3?: number;
+          exchangeTax3?: number;
+        }[];
+      }
+    | string;
 };
 
 type Props = {
@@ -52,7 +54,7 @@ function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
 }
 
 export const CardGame = ({ gameTitle, data }: Props) => {
-  const { launchDate, platform, ...regionsData } = data;
+  const { launchDate, ...regionsData } = data;
   const regions = Object.keys(regionsData).filter(
     (r) => r !== 'currentRegion' && r !== 'currentMonthYear'
   );
@@ -64,7 +66,6 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         <p style={styles.launch}>
           Launch Date: {new Date(launchDate + 'T12:00:00').toLocaleDateString()}
         </p>
-        <p style={styles.platform}>Platform: {platform}</p> {/* 🔹 Mostrando plataforma */}
 
         {regions.map((region) => {
           const monthsData = regionsData[region] as { [monthYear: string]: any[] };
@@ -75,7 +76,12 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                 <img
                   src={regionFlags[region]}
                   alt={`${region} flag`}
-                  style={{ width: 24, height: 15, marginRight: 8, verticalAlign: 'middle' }}
+                  style={{
+                    width: 24,
+                    height: 15,
+                    marginRight: 8,
+                    verticalAlign: 'middle',
+                  }}
                   draggable={false}
                 />
                 {region}
@@ -96,6 +102,14 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                       {entries.map((entry, idx) => (
                         <li key={idx} style={styles.priceItem}>
                           <strong style={styles.edition}>{entry.edition}</strong>
+
+                          {/* 👇 Exibir plataforma */}
+                          {entry.platform && (
+                            <div style={styles.platform}>
+                              Platform: {entry.platform}
+                            </div>
+                          )}
+
                           <div>
                             {entry.currency} {entry.price.toFixed(2)}
 
@@ -193,13 +207,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '0.85rem',
     color: '#6a9955',
     fontWeight: 'bold',
-    marginBottom: '0.25rem',
-    textAlign: 'center',
-  },
-  platform: {
-    fontSize: '0.85rem',
-    color: '#569cd6',
-    fontWeight: 'bold',
     marginBottom: '1rem',
     textAlign: 'center',
   },
@@ -248,10 +255,25 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#dddd6aff',
     textAlign: 'center',
   },
+  platform: {
+    fontSize: '0.8rem',
+    color: '#4fc3f7',
+    marginBottom: '0.3rem',
+  },
   discount: { color: '#da5757ff', fontSize: '0.85rem', marginLeft: 6 },
   increase: { color: '#18FAFA', fontSize: '0.85rem', marginLeft: 6 },
-  totalIncrease: { color: 'deeppink', fontWeight: 'bold', fontSize: '0.95rem', marginLeft: 6 },
-  totalDiscount: { color: 'orange', fontWeight: 'bold', fontSize: '0.95rem', marginLeft: 6 },
+  totalIncrease: {
+    color: 'deeppink',
+    fontWeight: 'bold',
+    fontSize: '0.95rem',
+    marginLeft: 6,
+  },
+  totalDiscount: {
+    color: 'orange',
+    fontWeight: 'bold',
+    fontSize: '0.95rem',
+    marginLeft: 6,
+  },
   exchange: { color: '#b5cea8', fontSize: '0.7rem', display: 'block', textAlign: 'center' },
   secondaryLine: { marginTop: '0.25rem' },
   realPrice: {
