@@ -21,20 +21,20 @@ export const hellisus = {
   },
   Europe: {
     'February 2025': [
-      { edition: "Deluxe Edition", price: 79.99, currency: '€' },
-      { edition: "Standard Edition", price: 59.99, currency: '€' },
+      { platform: "PS5/Xbox", edition: "Deluxe Edition", price: 79.99, currency: '€' },
+      { platform: "PS5/Xbox", edition: "Standard Edition", price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'February 2025': [
-      { edition: "Deluxe Edition", price: 64.99, currency: '£' },
-      { edition: "Standard Edition", price: 49.99, currency: '£' },
+      { platform: "PS5/Xbox", edition: "Deluxe Edition", price: 64.99, currency: '£' },
+      { platform: "PS5/Xbox", edition: "Standard Edition", price: 49.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'February 2025': [
-      { edition: "Deluxe Edition", price: 79.99, currency: '$' },
-      { edition: "Standard Edition", price: 59.99, currency: '$' },
+      { platform: "PS5/Xbox", edition: "Deluxe Edition", price: 79.99, currency: '$' },
+      { platform: "PS5/Xbox", edition: "Standard Edition", price: 59.99, currency: '$' },
     ],
   },
 };
