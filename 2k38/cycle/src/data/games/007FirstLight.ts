@@ -3,7 +3,7 @@ export const firstlight = {
   Brazil: {
     'March 2026': [
       { edition: "Deluxe Edition", price: 0, currency: 'R$', exchangeTax2: 0 },
-      { edition: "Standard Edition", price: 349.90, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: "Standard Edition", price: 339.95, currency: 'R$', exchangeTax2: 4.99 },
       { edition: "Standard Edition", price: 299.90, currency: 'R$', exchangeTax2: 4.28 },
     ],
   },
