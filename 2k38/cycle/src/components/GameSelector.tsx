@@ -44,6 +44,7 @@ export const GameSelector = () => {
   const [regionFilter, setRegionFilter] = useState<string>('All');
   const [groupFilter, setGroupFilter] = useState<string>('All');
   const [editionFilter, setEditionFilter] = useState<string>('All');
+  const [launchDateFilter, setLaunchDateFilter] = useState<string>('All');
 
   const toggleGroup = (type: ItemType) => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
@@ -70,6 +71,7 @@ export const GameSelector = () => {
     setRegionFilter('All');
     setGroupFilter('All');
     setEditionFilter('All');
+    setLaunchDateFilter('All');
     closeAllGroups();
   };
 
@@ -85,6 +87,7 @@ export const GameSelector = () => {
     }
   };
 
+  // Todas as regiões únicas
   const allRegions = Array.from(
     new Set(
       dataGroups.flatMap((group) =>
@@ -96,6 +99,7 @@ export const GameSelector = () => {
     )
   ).sort();
 
+  // Todas as edições únicas
   const allEditions = Array.from(
     new Set(
       dataGroups
@@ -115,6 +119,16 @@ export const GameSelector = () => {
     )
   ).sort();
 
+  // Todas as datas de lançamento únicas (A-Z)
+  const allLaunchDates = Array.from(
+    new Set(
+      dataGroups.flatMap((group) =>
+        Object.values(group.items).map((item: any) => item.launchDate).filter(Boolean)
+      )
+    )
+  ).sort((a, b) => a.localeCompare(b));
+
+  // Filtragem dos itens
   const allItems = dataGroups
     .filter((group) => groupFilter === 'All' || group.label === groupFilter)
     .flatMap((group) =>
@@ -129,25 +143,27 @@ export const GameSelector = () => {
         }
 
         // Filtrar por edição
-        if (editionFilter === 'All') return [title, filteredByRegion] as const;
-
-        const filteredByEdition: Record<string, any> = {};
-        for (const [region, regionData] of Object.entries(filteredByRegion)) {
-          if (region === 'launchDate') {
-            filteredByEdition[region] = regionData;
-            continue;
-          }
-          const regionFiltered: Record<string, any> = {};
-          for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
-            if (Array.isArray(items)) {
-              const editions = items.filter((x: any) => x.edition === editionFilter);
-              if (editions.length > 0) regionFiltered[monthYear] = editions;
+        let filteredByEdition: Record<string, any> = {};
+        if (editionFilter === 'All') filteredByEdition = filteredByRegion;
+        else {
+          for (const [region, regionData] of Object.entries(filteredByRegion)) {
+            if (region === 'launchDate') {
+              filteredByEdition[region] = regionData;
+              continue;
             }
-          }
-          if (Object.keys(regionFiltered).length > 0) {
-            filteredByEdition[region] = regionFiltered;
+            const regionFiltered: Record<string, any> = {};
+            for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
+              if (Array.isArray(items)) {
+                const editions = items.filter((x: any) => x.edition === editionFilter);
+                if (editions.length > 0) regionFiltered[monthYear] = editions;
+              }
+            }
+            if (Object.keys(regionFiltered).length > 0) filteredByEdition[region] = regionFiltered;
           }
         }
+
+        // Filtrar por launchDate
+        if (launchDateFilter !== 'All' && filteredByEdition.launchDate !== launchDateFilter) return null;
 
         return Object.keys(filteredByEdition).length > 0 ? [title, filteredByEdition] as const : null;
       })
@@ -206,6 +222,20 @@ export const GameSelector = () => {
               <option value="All">All</option>
               {allEditions.map((edition) => (
                 <option key={edition} value={edition}>{edition}</option>
+              ))}
+            </select>
+          </div>
+
+          <div style={styles.filterEdition}>
+            <label htmlFor="launchDate">Filter by Launch Date: </label>
+            <select
+              id="launchDate"
+              value={launchDateFilter}
+              onChange={(e) => setLaunchDateFilter(e.target.value)}
+            >
+              <option value="All">All</option>
+              {allLaunchDates.map((date) => (
+                <option key={date} value={date}>{date}</option>
               ))}
             </select>
           </div>
