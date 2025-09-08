@@ -3,8 +3,8 @@ export const untilDawn = {
 
   Brazil: {
     'April 2024': [
-      { edition: 'PS5 Pro', price: 224.92, currency: 'R$', discount: 25 },
-      { edition: 'PS5 Pro', price: 299.90, currency: 'R$' },
+      { edition: 'Standard Edition', price: 224.92, currency: 'R$', discount: 25 },
+      { edition: 'Standard Edition', price: 299.90, currency: 'R$' },
     ],
   },
 };

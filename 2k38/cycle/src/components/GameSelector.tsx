@@ -41,6 +41,8 @@ export const GameSelector = () => {
   const [editionFilter, setEditionFilter] = useState<string>('All');
   const [launchDateStart, setLaunchDateStart] = useState<string>('');
   const [launchDateEnd, setLaunchDateEnd] = useState<string>('');
+  const [minPrice, setMinPrice] = useState<number | ''>('');
+  const [maxPrice, setMaxPrice] = useState<number | ''>('');
 
   const toggleGroup = (type: ItemType) => setOpenGroups(prev => ({ ...prev, [type]: !prev[type] }));
   const closeAllGroups = () => setOpenGroups({ sub:false, game:false, car:false, console:false, product:false, coin:false });
@@ -49,6 +51,7 @@ export const GameSelector = () => {
     setSelected({ type: 'all' });
     setGroupFilter('All'); setRegionFilter('All'); setEditionFilter('All');
     setLaunchDateStart(''); setLaunchDateEnd('');
+    setMinPrice(''); setMaxPrice('');
     closeAllGroups();
   };
 
@@ -93,7 +96,16 @@ export const GameSelector = () => {
         const monthFiltered: Record<string, any> = {};
         for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
           if(!Array.isArray(items)) continue;
-          const filteredItems = editionFilter==='All' ? items : items.filter((x:any)=>x.edition===editionFilter);
+          let filteredItems = editionFilter==='All' ? items : items.filter((x:any)=>x.edition===editionFilter);
+
+          // Filtro de preço
+          filteredItems = filteredItems.filter((x:any)=>{
+            const price = x.price ?? 0;
+            if(minPrice!=='' && price < minPrice) return false;
+            if(maxPrice!=='' && price > maxPrice) return false;
+            return true;
+          });
+
           if(filteredItems.length>0) monthFiltered[monthYear] = filteredItems;
         }
 
@@ -126,7 +138,8 @@ export const GameSelector = () => {
       </div>
 
       {selected.type==='all' && <>
-        <div style={styles.filterContainer}>
+        {/* Group + Region */}
+        <div style={styles.filterRow}>
           <div>
             <label>Group: </label>
             <select value={groupFilter} onChange={e=>setGroupFilter(e.target.value)}>
@@ -143,14 +156,7 @@ export const GameSelector = () => {
           </div>
         </div>
 
-        <div style={styles.filterEdition}>
-          <label>Edition: </label>
-          <select value={editionFilter} onChange={e=>setEditionFilter(e.target.value)}>
-            <option value="All">All</option>
-            {allEditions.map(e=><option key={e} value={e}>{e}</option>)}
-          </select>
-        </div>
-
+        {/* Launch Date */}
         <div style={styles.filterEdition}>
           <label>Launch Date: </label>
           <div style={styles.datePickerContainer}>
@@ -165,20 +171,43 @@ export const GameSelector = () => {
             </div>
           </div>
         </div>
+
+        {/* Edition */}
+        <div style={styles.filterEdition}>
+          <label>Edition: </label>
+          <select value={editionFilter} onChange={e=>setEditionFilter(e.target.value)}>
+            <option value="All">All</option>
+            {allEditions.map(e=><option key={e} value={e}>{e}</option>)}
+          </select>
+        </div>
+
+        {/* Price Range */}
+        <div style={styles.filterEdition}>
+          <label>Price Range:</label>
+          <div style={styles.priceContainer}>
+            <input type="number" placeholder="Min" value={minPrice} onChange={e=>setMinPrice(e.target.value===''?'':Number(e.target.value))} style={styles.priceInput}/>
+            <span> - </span>
+            <input type="number" placeholder="Max" value={maxPrice} onChange={e=>setMaxPrice(e.target.value===''?'':Number(e.target.value))} style={styles.priceInput}/>
+          </div>
+        </div>
       </>}
 
-      {dataGroups.map(({label,type,items,emoji})=>{
-        return <div key={type} style={styles.group}>
-          <button onClick={()=>toggleGroup(type)} style={{...styles.groupButton, ...(openGroups[type]?styles.groupButtonActive:{})}}>{emoji} {label} ({Object.keys(items).length})</button>
+      {dataGroups.map(({label,type,items,emoji})=>(
+        <div key={type} style={styles.group}>
+          <button onClick={()=>toggleGroup(type)} style={{...styles.groupButton, ...(openGroups[type]?styles.groupButtonActive:{})}}>
+            {emoji} {label} ({Object.keys(items).length})
+          </button>
           {openGroups[type] && <ul style={styles.itemList}>
             {Object.keys(items).sort().map(title=>(
               <li key={`${type}|${title}`}>
-                <button onClick={()=>handleSelect(type,title)} style={{...styles.itemButton, ...(selected.type===type && selected.title===title?styles.itemButtonSelected:{})}}>{title}</button>
+                <button onClick={()=>handleSelect(type,title)} style={{...styles.itemButton, ...(selected.type===type && selected.title===title?styles.itemButtonSelected:{})}}>
+                  {title}
+                </button>
               </li>
             ))}
           </ul>}
         </div>
-      })}
+      ))}
 
       <div style={styles.cardWrapper}>
         {selected.type==='all' ? 
@@ -208,10 +237,12 @@ const styles: { [key: string]: React.CSSProperties } = {
   itemButton:{width:'100%',background:'transparent',border:'none',color:'#ccc',padding:'0.125rem 0.25rem',textAlign:'left',cursor:'pointer',borderRadius:'4px',fontSize:'0.8rem',transition:'background 0.2s,color 0.2s'},
   itemButtonSelected:{background:'#3c3c3c',color:'#9cdcfe'},
   cardWrapper:{marginTop:'0.5rem',display:'block',minHeight:'500px',width:'100%',overflowY:'auto',overflowX:'auto',paddingBottom:'0.5rem'},
-  filterContainer:{display:'flex',flexDirection:'column',gap:'0.5rem',marginBottom:'0.5rem',alignItems:'center'},
   filterEdition:{marginBottom:'0.5rem',display:'flex',flexDirection:'column',alignItems:'center',gap:'0.25rem'},
+  filterRow:{display:'flex',gap:'1rem',justifyContent:'center',alignItems:'center',flexWrap:'wrap',marginBottom:'0.5rem'},
   datePickerContainer:{display:'flex',gap:'0.25rem',justifyContent:'center',alignItems:'center'},
   dateInputWrapper:{position:'relative',display:'flex',alignItems:'center',background:'#2a2a2a',borderRadius:'6px',padding:'0.2rem 0.25rem',border:'1px solid #444'},
   dateInput:{background:'transparent',border:'none',color:'#d4d4d4',padding:'0.25rem 0.3rem',borderRadius:'4px',width:'120px',fontSize:'0.85rem',outline:'none'},
-  calendarIcon:{marginLeft:'0.25rem',pointerEvents:'none',fontSize:'1rem'}
+  calendarIcon:{marginLeft:'0.25rem',pointerEvents:'none',fontSize:'1rem'},
+  priceContainer:{display:'flex',gap:'0.25rem',alignItems:'center'},
+  priceInput:{width:'80px',padding:'0.25rem',borderRadius:'4px',border:'1px solid #444',background:'#2a2a2a',color:'#fff',textAlign:'center'}
 };
