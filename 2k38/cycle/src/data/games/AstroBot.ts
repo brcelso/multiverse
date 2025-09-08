@@ -2,6 +2,7 @@ export const astroBot = {
   launchDate: '2024-09-06',
   Brazil: {
     'September 2025': [
+      { edition: 'Standard Edition', price: 185.25, currency: 'R$', discount: 45.5 },
       { edition: 'Standard Edition', price: 235.42, currency: 'R$', discount: 30 },
       { edition: 'Standard Edition', price: 235.42, currency: 'R$', discount: 21.5 },
     ],
