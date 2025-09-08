@@ -56,7 +56,7 @@ export const icecream = {
       {
         edition: 'Casquinha McDonalds',
         price: 1.00,
-        increase: 25
+        increase: 25, 
         totalIncrease: 67,
         currency: 'R$',
       },
