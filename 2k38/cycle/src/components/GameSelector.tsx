@@ -44,7 +44,8 @@ export const GameSelector = () => {
   const [regionFilter, setRegionFilter] = useState<string>('All');
   const [groupFilter, setGroupFilter] = useState<string>('All');
   const [editionFilter, setEditionFilter] = useState<string>('All');
-  const [launchDateFilter, setLaunchDateFilter] = useState<string>('All');
+  const [launchDateStart, setLaunchDateStart] = useState<string>('');
+  const [launchDateEnd, setLaunchDateEnd] = useState<string>('');
 
   const toggleGroup = (type: ItemType) => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
@@ -71,7 +72,8 @@ export const GameSelector = () => {
     setRegionFilter('All');
     setGroupFilter('All');
     setEditionFilter('All');
-    setLaunchDateFilter('All');
+    setLaunchDateStart('');
+    setLaunchDateEnd('');
     closeAllGroups();
   };
 
@@ -119,15 +121,6 @@ export const GameSelector = () => {
     )
   ).sort();
 
-  // Todas as datas de lançamento únicas (A-Z)
-  const allLaunchDates = Array.from(
-    new Set(
-      dataGroups.flatMap((group) =>
-        Object.values(group.items).map((item: any) => item.launchDate).filter(Boolean)
-      )
-    )
-  ).sort((a, b) => a.localeCompare(b));
-
   // Filtragem dos itens
   const allItems = dataGroups
     .filter((group) => groupFilter === 'All' || group.label === groupFilter)
@@ -162,8 +155,14 @@ export const GameSelector = () => {
           }
         }
 
-        // Filtrar por launchDate
-        if (launchDateFilter !== 'All' && filteredByEdition.launchDate !== launchDateFilter) return null;
+        // Filtrar por launchDate range
+        if (launchDateStart || launchDateEnd) {
+          const launchDate = filteredByEdition.launchDate;
+          if (!launchDate) return null;
+          const dateObj = new Date(launchDate);
+          if (launchDateStart && dateObj < new Date(launchDateStart)) return null;
+          if (launchDateEnd && dateObj > new Date(launchDateEnd)) return null;
+        }
 
         return Object.keys(filteredByEdition).length > 0 ? [title, filteredByEdition] as const : null;
       })
@@ -226,18 +225,30 @@ export const GameSelector = () => {
             </select>
           </div>
 
+          {/* Date Picker Estilizado */}
           <div style={styles.filterEdition}>
-            <label htmlFor="launchDate">Filter by Launch Date: </label>
-            <select
-              id="launchDate"
-              value={launchDateFilter}
-              onChange={(e) => setLaunchDateFilter(e.target.value)}
-            >
-              <option value="All">All</option>
-              {allLaunchDates.map((date) => (
-                <option key={date} value={date}>{date}</option>
-              ))}
-            </select>
+            <label>Filter by Launch Date: </label>
+            <div style={styles.datePickerContainer}>
+              <div style={styles.dateInputWrapper}>
+                <input
+                  type="date"
+                  value={launchDateStart}
+                  onChange={(e) => setLaunchDateStart(e.target.value)}
+                  style={styles.dateInput}
+                />
+                <span style={styles.calendarIcon}>📅</span>
+              </div>
+              <span style={{ margin: '0 0.5rem' }}>→</span>
+              <div style={styles.dateInputWrapper}>
+                <input
+                  type="date"
+                  value={launchDateEnd}
+                  onChange={(e) => setLaunchDateEnd(e.target.value)}
+                  style={styles.dateInput}
+                />
+                <span style={styles.calendarIcon}>📅</span>
+              </div>
+            </div>
           </div>
         </>
       )}
@@ -308,7 +319,7 @@ export const GameSelector = () => {
   );
 };
 
-// estilos permanecem os mesmos
+// estilos
 const styles: { [key: string]: React.CSSProperties } = {
   container: { padding: '0.75rem', fontFamily: '"Fira Code", "Courier New", monospace', maxWidth: '800px', margin: 'auto', color: '#d4d4d4', backgroundColor: '#1e1e1e', borderRadius: '6px', boxShadow: '0 0 6px rgba(0,0,0,0.4)', textAlign: 'center' },
   navbar: { display: 'flex', justifyContent: 'flex-start', alignItems: 'center', background: '#333333', padding: '0.375rem 0.5rem', borderRadius: '5px', marginBottom: '0.5rem', position: 'sticky', top: 0, zIndex: 100, gap: '0.5rem' },
@@ -323,4 +334,8 @@ const styles: { [key: string]: React.CSSProperties } = {
   cardWrapper: { marginTop: '0.5rem', display: 'block', minHeight: '500px', width: '100%', overflowY: 'auto', overflowX: 'auto', paddingBottom: '0.5rem' },
   filterContainer: { display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '0.5rem', alignItems: 'center' },
   filterEdition: { marginBottom: '0.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.25rem' },
+  datePickerContainer: { display: 'flex', gap: '0.25rem', justifyContent: 'center', alignItems: 'center' },
+  dateInputWrapper: { position: 'relative', display: 'flex', alignItems: 'center', background: '#2a2a2a', borderRadius: '6px', padding: '0.2rem 0.25rem', border: '1px solid #444' },
+  dateInput: { background: 'transparent', border: 'none', color: '#d4d4d4', padding: '0.25rem 0.3rem', borderRadius: '4px', width: '120px', fontSize: '0.85rem', outline: 'none' },
+  calendarIcon: { marginLeft: '0.25rem', pointerEvents: 'none', fontSize: '1rem' },
 };
