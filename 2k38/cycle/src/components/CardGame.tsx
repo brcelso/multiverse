@@ -11,7 +11,7 @@ type GameData = {
           price: number;
           realPrice?: number;
           currency: string;
-          platform?: Platform;
+          platform?: Platform | string;
           discount?: number;
           increase?: number;
           totalIncrease?: number;
