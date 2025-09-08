@@ -2,9 +2,9 @@ import React from 'react';
 
 type GameData = {
   launchDate: string;
-  platform?: string; 
   [region: string]: {
     [monthYear: string]: {
+      platform?: string; 
       edition: string;
       price: number;
       realPrice?: number;
