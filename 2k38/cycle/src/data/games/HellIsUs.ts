@@ -14,19 +14,19 @@ export const hellisus = {
     ],
   },
   Europe: {
-    'September 2025': [
+    'February 2025': [
       { edition: "Deluxe Edition", price: 79.99, currency: '€' },
       { edition: "Standard Edition", price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
-    'September 2025': [
+    'February 2025': [
       { edition: "Deluxe Edition", price: 64.99, currency: '£' },
       { edition: "Standard Edition", price: 49.99, currency: '£' },
     ],
   },
   UnitedStates: {
-    'September 2025': [
+    'February 2025': [
       { edition: "Deluxe Edition", price: 79.99, currency: '$' },
       { edition: "Standard Edition", price: 59.99, currency: '$' },
     ],
