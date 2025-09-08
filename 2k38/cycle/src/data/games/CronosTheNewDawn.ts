@@ -5,6 +5,8 @@ export const cronos = {
       { edition: 'Standard Edition', price: 289, discount: 15, currency: 'R$', exchangeTax: 4.81 },
       { edition: 'Deluxe Edition', price: 399.90, currency: 'R$', exchangeTax: 5.71 },
       { edition: 'Standard Edition', price: 339.90, currency: 'R$', exchangeTax: 5.66 },
+      { edition: 'Standard Edition', price: 249.95, increase: 12, currency: 'R$', exchangeTax: 4.16 },
+      { edition: 'Standard Edition', price: 222.45, currency: 'R$', exchangeTax: 3.70 },
     ],
   },
   Europe: {
