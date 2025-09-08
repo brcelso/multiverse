@@ -7,7 +7,6 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 4.90,
         increase: 63,
-        totalIncrease: 390,
         currency: 'R$'
       },
     ],
@@ -22,7 +21,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 6,
         increase: 20,
-        totalIncrease: 500,
+        totalIncrease: 900,
         currency: 'R$'
       },
     ],
@@ -31,7 +30,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 5,
         increase: 43,
-        totalIncrease: 400,
+        totalIncrease: 734,
         currency: 'R$'
       },
     ],
@@ -40,7 +39,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 3.50,
         increase: 133,
-        totalIncrease: 250,
+        totalIncrease: 484,
         currency: 'R$'
       },
     ],
@@ -49,6 +48,7 @@ export const icecream = {
         edition: 'Casquinha McDonalds',
         price: 1.50,
         increase: 50,
+        totalIncrease: 150,
         currency: 'R$',
       },
     ],
@@ -56,6 +56,23 @@ export const icecream = {
       {
         edition: 'Casquinha McDonalds',
         price: 1.00,
+        increase: 25
+        totalIncrease: 67,
+        currency: 'R$',
+      },
+    ],
+    'Janeiro 1996': [
+      {
+        edition: 'Casquinha McDonalds',
+        price: 0.80,
+        increase: 33,
+        currency: 'R$',
+      },
+    ],
+    'Janeiro 1995': [
+      {
+        edition: 'Casquinha McDonalds',
+        price: 0.60,
         currency: 'R$',
       },
     ],
