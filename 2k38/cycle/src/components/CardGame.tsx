@@ -2,7 +2,7 @@ import React from 'react';
 
 type GameData = {
   launchDate: string;
-  platform: string; 
+  platform?: string; 
   [region: string]: {
     [monthYear: string]: {
       edition: string;
