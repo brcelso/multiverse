@@ -103,10 +103,9 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                         <li key={idx} style={styles.priceItem}>
                           <strong style={styles.edition}>{entry.edition}</strong>
 
-                          {/* 👇 Exibir plataforma */}
                           {entry.platform && (
                             <div style={styles.platform}>
-                              Platform: {entry.platform}
+                              <b>{entry.platform}</b>
                             </div>
                           )}
 
