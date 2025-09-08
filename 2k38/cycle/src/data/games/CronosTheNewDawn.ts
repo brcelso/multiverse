@@ -2,7 +2,7 @@ export const cronos = {
   launchDate: '2025-09-05',
   Brazil: {
     'September 2025': [
-      { edition: 'Standard Edition', price: 289, currency: 'R$', exchangeTax: 4.81 },
+      { edition: 'Standard Edition', price: 289, discount: 15, currency: 'R$', exchangeTax: 4.81 },
       { edition: 'Deluxe Edition', price: 399.90, currency: 'R$', exchangeTax: 5.71 },
       { edition: 'Standard Edition', price: 339.90, currency: 'R$', exchangeTax: 5.66 },
     ],
