@@ -53,6 +53,7 @@ import { godOfWarRagnarok } from './games/GodOfWarRagnarok';
 import { granTurismo7 } from './games/GT7';
 import { grandTheftAutoV } from './games/GTAV';
 import { gtavi } from './games/GrandTheftAutoVI';
+import { hellisus } from './games/HellIsUs';
 import { hogwartsLegacy } from './games/HogwartsLegacy';
 import { hollowknightsilksong } from './games/HollowKnightSilkSong';
 import { hollowknightvoidheartedition } from './games/HollowKnightVoidHeartEdition';
@@ -62,6 +63,7 @@ import { indianajones } from './games/IndianaJones';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
+import { monsterhunter } from './games/MonsterHunterWilds';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
@@ -174,6 +176,7 @@ export const games = {
   'Gran Turismo 7': granTurismo7,
   'Grand Theft Auto V': grandTheftAutoV,
   'Grand Theft Auto VI': gtavi,
+  'Hell Is Us': hellisus,
   'Hogwarts Legacy': hogwartsLegacy,
   'Hollow Knight Silksong': hollowknightsilksong,
   'Hollow Knight Void Heart Edition': hollowknightvoidheartedition,
@@ -183,6 +186,7 @@ export const games = {
   'Lost Soul Aside': lostSoulAside,
   'Mafia The Old Country': mafia,
   'Metal Gear Snake Eater Remake': mgs3,
+  'Monster Hunter Wilds': monsterhunter,
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
   'NFL College Football 2k26': nflCollegeFootball2026,
