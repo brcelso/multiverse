@@ -103,6 +103,7 @@ import { ns2 } from './consoles/ns2';
 import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
 import { ps5 } from './consoles/ps5';
+import { iphone } from './consoles/iphone';
 
 //products
 import { bigmac } from './products/bigmac';
@@ -224,6 +225,7 @@ export const games = {
   export const consoles = {
 'Dual Sense DS2': dualsenseds2,
 'Dual Sense TLOU': dualsensetlou,
+'Iphone': iphone,
 'Nintendo Switch 2': ns2,
 'Playstation 3': ps3,
 'Playstation 4': ps4,
