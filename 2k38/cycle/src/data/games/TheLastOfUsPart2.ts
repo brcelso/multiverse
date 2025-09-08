@@ -68,7 +68,7 @@ export const theLastOfUsPart2 = {
       { edition: 'Remastered', price: 39.99, discount: 20, currency: '$' },
     ],
     'January 2024': [
-      { edition: 'Remastered', price: 49.99, increase: 25, currency: '$' },
+      { edition: 'Remastered', price: 49.99, currency: '$' },
     ],
     'November 2023': [
       { edition: 'Standard Edition', price: 19.99, currency: '$' , discount: 50, totalDiscount: 66 },
