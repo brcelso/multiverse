@@ -42,6 +42,7 @@ export const GameSelector = () => {
   });
   const [regionFilter, setRegionFilter] = useState<string>('All');
   const [groupFilter, setGroupFilter] = useState<string>('All');
+  const [editionFilter, setEditionFilter] = useState<string>('All');
 
   const toggleGroup = (type: ItemType) => {
     setOpenGroups((prev) => ({ ...prev, [type]: !prev[type] }));
@@ -67,6 +68,7 @@ export const GameSelector = () => {
     setSelected({ type: 'all' });
     setRegionFilter('All');
     setGroupFilter('All');
+    setEditionFilter('All');
     closeAllGroups();
   };
 
@@ -93,21 +95,60 @@ export const GameSelector = () => {
     )
   ).sort();
 
+  const allEditions = Array.from(
+    new Set(
+      dataGroups
+        .filter((group) => groupFilter === 'All' || group.label === groupFilter)
+        .flatMap((group) =>
+          Object.values(group.items).flatMap((item: any) =>
+            Object.entries(item as Record<string, any>)
+              .filter(([region]) => region !== 'launchDate' && (regionFilter === 'All' || region === regionFilter))
+              .flatMap(([_, regionData]) =>
+                Object.values(regionData as Record<string, any>)
+                  .flatMap((arr: any) =>
+                    Array.isArray(arr) ? arr.map((x: any) => x.edition).filter(Boolean) : []
+                  )
+              )
+          )
+        )
+    )
+  ).sort();
+
   const allItems = dataGroups
     .filter((group) => groupFilter === 'All' || group.label === groupFilter)
     .flatMap((group) =>
-      Object.entries(group.items)
-        .map(([title, data]) => {
-          if (regionFilter === 'All') return [title, data] as const;
-          const filteredData = Object.fromEntries(
-            Object.entries(data as any).filter(
-              ([region]) => region !== 'launchDate' && region === regionFilter
-            )
-          );
-          return [title, filteredData] as const;
-        })
-        .filter(([_, data]) => Object.keys(data).length > 0)
-    );
+      Object.entries(group.items).map(([title, data]) => {
+        const dataObj = data as Record<string, any>;
+
+        // Filtrar por região
+        const filteredByRegion: Record<string, any> = {};
+        for (const [region, regionData] of Object.entries(dataObj)) {
+          if (region === 'launchDate') continue;
+          if (regionFilter !== 'All' && region !== regionFilter) continue;
+          filteredByRegion[region] = regionData;
+        }
+
+        // Filtrar por edição
+        if (editionFilter === 'All') return [title, filteredByRegion] as const;
+
+        const filteredByEdition: Record<string, any> = {};
+        for (const [region, regionData] of Object.entries(filteredByRegion)) {
+          const regionFiltered: Record<string, any> = {};
+          for (const [monthYear, items] of Object.entries(regionData as Record<string, any>)) {
+            if (Array.isArray(items)) {
+              const editions = items.filter((x: any) => x.edition === editionFilter);
+              if (editions.length > 0) regionFiltered[monthYear] = editions;
+            }
+          }
+          if (Object.keys(regionFiltered).length > 0) {
+            filteredByEdition[region] = regionFiltered;
+          }
+        }
+
+        return Object.keys(filteredByEdition).length > 0 ? [title, filteredByEdition] as const : null;
+      })
+    )
+    .filter((item): item is [string, any] => item !== null);
 
   return (
     <div style={styles.container}>
@@ -117,45 +158,60 @@ export const GameSelector = () => {
       </div>
 
       {selected.type === 'all' && (
-        <div style={styles.filterContainer}>
-          <div>
-            <label htmlFor="group">Filter by Group: </label>
-            <select
-              id="group"
-              value={groupFilter}
-              onChange={(e) => setGroupFilter(e.target.value)}
-            >
-              <option value="All">All</option>
-              {dataGroups
-                .slice()
-                .sort((a, b) => a.label.localeCompare(b.label))
-                .map((group) => (
-                  <option key={group.label} value={group.label}>{group.label}</option>
-              ))}
-            </select>
+        <>
+          <div style={styles.filterContainer}>
+            <div>
+              <label htmlFor="group">Filter by Group: </label>
+              <select
+                id="group"
+                value={groupFilter}
+                onChange={(e) => setGroupFilter(e.target.value)}
+              >
+                <option value="All">All</option>
+                {dataGroups
+                  .slice()
+                  .sort((a, b) => a.label.localeCompare(b.label))
+                  .map((group) => (
+                    <option key={group.label} value={group.label}>{group.label}</option>
+                  ))}
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="region">Filter by Region: </label>
+              <select
+                id="region"
+                value={regionFilter}
+                onChange={(e) => setRegionFilter(e.target.value)}
+              >
+                <option value="All">All</option>
+                {allRegions.map((region) => (
+                  <option key={region} value={region}>{region}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
-          <div>
-            <label htmlFor="region">Filter by Region: </label>
+          <div style={styles.filterEdition}>
+            <label htmlFor="edition">Filter by Edition: </label>
             <select
-              id="region"
-              value={regionFilter}
-              onChange={(e) => setRegionFilter(e.target.value)}
+              id="edition"
+              value={editionFilter}
+              onChange={(e) => setEditionFilter(e.target.value)}
             >
               <option value="All">All</option>
-              {allRegions.map((region) => (
-                <option key={region} value={region}>{region}</option>
+              {allEditions.map((edition) => (
+                <option key={edition} value={edition}>{edition}</option>
               ))}
             </select>
           </div>
-        </div>
+        </>
       )}
 
       {dataGroups
         .slice()
         .sort((a, b) => a.label.localeCompare(b.label))
         .map(({ label, type, items, emoji }) => {
-          // Contagem correta: apenas o número de itens no grupo
           const itemCount = Object.keys(items).length;
 
           return (
@@ -187,7 +243,7 @@ export const GameSelector = () => {
                           {title}
                         </button>
                       </li>
-                  ))}
+                    ))}
                 </ul>
               )}
             </div>
@@ -196,17 +252,23 @@ export const GameSelector = () => {
 
       <div style={styles.cardWrapper}>
         {selected.type === 'all'
-          ? allItems.map(([title, data]) => (
-              <div key={title} style={{ marginBottom: '0.5rem' }}>
-                <CardGame gameTitle={title} data={data as any} />
-              </div>
-            ))
-          : getData(selected.type, selected.title!) && (
-              <CardGame
-                gameTitle={selected.title!}
-                data={getData(selected.type, selected.title!)!}
-              />
-            )}
+          ? allItems.length > 0
+            ? allItems.map(([title, data]) =>
+                data && Object.keys(data).length > 0 ? (
+                  <div key={title} style={{ marginBottom: '0.5rem', overflowX: 'auto' }}>
+                    <CardGame gameTitle={title} data={data} />
+                  </div>
+                ) : null
+              )
+            : <div style={{ color: '#999' }}>Nenhum item encontrado</div>
+          : (() => {
+              const data = getData(selected.type, selected.title!);
+              return data && Object.keys(data as Record<string, any>).length > 0 ? (
+                <div style={{ overflowX: 'auto' }}>
+                  <CardGame gameTitle={selected.title!} data={data} />
+                </div>
+              ) : <div style={{ color: '#999' }}>Nenhum item encontrado</div>;
+            })()}
       </div>
     </div>
   );
@@ -295,12 +357,27 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: 'background 0.2s, color 0.2s',
   },
   itemButtonSelected: { background: '#3c3c3c', color: '#9cdcfe' },
-  cardWrapper: { marginTop: '0.5rem', display: 'block' },
+  cardWrapper: {
+    marginTop: '0.5rem',
+    display: 'block',      // um card por vez
+    minHeight: '500px',
+    width: '100%',
+    overflowY: 'auto',
+    overflowX: 'auto',
+    paddingBottom: '0.5rem',
+  },
   filterContainer: {
     display: 'flex',
     flexDirection: 'column',
     gap: '0.5rem',
     marginBottom: '0.5rem',
     alignItems: 'center',
+  },
+  filterEdition: {
+    marginBottom: '0.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '0.25rem',
   },
 };
