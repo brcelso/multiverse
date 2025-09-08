@@ -3,38 +3,40 @@ export const theLastOfUsPart2 = {
 
   Brazil: {
     'August 2025': [
-      { edition: 'Remastered', price: 134.91, currency: 'R$', discount: 46 },
+      { edition: 'Remastered', price: 134.91, currency: 'R$', discount: 46, exchangeTax2: 2.69 },
     ],
     'July 2025': [
-      { edition: 'Remastered', price: 179.90, currency: 'R$', discount: 28 },
+      { edition: 'Remastered', price: 179.90, currency: 'R$', discount: 28, exchangeTax2: 3.59 },
     ],
     'June 2025': [
       { edition: 'Remastered', price: 284.90, currency: 'R$', increase: 14, exchangeTax2: 5.69 },
     ],
     'February 2025': [
-      { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20, exchangeTax2: 5},
+      { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20, exchangeTax2: 5 },
     ],
     'January 2024': [
       { edition: 'Remastered', price: 249.90, currency: 'R$', exchangeTax: 5 },
+    ],
+    'November 2022': [
+      { edition: 'Standard Edition', price: 49.87, currency: 'R$', discount: 75, exchangeTax2: 4.99 },
     ],
     'July 2021': [
       { edition: 'Deluxe Edition', price: 249.50, currency: 'R$', discount: 28.7 },
       { edition: 'Standard Edition', price: 199.50, currency: 'R$', discount: 33.5 },
     ],
     'September 2020': [
-      { edition: 'Deluxe Edition', price: 349.90, currency: 'R$', increase: 20.5 },
-      { edition: 'Standard Edition', price: 299.90, currency: 'R$', increase: 7, totalIncrease: 50 },
+      { edition: 'Deluxe Edition', price: 349.90, currency: 'R$', increase: 20.5, exchangeTax2: 4.99 },
+      { edition: 'Standard Edition', price: 299.90, currency: 'R$', 
+        increase: 7, totalIncrease: 50, exchangeTax2: 4.83 },
     ],
     'June 2020': [
-      { edition: 'Standard Edition', price: 279.90, currency: 'R$', increase: 12, totalIncrease: 40 },
-    ],
-    'November 2022': [
-      { edition: 'Standard Edition', price: 49.87, currency: 'R$', discount: 75 },
+      { edition: 'Standard Edition', price: 279.90, currency: 'R$', 
+        increase: 12, totalIncrease: 40, exchangeTax2: 4.66 },
     ],
     'September 2019': [
-      { edition: 'Deluxe Edition', price: 289.99, currency: 'R$' },
-      { edition: 'Standard Edition', price: 249.99, currency: 'R$', increase: 25 },
-      { edition: 'Standard Edition', price: 199.99, currency: 'R$' },
+      { edition: 'Deluxe Edition', price: 289.99, currency: 'R$', exchangeTax2: 4.14 },
+      { edition: 'Standard Edition', price: 249.99, currency: 'R$', increase: 25 , exchangeTax2: 4.16 },
+      { edition: 'Standard Edition', price: 199.99, currency: 'R$', exchangeTax2: 3.33 },
     ],
   },
   Europe: {
