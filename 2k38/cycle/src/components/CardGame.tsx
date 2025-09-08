@@ -2,6 +2,7 @@ import React from 'react';
 
 type GameData = {
   launchDate: string;
+  platform: string; 
   [region: string]: {
     [monthYear: string]: {
       edition: string;
@@ -51,8 +52,10 @@ function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
 }
 
 export const CardGame = ({ gameTitle, data }: Props) => {
-  const { launchDate, ...regionsData } = data;
-  const regions = Object.keys(regionsData).filter((r) => r !== 'currentRegion' && r !== 'currentMonthYear');
+  const { launchDate, platform, ...regionsData } = data;
+  const regions = Object.keys(regionsData).filter(
+    (r) => r !== 'currentRegion' && r !== 'currentMonthYear'
+  );
 
   return (
     <div style={styles.container}>
@@ -61,6 +64,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
         <p style={styles.launch}>
           Launch Date: {new Date(launchDate + 'T12:00:00').toLocaleDateString()}
         </p>
+        <p style={styles.platform}>Platform: {platform}</p> {/* 🔹 Mostrando plataforma */}
 
         {regions.map((region) => {
           const monthsData = regionsData[region] as { [monthYear: string]: any[] };
@@ -158,7 +162,16 @@ export const CardGame = ({ gameTitle, data }: Props) => {
 };
 
 const styles: { [key: string]: React.CSSProperties } = {
-  container: { display: 'flex', justifyContent: 'center', flexDirection: 'column', padding: '1rem', backgroundColor: '#1e1e1e', minHeight: '100vh', fontFamily: '"Fira Code", monospace', textAlign: 'center' },
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    padding: '1rem',
+    backgroundColor: '#1e1e1e',
+    minHeight: '100vh',
+    fontFamily: '"Fira Code", monospace',
+    textAlign: 'center',
+  },
   card: {
     background: '#252526',
     color: '#d4d4d4',
@@ -170,19 +183,81 @@ const styles: { [key: string]: React.CSSProperties } = {
     overflowY: 'auto',
     textAlign: 'center',
   },
-  title: { fontSize: '1.5rem', marginBottom: '0.5rem', color: '#627d8fff', textAlign: 'center' },
-  launch: { fontSize: '0.85rem', color: '#6a9955', fontWeight: 'bold', marginBottom: '1rem', textAlign: 'center' },
-  regionSection: { marginBottom: '1.5rem', border: '1px solid #333', borderRadius: '6px', padding: '0.75rem', backgroundColor: '#1e1e1e', textAlign: 'center' },
-  regionTitle: { color: '#ffffff', borderBottom: '1px solid #333', paddingBottom: 4, marginBottom: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' },
-  monthTitle: { color: '#c586c0', marginBottom: '0.5rem', border: '1px solid #444', borderRadius: '4px', padding: '2px 6px', display: 'inline-block', fontSize: '0.8rem', backgroundColor: '#2d2d30', textAlign: 'center' },
+  title: {
+    fontSize: '1.5rem',
+    marginBottom: '0.5rem',
+    color: '#627d8fff',
+    textAlign: 'center',
+  },
+  launch: {
+    fontSize: '0.85rem',
+    color: '#6a9955',
+    fontWeight: 'bold',
+    marginBottom: '0.25rem',
+    textAlign: 'center',
+  },
+  platform: {
+    fontSize: '0.85rem',
+    color: '#569cd6',
+    fontWeight: 'bold',
+    marginBottom: '1rem',
+    textAlign: 'center',
+  },
+  regionSection: {
+    marginBottom: '1.5rem',
+    border: '1px solid #333',
+    borderRadius: '6px',
+    padding: '0.75rem',
+    backgroundColor: '#1e1e1e',
+    textAlign: 'center',
+  },
+  regionTitle: {
+    color: '#ffffff',
+    borderBottom: '1px solid #333',
+    paddingBottom: 4,
+    marginBottom: '0.75rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+  },
+  monthTitle: {
+    color: '#c586c0',
+    marginBottom: '0.5rem',
+    border: '1px solid #444',
+    borderRadius: '4px',
+    padding: '2px 6px',
+    display: 'inline-block',
+    fontSize: '0.8rem',
+    backgroundColor: '#2d2d30',
+    textAlign: 'center',
+  },
   priceList: { listStyle: 'none', padding: 0, margin: '0 auto', textAlign: 'center' },
-  priceItem: { background: '#2d2d30', padding: '0.5rem', borderRadius: '4px', marginBottom: '0.5rem', border: '1px solid #3c3c3c', textAlign: 'center' },
-  edition: { display: 'block', fontSize: '0.95rem', marginBottom: '0.2rem', color: '#dddd6aff', textAlign: 'center' },
+  priceItem: {
+    background: '#2d2d30',
+    padding: '0.5rem',
+    borderRadius: '4px',
+    marginBottom: '0.5rem',
+    border: '1px solid #3c3c3c',
+    textAlign: 'center',
+  },
+  edition: {
+    display: 'block',
+    fontSize: '0.95rem',
+    marginBottom: '0.2rem',
+    color: '#dddd6aff',
+    textAlign: 'center',
+  },
   discount: { color: '#da5757ff', fontSize: '0.85rem', marginLeft: 6 },
   increase: { color: '#18FAFA', fontSize: '0.85rem', marginLeft: 6 },
   totalIncrease: { color: 'deeppink', fontWeight: 'bold', fontSize: '0.95rem', marginLeft: 6 },
   totalDiscount: { color: 'orange', fontWeight: 'bold', fontSize: '0.95rem', marginLeft: 6 },
   exchange: { color: '#b5cea8', fontSize: '0.7rem', display: 'block', textAlign: 'center' },
   secondaryLine: { marginTop: '0.25rem' },
-  realPrice: { color: '#ce9178', fontSize: '0.75rem', marginTop: '0.25rem', textAlign: 'center' },
+  realPrice: {
+    color: '#ce9178',
+    fontSize: '0.75rem',
+    marginTop: '0.25rem',
+    textAlign: 'center',
+  },
 };
