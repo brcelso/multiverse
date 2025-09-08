@@ -9,6 +9,9 @@ export const mgs3 = {
   },
 
   Brazil: {
+    'September 2025': [
+      { edition: "Standard Edition", price: 287, discount: 28, currency: 'R$', exchangeTax2: 4.14 },
+    ],
     'June 2025': [
       { edition: "Deluxe Edition", price: 455.90, increase: 12.5, currency: 'R$', exchangeTax2: 5.69 },
       { edition: "Standard Edition", price: 399.50, increase: 14.3, currency: 'R$', exchangeTax2: 5.70 },
