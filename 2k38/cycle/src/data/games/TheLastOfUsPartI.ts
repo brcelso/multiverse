@@ -9,6 +9,9 @@ export const theLastOfUsPartI = {
     ],
   },
   Brazil: {
+    'September 2025': [
+      { edition: 'Standard Edition', price: 163.92, discount: 59, currency: 'R$' }, 
+    ],
     'August 2025': [
       { edition: 'Standard Edition', price: 121.42, discount: 65, currency: 'R$' }, 
     ],
