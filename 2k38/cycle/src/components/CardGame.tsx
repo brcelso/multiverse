@@ -10,6 +10,7 @@ type GameData = {
           edition: string;
           price: number;
           realPrice?: number;
+          convertedPrice?: number; // ✅ novo campo
           currency: string;
           platform?: Platform | string;
           discount?: number;
@@ -139,6 +140,12 @@ export const CardGame = ({ gameTitle, data }: Props) => {
                           {entry.realPrice !== undefined && (
                             <div style={styles.realPrice}>
                               Real Price: {entry.currency} {entry.realPrice.toFixed(2)}
+                            </div>
+                          )}
+
+                          {entry.convertedPrice !== undefined && ( // ✅ novo bloco
+                            <div style={styles.convertedPrice}>
+                              Converted Price: $ {entry.convertedPrice.toFixed(2)}
                             </div>
                           )}
 
@@ -279,6 +286,12 @@ const styles: { [key: string]: React.CSSProperties } = {
   secondaryLine: { marginTop: '0.25rem' },
   realPrice: {
     color: '#ce9178',
+    fontSize: '0.75rem',
+    marginTop: '0.25rem',
+    textAlign: 'center',
+  },
+  convertedPrice: { // ✅ estilo para convertedPrice
+    color: '#9cdcfe',
     fontSize: '0.75rem',
     marginTop: '0.25rem',
     textAlign: 'center',

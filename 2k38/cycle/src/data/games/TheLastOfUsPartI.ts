@@ -10,28 +10,38 @@ export const theLastOfUsPartI = {
   },
   Brazil: {
     'September 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 163.92, discount: 59, currency: 'R$', exchangeTax2: 2.34 }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 163.92, discount: 59, 
+        currency: 'R$', exchangeTax2: 2.34, convertedPrice: 30.46 }, 
     ],
     'August 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 121.42, discount: 69.5, currency: 'R$', exchangeTax2: 1.73 }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 121.42, discount: 69.5, 
+        currency: 'R$', exchangeTax2: 1.73, convertedPrice: 22.56 }, 
     ],
     'July 2025': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 247.69, currency: 'R$', discount: 38, exchangeTax2: 3.09 },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 65, exchangeTax2: 1.99 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 247.69, currency: 'R$', 
+        discount: 38, exchangeTax2: 3.09, convertedPrice: 46.03 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 139.41, currency: 'R$', 
+        discount: 65, exchangeTax2: 1.99, convertedPrice: 25.91 },
     ],
     'June 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$', exchangeTax2: 5.71 }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 399.90, increase: 14.5, 
+        currency: 'R$', exchangeTax2: 5.71, convertedPrice: 71.41 }, 
     ],
     'March 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 146.95, currency: 'R$', discount: 58, exchangeTax2: 2.10 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 146.95, currency: 'R$', 
+        discount: 58, exchangeTax2: 2.10, convertedPrice: 25.96 },
     ],
     'February 2025': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 299.62, currency: 'R$', discount: 25, exchangeTax2: 3.74 },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 248.42, currency: 'R$', discount: 29, exchangeTax2: 3.55 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 299.62, currency: 'R$', 
+        discount: 25, exchangeTax2: 3.74, convertedPrice: 52.47 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 248.42, currency: 'R$', 
+        discount: 29, exchangeTax2: 3.55, convertedPrice: 43.50 },
     ],
     'September 2022': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 399.5, currency: 'R$', exchangeTax2: 4.99 },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 349.9, currency: 'R$', exchangeTax2: 4.99 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 399.5, currency: 'R$', 
+        exchangeTax2: 4.99, convertedPrice: 77.65 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 349.9, currency: 'R$', 
+        exchangeTax2: 4.99, convertedPrice: 67.94 },
     ],
   },
   Europe: {
