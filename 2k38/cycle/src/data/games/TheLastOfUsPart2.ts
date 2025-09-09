@@ -3,7 +3,7 @@ export const theLastOfUsPart2 = {
 
   Brazil: {
     'September 2025': [
-      { edition: 'Remastered', price: 122.24, currency: 'R$', discount: 57, exchangeTax2: 2.91 },
+      { edition: 'Remastered', price: 122.24, currency: 'R$', discount: 57, exchangeTax2: 2.44 },
       { edition: 'Remastered', price: 145.08, currency: 'R$', discount: 49, exchangeTax2: 2.91 },
     ],
     'August 2025': [
