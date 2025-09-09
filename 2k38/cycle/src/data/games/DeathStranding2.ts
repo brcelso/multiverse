@@ -5,13 +5,11 @@ export const deathStranding2OnTheBeach = {
     'July 2025': [
       { edition: "Standard Edition", price: 60490, discount: 12, currency: 'ARS' },
       { edition: "Standard Edition", price: 68490, currency: 'ARS', exchangeTax2: 978.56 },
-
     ],
   },
-
   Brazil: {
     'September 2025': [
-      { edition: "Physical Media", price: 209.90, discount: 22.5, currency: 'R$', exchangeTax2: 2.99 }
+      { edition: "Physical Media", price: 209.90, discount: 22.5, currency: 'R$', exchangeTax2: 2.99 },
       { edition: "Physical Media", price: 215, discount: 46, currency: 'R$', exchangeTax2: 3.59 }
     ],
     'July 2025': [
