@@ -25,13 +25,12 @@ export const spotify = {
       { price: 19.99, increase: 18, totalIncrease: 25, currency: '$', edition: "Premium Family Monthly" },
       { price: 16.99, increase: 13, totalIncrease: 31, currency: '$', edition: "Premium Duo Monthly" },
       { price: 11.99, increase: 9, totalIncrease: 20, currency: '$', edition: "Premium Individual Monthly" },
-      { price: 5.99, increase: 20, totalIncrease: 20, currency: '$', edition: "Premium Student Monthly" },
     ],
     'July 2023': [
-      { price: 16.99, increase: 6, totalIncrease: 6, currency: '$', edition: "Premium Family Monthly" },
-      { price: 14.99, increase: 15, totalIncrease: 15, currency: '$', edition: "Premium Duo Monthly" },
-      { price: 10.99, increase: 10, totalIncrease: 10, currency: '$', edition: "Premium Individual Monthly" },
-      { price: 5.99, increase: 20, totalIncrease: 20, currency: '$', edition: "Premium Student Monthly" },
+      { price: 16.99, increase: 6, currency: '$', edition: "Premium Family Monthly" },
+      { price: 14.99, increase: 15, currency: '$', edition: "Premium Duo Monthly" },
+      { price: 10.99, increase: 10, currency: '$', edition: "Premium Individual Monthly" },
+      { price: 5.99, increase: 20, currency: '$', edition: "Premium Student Monthly" },
     ],
     'July 2011': [
       { price: 9.99, currency: '$', edition: "Premium Individual Monthly" },
