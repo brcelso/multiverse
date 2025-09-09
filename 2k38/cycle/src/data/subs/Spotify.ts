@@ -8,9 +8,9 @@ export const spotify = {
       { price: 12.90, increase: 8, totalIncrease: 30, currency: 'R$', edition: "Premium Student Monthly", exchangeTax2: 2.15 },
     ],
     'July 2023': [
-      { price: 34.90, currency: 'R$', edition: "Premium Family Monthly", exchangeTax2: 2.05 },
+      { price: 34.90, increase: 30, currency: 'R$', edition: "Premium Family Monthly", exchangeTax2: 2.05 },
       { price: 27.90, increase: 12, currency: 'R$', edition: "Premium Duo Monthly", exchangeTax2: 1.86 },
-      { price: 21.90, increase: 10, totalIncrease: 29, currency: 'R$', edition: "Premium Individual Monthly", exchangeTax2: 1.99 },
+      { price: 21.90, increase: 10, currency: 'R$', edition: "Premium Individual Monthly", exchangeTax2: 1.99 },
       { price: 11.90, increase: 20, currency: 'R$', edition: "Premium Student Monthly", exchangeTax2: 1.99 },
     ],
     'January 2019': [
