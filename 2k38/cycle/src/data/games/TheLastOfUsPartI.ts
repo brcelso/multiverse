@@ -2,92 +2,90 @@ export const theLastOfUsPartI = {
   launchDate: '2022-09-27',
   Argentina: {
     'August 2025': [
-      { edition: 'Standard Edition', price: 79999, currency: '$', discount: 20 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 79999, currency: '$', discount: 20 },
     ],
     'September 2022': [
-      { edition: 'Standard Edition', price: 99999, currency: '$' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 99999, currency: '$' },
     ],
   },
   Brazil: {
     'September 2025': [
-      { edition: 'Standard Edition', price: 163.92, discount: 59, currency: 'R$' }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 163.92, discount: 59, currency: 'R$', exchangeTax2: 2.34 }, 
     ],
     'August 2025': [
-      { edition: 'Standard Edition', price: 121.42, discount: 69.5, currency: 'R$' }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 121.42, discount: 69.5, currency: 'R$', exchangeTax2: 1.73 }, 
     ],
     'July 2025': [
-      { edition: 'Deluxe Edition', price: 247.69, currency: 'R$', discount: 38 },
-      { edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 65 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 247.69, currency: 'R$', discount: 38, exchangeTax2: 3.09 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 65, exchangeTax2: 1.99 },
     ],
     'June 2025': [
-      { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$' }, 
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$', exchangeTax2: 5.71 }, 
     ],
     'March 2025': [
-      { edition: 'Standard Edition', price: 146.95, currency: 'R$', discount: 58 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 146.95, currency: 'R$', discount: 58, exchangeTax2: 2.10 },
     ],
     'February 2025': [
-      { edition: 'Deluxe Edition', price: 299.62, currency: 'R$', discount: 25 },
-      { edition: 'Standard Edition', price: 248.42, currency: 'R$', discount: 29 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 299.62, currency: 'R$', discount: 25, exchangeTax2: 3.74 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 248.42, currency: 'R$', discount: 29, exchangeTax2: 3.55 },
     ],
     'September 2022': [
-      { edition: 'Deluxe Edition', price: 399.5, currency: 'R$' },
-      { edition: 'Standard Edition', price: 349.9, currency: 'R$' },
-      { edition: 'PS4', price: 49.75, currency: 'R$', discount: 50 },
-      { edition: 'PS4', price: 99.9, currency: 'R$' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 399.5, currency: 'R$', exchangeTax2: 4.99 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 349.9, currency: 'R$', exchangeTax2: 4.99 },
     ],
   },
   Europe: {
     'August 2025': [
-      { edition: 'Standard Edition', price: 49.99, currency: '€', discount: 38 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 49.99, currency: '€', discount: 38 },
     ],
     'November 2023': [
-      { edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
     ],
     'September 2022': [
-      { edition: 'Deluxe Edition', price: 89.99, currency: '€' },
-      { edition: 'Standard Edition', price: 79.99, currency: '€' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 89.99, currency: '€' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 79.99, currency: '€' },
     ],
   },
   Paraguay: {
     'August 2025': [
-      { edition: 'Standard Edition', price: 42, currency: '$', discount: 40 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 42, currency: '$', discount: 40 },
     ],
   },
   UnitedKingdom: {
     'August 2025': [
-      { edition: 'Standard Edition', price: 39.99, currency: '£', discount: 43 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '£', discount: 43 },
     ],
     'November 2023': [
-      { edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
     ],
     'September 2022': [
-      { edition: 'Deluxe Edition', price: 79.99, currency: '£' },
-      { edition: 'Standard Edition', price: 69.99, currency: '£' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '£' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'January 2025': [
-      { edition: 'Standard Edition', price: 49.59, currency: '$', discount: 38 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 49.59, currency: '$', discount: 38 },
     ],
     'February 2025': [
-      { edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
     ],
     'December 2024': [
-      { edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
     ],
     'December 2023': [
-      { edition: 'Standard Edition', price: 39.89, currency: '$', discount: 43 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 39.89, currency: '$', discount: 43 },
     ],
     'July 2023': [
-      { edition: 'Standard Edition', price: 49.99, currency: '$', discount: 28.5 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 49.99, currency: '$', discount: 28.5 },
     ],
     'February 2023': [
-      { edition: 'Deluxe Edition', price: 59.99, currency: '$', discount: 25 },
-      { edition: 'Standard Edition', price: 49.69, currency: '$', discount: 29 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 59.99, currency: '$', discount: 25 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 49.69, currency: '$', discount: 29 },
     ],
     'September 2022': [
-      { edition: 'Deluxe Edition', price: 79.99, currency: '$' },
-      { edition: 'Standard Edition', price: 69.99, currency: '$' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '$' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '$' },
     ],
   },
 };

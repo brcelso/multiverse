@@ -5,6 +5,10 @@ export const theLastOfUs = {
     'November 2024': [
       { edition: 'Remastered PS4', price: 23.97, discount: 76, totalDiscount: 87, currency: 'R$', exchangeTax2: 2.39 },
     ],
+    'September 2022': [
+      { edition: 'PS4', price: 49.75, currency: 'R$', discount: 50 },
+      { edition: 'PS4', price: 99.9, currency: 'R$' },
+    ],
     'November 2015': [
       { edition: 'Remastered PS4', price: 99.50, discount: 45, currency: 'R$' },
     ],
