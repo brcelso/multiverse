@@ -2,7 +2,7 @@ export const spotify = {
   launchDate: '2011-07-14',
   Brazil: {
     'September 2025': [
-      { price: 40.90, increase: 17, currency: 'R$', edition: "Premium Family Monthly", exchangeTax2: 2.05 },
+      { price: 40.90, increase: 17, totalIncrease: 50, currency: 'R$', edition: "Premium Family Monthly", exchangeTax2: 2.05 },
       { price: 31.90, increase: 14, totalIncrease: 45, currency: 'R$', edition: "Premium Duo Monthly", exchangeTax2: 1.88 },
       { price: 23.90, increase: 9, totalIncrease: 41, currency: 'R$', edition: "Premium Individual Monthly", exchangeTax2: 1.99 },
       { price: 12.90, increase: 8, totalIncrease: 30, currency: 'R$', edition: "Premium Student Monthly", exchangeTax2: 2.15 },
