@@ -58,7 +58,11 @@ function parseMonthYear(input: string): { date: Date; hasMonth: boolean } {
 export const CardGame = ({ gameTitle, data }: Props) => {
   const [gameData, setGameData] = useState<GameData>(data);
   const { launchDate, ...regionsData } = gameData;
-  const regions = Object.keys(regionsData);
+
+  // Filtra apenas regiões que são objetos (não strings)
+  const regions = Object.keys(regionsData).filter(
+    (r) => typeof regionsData[r] === 'object' && regionsData[r] !== null
+  );
 
   const handleFieldChange = (
     region: string,
@@ -113,6 +117,7 @@ export const CardGame = ({ gameTitle, data }: Props) => {
 
         {regions.map((region) => {
           const monthsData = regionsData[region] as { [monthYear: string]: any[] };
+
           return (
             <section key={region} style={styles.regionSection}>
               <h3 style={styles.regionTitle}>
