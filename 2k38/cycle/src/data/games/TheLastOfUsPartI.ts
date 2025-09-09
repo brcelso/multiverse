@@ -13,11 +13,11 @@ export const theLastOfUsPartI = {
       { edition: 'Standard Edition', price: 163.92, discount: 59, currency: 'R$' }, 
     ],
     'August 2025': [
-      { edition: 'Standard Edition', price: 121.42, discount: 65, currency: 'R$' }, 
+      { edition: 'Standard Edition', price: 121.42, discount: 69.5, currency: 'R$' }, 
     ],
     'July 2025': [
       { edition: 'Deluxe Edition', price: 247.69, currency: 'R$', discount: 38 },
-      { edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 60 },
+      { edition: 'Standard Edition', price: 139.41, currency: 'R$', discount: 65 },
     ],
     'June 2025': [
       { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$' }, 
