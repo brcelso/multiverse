@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Platform = "Xbox" | "Playstation 5" | "Playstation 5 | Xbox";
+type Platform = "PC" | "Xbox" | "Playstation 5" | "Playstation 5 | Xbox";
 
 type GameData = {
   launchDate: string;
