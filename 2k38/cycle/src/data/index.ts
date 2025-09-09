@@ -9,6 +9,7 @@ import { movies } from './subs/Movies';
 import { disney } from './subs/Disney+';
 import { youtube } from './subs/Youtube';
 import { netflix } from './subs/Netflix';
+import { spotify } from './subs/Spotify';
 
 //games
 import { firstlight } from './games/007FirstLight';
@@ -129,7 +130,8 @@ export const subs = {
   'Movies': movies,
   'Disney+': disney,
   'Youtube Premium': youtube,
-  'Netflix': netflix
+  'Netflix': netflix,
+  'Spotify': spotify,
 } as const;
 
 //games
