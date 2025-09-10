@@ -1,4 +1,4 @@
-export const ghostOfYotei = {
+export const destiny2 = {
   launchDate: '2025-07-15',
 
   Brazil: {
