@@ -12,28 +12,28 @@ export const destiny2 = {
 
   UnitedStates: {
     'September 2025': [
-      { edition: 'Year Of Prophecy', price: 74.99, discount: 25, currency: '$' },
+      { edition: 'Year Of Prophecy', price: 59.99, discount: 25, currency: '$' },
     ],
     'July 2025': [
-      { edition: 'Year Of Prophecy', price: 99.99, currency: '$' },
+      { edition: 'Year Of Prophecy', price: 79.99, currency: '$' },
     ],
   },
 
   Europe: {
     'September 2025': [
-      { edition: 'Year Of Prophecy', price: 74.99, discount: 25, currency: '€' },
+      { edition: 'Year Of Prophecy', price: 59.99, discount: 25, currency: '€' },
     ],
     'July 2025': [
-      { edition: 'Year Of Prophecy', price: 99.99, currency: '€' },
+      { edition: 'Year Of Prophecy', price: 79.99, currency: '€' },
     ],
   },
 
   UnitedKingdom: {
     'September 2025': [
-      { edition: 'Year Of Prophecy', price: 74.99, discount: 25, currency: '£' },
+      { edition: 'Year Of Prophecy', price: 59.99, discount: 25, currency: '£' },
     ],
     'July 2025': [
-      { edition: 'Year Of Prophecy', price: 99.99, currency: '£' },
+      { edition: 'Year Of Prophecy', price: 79.99, currency: '£' },
     ],
   },
 };
