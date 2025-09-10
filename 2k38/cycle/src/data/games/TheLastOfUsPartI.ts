@@ -98,7 +98,7 @@ export const theLastOfUsPartI = {
       { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
     ],
     'December 2024': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 57 },
     ],
     'December 2023': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 39.89, currency: '$', discount: 43 },
