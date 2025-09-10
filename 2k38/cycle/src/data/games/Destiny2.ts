@@ -3,10 +3,10 @@ export const destiny2 = {
 
   Brazil: {
     'September 2025': [
-      { edition: 'Year of Prophecy', price: 299.90, discount: 25, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Year of Prophecy', price: 299.99, discount: 25, currency: 'R$', exchangeTax: 5 },
     ],
     'July 2025': [
-      { edition: 'Year of Prophecy', price: 399.50, currency: 'R$', exchangeTax: 5 },
+      { edition: 'Year of Prophecy', price: 399.99, currency: 'R$', exchangeTax: 5 },
     ],
   },
 
