@@ -1,0 +1,27 @@
+export const name = {
+  launchDate: '2025-00-00',
+  Brazil: {
+    'Month 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 449.9, currency: 'R$', exchangeTax: 0 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 399.9, currency: 'R$', exchangeTax: 0 },
+    ],
+  },
+  Europe: {
+    'Month 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 89.99, currency: '€' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 79.99, currency: '€' },
+    ],
+  },
+  UnitedKingdom: {
+    'Month 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '£' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'Month 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '$' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '$' },
+    ],
+  },
+};
