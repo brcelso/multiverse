@@ -82,6 +82,7 @@ import { silenthillf } from './games/SilentHillF';
 import { spiderman2 } from './games/Spiderman2';
 import { spidermanMilesMorales } from './games/SpidermanMiles';
 import { spidermanRemastered } from './games/Spiderman';
+import { splitfiction } from './games/SplitFiction';
 import { starWarsOutlaws } from './games/StarWarsOutlaws';
 import { thecallistoprotocol } from './games/thecallistoprotocol';
 import { theLastOfUs } from './games/TheLastOfUsI';
@@ -207,6 +208,7 @@ export const games = {
   'Spiderman': spidermanRemastered,
   'Spiderman 2': spiderman2,
   'Spiderman Miles Morales': spidermanMilesMorales,
+  'Split Fiction': splitfiction,
   'Star Wars Outlaws': starWarsOutlaws,
   'The Callisto Protocol': thecallistoprotocol,
   'The Last Of Us I': theLastOfUs,
