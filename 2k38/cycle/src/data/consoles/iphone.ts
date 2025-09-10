@@ -2,6 +2,7 @@ export const iphone = {
   launchDate: '2007-06-29',
   Brazil: {
     'September 2025': [
+      { edition: 'iPhone 16 Pro Max 256GB', price: 9629, discount: 33.5, currency: 'R$' },
       { edition: 'iPhone 16 Pro Max 256GB', price: 8549, discount: 32, currency: 'R$' },
       { edition: 'iPhone 17 Pro Max 2TB', price: 18499, increase: 12.5, totalIncrease: 1950, currency: 'R$' },
       { edition: 'iPhone 17 Pro Max 1TB', price: 17999, increase: 12.5, totalIncrease: 1875, currency: 'R$' },
