@@ -5,7 +5,7 @@ export const nflCollegeFootball2026 = {
     'September 2025': [
       { edition: 'MVP Bundle', price: 599.60, currency: 'R$', discount: 20, exchangeTax2: 4.99 },
       { edition: 'Deluxe Edition', price: 374.62, currency: 'R$', discount: 25, exchangeTax2: 5 },
-      { edition: 'Standard Edition', price: 279.92, currency: 'R$', discount: 30, exchangeTax2: 5 },
+      { edition: 'Standard Edition', price: 244.93, currency: 'R$', discount: 30, exchangeTax2: 5 },
     ],
     'July 2025': [
       { edition: 'Deluxe', price: 569.90, increase: 14, currency: 'R$', exchangeTax2: 5.69 },
