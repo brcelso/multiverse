@@ -10,6 +10,8 @@ export const theLastOfUsPartI = {
   },
   Brazil: {
     'September 2025': [
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 167.95, discount: 58, 
+        currency: 'R$', exchangeTax2: 5.69, convertedPrice: 31.21 }, 
       { platform: "Playstation 5", edition: 'Standard Edition', price: 163.92, discount: 59, 
         currency: 'R$', exchangeTax2: 2.34, convertedPrice: 30.46 }, 
     ],
