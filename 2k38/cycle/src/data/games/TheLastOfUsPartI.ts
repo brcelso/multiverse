@@ -52,6 +52,9 @@ export const theLastOfUsPartI = {
     ],
   },
   Europe: {
+    'September 2025': [
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
+    ],
     'August 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 49.99, currency: '€', discount: 38 },
     ],
@@ -69,6 +72,9 @@ export const theLastOfUsPartI = {
     ],
   },
   UnitedKingdom: {
+    'August 2025': [
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
+    ],
     'August 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '£', discount: 43 },
     ],
