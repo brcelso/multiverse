@@ -1,6 +1,5 @@
 export const forzaHorizon5 = {
   launchDate: '2025-04-29',
-
   Argentina: {
     'June 2025': [
       { edition: 'Deluxe Edition', price: 63.99, discount: 20, currency: '$' },
@@ -11,7 +10,6 @@ export const forzaHorizon5 = {
       { edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
   },
-
   Brazil: {
     'September 2025': [
       { edition: 'Deluxe Edition', price: 216.30, discount: 30, currency: 'R$' },
@@ -34,6 +32,9 @@ export const forzaHorizon5 = {
     ],
   },
   Europe: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 55.99, discount: 30, currency: '€' },
+    ],
     'August 2025': [
       { edition: 'Premium Edition', price: 69.99, discount: 30, currency: '€' },
       { edition: 'Standard Edition', price: 41.99, discount: 30, currency: '€' },
@@ -49,6 +50,9 @@ export const forzaHorizon5 = {
     ],
   },
   UnitedKingdom: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 48.99, discount: 30, currency: '£' },
+    ],
     'August 2025': [
       { edition: 'Premium Edition', price: 59.49, discount: 30, currency: '£' },
       { edition: 'Standard Edition', price: 38.49, discount: 30, currency: '£' },
@@ -63,6 +67,9 @@ export const forzaHorizon5 = {
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 55.99, discount: 30, currency: '$' },
+    ],
     'August 2025': [
       { edition: 'Premium Edition', price: 69.99, discount: 30, currency: '$' },
       { edition: 'Standard Edition', price: 41.99, discount: 30, currency: '$' },
