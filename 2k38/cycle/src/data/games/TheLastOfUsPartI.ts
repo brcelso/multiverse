@@ -72,7 +72,7 @@ export const theLastOfUsPartI = {
     ],
   },
   UnitedKingdom: {
-    'August 2025': [
+    'September 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
     ],
     'August 2025': [
