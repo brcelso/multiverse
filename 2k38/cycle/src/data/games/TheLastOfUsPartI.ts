@@ -74,6 +74,10 @@ export const theLastOfUsPartI = {
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 65.99, currency: '$', discount: 18 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.49, currency: '$', discount: 58 },
+    ],
     'January 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 49.59, currency: '$', discount: 38 },
     ],
