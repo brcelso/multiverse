@@ -1,6 +1,9 @@
 export const forzaHorizon5 = {
   launchDate: '2025-04-29',
   Argentina: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 55.99, discount: 30, currency: '$' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 63.99, discount: 20, currency: '$' },
     ],
