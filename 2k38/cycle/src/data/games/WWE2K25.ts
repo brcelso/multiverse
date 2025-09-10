@@ -2,6 +2,10 @@ export const wwe2k25 = {
   launchDate: '2025-03-13',
 
   Brazil: {
+    'September 2025': [
+      { edition: 'Bloodline', price: 279.44, discount: 44, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: 'Standard', price: 151.96, discount: 60, currency: 'R$', exchangeTax2: 5.42 },
+    ],
     'August 2025': [
       { edition: 'Deadman', price: 249.95, discount: 50, currency: 'R$', exchangeTax2: 5 },
     ],
@@ -17,6 +21,10 @@ export const wwe2k25 = {
     ],
   },
   Europe: {
+    'September 2025': [
+      { edition: 'Bloodline', price: 72.79, discount: 44, currency: '€' },
+      { edition: 'Standard', price: 29.99, discount: 60, currency: '€' },
+    ],
     'August 2025': [
       { edition: 'Bloodline', price: 77.99, discount: 40, currency: '€' },
       { edition: 'Standard', price: 49.99, discount: 50, currency: '€' },
@@ -32,6 +40,10 @@ export const wwe2k25 = {
     ],
   },
   UnitedKingdom: {
+    'September 2025': [
+      { edition: 'Bloodline', price: 67.19, discount: 44, currency: '£' },
+      { edition: 'Standard', price: 25.99, discount: 60, currency: '£' },
+    ],
     'August 2025': [
       { edition: 'Bloodline', price: 71.99, discount: 40, currency: '£' },
       { edition: 'Standard', price: 44.99, discount: 50, currency: '£' },
@@ -47,6 +59,10 @@ export const wwe2k25 = {
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Bloodline', price: 72.79, discount: 44, currency: '$' },
+      { edition: 'Standard', price: 27.99, discount: 60, currency: '$' },
+    ],
     'August 2025': [
       { edition: 'Bloodline', price: 77.99, discount: 40, currency: '$' },
       { edition: 'Deadman', price: 49.99, discount: 50, currency: '$' },
