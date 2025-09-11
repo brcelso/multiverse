@@ -17,9 +17,9 @@ export const godOfWarRagnarok = {
       { edition: 'Standard PS4', price: 125.95, currency: 'R$', discount: 58 },
     ],
     'November 2022': [
-      { edition: 'Deluxe Edition', price: 399.9, currency: 'R$' },
-      { edition: 'Standard PS5', price: 349.9, currency: 'R$' },
-      { edition: 'Standard PS4', price: 299.9, currency: 'R$' },
+      { edition: 'Deluxe Edition', price: 399.9, currency: 'R$', exchangeTax2: 5 },
+      { edition: 'Standard PS5', price: 349.9, currency: 'R$', exchangeTax2: 5 },
+      { edition: 'Standard PS4', price: 299.9, currency: 'R$', exchangeTax2: 5 },
     ],
   },
   Europe: {
