@@ -1,6 +1,5 @@
 export const codcoldwar = {
   launchDate: '2020-11-12',
-
   Brazil: {
     'June 2025': [
       { edition: 'Cross-Gen', price: 127.96, discount: 60, currency: 'R$', exchangeTax: 4.57 },
@@ -11,18 +10,6 @@ export const codcoldwar = {
       { edition: 'Standard', price: 274.00, currency: 'R$', exchangeTax: 4.56 },
     ],
   },
-
-  UnitedStates: {
-    'June 2025': [
-      { edition: 'Cross-Gen', price: 27.99, discount: 60, currency: '$'},
-      { edition: 'Standard', price: 19.79, discount: 67, currency: '$'},
-    ],
-    'April 2025': [
-      { edition: 'Cross-Gen', price: 69.99, currency: '$' },
-      { edition: 'Standard', price: 59.99, currency: '$' },
-    ],
-  },
-
   Europe: {
     'June 2025': [
       { edition: 'Cross-Gen', price: 31.99, discount: 60, currency: '€'},
@@ -33,7 +20,6 @@ export const codcoldwar = {
       { edition: 'Standard', price: 59.99, currency: '€' },
     ],
   },
-
   UnitedKingdom: {
     'June 2025': [
       { edition: 'Cross-Gen', price: 27.99, discount: 60, currency: '£' },
@@ -42,6 +28,16 @@ export const codcoldwar = {
     'April 2025': [
       { edition: 'Cross-Gen', price: 69.99, currency: '£' },
       { edition: 'Standard', price: 49.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'June 2025': [
+      { edition: 'Cross-Gen', price: 27.99, discount: 60, currency: '$'},
+      { edition: 'Standard', price: 19.79, discount: 67, currency: '$'},
+    ],
+    'April 2025': [
+      { edition: 'Cross-Gen', price: 69.99, currency: '$' },
+      { edition: 'Standard', price: 59.99, currency: '$' },
     ],
   },
 };
