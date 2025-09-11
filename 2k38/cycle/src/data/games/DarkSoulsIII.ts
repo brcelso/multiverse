@@ -16,13 +16,12 @@ export const darksoulsiii = {
     ],
   },
   Europe: {
-    'Month 2025': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', discount: 0, price: 89.99, currency: '€' },
-      { platform: "Playstation 5", edition: 'Standard Edition', discount: 0, price: 79.99, currency: '€' },
+    'April 2020': [
+      { platform: "Playstation 5", edition: 'Standard Edition', discount: 83.5, price: 9.99, currency: '€' },
     ],
     'April 2016': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 89.99, currency: '€' },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 79.99, currency: '€' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 69.99, currency: '€' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
