@@ -30,8 +30,8 @@ export const darksoulsiii = {
       { platform: "Playstation 5", edition: 'Standard Edition', discount: 0, price: 69.99, currency: '£' },
     ],
     'April 2016': [
-      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '£' },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '£' },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 54.99, currency: '£' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 44.99, currency: '£' },
     ],
   },
   UnitedStates: {
