@@ -1,6 +1,5 @@
 export const horizonZeroDawn = {
   launchDate: '2020-02-28',
-
   Brazil: {
     'September 2025': [
       { edition: 'PS5 Remastered', price: 170.94, discount: 40, currency: 'R$' },
