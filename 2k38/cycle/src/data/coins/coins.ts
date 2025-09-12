@@ -20,9 +20,11 @@ export const coin = {
     ],
   },
   Europe: {
-    'June 2025': [
-      { edition: 'Euro', increase: 25, price: 7.87, currency: 'R$' }, 
-      { edition: 'Euro', increase: 28, price: 6.30, currency: 'R$' }, 
+    'May 2025': [
+      { edition: 'Euro', discount: 8.5, price: 6.26, currency: 'R$' }, 
+    ],
+    'April 2025': [
+      { edition: 'Euro', increase: 38, totalIncrease: 560, price: 6.85, currency: 'R$' }, 
     ],
     'November 2022': [
       { edition: 'Euro', increase: 18.5, price: 4.96, currency: 'R$' },
@@ -62,7 +64,7 @@ export const coin = {
   },
   UnitedStates: {
     'September 2025': [
-      { edition: 'Dolar', totalIncrease: 137900, price: 1379, currency: 'ARS' },
+      { edition: 'Dolar', totalIncrease: 143600, price: 1436, currency: 'ARS' },
     ],
     'August 2025': [
       { edition: 'Dolar', discount: 14.5, price: 5.39, currency: 'R$' },
