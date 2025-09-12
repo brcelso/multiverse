@@ -25,7 +25,6 @@ export const horizonZeroDawn = {
       { edition: 'PS4', price: 39.99, increase: 100, currency: '$' },
     ],
     'February 2020': [
-      { edition: 'PS5 Remastered', price: 49.99, currency: '$' },
       { edition: 'PS4', price: 19.99, currency: '$' },
     ],
   },
