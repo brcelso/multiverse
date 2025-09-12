@@ -66,6 +66,7 @@ import { hollowknightvoidheartedition } from './games/HollowKnightVoidHeartEditi
 import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { indianajones } from './games/IndianaJones';
+import { legohorizon } from './games/LegoHorizon';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
@@ -196,6 +197,7 @@ export const games = {
   'Horizon Forbidden West': horizonForbiddenWest,
   'Horizon Zero Dawn': horizonZeroDawn,
   'Indiana Jones and The Great Circle': indianajones,
+  'Lego Horizon Adventures': legohorizon,
   'Lost Soul Aside': lostSoulAside,
   'Mafia The Old Country': mafia,
   'Metal Gear Snake Eater Remake': mgs3,
