@@ -12,7 +12,7 @@ export const legohorizon = {
       { platform: "Playstation 5", edition: 'Standard Edition', price: 339.90, increase: 47.5, currency: 'R$', exchangeTax: 8.49 },
     ],
     'November 2024': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 349.90, currency: 'R$', exchangeTax: 6.99 },
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 349.90, currency: 'R$', exchangeTax: 6.99 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 229.90, currency: 'R$', exchangeTax: 5.74 },
     ],
   },
