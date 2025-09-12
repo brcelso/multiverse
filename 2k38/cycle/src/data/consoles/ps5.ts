@@ -115,6 +115,7 @@ export const ps5 = {
   },
   UnitedStates: {
     'August 2025': [
+      { edition: 'PS5 Pro w/ Disc Drive', price: 829.99, currency: '$' },
       { edition: 'PS5 Pro', price: 749.99, currency: '$', increase: 7.3, totalIncrease: 50 },
       { edition: 'PS5 Standard', price: 549.99, currency: '$', totalIncrease: 10},
       { edition: 'PS5 Digital', price: 499.99, currency: '$', increase: 10, totalIncrease: 25 },
