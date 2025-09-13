@@ -74,6 +74,7 @@ import { monsterhunter } from './games/MonsterHunterWilds';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
+import { pokemonlegendsza } from './games/PokemonLegendsZA';
 import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
 import { residentevil4 } from './games/ResidentEvil4';
@@ -205,6 +206,7 @@ export const games = {
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
   'NFL College Football 2k26': nflCollegeFootball2026,
+  'Pokemon Legends Z-A': pokemonlegendsza,
   'Red Dead Redemption 2': redDeadRedemption2,
   'Red Dead Redemption I': redDeadRedemptionI,
   "Resident Evil 4": residentevil4,
