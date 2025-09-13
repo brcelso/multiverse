@@ -2,7 +2,7 @@ export const mafia = {
   launchDate: '2025-08-08',
   Brazil: {
     'September 2025': [
-      { edition: "Standard Edition", price: 196, discount: 32.5, currency: 'R$', exchangeTax2: 4.08 },
+      { edition: "Standard Edition", price: 196, discount: 32.5, currency: 'R$', exchangeTax2: 3.92 },
       { edition: "Standard Edition", price: 204.02, discount: 29.5, currency: 'R$', exchangeTax2: 4.08 },
       { edition: "Standard Edition", price: 212, discount: 27, currency: 'R$', exchangeTax2: 4.24 },
     ],
