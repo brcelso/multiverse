@@ -69,6 +69,7 @@ export const theLastOfUsPart2 = {
   },
   UnitedStates: {
     'September 2025': [
+      { edition: 'Remastered', price: 41.99, discount: 16, currency: '$' },
       { edition: 'Deluxe Edition', price: 42.99, currency: '$' , discount: 14 },
     ],
     'March 2025': [
@@ -87,7 +88,8 @@ export const theLastOfUsPart2 = {
       { edition: 'Standard Edition', price: 9.99, currency: '$' , discount: 75, totalDiscount: 83.3 },
     ],
     'October 2020': [
-      { edition: 'Standard Edition', price: 39.99, currency: '$' , discount: 33 },
+      { edition: 'Deluxe Edition', price: 49.99, currency: '$' , totalDiscount: 28.5 },
+      { edition: 'Standard Edition', price: 39.99, currency: '$' , totalDiscount: 33 },
     ],
     'June 2020': [
       { edition: 'Ellie Edition', price: 229.99, currency: '$' },
