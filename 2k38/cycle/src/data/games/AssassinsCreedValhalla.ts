@@ -16,6 +16,9 @@ export const assassinsCreedValhalla = {
   },
 
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Complete Edition', price: 27.99, currency: '$', discount: 80 },
+    ],
     'April 2025': [
       { edition: 'Complete Edition', price: 34.99, currency: '$', discount: 75 },
       { edition: 'Complete Edition', price: 14.99, currency: '$', discount: 75 },
