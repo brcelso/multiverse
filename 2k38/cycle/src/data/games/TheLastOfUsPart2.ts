@@ -68,6 +68,9 @@ export const theLastOfUsPart2 = {
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Deluxe Edition', price: 42.99, currency: '$' , discount: 14 },
+    ],
     'March 2025': [
       { edition: 'Remastered', price: 39.99, discount: 20, currency: '$' },
     ],
