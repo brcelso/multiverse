@@ -70,6 +70,7 @@ import { legohorizon } from './games/LegoHorizon';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
+import { mklegacy } from './games/MKLegacy';
 import { monsterhunter } from './games/MonsterHunterWilds';
 import { nba2k25 } from './games/nba2k25';
 import { nfl25 } from './games/NFL25';
@@ -203,6 +204,7 @@ export const games = {
   'Lost Soul Aside': lostSoulAside,
   'Mafia The Old Country': mafia,
   'Metal Gear Snake Eater Remake': mgs3,
+  'Mortal Kombat Legacy Kollection': mklegacy,
   'Monster Hunter Wilds': monsterhunter,
   'NBA 2k25': nba2k25,
   'NFL 25': nfl25,
