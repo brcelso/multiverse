@@ -9,6 +9,9 @@ export const crash4ItsAboutTime = {
   },
 
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Standard Edition', price: 19.79, currency: '$', discount: 67 },
+    ],
     'February 2025': [
       { edition: 'Standard Edition', price: 19.79, currency: '$', discount: 67 },
       { edition: 'Standard Edition', price: 59.99, currency: '$' },
