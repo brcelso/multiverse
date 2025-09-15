@@ -15,6 +15,9 @@ export const nflCollegeFootball2025 = {
   },
 
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Standard Edition', price: 46.99, currency: '$', discount: 33 },
+    ],
     'March 2025': [
       { edition: 'Bundle Deluxe', price: 59.99, currency: '$', discount: 60 },
       { edition: 'Standard Edition', price: 13.99, currency: '$', discount: 80 },
