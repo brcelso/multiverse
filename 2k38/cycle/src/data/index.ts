@@ -85,6 +85,7 @@ import { riseOfTheTombRaider } from './games/RiseOfTombRaider';
 import { shadowOfTheTombRaider } from './games/ShadowOfTombRaider';
 import { silentHill2Remake } from './games/SilentHill2Remake';
 import { silenthillf } from './games/SilentHillF';
+import { sonicracing } from './games/SonicRacingCrossworlds';
 import { spiderman2 } from './games/Spiderman2';
 import { spidermanMilesMorales } from './games/SpidermanMiles';
 import { spidermanRemastered } from './games/Spiderman';
@@ -217,6 +218,7 @@ export const games = {
   'Shadow Of Tomb Raider': shadowOfTheTombRaider,
   'Silent Hill 2 Remake': silentHill2Remake,
   'Silent Hill F': silenthillf,
+  'Sonic Racing Crossworlds': sonicracing,
   'Spiderman': spidermanRemastered,
   'Spiderman 2': spiderman2,
   'Spiderman Miles Morales': spidermanMilesMorales,
