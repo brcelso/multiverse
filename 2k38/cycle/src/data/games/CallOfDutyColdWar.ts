@@ -31,6 +31,9 @@ export const codcoldwar = {
     ],
   },
   UnitedStates: {
+    'September 2025': [
+      { edition: 'Cross-Gen', price: 24.49, discount: 65, currency: '$'},
+    ],
     'June 2025': [
       { edition: 'Cross-Gen', price: 27.99, discount: 60, currency: '$'},
       { edition: 'Standard', price: 19.79, discount: 67, currency: '$'},
