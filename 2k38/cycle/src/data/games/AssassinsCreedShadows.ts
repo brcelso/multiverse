@@ -3,6 +3,7 @@ export const assassinsCreedShadows = {
 
   Brazil: {
     'September 2025': [
+      { edition: 'Premium Edition', price: 549.90, currency: 'R$', exchangeTax2: 4.99 },
       { edition: 'Deluxe Edition', price: 301.43, currency: 'R$', discount: 33, exchangeTax: 4.99 },
       { edition: 'Standard Edition', price: 234.43, currency: 'R$', discount: 33, exchangeTax: 4.98 },
     ],
@@ -21,6 +22,7 @@ export const assassinsCreedShadows = {
   },
   Europe: {
     'September 2025': [
+      { edition: 'Premium Edition', price: 109.99, currency: '€' },
       { edition: 'Deluxe Edition', price: 66.99, discount: 33, currency: '€' },
       { edition: 'Standard Edition', price: 53.59, discount: 33, currency: '€' },
     ],
@@ -31,6 +33,7 @@ export const assassinsCreedShadows = {
   },
   UnitedKingdom: {
     'September 2025': [
+      { edition: 'Premium Edition', price: 99.99, currency: '£' },
       { edition: 'Deluxe Edition', price: 56.94, discount: 33, currency: '£' },
       { edition: 'Standard Edition', price: 46.89, discount: 33, currency: '£' },
     ],
@@ -41,6 +44,7 @@ export const assassinsCreedShadows = {
   },
   UnitedStates: {
     'September 2025': [
+      { edition: 'Premium Edition', price: 109.99, currency: '$' },
       { edition: 'Deluxe Edition', price: 60.29, discount: 33, currency: '$' },
       { edition: 'Standard Edition', price: 46.89, discount: 33, currency: '$' },
     ],
