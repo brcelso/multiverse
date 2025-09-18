@@ -3,7 +3,7 @@ export const lostSoulAside = {
 
   Brazil: {
     'September 2025': [
-      { edition: 'Standard Edition', price: 159.20, discount: 20, currency: 'R$', exchangeTax: 2.65 },
+      { edition: 'Standard Edition', price: 159.20, discount: 53, currency: 'R$', exchangeTax: 2.65 },
       { edition: 'Deluxe Edition', price: 399.90, increase: 14.5, currency: 'R$', exchangeTax: 5.71 },
       { edition: 'Standard Edition', price: 339.90, increase: 13.5, currency: 'R$', exchangeTax: 5.66 },
     ],
