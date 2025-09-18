@@ -6,7 +6,7 @@ export const trips = {
         edition: 'Cambio Banco de La Nacion',
         price: 382200,
         exchangeTax: 273,
-        realPrice: 1400,
+        convertedPrice: 1400,
         currency: 'ARS'
       },
     ],
