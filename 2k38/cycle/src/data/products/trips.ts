@@ -3,6 +3,13 @@ export const trips = {
   Argentina: {
     'September 2025': [
       {
+        edition: 'Primero Cafe',
+        price: 49.81,
+        exchangeTax: 273,
+        convertedPrice: 13600,
+        currency: 'R$'
+      },
+      {
         edition: 'Alfajor',
         price: 13.91,
         exchangeTax: 273,
