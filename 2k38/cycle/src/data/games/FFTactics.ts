@@ -8,14 +8,14 @@ export const fftactics = {
   },
   Europe: {
     'September 2025': [
-      { edition: 'Deluxe Edition', price: 59.99, currency: '€' },
-      { edition: 'Standard Edition', price: 49.99, currency: '€' },
+      { edition: 'Deluxe Edition', price: 69.99, currency: '€' },
+      { edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
     'September 2025': [
       { edition: 'Deluxe Edition', price: 54.99, currency: '£' },
-      { edition: 'Standard Edition', price: 44.99, currency: '£' },
+      { edition: 'Standard Edition', price: 49.99, currency: '£' },
     ],
   },
   UnitedStates: {
