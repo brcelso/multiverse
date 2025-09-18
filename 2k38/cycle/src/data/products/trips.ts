@@ -10,6 +10,13 @@ export const trips = {
         currency: 'ARS'
       },
       {
+        edition: 'Uber',
+        price: 43.89,
+        exchangeTax: 259,
+        convertedPrice: 11369,
+        currency: 'R$'
+      },
+      {
         edition: 'Alfajor',
         price: 13.91,
         exchangeTax: 273,
