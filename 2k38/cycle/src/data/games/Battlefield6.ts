@@ -1,6 +1,9 @@
 export const bf6 = {
   launchDate: '2025-10-10',
   Brazil: {
+    'September 2025': [
+      { edition: 'Standard Edition', price: 259.47, discount: 26, currency: 'R$', exchangeTax: 3.70 },
+    ],
     'July 2025': [
       { edition: 'Phantom Edition', price: 499.50, currency: 'R$', exchangeTax: 5 },
       { edition: 'Standard Edition', price: 349.90, currency: 'R$', exchangeTax: 5 },
