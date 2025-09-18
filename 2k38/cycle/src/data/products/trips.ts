@@ -3,6 +3,34 @@ export const trips = {
   Argentina: {
     'September 2025': [
       {
+        edition: 'Alfajor',
+        price: 13.91,
+        exchangeTax: 273,
+        convertedPrice: 3800,
+        currency: 'R$'
+      },
+      {
+        edition: 'Sube',
+        price: 41.90,
+        exchangeTax: 273,
+        convertedPrice: 11140,
+        currency: 'R$'
+      },
+      {
+        edition: 'Agua',
+        price: 2400,
+        exchangeTax: 273,
+        convertedPrice: 8.79,
+        currency: 'ARS'
+      },
+      {
+        edition: 'MC Donalds - Almuerzo - 18-09',
+        price: 21700,
+        exchangeTax: 273,
+        convertedPrice: 79.48,
+        currency: 'ARS'
+      },
+      {
         edition: 'Cambio Banco de La Nacion',
         price: 382200,
         exchangeTax: 273,
