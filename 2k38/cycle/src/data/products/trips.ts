@@ -4,10 +4,10 @@ export const trips = {
     'September 2025': [
       {
         edition: 'Primero Cafe',
-        price: 49.81,
+        price: 13600,
         exchangeTax: 273,
-        convertedPrice: 13600,
-        currency: 'R$'
+        convertedPrice: 49.81,
+        currency: 'ARS'
       },
       {
         edition: 'Alfajor',
