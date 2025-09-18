@@ -2,6 +2,8 @@ export const theLastOfUsPartI = {
   launchDate: '2022-09-27',
   Argentina: {
     'September 2025': [
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 220999, currency: '$', increase: 121 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 89999, currency: '$', discount: 10 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
     ],
     'August 2025': [
