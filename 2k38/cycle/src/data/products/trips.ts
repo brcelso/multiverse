@@ -1,6 +1,16 @@
 export const trips = {
   launchDate: '2025-08-24',
-
+  Argentina: {
+    'September 2025': [
+      {
+        edition: 'Cambio Banco de La Nacion',
+        price: 382200,
+        exchangeTax: 273,
+        realPrice: 1400
+        currency: 'ARS'
+      },
+    ],
+  },
   Brazil: {
     'August 2025': [
       {
