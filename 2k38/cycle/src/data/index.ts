@@ -40,6 +40,7 @@ import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
 import { demonsouls } from './games/DemonSouls';
 import { destiny2 } from './games/Destiny2';
+import { digimon } from './games/Digimon';
 import { donkeyKongBananza } from './games/DonkeyKongBananza';
 import { doomTheDarkAges } from './games/DoomTheDarkAges';
 import { elderScrollsOblivionRemastered } from './games/ElderScrollsOblivionRem';
@@ -176,6 +177,7 @@ export const games = {
   'Death Stranding 2': deathStranding2OnTheBeach,
   'Demon Souls': demonsouls,
   'Destiny 2': destiny2,
+  'Digimon Story Time Stranger': digimon,
   'Donkey Kong Bananza': donkeyKongBananza,
   'Doom The Dark Ages': doomTheDarkAges,
   'Elder Scrolls Oblivion Remastered': elderScrollsOblivionRemastered,
