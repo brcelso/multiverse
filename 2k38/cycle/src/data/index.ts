@@ -74,6 +74,7 @@ import { mgs3 } from './games/MetalGearSnakeEaterRemake';
 import { mklegacy } from './games/MKLegacy';
 import { monsterhunter } from './games/MonsterHunterWilds';
 import { nba2k25 } from './games/nba2k25';
+import { ninja4 } from './games/NinjaGaiden4';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
 import { pokemonlegendsza } from './games/PokemonLegendsZA';
@@ -209,6 +210,7 @@ export const games = {
   'Mortal Kombat Legacy Kollection': mklegacy,
   'Monster Hunter Wilds': monsterhunter,
   'NBA 2k25': nba2k25,
+  'Ninja Gaiden 4': ninja4,
   'NFL 25': nfl25,
   'NFL College Football 2k26': nflCollegeFootball2026,
   'Pokemon Legends Z-A': pokemonlegendsza,
