@@ -2,17 +2,17 @@ export const theLastOfUsPartI = {
   launchDate: '2022-09-27',
   Argentina: {
     'September 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 220999, currency: '$', increase: 121 },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 89999, currency: '$', discount: 10 },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: '$', discount: 58 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 220999, currency: 'ARS', increase: 121 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 89999, currency: 'ARS', discount: 10 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 29.39, currency: 'ARS', discount: 58 },
     ],
     'August 2025': [
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 79999, currency: '$', discount: 20 },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 79999, currency: 'ARS', discount: 20 },
     ],
     'September 2022': [
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '$' },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '$' },
-      { platform: "Playstation 5", edition: 'Standard Edition', price: 99999, currency: '$' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 99999, currency: 'ARS' },
     ],
   },
   Brazil: {
