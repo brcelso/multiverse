@@ -3,6 +3,13 @@ export const trips = {
   Argentina: {
     'September 2025': [
       {
+        edition: 'Saldo 19-09',
+        price: 281400,
+        exchangeTax: 273,
+        convertedPrice: 1030.76,
+        currency: 'ARS'
+      },
+      {
         edition: 'Uber 19-09',
         price: 13204,
         exchangeTax: 257.38,
