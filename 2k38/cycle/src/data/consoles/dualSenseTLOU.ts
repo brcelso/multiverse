@@ -1,6 +1,19 @@
 export const dualsensetlou = {
       launchDate: '2025-04-28',
-
+  Argentina: {
+    'September 2025': [
+      {
+        edition: 'Dual Sense TLOU',
+        price: 470923,
+        currency: 'ARS',
+      },
+      {
+        edition: 'Dual Sense TLOU',
+        price: 199999,
+        currency: 'ARS',
+      },
+    ],
+  },
   Brazil: {
     'September 2025': [
       {
