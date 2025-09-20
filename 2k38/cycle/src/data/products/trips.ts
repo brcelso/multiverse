@@ -4,9 +4,9 @@ export const trips = {
     'September 2025': [
       {
         edition: 'Saldo 20-09',
-        price: 0,
+        price: 234100,
         exchangeTax: 273,
-        convertedPrice: 0,
+        convertedPrice: 857.50,
         currency: 'ARS'
       },
       {
