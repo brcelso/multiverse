@@ -3,6 +3,62 @@ export const trips = {
   Argentina: {
     'September 2025': [
       {
+        edition: 'Saldo 20-09',
+        price: 0,
+        exchangeTax: 273,
+        convertedPrice: 0,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Uber 20-09',
+        price: 5138,
+        exchangeTax: 267.08,
+        convertedPrice: 19.20,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Argentina Grill 20-09',
+        price: 74250,
+        exchangeTax: 273,
+        convertedPrice: 271.97,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Mercado 20-09',
+        price: 6100,
+        exchangeTax: 273,
+        convertedPrice: 22.34,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Presepio 20-09',
+        price: 43600,
+        exchangeTax: 273,
+        convertedPrice: 159.70,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Museu 20-09',
+        price: 10000,
+        exchangeTax: 273,
+        convertedPrice: 36.63,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Uber 20-09',
+        price: 5151,
+        exchangeTax: 267.44,
+        convertedPrice: 19.26,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Primero Cafe 20-09',
+        price: 20800,
+        exchangeTax: 273,
+        convertedPrice: 76.19,
+        currency: 'ARS'
+      },
+      {
         edition: 'Saldo 19-09',
         price: 259800,
         exchangeTax: 273,
