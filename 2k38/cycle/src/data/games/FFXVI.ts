@@ -1,7 +1,9 @@
 export const finalFantasyXVI = {
   launchDate: '2023-06-22',
-
   Brazil: {
+    'September 2025': [
+      { edition: 'Complete Edition', price: 209.94, currency: 'R$', discount: 40 },
+    ],
     'June 2025': [
       { edition: 'Complete Edition', price: 227.44, currency: 'R$', discount: 35 },
       { edition: 'Standard Edition', price: 162.18, currency: 'R$', discount: 35 },
@@ -15,23 +17,10 @@ export const finalFantasyXVI = {
       { edition: 'Standard Edition', price: 249.5, currency: 'R$' },
     ],
   },
-
-  UnitedStates: {
-    'June 2025': [
-      { edition: 'Complete Edition', price: 45.49, currency: '$', discount: 35 },
-      { edition: 'Standard Edition', price: 32.49, currency: '$', discount: 35 },
-    ],
-    'January 2025': [
-      { edition: 'Complete Edition', price: 52.49, currency: '$', discount: 25 },
-      { edition: 'Standard Edition', price: 37.49, currency: '$', discount: 25 },
-    ],
-    'June 2023': [
-      { edition: 'Complete Edition', price: 69.99, currency: '$' },
-      { edition: 'Standard Edition', price: 49.99, currency: '$' },
-    ],
-  },
-
   Europe: {
+    'September 2025': [
+      { edition: 'Complete Edition', price: 47.99, currency: '€', discount: 40 },
+    ],
     'June 2025': [
       { edition: 'Complete Edition', price: 51.99, currency: '€', discount: 35 },
       { edition: 'Standard Edition', price: 38.99, currency: '€', discount: 35 },
@@ -45,8 +34,10 @@ export const finalFantasyXVI = {
       { edition: 'Standard Edition', price: 59.99, currency: '€' },
     ],
   },
-
   UnitedKingdom: {
+    'September 2025': [
+      { edition: 'Complete Edition', price: 41.99, currency: '£', discount: 40 },
+    ],
     'June 2025': [
       { edition: 'Complete Edition', price: 45.49, currency: '£', discount: 35 },
       { edition: 'Standard Edition', price: 32.49, currency: '£', discount: 35 },
@@ -61,6 +52,23 @@ export const finalFantasyXVI = {
     'June 2023': [
       { edition: 'Complete Edition', price: 69.99, currency: '£' },
       { edition: 'Standard Edition', price: 49.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'September 2025': [
+      { edition: 'Complete Edition', price: 41.99, currency: '$', discount: 40 },
+    ],
+    'June 2025': [
+      { edition: 'Complete Edition', price: 45.49, currency: '$', discount: 35 },
+      { edition: 'Standard Edition', price: 32.49, currency: '$', discount: 35 },
+    ],
+    'January 2025': [
+      { edition: 'Complete Edition', price: 52.49, currency: '$', discount: 25 },
+      { edition: 'Standard Edition', price: 37.49, currency: '$', discount: 25 },
+    ],
+    'June 2023': [
+      { edition: 'Complete Edition', price: 69.99, currency: '$' },
+      { edition: 'Standard Edition', price: 49.99, currency: '$' },
     ],
   },
 };
