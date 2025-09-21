@@ -4,6 +4,18 @@ export const ns2 = {
   Brazil: {
     'September 2025': [
       {
+        edition: 'NS2 Standard',
+        price: 3766,
+        currency: 'R$',
+        discount: 16.3,
+      },
+      {
+        edition: 'NS2 Mario Kart Bundle',
+        price: 4017,
+        currency: 'R$',
+        discount: 16.3,
+      },
+      {
         edition: 'NS2 Mario Kart Bundle',
         price: 4099,
         currency: 'R$',
