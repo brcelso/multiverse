@@ -3,6 +3,76 @@ export const trips = {
   Argentina: {
     'September 2025': [
       {
+        edition: 'Saldo 21-09',
+        price: 162.000,
+        exchangeTax: 273,
+        convertedPrice: 593.40,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Uber 21-09',
+        price: 8176,
+        exchangeTax: 273,
+        convertedPrice: 29.94,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Bandaid 21-09',
+        price: 1000,
+        exchangeTax: 273,
+        convertedPrice: 3.66,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Mafalda Messi 21-09',
+        price: 24000,
+        exchangeTax: 273,
+        convertedPrice: 87.91,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Antiche 21-09',
+        price: 7000,
+        exchangeTax: 273,
+        convertedPrice: 25.64,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Mostaza 21-09',
+        price: 26400,
+        exchangeTax: 273,
+        convertedPrice: 96.70,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Tango 21-09',
+        price: 2800,
+        exchangeTax: 273,
+        convertedPrice: 10.25,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Quadros 21-09',
+        price: 20000,
+        exchangeTax: 273,
+        convertedPrice: 73.26,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Uber 21-09',
+        price: 8184,
+        exchangeTax: 273,
+        convertedPrice: 29.97,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Cafe 21-09',
+        price: 25000,
+        exchangeTax: 273,
+        convertedPrice: 91.57,
+        currency: 'ARS'
+      },
+      {
         edition: 'Saldo 20-09',
         price: 234100,
         exchangeTax: 273,
@@ -14,6 +84,20 @@ export const trips = {
         price: 5138,
         exchangeTax: 267.08,
         convertedPrice: 19.20,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Kentucky 20-09',
+        price: 9800,
+        exchangeTax: 273,
+        convertedPrice: 35.89,
+        currency: 'ARS'
+      },
+      {
+        edition: 'Dia 20-09',
+        price: 6287.25,
+        exchangeTax: 273,
+        convertedPrice: 23.03,
         currency: 'ARS'
       },
       {
