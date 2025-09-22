@@ -14,11 +14,15 @@ export const disney = {
       ],
     'March 2025': [
       { price: 18399, currency: 'ARS', exchangeTax: 275.02, exchangeTax2: 1150.65,
-        edition: "Combo+ Monthly 4 months" },
+        edition: "Combo+ Monthly" },
       { price: 12299, currency: 'ARS', exchangeTax: 262.23,
-        edition: "Standard Ads Free Monthly 4 months" },
+        edition: "Standard Ads Free Monthly" },
       { price: 9999, currency: 'ARS', exchangeTax: 357.23, exchangeTax2: 1000,
-        edition: "Standard W/Ads Monthly 4 months" },
+        edition: "Standard W/Ads Monthly" },
+      ],
+    'November 2019': [
+      { price: 385, currency: 'ARS', exchangeTax: 13.79, exchangeTax2: 55.07,
+        edition: "Combo+ Monthly" },
       ],
     },
   Brazil: {
