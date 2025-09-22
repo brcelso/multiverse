@@ -2,10 +2,11 @@ export const disney = {
   launchDate: '2019-11-12',
   Argentina: {
     'September 2025': [
-      { price: 7299, currency: 'ARS', discount: 65, 
+      { price: 7299, currency: 'ARS', discount: 60, 
         exchangeTax: 366.78, exchangeTax2: 456.47,
         edition: "Combo+ Monthly 4 months" },
-      { price: 3999, currency: 'ARS', discount: 65, exchangeTax: 268.38,
+      { price: 3999, currency: 'ARS', discount: 67.5, 
+        exchangeTax: 268.38,
         edition: "Standard Ads Free Monthly 4 months" },
       { price: 3490, currency: 'ARS', discount: 65, 
         exchangeTax: 352.52, exchangeTax2: 349.34,
