@@ -87,9 +87,9 @@ export const disney = {
       },
   UnitedStates: {
     'October 2025': [
-     { price: 189.99, increase: 18, totalIncrease: 129, currency: '$', 
+     { price: 189.99, increase: 18, totalIncrease: 172, currency: '$', 
         edition: "Premium Yearly" },
-      { price: 18.99, increase: 18, totalIncrease: 129, currency: '$', 
+      { price: 18.99, increase: 18, totalIncrease: 172, currency: '$', 
         edition: "Premium Monthly" },
       ],
     'October 2024': [
