@@ -85,6 +85,30 @@ export const disney = {
         edition: "Combo+ Monthly" },
       ],
       },
+  Europe: {
+    'October 2025': [
+      { price: 139.90, totalIncrease: 100, currency: '€',
+        edition: "Premium Yearly" },
+      { price: 13.99, totalIncrease: 100, currency: '€',
+        edition: "Premium Monthly" },
+      { price: 5.99,  increase: 20, currency: '€',
+        edition: "Standard Monthly" },
+      { price: 4.99, currency: '€',
+        edition: "Standard w/Ads Monthly" },
+    ],
+  },
+  UnitedKingdom: {
+    'October 2025': [
+      { price: 129.90, totalIncrease: 116, currency: '£',
+        edition: "Premium Yearly" },
+      { price: 12.99, totalIncrease: 117, currency: '£',
+        edition: "Premium Monthly" },
+      { price: 8.99,  increase: 80, currency: '£',
+        edition: "Standard Monthly" },
+      { price: 4.99, currency: '£',
+        edition: "Standard w/Ads Monthly" },
+    ],
+  },
   UnitedStates: {
     'October 2025': [
      { price: 189.99, increase: 18, totalIncrease: 172, currency: '$', 
