@@ -91,6 +91,8 @@ export const disney = {
         edition: "Premium Yearly" },
       { price: 18.99, increase: 18, totalIncrease: 172, currency: '$', 
         edition: "Premium Monthly" },
+      { price: 11.99, increase: 20, totalIncrease: 50, currency: '$', 
+        edition: "Standard w/Ads Monthly" },
       ],
     'October 2024': [
      { price: 159.99, increase: 14.5, totalIncrease: 129, currency: '$', 
