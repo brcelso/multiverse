@@ -17,14 +17,14 @@ export const marioKartWorldSW2 = {
   },
   UnitedKingdom: {
     'June 2025': [
-      { price: 74.99, currency: '£' },
-      { price: 66.99, currency: '£' },
+      { price: 74.99, edition: "Standard Edition", currency: '£' },
+      { price: 66.99, edition: "Standard Edition", currency: '£' },
     ],
   },
   UnitedStates: {
     'June 2025': [
-      { price: 79.99, currency: '$' },
-      { price: 69.99, currency: '$' },
+      { price: 79.99, edition: "Standard Edition", currency: '$' },
+      { price: 69.99, edition: "Standard Edition", currency: '$' },
     ],
   },
 };
