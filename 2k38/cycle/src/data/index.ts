@@ -72,6 +72,7 @@ import { indianajones } from './games/IndianaJones';
 import { legohorizon } from './games/LegoHorizon';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
+import { marioKartWorldSW2 } from './games/MarioKartWorld';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
 import { mklegacy } from './games/MKLegacy';
 import { monsterhunter } from './games/MonsterHunterWilds';
@@ -211,6 +212,7 @@ export const games = {
   'Lego Horizon Adventures': legohorizon,
   'Lost Soul Aside': lostSoulAside,
   'Mafia The Old Country': mafia,
+  'Mario Kart World': marioKartWorldSW2,
   'Metal Gear Snake Eater Remake': mgs3,
   'Mortal Kombat Legacy Kollection': mklegacy,
   'Monster Hunter Wilds': monsterhunter,
