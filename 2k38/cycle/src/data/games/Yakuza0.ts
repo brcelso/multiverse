@@ -1,30 +1,27 @@
-export const marioKartWorldSW2 = {
+export const yakuza0 = {
   launchDate: '2025-06-05',
 
   Brazil: {
     'September 2025': [
-      { price: 404.98, currency: 'R$', discount: 19, exchangeTax: 5.06 },
-    ],
-    'June 2025': [
-      { price: 499.9, currency: 'R$', exchangeTax: 6.24 },
+      { platform: "Playstation 5 | XBox", price: 285.44, currency: 'R$', exchangeTax: 5.71 },
     ],
   },
   Europe: {
-    'June 2025': [
-      { price: 89.99, currency: '€' },
-      { price: 79.99, currency: '€' },
+    'September 2025': [
+      { platform: "Playstation 5 | XBox", price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
-    'June 2025': [
-      { price: 74.99, currency: '£' },
-      { price: 66.99, currency: '£' },
+    'April 2025': [
+      { platform: "Switch 2", price: 44.95, currency: '£' },
     ],
   },
   UnitedStates: {
-    'June 2025': [
-      { price: 79.99, currency: '$' },
-      { price: 69.99, currency: '$' },
+    'September 2025': [
+      { platform: "Switch 2", price: 37.00, discount: 25, currency: '$' },
+    ],
+    'April 2025': [
+      { platform: "Switch 2", price: 49.99, currency: '$' },
     ],
   },
 };
