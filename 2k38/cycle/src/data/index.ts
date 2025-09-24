@@ -88,6 +88,7 @@ import { residentevil7 } from './games/ResidentEvil7';
 import { residentevil9 } from './games/ResidentEvil9';
 import { residentevilvillage } from './games/ResidentEvilVillage';
 import { riseOfTheTombRaider } from './games/RiseOfTombRaider';
+import { saros } from './games/Saros';
 import { shadowOfTheTombRaider } from './games/ShadowOfTombRaider';
 import { silentHill2Remake } from './games/SilentHill2Remake';
 import { silenthillf } from './games/SilentHillF';
@@ -228,6 +229,7 @@ export const games = {
   'Resident Evil 9 Requiem': residentevil9,
   'Resident Evil Village': residentevilvillage,
   'Rise Of The Tomb Raider': riseOfTheTombRaider,
+  'Saros [2026]': saros,
   'Shadow Of Tomb Raider': shadowOfTheTombRaider,
   'Silent Hill 2 Remake': silentHill2Remake,
   'Silent Hill F': silenthillf,
