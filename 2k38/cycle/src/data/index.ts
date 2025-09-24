@@ -36,6 +36,7 @@ import { crashTrilogy } from './games/CrashTrilogy';
 import { cronos } from './games/CronosTheNewDawn';
 import { cyberpunk } from './games/CyberPunk';
 import { darksoulsiii } from './games/DarkSoulsIII';
+import { dayz } from './games/DayZ';
 import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
 import { demonsouls } from './games/DemonSouls';
@@ -173,6 +174,7 @@ export const games = {
   'Cronos The New Dawn': cronos,
   'Cyber Punk 2077': cyberpunk,
   'Dark Souls III': darksoulsiii,
+  'DayZ': dayz,
   'Death Stranding': deathStranding,
   'Death Stranding 2': deathStranding2OnTheBeach,
   'Demon Souls': demonsouls,
