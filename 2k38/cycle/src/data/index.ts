@@ -247,7 +247,7 @@ export const games = {
   'Tomb Raider Remastered IV-V-VI': tombRaiderRemasteredIVVVI,
   'Until Dawn': untilDawn,
   'WWE 2K25': wwe2k25,
-  'Yakuza 0 Director Cut': yakuza,
+  'Yakuza 0 Director Cut': yakuza0,
 
 } as const;
 
