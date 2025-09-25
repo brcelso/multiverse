@@ -56,6 +56,7 @@ import { finalFantasyVIIRemake } from './games/FFVIIRemake';
 import { finalFantasyVIIRebirth } from './games/FFVIIRebirth';
 import { finalFantasyXVI } from './games/FFXVI';
 import { forzaHorizon5 } from './games/ForzaHorizon5';
+import { forza6 } from './games/ForzaHorizon6';
 import { ghostoftsushima } from './games/GhostOfTsushima';
 import { ghostOfYotei } from './games/GhostofYotei';
 import { godOfWarRagnarok } from './games/GodOfWarRagnarok';
@@ -198,6 +199,7 @@ export const games = {
   'Final Fantasy VII Remake': finalFantasyVIIRemake,
   'Final Fantasy XVI': finalFantasyXVI,
   'Forza Horizon 5': forzaHorizon5,
+  'Forza Horizon 6': forza6,
   'Ghost of Tsushima': ghostoftsushima,
   'Ghost of Yotei': ghostOfYotei,
   'God Of War Ragnarok': godOfWarRagnarok,
