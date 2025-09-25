@@ -199,7 +199,7 @@ export const games = {
   'Final Fantasy VII Remake': finalFantasyVIIRemake,
   'Final Fantasy XVI': finalFantasyXVI,
   'Forza Horizon 5': forzaHorizon5,
-  'Forza Horizon 6': forza6,
+  'Forza Horizon 6 [2026]': forza6,
   'Ghost of Tsushima': ghostoftsushima,
   'Ghost of Yotei': ghostOfYotei,
   'God Of War Ragnarok': godOfWarRagnarok,
