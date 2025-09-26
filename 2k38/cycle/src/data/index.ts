@@ -55,6 +55,7 @@ import { fftactics } from './games/FFTactics';
 import { finalFantasyVIIRemake } from './games/FFVIIRemake';
 import { finalFantasyVIIRebirth } from './games/FFVIIRebirth';
 import { finalFantasyXVI } from './games/FFXVI';
+import { flight2024 } from './games/Flight2024';
 import { forzaHorizon5 } from './games/ForzaHorizon5';
 import { forza6 } from './games/ForzaHorizon6';
 import { ghostoftsushima } from './games/GhostOfTsushima';
@@ -198,6 +199,7 @@ export const games = {
   'Final Fantasy VII Rebirth': finalFantasyVIIRebirth,
   'Final Fantasy VII Remake': finalFantasyVIIRemake,
   'Final Fantasy XVI': finalFantasyXVI,
+  'Microsoft Flight Simulator 2024': flight2024,
   'Forza Horizon 5': forzaHorizon5,
   'Forza Horizon 6 [2026]': forza6,
   'Ghost of Tsushima': ghostoftsushima,
