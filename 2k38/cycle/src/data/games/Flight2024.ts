@@ -28,7 +28,6 @@ export const flight2024 = {
     'September 2025': [
       { platform: "Playstation 5", edition: 'Aviator Edition', price: 199.99, currency: '$' },
       { platform: "Playstation 5", edition: 'Premium Deluxe Edition', price: 129.99, currency: '$' },
-    ],
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 99.99, currency: '$' },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '$' },
     ],
