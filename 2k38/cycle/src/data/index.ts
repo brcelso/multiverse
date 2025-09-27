@@ -106,6 +106,7 @@ import { tloucomplete } from './games/TheLastOfUsComplete';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
 import { theouterworlds2 } from './games/theOuterWorlds2';
+import { tombraidertrilogy } from './games/TombRaiderTrilogy';
 import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
@@ -251,6 +252,7 @@ export const games = {
   'The Last Of Us Part II': theLastOfUsPart2,
   'The Last Of Us Complete': tloucomplete,
   'The Outer Worlds 2': theouterworlds2,
+  'Tomb Raider Definitive Survivor Trilogy': tombraidertrilogy,
   'Tony Hawk 1+2': tonyHawk12,
   'Tony Hawk 3+4': tonyHawk3Plus4,
   'Tomb Raider': tombRaider,
