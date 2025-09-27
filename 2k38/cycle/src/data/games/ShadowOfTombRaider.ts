@@ -37,7 +37,6 @@ export const shadowOfTheTombRaider = {
       { edition: 'Definitive Edition', price: 6.99, currency: '£', discount: 80 },
       { edition: 'Definitive Edition', price: 34.99, currency: '£' },
       { edition: 'Standard Edition', price: 54.99, currency: '£' },
-
     ],
   },
   UnitedStates: {
