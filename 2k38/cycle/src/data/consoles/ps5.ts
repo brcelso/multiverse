@@ -94,6 +94,10 @@ export const ps5 = {
     ],
   },
   UnitedKingdom: {
+    'September 2025': [
+      { edition: 'PS5 Standard', price: 434.99, currency: '£', discount: 9.5 },
+      { edition: 'PS5 Digital', price: 339.99, currency: '£', discount: 21 },
+    ],
     'May 2025': [
       { edition: 'PS5 Pro', price: 649.99, currency: '£', discount: 7 },
       { edition: 'PS5 Digital', price: 339.99, currency: '£', discount: 21 },
