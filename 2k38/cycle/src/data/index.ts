@@ -127,6 +127,7 @@ import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
 import { ps5 } from './consoles/ps5';
 import { iphone } from './consoles/iphone';
+import { rogxbox } from './consoles/RogXBox';
 
 //products
 import { bigmac } from './products/bigmac';
@@ -275,7 +276,8 @@ export const games = {
 'Nintendo Switch 2': ns2,
 'Playstation 3': ps3,
 'Playstation 4': ps4,
-'Playstation 5': ps5
+'Playstation 5': ps5,
+'Rog Xbox': rogxbox
 
 } as const;
 
