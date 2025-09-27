@@ -9,6 +9,7 @@ export const deathStranding2OnTheBeach = {
   },
   Brazil: {
     'September 2025': [
+      { edition: "Standard Edition", price: 337.50, discount: 15, currency: 'R$', exchangeTax2: 5.71 },
       { edition: "Physical Media", price: 196, discount: 51, currency: 'R$', exchangeTax2: 2.80 },
       { edition: "Physical Media", price: 209.90, discount: 47.5, currency: 'R$', exchangeTax2: 2.99 },
       { edition: "Physical Media", price: 215, discount: 46, currency: 'R$', exchangeTax2: 3.59 }
@@ -27,13 +28,15 @@ export const deathStranding2OnTheBeach = {
   },
 
   Europe: {
+    'September 2025': [
+      { edition: "Standard Edition", price: 67.99, discount: 15, currency: '€' },
+    ],
     'June 2025': [
       { edition: "Collector Edition", price: 249.99, currency: '€' },
       { edition: "Deluxe Edition", price: 89.99, currency: '€' },
       { edition: "Standard Edition", price: 79.99, currency: '€' },
     ],
   },
-
   Japan: {
     'June 2025': [
       { edition: "Collector Edition", price: 31980, currency: '¥' },  
@@ -41,8 +44,10 @@ export const deathStranding2OnTheBeach = {
       { edition: "Standard Edition", price: 8980, currency: '¥' },
     ],
   },
-
   UnitedKingdom: {
+    'September 2025': [
+      { edition: "Standard Edition", price: 59.49, discount: 15, currency: '£' },
+    ],
     'June 2025': [
       { edition: "Collector Edition", price: 229.99, currency: '£' },
       { edition: "Deluxe Edition", price: 79.99, currency: '£' },
@@ -51,6 +56,9 @@ export const deathStranding2OnTheBeach = {
   },
 
   UnitedStates: {
+    'September 2025': [
+      { edition: "Standard Edition", price: 59.49, discount: 15, currency: '$' },
+    ],
     'June 2025': [
       { edition: "Collector Edition", price: 229.99, currency: '$' },
       { edition: "Deluxe Edition", price: 79.99, currency: '$' },
