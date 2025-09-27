@@ -1,6 +1,5 @@
 export const residentevil4 = {
   launchDate: '2023-03-24',
-
   Brazil: {
     'August 2025': [
       { edition: 'Remake Trilogy', price: 192.10, discount: 55, currency: 'R$', exchangeTax: 4.74 },
@@ -15,22 +14,6 @@ export const residentevil4 = {
       { edition: 'Standard Edition', price: 199.50, currency: 'R$' },
     ],
   },
-
-  UnitedStates: {
-    'August 2025': [
-      { edition: 'Remake Trilogy', price: 40.49, discount: 55, currency: '$' },
-      { edition: 'Gold Edition', price: 29.99, discount: 40, currency: '$' },
-      { edition: 'Standard Edition', price: 19.99, discount: 50, currency: '$' },
-    ],
-    'October 2024': [
-      { edition: 'Remake Trilogy', price: 89.99, currency: '$' },
-    ],
-    'March 2023': [
-      { edition: 'Gold Edition', price: 49.99, currency: '$' },
-      { edition: 'Standard Edition', price: 39.99, currency: '$' },
-    ],
-  },
-
   Europe: {
     'August 2025': [
       { edition: 'Remake Trilogy', price: 40.49, discount: 55, currency: '€' },
@@ -45,7 +28,6 @@ export const residentevil4 = {
       { edition: 'Standard Edition', price: 39.99, currency: '€' },
     ],
   },
-
   UnitedKingdom: {
     'August 2025': [
       { edition: 'Remake Trilogy', price: 33.74, discount: 55, currency: '£' },
@@ -58,6 +40,20 @@ export const residentevil4 = {
     'March 2023': [
       { edition: 'Gold Edition', price: 44.99, currency: '£' },
       { edition: 'Standard Edition', price: 34.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'August 2025': [
+      { edition: 'Remake Trilogy', price: 40.49, discount: 55, currency: '$' },
+      { edition: 'Gold Edition', price: 29.99, discount: 40, currency: '$' },
+      { edition: 'Standard Edition', price: 19.99, discount: 50, currency: '$' },
+    ],
+    'October 2024': [
+      { edition: 'Remake Trilogy', price: 89.99, currency: '$' },
+    ],
+    'March 2023': [
+      { edition: 'Gold Edition', price: 49.99, currency: '$' },
+      { edition: 'Standard Edition', price: 39.99, currency: '$' },
     ],
   },
 };
