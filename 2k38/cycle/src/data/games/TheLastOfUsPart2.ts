@@ -1,9 +1,9 @@
 export const theLastOfUsPart2 = {
   launchDate: '2020-06-19',
-
   Brazil: {
     'September 2025': [
       { edition: 'Remastered', price: 170.94, currency: 'R$', discount: 40, exchangeTax2: 5.69 },
+      { edition: 'Standard Edition', price: 172.42, currency: 'R$', discount: 25, exchangeTax2: 5.74 },
       { edition: 'Remastered', price: 122.24, currency: 'R$', discount: 57, exchangeTax2: 2.44 },
       { edition: 'Remastered', price: 145.08, currency: 'R$', discount: 49, exchangeTax2: 2.91 },
     ],
@@ -15,6 +15,7 @@ export const theLastOfUsPart2 = {
     ],
     'June 2025': [
       { edition: 'Remastered', price: 284.90, currency: 'R$', increase: 14, exchangeTax2: 5.69 },
+      { edition: 'Standard Edition', price: 229.50, currency: 'R$', increase: 15 },
     ],
     'February 2025': [
       { edition: 'Remastered', price: 199.6, currency: 'R$', discount: 20, exchangeTax2: 5 },
@@ -46,6 +47,7 @@ export const theLastOfUsPart2 = {
   },
   Europe: {
     'September 2025': [
+      { edition: 'Standard Edition', price: 29.99, discount: 25, currency: '€' },
       { edition: 'Remastered', price: 29.99, currency: '€', discount: 40 },
     ],
     'May 2025': [
@@ -58,6 +60,7 @@ export const theLastOfUsPart2 = {
   UnitedKingdom: {
     'September 2025': [
       { edition: 'Remastered', price: 26.99, currency: '£', discount: 40 },
+      { edition: 'Standard Edition', price: 26.24, discount: 25, currency: '£' },
       ],
     'May 2025': [
       { edition: 'Remastered', price: 35.99, currency: '£', discount: 20 },
@@ -76,6 +79,7 @@ export const theLastOfUsPart2 = {
   },
   UnitedStates: {
     'September 2025': [
+      { edition: 'Standard Edition', price: 29.99, discount: 25, currency: '$' },
       { edition: 'Remastered', price: 29.99, currency: '$', discount: 40 },
       { edition: 'Remastered', price: 41.99, discount: 16, currency: '$' },
       { edition: 'Deluxe Edition', price: 42.99, currency: '$' , discount: 14 },
