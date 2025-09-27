@@ -88,6 +88,7 @@ import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
 import { residentevil4 } from './games/ResidentEvil4';
 import { residentevil7 } from './games/ResidentEvil7';
 import { residentevil9 } from './games/ResidentEvil9';
+import { residentevilremaketrilogy } from './games/ResidentEvilRemakeTrilogy';
 import { residentevilvillage } from './games/ResidentEvilVillage';
 import { riseOfTheTombRaider } from './games/RiseOfTombRaider';
 import { saros } from './games/Saros';
@@ -235,6 +236,7 @@ export const games = {
   'Resident Evil 7': residentevil7,
   'Resident Evil 9 Requiem': residentevil9,
   'Resident Evil Village': residentevilvillage,
+  'Resident Evil Remake Trilogy': residentevilremaketrilogy,
   'Rise Of The Tomb Raider': riseOfTheTombRaider,
   'Saros [2026]': saros,
   'Shadow Of Tomb Raider': shadowOfTheTombRaider,
