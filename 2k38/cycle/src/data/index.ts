@@ -127,7 +127,7 @@ import { ps3 } from './consoles/ps3';
 import { ps4 } from './consoles/ps4';
 import { ps5 } from './consoles/ps5';
 import { iphone } from './consoles/iphone';
-import { rogxbox } from './consoles/RogXBox';
+import { rogxbox } from './consoles/RogXbox';
 
 //products
 import { bigmac } from './products/bigmac';
