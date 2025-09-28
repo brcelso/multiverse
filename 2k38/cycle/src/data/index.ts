@@ -76,7 +76,7 @@ import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
 import { marioKartWorldSW2 } from './games/MarioKartWorld';
 import { mgs3 } from './games/MetalGearSnakeEaterRemake';
-import { mortalkombat11 } './games/MK11';
+import { mortalkombat11 } from './games/MK11';
 import { mklegacy } from './games/MKLegacy';
 import { monsterhunter } from './games/MonsterHunterWilds';
 import { nba2k25 } from './games/nba2k25';
