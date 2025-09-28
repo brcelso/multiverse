@@ -31,24 +31,6 @@ export const netflix = {
       { price: 14.99, currency: 'R$', edition: "Premium Monthly", exchangeTax2: 1.87 },
     ],
   },
-  UnitedStates: {
-    'January 2025': [
-      { price: 24.99, increase: 8.7, totalIncrease: 213, currency: '$', edition: "Premium Monthly" },
-      { price: 17.99, increase: 12.5, totalIncrease: 150, currency: '$', edition: "Standard Monthly" },
-      { price: 7.99, increase: 14.3, currency: '$', edition: "Standard w/Ads Monthly" },
-    ],
-    'October 2023': [
-      { price: 22.99, totalIncrease: 76.9, currency: '$', edition: "Premium Monthly" },
-      { price: 15.99, increase: 60, currency: '$', edition: "Standard Monthly" },
-      { price: 6.99, currency: '$', edition: "Standard w/Ads Monthly" },
-    ],
-    '2019': [
-      { price: 12.99, increase: 62.6, currency: '$', edition: "Standard Monthly" },
-    ],
-    'September 2011': [
-      { price: 7.99, currency: '$', edition: "Premium Monthly" },
-    ],
-  },
   Europe: {
     'October 2023': [
       { price: 19.99, totalIncrease: 186, currency: '€', edition: "Premium Monthly" },
@@ -90,6 +72,24 @@ export const netflix = {
     ],
     'January 2012': [
       { price: 5.99, currency: '£', edition: "Premium Monthly" },
+    ],
+  },
+  UnitedStates: {
+    'January 2025': [
+      { price: 24.99, increase: 8.7, totalIncrease: 213, currency: '$', edition: "Premium Monthly" },
+      { price: 17.99, increase: 12.5, totalIncrease: 150, currency: '$', edition: "Standard Monthly" },
+      { price: 7.99, increase: 14.3, currency: '$', edition: "Standard w/Ads Monthly" },
+    ],
+    'October 2023': [
+      { price: 22.99, totalIncrease: 76.9, currency: '$', edition: "Premium Monthly" },
+      { price: 15.99, increase: 60, currency: '$', edition: "Standard Monthly" },
+      { price: 6.99, currency: '$', edition: "Standard w/Ads Monthly" },
+    ],
+    '2019': [
+      { price: 12.99, increase: 62.6, currency: '$', edition: "Standard Monthly" },
+    ],
+    'September 2011': [
+      { price: 7.99, currency: '$', edition: "Premium Monthly" },
     ],
   },
 };
