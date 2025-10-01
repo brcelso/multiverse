@@ -2,22 +2,19 @@ export const gamepass = {
   launchDate: '2017-06-01',
   Brazil: {
     'September 2024': [
-      { price: 59.99, increase: 33, totalIncrease: 100, currency: 'R$', edition: "Game Pass Ultimate" },
+      { price: 59.99, increase: 33, totalIncrease: 100, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 3.53 },
       { price: 49.99, increase: 51, totalIncrease: 72, currency: 'R$', edition: "Game Pass Standard", exchangeTax2: 3.33 },
-      { price: 29.99, increase: 0, totalIncrease: 114, currency: 'R$', edition: "Game Pass PC" },
     ],
     'July 2023': [
-      { price: 44.99, increase: 13, totalIncrease: 13, currency: 'R$', edition: "Game Pass Ultimate" },
+      { price: 44.99, increase: 13, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 2.64 },
       { price: 32.99, increase: 10, currency: 'R$', edition: "Game Pass Console", exchangeTax2: 3.00 },
-      { price: 29.99, increase: 114, totalIncrease: 114, currency: 'R$', edition: "Game Pass PC" },
     ],
     'September 2020': [
-      { price: 39.99, increase: 0, totalIncrease: 0, currency: 'R$', edition: "Game Pass Ultimate" },
-      { price: 29.99, increase: 114, totalIncrease: 114, currency: 'R$', edition: "Game Pass PC" },
+      { price: 29.99, increase: 114, currency: 'R$', edition: "Game Pass PC", exchangeTax2: 3.00 },
     ],
     'June 2019': [
-      { price: 39.99, currency: 'R$', edition: "Game Pass Ultimate" },
-      { price: 13.99, currency: 'R$', edition: "Game Pass PC (Beta)" },
+      { price: 39.99, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 2.66 },
+      { price: 13.99, currency: 'R$', edition: "Game Pass PC (Beta)", exchangeTax2: 2.80 },
     ],
     'June 2017': [
       { price: 29.00, currency: 'R$', edition: "Game Pass Console", exchangeTax2: 2.90 },
