@@ -1,13 +1,12 @@
 export const sonicracing = {
   launchDate: '2025-09-25',
   Brazil: {
-    'October 2025': [
-      { edition: 'Deluxe Edition', price: 320.90, discount: 37, currency: 'R$', exchangeTax: 3.56 },
-      { edition: 'Standard Edition', price: 219.90, discount: 45, currency: 'R$', exchangeTax: 3.14 },
     ],
     'September 2025': [
       { edition: 'Deluxe Edition', price: 507.50, increase: 14.3, currency: 'R$', exchangeTax: 5.63 },
       { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$', exchangeTax: 5.71 },
+      { edition: 'Deluxe Edition', price: 320.90, currency: 'R$', exchangeTax: 3.56 },
+      { edition: 'Standard Edition', price: 219.90, currency: 'R$', exchangeTax: 3.14 },
     ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 444.50, currency: 'R$', exchangeTax: 4.93 },
