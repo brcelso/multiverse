@@ -2,6 +2,7 @@
 import { deluxeOrPremium } from './subs/CardSubs';
 import { extra } from './subs/CardSubs';
 import { essential } from './subs/CardSubs';
+import { gamepass } from './subs/GamePass';
 import { gtaplus } from './subs/GTA+';
 import { ubisoftplus } from './subs/Ubisoft+';
 import { appletv } from './subs/AppleTV';
@@ -148,6 +149,7 @@ export const subs = {
   'Deluxe or Premium': deluxeOrPremium,
   'Extra': extra,
   'Essential': essential,
+  'Game Pass': gamepass,
   'GTA+': gtaplus,
   'Ubisoft+': ubisoftplus,
   'Apple TV+': appletv,
