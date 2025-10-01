@@ -68,21 +68,16 @@ export const gamepass = {
     'September 2024': [
       { price: 16.99, increase: 13, totalIncrease: 13, currency: '$', edition: "Game Pass Ultimate" },
       { price: 14.99, increase: 36, totalIncrease: 50, currency: '$', edition: "Game Pass Standard" },
-      { price: 9.99, increase: 0, totalIncrease: 100, currency: '$', edition: "Game Pass PC" },
     ],
     'July 2023': [
-      { price: 16.99, increase: 13, totalIncrease: 13, currency: '$', edition: "Game Pass Ultimate" },
-      { price: 10.99, increase: 10, totalIncrease: 10, currency: '$', edition: "Game Pass Console" },
-      { price: 9.99, increase: 100, totalIncrease: 100, currency: '$', edition: "Game Pass PC" },
+      { price: 16.99, increase: 13, currency: '$', edition: "Game Pass Ultimate" },
+      { price: 10.99, increase: 10, currency: '$', edition: "Game Pass Console" },
     ],
     'September 2020': [
-      { price: 14.99, increase: 0, totalIncrease: 0, currency: '$', edition: "Game Pass Ultimate" },
-      { price: 9.99, increase: 0, totalIncrease: 0, currency: '$', edition: "Game Pass Console" },
-      { price: 9.99, increase: 100, totalIncrease: 100, currency: '$', edition: "Game Pass PC" },
+      { price: 9.99, currency: '$', increase: 100, edition: "Game Pass PC" },
     ],
     'June 2019': [
       { price: 14.99, currency: '$', edition: "Game Pass Ultimate" },
-      { price: 9.99, currency: '$', edition: "Game Pass Console" },
       { price: 4.99, currency: '$', edition: "Game Pass PC (Beta)" },
     ],
     'June 2017': [
