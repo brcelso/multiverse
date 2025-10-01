@@ -4,7 +4,7 @@ export const gamepass = {
     'October 2025': [
       { price: 119.90, increase: 100, totalIncrease: 200, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 4 },
       { price: 59.90, increase: 20, totalIncrease: 100, currency: 'R$', edition: "Game Pass Premium", exchangeTax2: 4 },
-      { price: 69.90, increase: 134, totalIncrease: 400, currency: 'R$', edition: "Game Pass PC", exchangeTax2: 4.39 },
+      { price: 69.90, increase: 134, totalIncrease: 400, currency: 'R$', edition: "Game Pass PC", exchangeTax2: 4.23 },
       { price: 43.90, increase: 32, totalIncrease: 215, currency: 'R$', edition: "Game Pass Essential", exchangeTax2: 4.39 },
     ],
     'September 2024': [
