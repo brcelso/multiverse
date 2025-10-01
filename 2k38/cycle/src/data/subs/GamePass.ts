@@ -66,7 +66,6 @@ export const gamepass = {
   },
   UnitedStates: {
     'September 2024': [
-      { price: 16.99, increase: 13, totalIncrease: 13, currency: '$', edition: "Game Pass Ultimate" },
       { price: 14.99, increase: 36, totalIncrease: 50, currency: '$', edition: "Game Pass Standard" },
     ],
     'July 2023': [
