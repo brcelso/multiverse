@@ -1,6 +1,11 @@
 export const gamepass = {
   launchDate: '2017-06-01',
   Brazil: {
+    'October 2025': [
+      { price: 119.90, increase: 100, totalIncrease: 200, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 4 },
+      { price: 59.90, increase: 20, totalIncrease: 100, currency: 'R$', edition: "Game Pass Premium", exchangeTax2: 4 },
+      { price: 43.90, increase: 32, totalIncrease: 215, currency: 'R$', edition: "Game Pass Essential", exchangeTax2: 4.39 },
+    ],
     'September 2024': [
       { price: 59.99, increase: 33, totalIncrease: 100, currency: 'R$', edition: "Game Pass Ultimate", exchangeTax2: 3.53 },
       { price: 49.99, increase: 51, totalIncrease: 72, currency: 'R$', edition: "Game Pass Standard", exchangeTax2: 3.33 },
