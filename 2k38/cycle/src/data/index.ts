@@ -45,6 +45,7 @@ import { destiny2 } from './games/Destiny2';
 import { digimon } from './games/Digimon';
 import { donkeyKongBananza } from './games/DonkeyKongBananza';
 import { doomTheDarkAges } from './games/DoomTheDarkAges';
+import { dragonball } from './games/DragonBall';
 import { elderScrollsOblivionRemastered } from './games/ElderScrollsOblivionRem';
 import { eldenRing } from './games/ElderRing';
 import { eldenRingDLC } from './games/EldenRingDLC';
@@ -194,6 +195,7 @@ export const games = {
   'Digimon Story Time Stranger': digimon,
   'Donkey Kong Bananza': donkeyKongBananza,
   'Doom The Dark Ages': doomTheDarkAges,
+  'Dragon Ball Sparking! ZERO': dragonball,
   'Elder Scrolls Oblivion Remastered': elderScrollsOblivionRemastered,
   'Elden Ring': eldenRing,
   'Elden Ring DLC': eldenRingDLC,
