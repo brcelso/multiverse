@@ -9,6 +9,7 @@ export const vwTera = {
         currency: 'R$',
         discount: 10
       },
+      ],
     'August 2025': [
       {
         edition: 'VW Tera High AT',
