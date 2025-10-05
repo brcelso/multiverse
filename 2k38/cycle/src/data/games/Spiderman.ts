@@ -2,7 +2,7 @@ export const spidermanRemastered = {
   launchDate: '2023-08-12',
   Brazil: {
     'October 2025': [
-      { edition: 'Standard Edition', price: 109.99, discount: 56, currency: 'R$', discount: 50 },
+      { edition: 'Standard Edition', price: 109.99, currency: 'R$', discount: 56 },
     ],
     'July 2025': [
       { edition: 'Standard Edition', price: 124.75, currency: 'R$', discount: 50 },
