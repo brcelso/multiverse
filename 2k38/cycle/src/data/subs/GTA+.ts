@@ -3,7 +3,7 @@ export const gtaplus = {
   Brazil: {
     'April 2025': [
       { price: 42.90, increase: 35, currency: 'R$',
-        basePrice: 5.99, exchangeTax2: 5.36,
+        basePrice: 7.99, exchangeTax2: 5.36,
         realPrice: 45.38, exchangeTax3: 5.68, 
         edition: "GTA+ Monthly" },
       ],
