@@ -115,6 +115,7 @@ import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
 import { tombRaiderRemasteredIVVVI } from './games/TombRaiderRemasteredIVVVI';
+import { unchartedlegacy } from './games/UnchartedLegacy';
 import { untilDawn } from './games/UntilDawn';
 import { wolverine } from './games/Wolverine';
 import { wwe2k25 } from './games/WWE2K25';
@@ -265,6 +266,7 @@ export const games = {
   'Tony Hawk 3+4': tonyHawk3Plus4,
   'Tomb Raider': tombRaider,
   'Tomb Raider Remastered IV-V-VI': tombRaiderRemasteredIVVVI,
+  'Uncharted Legacy of Thieves Collection': unchartedlegacy,
   'Until Dawn': untilDawn,
   'Wolverine [2026]': wolverine,
   'WWE 2K25': wwe2k25,
