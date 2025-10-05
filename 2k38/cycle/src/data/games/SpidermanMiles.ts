@@ -1,7 +1,9 @@
 export const spidermanMilesMorales = {
   launchDate: '2020-11-12',
-
   Brazil: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 79.90, currency: 'R$', discount: 80 },
+    ],
     'May 2025': [
       { edition: 'Standard Edition', price: 99.8, currency: 'R$', discount: 60 },
     ],
