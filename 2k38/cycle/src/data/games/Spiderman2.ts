@@ -1,15 +1,24 @@
 export const spiderman2 = {
-  launchDate: '2023-10-12', // coloquei a data aproximada de lançamento em outubro 2023
-
+  launchDate: '2023-10-12', 
   Brazil: {
+    'October 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 171.89,
+        discount: 51,
+        currency: 'R$',
+        basePrice: 349.9, 
+        exchangeTax: 2.45,
+      },
+    ],
     'March 2025': [
       {
         edition: 'Standard Edition',
         price: 199.44,
         discount: 43,
         currency: 'R$',
-        basePrice: 349.9, // base estimada a partir do desconto e preço atual
-        exchangeTax: 4.99, // mantive o mesmo padrão do outro objeto
+        basePrice: 349.9, 
+        exchangeTax: 2.84,
       },
     ],
     'February 2025': [
@@ -19,7 +28,7 @@ export const spiderman2 = {
         discount: 38,
         currency: 'R$',
         basePrice: 399.5,
-        exchangeTax: 4.99,
+        exchangeTax: 3.09,
       },
     ],
     'October 2023': [
@@ -37,30 +46,6 @@ export const spiderman2 = {
       },
     ],
   },
-
-  UnitedStates: {
-    'February 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 49.59,
-        discount: 38,
-        currency: '$',
-      },
-    ],
-    'October 2023': [
-      {
-        edition: 'Deluxe Edition',
-        price: 79.99,
-        currency: '$',
-      },
-      {
-        edition: 'Standard Edition',
-        price: 69.99,
-        currency: '$',
-      },
-    ],
-  },
-
   Europe: {
     'February 2025': [
       {
@@ -80,6 +65,28 @@ export const spiderman2 = {
         edition: 'Standard Edition',
         price: 79.99,
         currency: '€',
+      },
+    ],
+   },
+  UnitedStates: {
+    'February 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 49.59,
+        discount: 38,
+        currency: '$',
+      },
+    ],
+    'October 2023': [
+      {
+        edition: 'Deluxe Edition',
+        price: 79.99,
+        currency: '$',
+      },
+      {
+        edition: 'Standard Edition',
+        price: 69.99,
+        currency: '$',
       },
     ],
   },
