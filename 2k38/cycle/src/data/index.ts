@@ -88,6 +88,10 @@ import { ninja4 } from './games/NinjaGaiden4';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
 import { pokemonlegendsza } from './games/PokemonLegendsZA';
+import { prince1 } from './games/PrinceOfPersiaTheSandsOfTime';
+import { prince2 } from './games/PrinceOfPersiaWarriorWithin';
+import { prince3 } from './games/PrinceOfPersiaTheTwoThrones';
+import { princeremake } from './games/PrinceOfPersiaRemake';
 import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
 import { residentevil4 } from './games/ResidentEvil4';
@@ -241,6 +245,10 @@ export const games = {
 'NFL 25 [2024]': nfl25,
 'NFL College Football 2k26 [2025]': nflCollegeFootball2026,
 'Pokemon Legends Z-A [2025]': pokemonlegendsza,
+'Prince of Persia The Sands of Time [2003]': prince1,
+'Prince of Persia Warrior Within [2004]': prince2,
+'Prince of Persia The Two Thrones [2005]': prince3,
+'Prince of Persia The Sands of Time Remake [2024]': princeremake,
 'Red Dead Redemption 2 [2018]': redDeadRedemption2,
 'Red Dead Redemption I [2010]': redDeadRedemptionI,
 'Resident Evil 4 [2023]': residentevil4,
