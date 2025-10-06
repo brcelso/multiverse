@@ -2,10 +2,10 @@ export const maxpayne3 = {
   launchDate: '2012-05-15',
   Brazil: {
     'October 2025': [
-      { platform: "Steam", price: 29.85, edition: "Standard Edition", discount: 70, currency: 'R$', exchangeTax2: 5 },
+      { platform: "Steam", price: 29.85, edition: "Standard Edition", discount: 70, totalDiscount: 85, currency: 'R$', exchangeTax2: 5 },
     ],
-    'October 2023': [
-      { platform: "Steam", price: 99.50, edition: "Standard Edition", currency: 'R$', exchangeTax2: 5 },
+    'November 2013': [
+      { platform: "Steam", price: 99.50, edition: "Standard Edition", currency: 'R$', totalDiscount: 50, exchangeTax2: 5 },
     ],
     'May 2012': [
       { platform: "Playstation | Xbox", price: 399.90, edition: "Collector Edition", currency: 'R$', exchangeTax2: 4 },
@@ -31,13 +31,13 @@ export const maxpayne3 = {
   },
   UnitedStates: {
     'October 2025': [
-      { platform: "Steam", price: 5.99, edition: "Standard Edition", discount: 70, currency: '$' },
+      { platform: "Steam", price: 5.99, edition: "Standard Edition", discount: 70, totalDiscount: 90, currency: '$' },
     ],
     'October 2023': [
       { platform: "Steam", price: 19.99, edition: "Standard Edition", currency: '$' },
     ],
-    'October 2020': [
-      { platform: "Playstation | Xbox", price: 19.99, edition: "Standard Edition", discount: 66.7, currency: '$' },
+    'November 2013': [
+      { platform: "Playstation | Xbox", price: 19.99, edition: "Standard Edition", totalDiscount: 66.7, currency: '$' },
     ],
     'May 2012': [
       { platform: "Playstation | Xbox", price: 99.99, edition: "Collector Edition", currency: '$' },
