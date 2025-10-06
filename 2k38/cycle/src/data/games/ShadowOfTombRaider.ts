@@ -47,17 +47,17 @@ export const shadowOfTheTombRaider = {
   },
   UnitedStates: {
     'October 2025': [
-      { edition: 'Definitive Edition', price: 7.86, discount: 80, currency: '$' },
+      { edition: 'Definitive Edition', price: 7.86, discount: 80, totalDiscount: 87, currency: '$' },
     ],
     'September 2025': [
-      { edition: 'Definitive Edition', price: 7.99, discount: 80, currency: '$' },
+      { edition: 'Definitive Edition', price: 7.99, discount: 80, totalDiscount: 87, currency: '$' },
     ],
     'September 2018': [
       { edition: 'Ultimate Collector Edition', price: 199.99, currency: '$' },
       { edition: 'Croft Edition', price: 89.99, currency: '$' },
+      { edition: 'Definitive Edition', price: 7.99, currency: '$', discount: 80, totalDiscount: 87 },
+      { edition: 'Definitive Edition', price: 39.99, totalDiscount: 33.3, currency: '$' },
       { edition: 'Standard Edition', price: 59.99, currency: '$' },
-      { edition: 'Definitive Edition', price: 39.99, currency: '$' },
-      { edition: 'Definitive Edition', price: 7.99, currency: '$', discount: 80 },
     ],
   },
 };
