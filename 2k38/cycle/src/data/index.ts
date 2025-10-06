@@ -248,7 +248,7 @@ export const games = {
 'Prince of Persia The Sands of Time [2003]': prince1,
 'Prince of Persia Warrior Within [2004]': prince2,
 'Prince of Persia The Two Thrones [2005]': prince3,
-'Prince of Persia The Sands of Time Remake [2024]': princeremake,
+'Prince of Persia The Sands of Time Remake [2026]': princeremake,
 'Red Dead Redemption 2 [2018]': redDeadRedemption2,
 'Red Dead Redemption I [2010]': redDeadRedemptionI,
 'Resident Evil 4 [2023]': residentevil4,
