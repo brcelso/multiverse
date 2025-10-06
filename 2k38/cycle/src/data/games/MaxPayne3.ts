@@ -1,5 +1,5 @@
 export const maxpayne3 = {
-  launchDate: '2010-05-31',
+  launchDate: '2012-05-15',
   Brazil: {
     'October 2025': [
       { platform: "Steam", price: 29.85, edition: "Standard Edition", discount: 70, currency: 'R$', exchangeTax2: 5 },
