@@ -3,16 +3,25 @@ export const spiderman2 = {
   Brazil: {
     'October 2025': [
       {
+        platform: "Steam",
+        edition: 'Digital Deluxe Edition',
+        price: 205.99,
+        discount: 48.5,
+        currency: 'R$',
+        exchangeTax: 2.45,
+      },
+      {
+        platform: "Steam",
         edition: 'Standard Edition',
         price: 171.89,
         discount: 51,
         currency: 'R$',
-        basePrice: 349.9, 
         exchangeTax: 2.45,
       },
     ],
     'March 2025': [
       {
+        platform: "Playstation",
         edition: 'Standard Edition',
         price: 199.44,
         discount: 43,
@@ -23,7 +32,8 @@ export const spiderman2 = {
     ],
     'February 2025': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 247.69,
         discount: 38,
         currency: 'R$',
@@ -33,12 +43,14 @@ export const spiderman2 = {
     ],
     'October 2023': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 399.5,
         currency: 'R$',
         exchangeTax: 4.99,
       },
       {
+        platform: "Playstation",
         edition: 'Standard Edition',
         price: 349.9,
         currency: 'R$',
@@ -49,7 +61,8 @@ export const spiderman2 = {
   Europe: {
     'February 2025': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 59.39,
         discount: 34,
         currency: '€',
@@ -57,11 +70,13 @@ export const spiderman2 = {
     ],
     'October 2023': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 89.99,
         currency: '€',
       },
       {
+        platform: "Playstation",
         edition: 'Standard Edition',
         price: 79.99,
         currency: '€',
@@ -71,7 +86,8 @@ export const spiderman2 = {
   UnitedStates: {
     'February 2025': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 49.59,
         discount: 38,
         currency: '$',
@@ -79,11 +95,13 @@ export const spiderman2 = {
     ],
     'October 2023': [
       {
-        edition: 'Deluxe Edition',
+        platform: "Playstation",
+        edition: 'Digital Deluxe Edition',
         price: 79.99,
         currency: '$',
       },
       {
+        platform: "Playstation",
         edition: 'Standard Edition',
         price: 69.99,
         currency: '$',
