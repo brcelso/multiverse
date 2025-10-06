@@ -7,7 +7,7 @@ export const godofwar = {
       { platform: "Playstation", edition: "Standard Edition", price: 114.90, currency: 'R$', exchangeTax2: 0 },
     ],
     'April 2018': [
-      { platform: "Playstation", edition: "Digital Deluxe Edition", price: 249.90, currency: 'R$', exchangeTax2: 4 },
+      { platform: "Playstation", edition: "Digital Deluxe Edition", price: 299.90, currency: 'R$', exchangeTax2: 4.28 },
       { platform: "Playstation", edition: "Standard Edition", price: 199.90, currency: 'R$', exchangeTax2: 3.33 },
       { platform: "Steam", edition: "Standard Edition", price: 199.90, currency: 'R$', exchangeTax2: 4 },
     ],
