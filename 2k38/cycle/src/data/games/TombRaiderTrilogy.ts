@@ -32,12 +32,16 @@ export const tombraidertrilogy = {
     ],
   },
   UnitedStates: {
+    'October 2025': [
+      { edition: 'Definitive Survivor Trilogy', price: 11.91, discount: 87, currency: '$' },
+    ],
     'September 2025': [
       { edition: 'Definitive Survivor Trilogy', price: 12.49, discount: 75, currency: '$' },
     ],
     'March 2021': [
       { edition: 'Definitive Survivor Trilogy', price: 19.99, discount: 60, currency: '$' },
       { edition: 'Definitive Survivor Trilogy', price: 49.99, currency: '$' },
+      { edition: 'Definitive Survivor Trilogy', price: 90.84, currency: '$' },
     ],
   },
 };

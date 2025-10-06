@@ -62,6 +62,7 @@ import { forzaHorizon5 } from './games/ForzaHorizon5';
 import { forza6 } from './games/ForzaHorizon6';
 import { ghostoftsushima } from './games/GhostOfTsushima';
 import { ghostOfYotei } from './games/GhostofYotei';
+import { godofwar } from './games/GodOfWar';
 import { godOfWarRagnarok } from './games/GodOfWarRagnarok';
 import { granTurismo7 } from './games/GT7';
 import { grandTheftAutoV } from './games/GTAV';
@@ -214,6 +215,7 @@ export const games = {
   'Forza Horizon 6 [2026]': forza6,
   'Ghost of Tsushima': ghostoftsushima,
   'Ghost of Yotei': ghostOfYotei,
+  'God Of War [2018]': godofwar,
   'God Of War Ragnarok': godOfWarRagnarok,
   'Gran Turismo 7': granTurismo7,
   'Grand Theft Auto V': grandTheftAutoV,
