@@ -1,6 +1,9 @@
 export const shadowOfTheTombRaider = {
   launchDate: '2018-09-01',
   Brazil: {
+    'October 2025': [
+      { edition: 'Definitive Edition', price: 33.29, currency: 'R$', discount: 80, exchangeTax: 4.16 },
+    ],
     'September 2025': [
       { edition: 'Definitive Edition', discount: 80, price: 45.98, currency: 'R$', exchangeTax: 5.74 },
     ],
@@ -9,6 +12,9 @@ export const shadowOfTheTombRaider = {
     ],
     'April 2025': [
       { edition: 'Definitive Edition', price: 39.90, currency: 'R$', discount: 80 },
+    ],
+    '2020': [
+      { edition: 'Definitive Edition', price: 164.98, currency: 'R$', exchangeTax: 4.16 },
     ],
     'September 2018': [
       { edition: 'Croft Edition', price: 369.90, currency: 'R$' },
@@ -40,6 +46,9 @@ export const shadowOfTheTombRaider = {
     ],
   },
   UnitedStates: {
+    'October 2025': [
+      { edition: 'Definitive Edition', price: 7.86, discount: 80, currency: '$' },
+    ],
     'September 2025': [
       { edition: 'Definitive Edition', price: 7.99, discount: 80, currency: '$' },
     ],
