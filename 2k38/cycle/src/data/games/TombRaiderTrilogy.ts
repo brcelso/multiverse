@@ -1,12 +1,16 @@
 export const tombraidertrilogy = {
   launchDate: '2021-03-18',
   Brazil: {
+    'October 2025': [
+      { platform: "Steam", edition: 'Definitive Survivor Trilogy', price: 49.66, discount: 87, currency: 'R$', exchangeTax2: 7.56 },
+    ],
     'September 2025': [
-      { edition: 'Definitive Survivor Trilogy', price: 62.47, discount: 75, currency: 'R$', exchangeTax2: 5 },
+      { platform: "Playstation | Xbox", edition: 'Definitive Survivor Trilogy', price: 62.47, discount: 75, currency: 'R$', exchangeTax2: 5 },
     ],
     'March 2021': [
-      { edition: 'Definitive Survivor Trilogy', price: 99.80, discount: 60, currency: 'R$', exchangeTax2: 5 },
-      { edition: 'Definitive Survivor Trilogy', price: 249.90, currency: 'R$', exchangeTax2: 5 },
+      { platform: "Playstation | Xbox", edition: 'Definitive Survivor Trilogy', price: 99.80, discount: 60, currency: 'R$', exchangeTax2: 5 },
+      { platform: "Steam", edition: 'Definitive Survivor Trilogy', price: 378.36, currency: 'R$', exchangeTax2: 7.56 },
+      { platform: "Playstation | Xbox", edition: 'Definitive Survivor Trilogy', price: 249.90, currency: 'R$', exchangeTax2: 5 },
     ],
   },
   Europe: {

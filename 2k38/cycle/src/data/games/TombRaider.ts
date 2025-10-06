@@ -1,7 +1,9 @@
 export const tombRaider = {
   launchDate: '2014-01-01',
-
   Brazil: {
+    'October 2025': [
+      { platform: "Steam", edition: 'Definitive Edition', price: 9.37, currency: 'R$', discount: 85 },
+    ],
     'December 2020': [
       { edition: 'Definitive Edition', price: 9.37, currency: 'R$', discount: 85 },
     ],
@@ -12,7 +14,22 @@ export const tombRaider = {
       { edition: 'PS3', price: 149.9, currency: 'R$' },
     ],
   },
-
+  Europe: {
+    'April 2025': [
+      { edition: 'Definitive Edition', price: 3.99, currency: '€', discount: 93 },
+    ],
+    'January 2014': [
+      { edition: 'Definitive Edition', price: 19.99, currency: '€' },
+      { edition: 'Definitive Edition', price: 49.99, currency: '€' },
+    ],
+  },
+  UnitedKingdom: {
+    'January 2014': [
+      { edition: 'Definitive Edition', price: 3.19, currency: '£', discount: 92 },
+      { edition: 'Definitive Edition', price: 15.99, currency: '£', discount: 60 },
+      { edition: 'Definitive Edition', price: 39.99, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'December 2020': [
       { edition: 'Definitive Edition', price: 2.24, currency: '$', discount: 96 },
@@ -36,24 +53,6 @@ export const tombRaider = {
       { edition: 'Definitive Edition', price: 14.99, currency: '$' },
       { edition: 'Definitive Edition', price: 19.99, currency: '$' },
       { edition: 'Definitive Edition', price: 59.99, currency: '$'},
-    ],
-  },
-
-  Europe: {
-    'April 2025': [
-      { edition: 'Definitive Edition', price: 3.99, currency: '€', discount: 93 },
-    ],
-    'January 2014': [
-      { edition: 'Definitive Edition', price: 19.99, currency: '€' },
-      { edition: 'Definitive Edition', price: 49.99, currency: '€' },
-    ],
-  },
-
-  UnitedKingdom: {
-    'January 2014': [
-      { edition: 'Definitive Edition', price: 3.19, currency: '£', discount: 92 },
-      { edition: 'Definitive Edition', price: 15.99, currency: '£', discount: 60 },
-      { edition: 'Definitive Edition', price: 39.99, currency: '£' },
     ],
   },
 };
