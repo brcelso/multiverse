@@ -16,6 +16,12 @@ export const theLastOfUsPartI = {
     ],
   },
   Brazil: {
+    'October 2025': [
+      { platform: "Steam", edition: 'Deluxe Edition', price: 149.95, currency: 'R$', 
+        discount: 50, exchangeTax2: 4.28 },
+      { platform: "Steam", edition: 'Standard Edition', price: 105.99, currency: 'R$', 
+        discount: 57.5, exchangeTax2: 4.16 },
+    ],
     'September 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 167.95, discount: 58, 
         currency: 'R$', exchangeTax2: 5.69, convertedPrice: 31.21 }, 
@@ -45,6 +51,12 @@ export const theLastOfUsPartI = {
         discount: 25, exchangeTax2: 3.74, convertedPrice: 52.47 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 248.42, currency: 'R$', 
         discount: 29, exchangeTax2: 3.55, convertedPrice: 43.50 },
+    ],
+    'March 2023': [
+      { platform: "Steam", edition: 'Deluxe Edition', price: 299.90, currency: 'R$', 
+        exchangeTax2: 4.28 },
+      { platform: "Steam", edition: 'Standard Edition', price: 249.90, currency: 'R$', 
+        exchangeTax2: 4.16 },
     ],
     'September 2022': [
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 399.5, currency: 'R$', 
@@ -89,6 +101,10 @@ export const theLastOfUsPartI = {
     ],
   },
   UnitedStates: {
+    'October 2025': [
+      { platform: "Steam", edition: 'Deluxe Edition', price: 34.99, discount: 50, currency: '$' },
+      { platform: "Steam", edition: 'Standard Edition', price: 29.99, discount: 50, currency: '$' },
+    ],
     'September 2025': [
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 65.99, currency: '$', discount: 18 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 29.49, currency: '$', discount: 58 },
@@ -107,6 +123,10 @@ export const theLastOfUsPartI = {
     ],
     'July 2023': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 49.99, currency: '$', discount: 28.5 },
+    ],
+    'March 2023': [
+      { platform: "Steam", edition: 'Deluxe Edition', price: 69.99, currency: '$' },
+      { platform: "Steam", edition: 'Standard Edition', price: 59.99, currency: '$' },
     ],
     'February 2023': [
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 59.99, currency: '$', discount: 25 },
