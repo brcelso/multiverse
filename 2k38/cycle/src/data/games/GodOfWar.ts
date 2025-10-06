@@ -3,8 +3,8 @@ export const godofwar = {
   Brazil: {
     'October 2025': [
       { platform: "Steam", edition: "Standard Edition", price: 79.96, discount: 60, currency: 'R$', exchangeTax2: 4 },
-      { platform: "Playstation", edition: "Digital Deluxe Edition", price: 169.90, currency: 'R$', exchangeTax2: 0 },
-      { platform: "Playstation", edition: "Standard Edition", price: 114.90, currency: 'R$', exchangeTax2: 0 },
+      { platform: "Playstation", edition: "Digital Deluxe Edition", price: 169.90, currency: 'R$', exchangeTax2: 5.66 },
+      { platform: "Playstation", edition: "Standard Edition", price: 114.90, currency: 'R$', exchangeTax2: 5.74 },
     ],
     'April 2018': [
       { platform: "Playstation", edition: "Digital Deluxe Edition", price: 299.90, currency: 'R$', exchangeTax2: 4.28 },
