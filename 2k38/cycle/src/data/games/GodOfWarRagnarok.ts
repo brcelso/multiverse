@@ -2,7 +2,7 @@ export const godOfWarRagnarok = {
   launchDate: '2022-11-09',
   Brazil: {
     'October 2025': [
-      { platform: "Steam", edition: 'Deluxe Edition', price: 239.92, currency: 'R$', discount: 20, exchangeTax2: 3.41 },
+      { platform: "Steam", edition: 'Digital Deluxe Edition', price: 239.92, currency: 'R$', discount: 20, exchangeTax2: 3.41 },
       { platform: "Steam", edition: 'Standard Edition', price: 164.90, currency: 'R$', discount: 34, exchangeTax2: 2.74 },
     ],
     'September 2025': [
