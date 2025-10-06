@@ -8,7 +8,7 @@ export const spiderman2 = {
         price: 205.99,
         discount: 48.5,
         currency: 'R$',
-        exchangeTax: 2.45,
+        exchangeTax: 2.57,
       },
       {
         platform: "Steam",
