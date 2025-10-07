@@ -1,7 +1,7 @@
 export const borderlands4 = {
   launchDate: '2025-09-12',
-  Brazil: {
-    'September 2025': [
+  Brazil: 
+    'October 2025': [
       { edition: 'Standard Edition', price: 230.42, discount: 39, currency: 'R$', exchangeTax: 3.29 },
     ],
     'September 2025': [
