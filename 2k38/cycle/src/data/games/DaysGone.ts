@@ -2,7 +2,10 @@ export const daysgone = {
   launchDate: '2019-04-26',
   Brazil: {
     'October 2025': [
-      { platform: "Steam", edition: 'Standard Edition', price: 99.75, discount: 50, currency: 'R$', exchangeTax: 5.74 },
+      { platform: "Steam", edition: 'Standard Edition', price: 99.75, discount: 50, currency: 'R$', exchangeTax: 5 },
+    ],
+    'December 2024': [
+      { platform: "Steam", edition: 'Standard Edition', price: 49.97, discount: 75, currency: 'R$', exchangeTax: 4 },
     ],
     'April 2019': [
       { platform: "Playstation", edition: 'Remastered', price: 249.90, currency: 'R$', exchangeTax: 5 },
@@ -28,6 +31,9 @@ export const daysgone = {
   UnitedStates: {
     'October 2025': [
       { platform: "Steam", edition: 'Standard Edition', discount: 50, price: 19.99, currency: '$' },
+    ],
+    'December 2024': [
+      { platform: "Steam", edition: 'Standard Edition', discount: 75, price: 12.49, currency: '$' },
     ],
     'April 2019': [
       { platform: "Playstation", edition: 'Remastered', price: 49.99, currency: '$' },
