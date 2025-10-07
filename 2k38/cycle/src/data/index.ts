@@ -37,6 +37,7 @@ import { crashTrilogy } from './games/CrashTrilogy';
 import { cronos } from './games/CronosTheNewDawn';
 import { cyberpunk } from './games/CyberPunk';
 import { darksoulsiii } from './games/DarkSoulsIII';
+import { daysgone } from './games/DaysGone';
 import { dayz } from './games/DayZ';
 import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
@@ -194,6 +195,7 @@ export const games = {
 'Cronos The New Dawn [2025]': cronos,
 'Cyber Punk 2077 [2020]': cyberpunk,
 'Dark Souls III [2016]': darksoulsiii,
+'Days Gone [2019]': daysgone,
 'DayZ [2018]': dayz,
 'Death Stranding [2019]': deathStranding,
 'Death Stranding 2 [2025]': deathStranding2OnTheBeach,
