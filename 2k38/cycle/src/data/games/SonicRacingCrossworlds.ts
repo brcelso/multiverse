@@ -1,6 +1,9 @@
 export const sonicracing = {
   launchDate: '2025-09-25',
   Brazil: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 271, discount: 32, currency: 'R$', exchangeTax: 3.87 },
+    ],
     'September 2025': [
       { edition: 'Deluxe Edition', price: 507.50, increase: 14.3, currency: 'R$', exchangeTax: 5.63 },
       { edition: 'Standard Edition', price: 399.90, increase: 14.5, currency: 'R$', exchangeTax: 5.71 },
