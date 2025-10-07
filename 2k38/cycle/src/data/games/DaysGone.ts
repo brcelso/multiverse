@@ -7,6 +7,9 @@ export const daysgone = {
     'December 2024': [
       { platform: "Steam", edition: 'Standard Edition', price: 49.97, discount: 75, currency: 'R$', exchangeTax: 4 },
     ],
+    'December 2023': [
+      { platform: "Steam", edition: 'Standard Edition', price: 35.98, discount: 82, currency: 'R$', exchangeTax: 5 },
+    ],
     'April 2019': [
       { platform: "Playstation", edition: 'Remastered', price: 249.90, currency: 'R$', exchangeTax: 5 },
       { platform: "Playstation", edition: 'Digital Deluxe Edition PS4', price: 284.90, currency: 'R$', exchangeTax: 5.69 },
