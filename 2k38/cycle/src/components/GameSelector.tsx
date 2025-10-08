@@ -262,7 +262,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   group:{marginBottom:'0.375rem'},
   groupButton:{width:'100%',background:'#333',border:'none',color:'#fff',padding:'0.2rem 0.375rem',borderRadius:'5px',fontWeight:'bold',textAlign:'center',cursor:'pointer',userSelect:'none',fontSize:'0.85rem',transition:'background 0.2s'},
   groupButtonActive:{background:'#444'},
-  itemList:{listStyle:'none',margin:0,paddingLeft:'0.25rem',maxHeight:'150px',overflowY:'auto',background:'#252526',borderRadius:'4px',marginTop:'0.125rem',border:'1px solid #333',textAlign:'left'},
+  itemList:{listStyle:'none',margin:0,paddingLeft:'0.25rem',maxHeight:'400px',overflowY:'auto',background:'#252526',borderRadius:'4px',marginTop:'0.125rem',border:'1px solid #333',textAlign:'left'},
   itemButton:{width:'100%',background:'transparent',border:'none',color:'#ccc',padding:'0.125rem 0.25rem',textAlign:'left',cursor:'pointer',borderRadius:'4px',fontSize:'0.8rem',transition:'background 0.2s,color 0.2s'},
   itemButtonSelected:{background:'#3c3c3c',color:'#9cdcfe'},
   cardWrapper:{marginTop:'0.5rem',display:'block',minHeight:'500px',width:'100%',overflowY:'auto',overflowX:'auto',paddingBottom:'0.5rem'},
