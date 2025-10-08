@@ -95,6 +95,7 @@ import { prince3 } from './games/PrinceOfPersiaTheTwoThrones';
 import { princeremake } from './games/PrinceOfPersiaRemake';
 import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
+import { residentevil } from './games/ResidentEvil';
 import { residentevil4 } from './games/ResidentEvil4';
 import { residentevil7 } from './games/ResidentEvil7';
 import { residentevil9 } from './games/ResidentEvil9';
@@ -255,6 +256,7 @@ export const games = {
 'Prince of Persia The Sands of Time Remake [2026]': princeremake,
 'Red Dead Redemption 2 [2018]': redDeadRedemption2,
 'Red Dead Redemption I [2010]': redDeadRedemptionI,
+'Resident Evil [2015]': residentevil,
 'Resident Evil 4 [2023]': residentevil4,
 'Resident Evil 7 [2017]': residentevil7,
 'Resident Evil 9 Requiem [2026]': residentevil9,
