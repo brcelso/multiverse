@@ -1,7 +1,9 @@
 export const tonyHawk3Plus4 = {
   launchDate: '2025-07-11',
-
   Brazil: {
+    'October 2025': [
+      { edition: 'Cross-Gen', price: 188.93, discount: 30, currency: 'R$', exchangeTax: 5.39 },
+    ],
     'September 2025': [
       { edition: 'Deluxe Edition', price: 272.30, discount: 30, currency: 'R$', exchangeTax: 5.55 },
     ],
@@ -12,6 +14,9 @@ export const tonyHawk3Plus4 = {
     ],
   },
   Europe: {
+    'October 2025': [
+      { edition: 'Cross-Gen', price: 34.99, discount: 30, currency: '€' },
+    ],
     'September 2025': [
       { edition: 'Deluxe Edition', price: 48.99, discount: 30, currency: '€' },
     ],
@@ -21,6 +26,9 @@ export const tonyHawk3Plus4 = {
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { edition: 'Cross-Gen', price: 27.99, discount: 30, currency: '£' },
+    ],
     'September 2025': [
       { edition: 'Deluxe Edition', price: 41.99, discount: 30, currency: '£' },
     ],
