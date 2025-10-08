@@ -1,6 +1,9 @@
 export const elderScrollsOblivionRemastered = {
   launchDate: '2025-04-22',
   Brazil: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 211.92, discount: 20, currency: 'R$', exchangeTax: 5.29 },
+    ],
     'July 2025': [
       { edition: 'Standard Edition', price: 211.92, discount: 20, currency: 'R$', exchangeTax: 5.29 },
     ],
@@ -14,6 +17,9 @@ export const elderScrollsOblivionRemastered = {
     ],
   },
   Europe: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 43.99, discount: 20, currency: '€' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 51.99, discount: 20, currency: '€' },
       { edition: 'Standard Edition', price: 43.99, discount: 20, currency: '€' },
@@ -24,6 +30,9 @@ export const elderScrollsOblivionRemastered = {
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 39.99, discount: 20, currency: '£' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 47.99, discount: 20, currency: '£' },
       { edition: 'Standard Edition', price: 39.99, discount: 20, currency: '£' },
@@ -34,6 +43,9 @@ export const elderScrollsOblivionRemastered = {
     ],
   },
   UnitedStates: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 39.99, discount: 20, currency: '$' },
+    ],
     'June 2025': [
       { edition: 'Deluxe Edition', price: 47.99, discount: 20, currency: '$' },
       { edition: 'Standard Edition', price: 39.99, discount: 20, currency: '$' },
