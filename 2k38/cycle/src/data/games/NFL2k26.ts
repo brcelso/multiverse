@@ -1,7 +1,9 @@
 export const nflCollegeFootball2026 = {
   launchDate: '2025-07-10',
-
   Brazil: {
+    'October 2025': [
+      { edition: 'Kickoff Bundle', price: 399.60, discount: 20, currency: 'R$', exchangeTax2: 4.99  },
+    ],
     'September 2025': [
       { edition: 'MVP Bundle', price: 599.60, currency: 'R$', discount: 20, exchangeTax2: 4.99 },
       { edition: 'Deluxe Edition', price: 374.62, currency: 'R$', discount: 25, exchangeTax2: 5 },
@@ -11,11 +13,16 @@ export const nflCollegeFootball2026 = {
       { edition: 'Deluxe', price: 569.90, increase: 14, currency: 'R$', exchangeTax2: 5.69 },
       { edition: 'Standard Edition', price: 399.90, increase: 14.3, currency: 'R$', exchangeTax2: 5.71 },
       { edition: 'MVP Bundle', price: 749.5, currency: 'R$', exchangeTax2: 4.99 },
+      { edition: 'Kickoff Bundle', price: 499.50, currency: 'R$', exchangeTax2: 4.99  },
       { edition: 'Deluxe Edition', price: 499.9, currency: 'R$', exchangeTax2: 5 },
       { edition: 'Standard Edition', price: 349.5, currency: 'R$', exchangeTax2: 4.99 },
     ],
   },
 Europe: {
+    'October 2025': [
+      { edition: 'MVP Bundle', price: 111.99, discount: 30, currency: '€' },
+      { edition: 'Kickoff Bundle', price: 87.99, discount: 20, currency: '€' },
+    ],
     'September 2025': [
       { edition: 'MVP Bundle', price: 127.99, discount: 20, currency: '€' },
       { edition: 'Deluxe Edition', price: 82.49, discount: 25, currency: '€' },
@@ -23,11 +30,16 @@ Europe: {
     ],
     'July 2025': [
       { edition: 'MVP Bundle', price: 159.99, currency: '€' },
+      { edition: 'Kickoff Bundle', price: 109.99, currency: '€' },
       { edition: 'Deluxe Edition', price: 109.99, currency: '€' },
       { edition: 'Standard Edition', price: 79.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { edition: 'MVP Bundle', price: 97.99, discount: 30, currency: '£' },
+      { edition: 'Kickoff Bundle', price: 79.99, discount: 20, currency: '£' },
+    ],
     'September 2025': [
       { edition: 'MVP Bundle', price: 111.99, discount: 20, currency: '£' },
       { edition: 'Deluxe Edition', price: 74.99, discount: 25, currency: '£' },
@@ -35,6 +47,7 @@ Europe: {
     ],
     'July 2025': [
       { edition: 'MVP Bundle', price: 139.99, currency: '£' },
+      { edition: 'Kickoff Bundle', price: 99.99, currency: '£' },
       { edition: 'Deluxe Edition', price: 99.99, currency: '£' },
       { edition: 'Standard Edition', price: 69.99, currency: '£' },
     ],
@@ -45,6 +58,7 @@ Europe: {
     ],
     'July 2025': [
       { edition: 'MVP Bundle', price: 149.99, currency: '$' },
+      { edition: 'Kickoff Bundle', price: 99.99, currency: '$' },
       { edition: 'Deluxe Edition', price: 99.99, currency: '$' },
       { edition: 'Standard Edition', price: 69.99, currency: '$' },
     ],
