@@ -18,18 +18,18 @@ export const stray = {
   },
   UnitedKingdom: {
     'October 2025': [
-      { edition: 'Standard Edition', price: 14.99, discount: 40, currency: '£', exchangeTax: 5 },
+      { edition: 'Standard Edition', price: 14.99, discount: 40, currency: '£' },
     ],
     'July 2022': [
-      { edition: 'Standard Edition', price: 24.99, currency: '£', exchangeTax: 5 },
+      { edition: 'Standard Edition', price: 24.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'October 2025': [
-      { edition: 'Standard Edition', price: 17.99, discount: 40, currency: '$', exchangeTax: 5 },
+      { edition: 'Standard Edition', price: 17.99, discount: 40, currency: '$' },
     ],
     'July 2022': [
-      { edition: 'Standard Edition', price: 29.99, currency: '$', exchangeTax: 5 },
+      { edition: 'Standard Edition', price: 29.99, currency: '$' },
     ],
   },
 };
