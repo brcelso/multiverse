@@ -27,6 +27,10 @@ export const godOfWarRagnarok = {
     ],
   },
   Europe: {
+    'October 2025': [
+      { platform: "Playstation", edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
+      { platform: "Playstation", edition: 'Standard PS4', price: 29.39, currency: '€', discount: 58 },
+    ],
     'September 2025': [
       { platform: "Playstation", edition: 'Digital Deluxe Edition', price: 50.39, currency: '€', discount: 44 },
     ],
@@ -37,6 +41,10 @@ export const godOfWarRagnarok = {
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { platform: "Playstation", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
+      { platform: "Playstation", edition: 'Standard PS4', price: 25.19, currency: '£', discount: 58 },
+    ],
     'September 2025': [
       { platform: "Playstation", edition: 'Digital Deluxe Edition', price: 44.79, currency: '£', discount: 44 },
     ],
