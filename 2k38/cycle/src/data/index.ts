@@ -266,7 +266,7 @@ export const games = {
 'Silent Hill 2 Remake [2024]': silentHill2Remake,
 'Silent Hill F [2025]': silenthillf,
 'Sonic Racing Crossworlds [2025]': sonicracing,
-'Spiderman [2018]': spidermanRemastered,
+'Spiderman Remastered [2023]': spidermanRemastered,
 'Spiderman 2 [2023]': spiderman2,
 'Spiderman Miles Morales [2020]': spidermanMilesMorales,
 'Split Fiction [2025]': splitfiction,
