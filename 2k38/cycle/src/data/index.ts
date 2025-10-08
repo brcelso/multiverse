@@ -97,6 +97,8 @@ import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
 import { residentevil } from './games/ResidentEvil';
 import { residentevil4 } from './games/ResidentEvil4';
+import { residentevil5 } from './games/ResidentEvil5';
+import { residentevil6 } from './games/ResidentEvil6';
 import { residentevil7 } from './games/ResidentEvil7';
 import { residentevil9 } from './games/ResidentEvil9';
 import { residentevilremaketrilogy } from './games/ResidentEvilRemakeTrilogy';
@@ -258,6 +260,8 @@ export const games = {
 'Red Dead Redemption I [2010]': redDeadRedemptionI,
 'Resident Evil [2015]': residentevil,
 'Resident Evil 4 [2023]': residentevil4,
+'Resident Evil 5 [2016]': residentevil5,
+'Resident Evil 6 [2016]': residentevil6,
 'Resident Evil 7 [2017]': residentevil7,
 'Resident Evil 9 Requiem [2026]': residentevil9,
 'Resident Evil Village [2021]': residentevilvillage,
