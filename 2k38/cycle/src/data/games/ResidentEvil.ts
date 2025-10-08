@@ -18,10 +18,10 @@ export const residentevil = {
   },
   UnitedKingdom: {
     'July 2025': [
-      { edition: 'Standard Edition', price: 4.99, discount: 75, currency: '£' },
+      { edition: 'Standard Edition', price: 3.99, discount: 75, currency: '£' },
     ],
     'January 2015': [
-      { edition: 'Standard Edition', price: 19.99, currency: '£' },
+      { edition: 'Standard Edition', price: 15.99, currency: '£' },
     ],
   },
   UnitedStates: {
