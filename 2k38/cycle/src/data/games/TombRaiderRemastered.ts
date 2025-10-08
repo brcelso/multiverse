@@ -23,7 +23,7 @@ export const tombRaiderRemastered = {
       { edition: 'Remastered', price: 8.99, currency: '€', discount: 70 },
     ],
     'February 2025': [
-      { edition: 'Remastered Bundle', '€': 54.99, currency: '$' },
+      { edition: 'Remastered Bundle', price: 54.99, currency: '€' },
     ],
     'February 2024': [
       { edition: 'Remastered', price: 26.99, currency: '€', discount: 10 },
