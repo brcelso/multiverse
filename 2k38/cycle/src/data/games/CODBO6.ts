@@ -37,6 +37,11 @@ export const codbo6 = {
       { edition: 'Cross Gen Bundle', price: 79.99, currency: '€' },
     ],
   },
+  UnitedKingdom: {
+    'October 2025': [
+      { edition: 'Cross Gen Bundle', price: 38.49, discount: 45, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'October 2025': [
       { edition: 'Cross Gen Bundle', price: 38.49, discount: 45, currency: '$' },
