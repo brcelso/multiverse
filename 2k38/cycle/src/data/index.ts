@@ -44,7 +44,7 @@ import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
 import { demonsouls } from './games/DemonSouls';
 import { destiny2 } from './games/Destiny2';
-import { deteoitbecomehuman } from './games/DetroitBecomeHuman';
+import { detroitbecomehuman } from './games/DetroitBecomeHuman';
 import { digimon } from './games/Digimon';
 import { donkeyKongBananza } from './games/DonkeyKongBananza';
 import { doomTheDarkAges } from './games/DoomTheDarkAges';
