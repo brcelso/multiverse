@@ -2,7 +2,10 @@ export const beyondtwosouls = {
   launchDate: '2015-11-24',
   Brazil: {
     'October 2025': [
-      { platform: "Playstation", edition: 'Standard Edition PS4', price: 99.99, currency: 'R$', exchangeTax2: 3.33, totalDiscount: 50 },
+      { platform: "Playstation", edition: 'Standard Edition PS4', price: 169.99, currency: 'R$', exchangeTax2: 5.66 },
+    ],
+    'June 2025': [
+      { platform: "Steam", edition: 'Standard Edition', price: 5.99, totalDiscount: 90, currency: 'R$', exchangeTax2: 3 },
     ],
     'January 2019': [
       { platform: "Steam", edition: 'Standard Edition', price: 59.99, totalDiscount: 66.6, currency: 'R$', exchangeTax2: 3 },
@@ -32,8 +35,11 @@ export const beyondtwosouls = {
     'October 2025': [
       { platform: "Playstation", edition: 'Standard Edition PS4', price: 29.99, currency: '£', totalDiscount: 50 },
     ],
+    'June 2025': [
+      { platform: "Steam", edition: 'Standard Edition', price: 1.69, discount: 33.3, totalDiscount: 66.6, currency: '£' },
+    ],
     'January 2019': [
-      { platform: "Steam", edition: 'Standard Edition', price: 19.99, discount: 33.3, totalDiscount: 66.6, currency: '£' },
+      { platform: "Steam", edition: 'Standard Edition', price: 16.99, discount: 33.3, totalDiscount: 66.6, currency: '£' },
     ],
     'March 2016': [
       { platform: "Playstation", edition: 'Standard Edition PS4', price: 29.99, totalDiscount: 50, currency: '£' },
@@ -45,6 +51,9 @@ export const beyondtwosouls = {
   UnitedStates: {
     'October 2025': [
       { platform: "Playstation", edition: 'Standard Edition PS4', price: 29.99, currency: '$', totalDiscount: 50 },
+    ],
+    'June 2025': [
+      { platform: "Steam", edition: 'Standard Edition', price: 1.99, totalDiscount: 90, currency: '$' },
     ],
     'January 2019': [
       { platform: "Steam", edition: 'Standard Edition', price: 19.99, discount: 33.3, totalDiscount: 66.6, currency: '$' },
