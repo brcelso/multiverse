@@ -68,26 +68,17 @@ export const armoredcore = {
     ],
   },
   Europe: {
-    'February 2025': [
-      {
-        platform: "Playstation",
-        edition: 'Digital Deluxe Edition',
-        price: 59.39,
-        discount: 34,
-        currency: '€',
-      },
-    ],
     'August 2023': [
       {
         platform: "Playstation",
         edition: 'Digital Deluxe Edition',
-        price: 89.99,
+        price: 79.99,
         currency: '€',
       },
       {
         platform: "Playstation",
         edition: 'Standard Edition',
-        price: 79.99,
+        price: 69.99,
         currency: '€',
       },
     ],
