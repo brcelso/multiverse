@@ -4,15 +4,15 @@ export const rogxbox = {
     'September 2025': [
       {
         edition: 'Ally X',
-        price: 999.99,
+        price: 11.500,
         currency: 'R$',
-        exchangeTax2: 4.99
+        exchangeTax2: 11.51
       },
       {
         edition: 'Ally',
-        price: 599.99,
+        price: 8.100,
         currency: 'R$',
-        exchangeTax2: 4.99
+        exchangeTax2: 13.52
       },
     ],
   },
