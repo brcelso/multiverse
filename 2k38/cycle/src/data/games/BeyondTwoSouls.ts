@@ -36,7 +36,7 @@ export const beyondtwosouls = {
       { platform: "Playstation", edition: 'Standard Edition PS4', price: 29.99, currency: '£', totalDiscount: 50 },
     ],
     'June 2025': [
-      { platform: "Steam", edition: 'Standard Edition', price: 1.69, discount: 33.3, totalDiscount: 66.6, currency: '£' },
+      { platform: "Steam", edition: 'Standard Edition', price: 1.69, totalDiscount: 90, currency: '£' },
     ],
     'January 2019': [
       { platform: "Steam", edition: 'Standard Edition', price: 16.99, discount: 33.3, totalDiscount: 66.6, currency: '£' },
