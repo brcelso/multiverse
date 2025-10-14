@@ -15,6 +15,7 @@ import { spotify } from './subs/Spotify';
 //games
 import { firstlight } from './games/007FirstLight';
 import { allprices } from './games/AllPrices';
+import { armoredcore } from './games/ArmoredCore';
 import { assassinsCreedShadows } from './games/AssassinsCreedShadows';
 import { assassinsCreedValhalla } from './games/AssassinsCreedValhalla';
 import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
@@ -181,6 +182,7 @@ export const subs = {
 export const games = {
 '007 First Light [2026]': firstlight,
 'All Prices': allprices,
+'Armored Core VI [2023]': armoredcore,
 'Assassins Creed Shadows [2025]': assassinsCreedShadows,
 'Assassins Creed Valhalla [2020]': assassinsCreedValhalla,
 'Assassins Creed Black Flag [2013]': assassinsCreedBlackFlag,
