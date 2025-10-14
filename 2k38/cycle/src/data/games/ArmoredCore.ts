@@ -6,7 +6,7 @@ export const armoredcore = {
         platform: "Playstation",
         edition: 'Standard Edition',
         price: 135,
-        discount: 61.5
+        discount: 61.5,
         currency: 'R$',
         basePrice: 349.9, 
         exchangeTax: 2.25,
