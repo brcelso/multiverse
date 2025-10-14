@@ -21,6 +21,7 @@ import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
 import { assassinsCreedMirage } from './games/AssassinsCreedMirage';
 import { astroBot } from './games/AstroBot';
 import { baldursgate3 } from './games/BaldursGate3';
+import { beyondtwosouls } from './games/BeyondTwoSouls';
 import { bf4 } from './games/Battlefield4';
 import { bf6 } from './games/Battlefield6';
 import { blackMythWukong } from './games/BlackMythWukong';
@@ -43,6 +44,7 @@ import { deathStranding } from './games/DeathStranding';
 import { deathStranding2OnTheBeach } from './games/DeathStranding2';
 import { demonsouls } from './games/DemonSouls';
 import { destiny2 } from './games/Destiny2';
+import { deteoitbecomehuman } from './games/DetroitBecomeHuman';
 import { digimon } from './games/Digimon';
 import { donkeyKongBananza } from './games/DonkeyKongBananza';
 import { doomTheDarkAges } from './games/DoomTheDarkAges';
@@ -68,6 +70,7 @@ import { godOfWarRagnarok } from './games/GodOfWarRagnarok';
 import { granTurismo7 } from './games/GT7';
 import { grandTheftAutoV } from './games/GTAV';
 import { gtavi } from './games/GrandTheftAutoVI';
+import { heavyrain } from './games/HeavyRain';
 import { hellisus } from './games/HellIsUs';
 import { hogwartsLegacy } from './games/HogwartsLegacy';
 import { hollowknightsilksong } from './games/HollowKnightSilkSong';
@@ -186,6 +189,7 @@ export const games = {
 'Baldurs Gate 3 [2023]': baldursgate3,
 'Battlefield 4 [2013]': bf4,
 'Battlefield 6 [2025]': bf6,
+'Beyond Two Souls [2016]': beyondtwosouls,
 'Black Myth Wukong [2024]': blackMythWukong,
 'Bloodborne [2015]': bloodborne,
 'Borderlands 4 [2025]': borderlands4,
@@ -206,6 +210,7 @@ export const games = {
 'Death Stranding 2 [2025]': deathStranding2OnTheBeach,
 'Demon Souls [2020]': demonsouls,
 'Destiny 2 [2017]': destiny2,
+'Detroit Become Human [2018]': detroitbecomehuman,
 'Digimon Story Time Stranger [2025]': digimon,
 'Donkey Kong Bananza [2025]': donkeyKongBananza,
 'Doom The Dark Ages [2025]': doomTheDarkAges,
@@ -231,6 +236,7 @@ export const games = {
 'Gran Turismo 7 [2022]': granTurismo7,
 'Grand Theft Auto V [2013]': grandTheftAutoV,
 'Grand Theft Auto VI [2026]': gtavi,
+'Heavy Rain [2015]': heavyrain,
 'Hell Is Us [2025]': hellisus,
 'Hogwarts Legacy [2023]': hogwartsLegacy,
 'Hollow Knight Silksong [2025]': hollowknightsilksong,
