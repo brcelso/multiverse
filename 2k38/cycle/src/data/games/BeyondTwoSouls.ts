@@ -55,4 +55,5 @@ export const beyondtwosouls = {
     'February 2010': [
       { platform: "Playstation", edition: 'Standard Edition PS3', price: 59.99, currency: '$' },
     ],
-  }
+  },
+}
