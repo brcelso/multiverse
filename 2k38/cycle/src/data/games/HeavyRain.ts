@@ -2,16 +2,16 @@ export const heavyrain = {
   launchDate: '2010-02-24',
   Brazil: {
     'October 2025': [
-      { platform: "Playstation", edition: 'Standard Edition PS4', price: 99.99, currency: 'R$', totalDiscount: 50 },
+      { platform: "Playstation", edition: 'Standard Edition PS4', price: 99.99, currency: 'R$', exchangeTax2: 3.33, totalDiscount: 50 },
     ],
     'January 2019': [
-      { platform: "Steam", edition: 'Standard Edition', price: 59.99, totalDiscount: 66.6, currency: 'R$' },
+      { platform: "Steam", edition: 'Standard Edition', price: 59.99, totalDiscount: 66.6, currency: 'R$', exchangeTax2: 3 },
     ],
     'March 2016': [
-      { platform: "Playstation", edition: 'Standard Edition PS4', price: 149.90, totalDiscount: 25, currency: 'R$' },
+      { platform: "Playstation", edition: 'Standard Edition PS4', price: 149.90, totalDiscount: 25, currency: 'R$', exchangeTax2: 5 },
     ],
     'February 2010': [
-      { platform: "Playstation", edition: 'Standard Edition PS3', price: 199.99, currency: 'R$' },
+      { platform: "Playstation", edition: 'Standard Edition PS3', price: 199.99, currency: 'R$', exchangeTax2: 3.33 },
     ],
   },
   Europe: {
