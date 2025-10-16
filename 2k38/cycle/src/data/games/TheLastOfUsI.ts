@@ -1,6 +1,5 @@
 export const theLastOfUs = {
   launchDate: '2013-06-01',
-
   Brazil: {
     'November 2024': [
       { edition: 'Remastered PS4', price: 23.97, discount: 76, totalDiscount: 87, currency: 'R$', exchangeTax2: 2.39 },
@@ -20,7 +19,16 @@ export const theLastOfUs = {
       { edition: 'Digital Edition', price: 119.90, currency: 'R$', exchangeTax2: 2.00 },
     ],
   },
-
+  Europe: {
+    'July 2014': [
+      { edition: 'Remastered', price: 19.99, currency: '€' },
+    ],
+  },
+  UnitedKingdom: {
+    'July 2014': [
+      { edition: 'Remastered', price: 15.99, currency: '£' },
+    ],
+  },
   UnitedStates: {
     'November 2024': [
       { edition: 'Remastered PS4', price: 9.99, discount: 50, totalDiscount: 80, currency: '$' },
