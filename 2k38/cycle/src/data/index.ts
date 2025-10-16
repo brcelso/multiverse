@@ -122,6 +122,7 @@ import { stray } from './games/Stray';
 import { thecallistoprotocol } from './games/thecallistoprotocol';
 import { theLastOfUs } from './games/TheLastOfUsI';
 import { tloucomplete } from './games/TheLastOfUsComplete';
+import { leftbehind } from './games/TheLastOfUsLeftBehind';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
 import { theouterworlds2 } from './games/theOuterWorlds2';
@@ -288,6 +289,7 @@ export const games = {
 'Stray [2022]': stray,
 'The Callisto Protocol [2022]': thecallistoprotocol,
 'The Last Of Us I [2013]': theLastOfUs,
+'The Last Of Us Left Behind [2015]': leftbehind,
 'The Last Of Us Part I [2022]': theLastOfUsPartI,
 'The Last Of Us Part II [2020]': theLastOfUsPart2,
 'The Last Of Us Complete [2025]': tloucomplete,
