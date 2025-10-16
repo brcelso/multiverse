@@ -2,12 +2,12 @@ export const leftbehind = {
   launchDate: '2015-05-11',
   Japan: {
     'April 2015': [
-      { edition: "DLC", price: 11980, currency: '¥' },
+      { edition: "DLC", price: 1100, currency: '¥' },
     ],
   },
   Brazil: {
     'April 2015': [
-      { edition: "DLC", price: 29.99, currency: 'R$', exchangeTax: 5.69 },
+      { edition: "DLC", price: 56.90, currency: 'R$', exchangeTax: 5.69 },
     ],
   },
   Europe: {
