@@ -1,18 +1,18 @@
 export const rogxbox = {
   launchDate: '2025-10-16',
   Brazil: {
-    'September 2025': [
+    'October 2025': [
       {
         edition: 'Ally X',
-        price: 11.500,
+        price: 14171.80,
         currency: 'R$',
-        exchangeTax2: 11.51
+        exchangeTax2: 14.18
       },
       {
         edition: 'Ally',
-        price: 8.100,
+        price: 9515.31,
         currency: 'R$',
-        exchangeTax2: 13.52
+        exchangeTax2: 15.88
       },
     ],
   },
