@@ -1,6 +1,9 @@
 export const ghostOfYotei = {
   launchDate: '2025-10-02',
   Brazil: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 259.91, discount: 35, currency: 'R$', exchangeTax: 3.71 },
+    ],
     'September 2025': [
       { edition: 'Standard Edition', price: 278.91, discount: 30, currency: 'R$', exchangeTax: 3.99 },
     ],
