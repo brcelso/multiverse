@@ -2,6 +2,7 @@ export const hogwartsLegacy = {
   launchDate: '2023-02-10',
   Brazil: {
     'October 2025': [
+      { edition: 'Standard', price: 37.49, currency: 'R$', discount: 85 },
       { edition: 'PS5 Standard', price: 59.98, currency: 'R$', discount: 80 },
       { edition: 'PS4 Standard', price: 49.98, currency: 'R$', discount: 80 },
     ],
@@ -25,18 +26,6 @@ export const hogwartsLegacy = {
       { edition: 'PS4 Standard', price: 249.9, currency: 'R$' },
     ],
   },
-
-  UnitedStates: {
-    'July 2025': [
-      { edition: 'PS5 Deluxe', price: 15.99, currency: '$', discount: 80 },
-    ],
-    'February 2023': [
-      { edition: 'PS5 Deluxe', price: 19.99, currency: '$', discount: 75 },
-      { edition: 'PS5 Deluxe', price: 79.99, currency: '$' },
-      { edition: 'PS5 Standard', price: 69.99, currency: '$' },
-    ],
-  },
-
   Europe: {
     'January 2025': [
       { edition: 'PS5 Standard', price: 22.49, currency: '€', discount: 70 },
@@ -56,6 +45,20 @@ export const hogwartsLegacy = {
       { edition: 'PS4 Standard', discount: 80, price: 11.99, currency: '£' },
       { edition: 'PS5 Standard', price: 64.99, currency: '£' },
       { edition: 'PS4 Standard', price: 59.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'October 2025': [
+      { edition: 'Standard', price: 8.99, currency: '$', discount: 85 },
+    ],
+    'July 2025': [
+      { edition: 'PS5 Deluxe', price: 15.99, currency: '$', discount: 80 },
+    ],
+    'February 2023': [
+      { edition: 'PS5 Deluxe', price: 19.99, currency: '$', discount: 75 },
+      { edition: 'PS5 Deluxe', price: 79.99, currency: '$' },
+      { edition: 'PS5 Standard', price: 69.99, currency: '$' },
+      { edition: 'Standard', price: 59.99, currency: '$' },
     ],
   },
 };
