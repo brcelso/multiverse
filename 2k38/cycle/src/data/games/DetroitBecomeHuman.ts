@@ -35,7 +35,7 @@ export const detroitbecomehuman = {
       { platform: "Steam", edition: 'Standard Edition', price: 6.79, discount: 80, currency: '£' },
     ],
     'January 2019': [
-      { platform: "Steam", edition: 'Standard Edition', price: 33.99, discount: 33.3, totalDiscount: 66.6, currency: '£' },
+      { platform: "Steam", edition: 'Standard Edition', price: 33.99, currency: '£' },
     ],
     'March 2016': [
       { platform: "Playstation", edition: 'Standard Edition PS4', price: 29.99, totalDiscount: 50, currency: '£' },
