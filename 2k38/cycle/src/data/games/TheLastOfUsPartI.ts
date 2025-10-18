@@ -92,12 +92,18 @@ export const theLastOfUsPartI = {
     'August 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '£', discount: 43 },
     ],
+    'December 2024': [
+      { platform: "Steam", edition: 'Deluxe Edition', price: 29.99, currency: '£', discount: 50 },
+      { platform: "Steam", edition: 'Standard Edition', price: 24.99, currency: '£', discount: 50 },
+    ],
     'November 2023': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
     ],
     'September 2022': [
       { platform: "Playstation 5", edition: 'Deluxe Edition', price: 79.99, currency: '£' },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 69.99, currency: '£' },
+      { platform: "Steam", edition: 'Deluxe Edition', price: 59.99, currency: '£' },
+      { platform: "Steam", edition: 'Standard Edition', price: 49.99, currency: '£' },
     ],
   },
   UnitedStates: {
