@@ -130,6 +130,7 @@ import { tombraidertrilogy } from './games/TombRaiderTrilogy';
 import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
 import { tombRaider } from './games/TombRaider';
+import { tombraideranniversary } from './games/TombRaiderAnniversary';
 import { tombRaiderRemastered } from './games/TombRaiderRemastered';
 import { tombRaiderRemasteredIVVVI } from './games/TombRaiderRemasteredIVVVI';
 import { unchartedlegacy } from './games/UnchartedLegacy';
@@ -298,6 +299,7 @@ export const games = {
 'Tony Hawk 1+2 [2020]': tonyHawk12,
 'Tony Hawk 3+4 [2025]': tonyHawk3Plus4,
 'Tomb Raider [2013]': tombRaider,
+'Tomb Raider Anniversary [2007]': tombraideranniversary,
 'Tomb Raider Remastered [2024]': tombRaiderRemastered,
 'Tomb Raider Remastered IV-V-VI [2025]': tombRaiderRemasteredIVVVI,
 'Uncharted Legacy of Thieves Collection [2022]': unchartedlegacy,
