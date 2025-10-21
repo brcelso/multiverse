@@ -3,6 +3,9 @@ export const demonsouls = {
 
   Brazil: {
     'September 2025': [
+      { edition: 'Standard Edition', price: 159.26, discount: 60, currency: 'R$', exchangeTax2: 2.27 },
+    ],
+    'September 2025': [
       { edition: 'Standard Edition', price: 145.96, discount: 63.5, currency: 'R$', exchangeTax2: 2.08 },
     ],
     'August 2025': [
