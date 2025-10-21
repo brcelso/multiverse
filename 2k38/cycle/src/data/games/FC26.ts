@@ -2,6 +2,7 @@ export const fc26 = {
   launchDate: '2025-09-26',
   Brazil: {
     'September 2025': [
+      { edition: 'Standard Edition', price: 205, discount: 41, currency: 'R$', exchangeTax2: 2.92 },
       { edition: 'Standard Edition', price: 253.31, discount: 27.5, currency: 'R$', exchangeTax2: 3.61 },
       { edition: 'Standard Edition', price: 282.99, discount: 19, currency: 'R$', exchangeTax2: 4.04 },
     ],
