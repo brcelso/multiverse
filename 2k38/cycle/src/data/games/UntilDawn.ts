@@ -2,6 +2,7 @@ export const untilDawn = {
   launchDate: '2024-10-04',
   Brazil: {
     'October 2025': [
+      { edition: 'Standard Edition', price: 111.20, currency: 'R$', discount: 63, exchangeTax2: 1.85 },
       { edition: 'Standard Edition', price: 118.93, currency: 'R$', discount: 60, exchangeTax2: 1.98 },
       { edition: 'Standard Edition', price: 127.42, currency: 'R$', discount: 57.5, exchangeTax2: 2.12 },
       { edition: 'Standard Edition', price: 189.90, currency: 'R$', discount: 36.5, exchangeTax2: 4.72 },
