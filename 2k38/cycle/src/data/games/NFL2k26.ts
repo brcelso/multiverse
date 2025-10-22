@@ -2,6 +2,7 @@ export const nflCollegeFootball2026 = {
   launchDate: '2025-07-10',
   Brazil: {
     'October 2025': [
+      { edition: 'Deluxe Edition', price: 324.67, discount: 35, currency: 'R$', exchangeTax2: 5 },
       { edition: 'Kickoff Bundle', price: 399.60, discount: 20, currency: 'R$', exchangeTax2: 4.99  },
     ],
     'September 2025': [
@@ -10,7 +11,7 @@ export const nflCollegeFootball2026 = {
       { edition: 'Standard Edition', price: 244.93, currency: 'R$', discount: 30, exchangeTax2: 5 },
     ],
     'July 2025': [
-      { edition: 'Deluxe', price: 569.90, increase: 14, currency: 'R$', exchangeTax2: 5.69 },
+      { edition: 'Deluxe Edition', price: 569.90, increase: 14, currency: 'R$', exchangeTax2: 5.69 },
       { edition: 'Standard Edition', price: 399.90, increase: 14.3, currency: 'R$', exchangeTax2: 5.71 },
       { edition: 'MVP Bundle', price: 749.5, currency: 'R$', exchangeTax2: 4.99 },
       { edition: 'Kickoff Bundle', price: 499.50, currency: 'R$', exchangeTax2: 4.99  },
