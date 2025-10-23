@@ -100,6 +100,8 @@ import { princeremake } from './games/PrinceOfPersiaRemake';
 import { redDeadRedemption2 } from './games/RedDead2';
 import { redDeadRedemptionI } from './games/RedDeadRedemptionI';
 import { residentevil } from './games/ResidentEvil';
+import { residentevil2 } from './games/ResidentEvil2';
+import { residentevil3 } from './games/ResidentEvil3';
 import { residentevil4 } from './games/ResidentEvil4';
 import { residentevil5 } from './games/ResidentEvil5';
 import { residentevil6 } from './games/ResidentEvil6';
@@ -270,6 +272,8 @@ export const games = {
 'Red Dead Redemption 2 [2018]': redDeadRedemption2,
 'Red Dead Redemption I [2010]': redDeadRedemptionI,
 'Resident Evil [2015]': residentevil,
+'Resident Evil 2 [2019]': residentevil2,
+'Resident Evil 3 [2020]': residentevil3,
 'Resident Evil 4 [2023]': residentevil4,
 'Resident Evil 5 [2016]': residentevil5,
 'Resident Evil 6 [2016]': residentevil6,
