@@ -112,6 +112,7 @@ export const silentHill2Remake = {
         discount: 50,
         currency: '€',
       },
+    ],
     'June 2025': [
       {
         edition: 'Deluxe Edition',
@@ -173,6 +174,7 @@ export const silentHill2Remake = {
         discount: 50,
         currency: '£',
       },
+    ],
     'June 2025': [
       {
         edition: 'Deluxe Edition',
@@ -226,6 +228,7 @@ export const silentHill2Remake = {
         discount: 50,
         currency: '$',
       },
+    ],
     'July 2025': [
       {
         edition: 'Standard Edition',
