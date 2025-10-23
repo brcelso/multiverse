@@ -135,6 +135,7 @@ import { tombRaiderRemastered } from './games/TombRaiderRemastered';
 import { tombRaiderRemasteredIVVVI } from './games/TombRaiderRemasteredIVVVI';
 import { unchartedlegacy } from './games/UnchartedLegacy';
 import { untilDawn } from './games/UntilDawn';
+import { untilDawn2015 } from './games/UntilDawn2015';
 import { wolverine } from './games/Wolverine';
 import { wwe2k25 } from './games/WWE2K25';
 import { yakuza0 } from './games/Yakuza0';
@@ -303,7 +304,8 @@ export const games = {
 'Tomb Raider Remastered [2024]': tombRaiderRemastered,
 'Tomb Raider Remastered IV-V-VI [2025]': tombRaiderRemasteredIVVVI,
 'Uncharted Legacy of Thieves Collection [2022]': unchartedlegacy,
-'Until Dawn [2015]': untilDawn,
+'Until Dawn [2015]': untilDawn2015,
+'Until Dawn [2024]': untilDawn,
 'Wolverine [2026]': wolverine,
 'WWE 2K25 [2024]': wwe2k25,
 'Yakuza 0 Director Cut [2025]': yakuza0,
