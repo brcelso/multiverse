@@ -121,6 +121,7 @@ import { spidermanMilesMorales } from './games/SpidermanMiles';
 import { spidermanRemastered } from './games/Spiderman';
 import { splitfiction } from './games/SplitFiction';
 import { starWarsOutlaws } from './games/StarWarsOutlaws';
+import { stellarblade } from './games/StellarBlade';
 import { stray } from './games/Stray';
 import { thecallistoprotocol } from './games/TheCallistoProtocol';
 import { theLastOfUs } from './games/TheLastOfUsI';
@@ -294,6 +295,7 @@ export const games = {
 'Spiderman Miles Morales [2020]': spidermanMilesMorales,
 'Split Fiction [2025]': splitfiction,
 'Star Wars Outlaws [2024]': starWarsOutlaws,
+'Stellar Blade [2024]': stellarblade,
 'Stray [2022]': stray,
 'The Callisto Protocol [2022]': thecallistoprotocol,
 'The Last Of Us I [2013]': theLastOfUs,
