@@ -1,6 +1,9 @@
 export const theLastOfUsPartI = {
   launchDate: '2022-09-27',
   Argentina: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 49.59, currency: '$', discount: 38 },
+    ],
     'September 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 220999, currency: 'ARS', increase: 121 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 89999, currency: 'ARS', discount: 10 },
@@ -17,6 +20,8 @@ export const theLastOfUsPartI = {
   },
   Brazil: {
     'October 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 247.69, 
+        currency: 'R$', exchangeTax2: 4.99, discount: 38 },
       { platform: "Playstation 5", edition: 'Standard Edition', price: 97.70, discount: 75.5, 
         currency: 'R$', exchangeTax2: 1.39 }, 
       { platform: "Steam", edition: 'Deluxe Edition', price: 149.95, currency: 'R$', 
@@ -68,6 +73,9 @@ export const theLastOfUsPartI = {
     ],
   },
   Europe: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 59.39, currency: '€', discount: 34 },
+    ],
     'September 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 39.99, currency: '€', discount: 50 },
     ],
@@ -88,6 +96,9 @@ export const theLastOfUsPartI = {
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 52.79, currency: '£', discount: 34 },
+    ],
     'September 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 34.99, currency: '£', discount: 50 },
     ],
@@ -110,6 +121,7 @@ export const theLastOfUsPartI = {
   },
   UnitedStates: {
     'October 2025': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 49.59, currency: '$', discount: 38 },
       { platform: "Steam", edition: 'Deluxe Edition', price: 34.99, discount: 50, currency: '$' },
       { platform: "Steam", edition: 'Standard Edition', price: 29.99, discount: 50, currency: '$' },
     ],
