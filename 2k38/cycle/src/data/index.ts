@@ -88,6 +88,7 @@ import { mgs3 } from './games/MetalGearSnakeEaterRemake';
 import { mortalkombat11 } from './games/MK11';
 import { mklegacy } from './games/MKLegacy';
 import { monsterhunter } from './games/MonsterHunterWilds';
+import { nba2k25 } from './games/NBA2k25';
 import { ninja4 } from './games/NinjaGaiden4';
 import { nfl25 } from './games/NFL25';
 import { nflCollegeFootball2026 } from './games/NFL2k26';
@@ -121,11 +122,13 @@ import { spidermanRemastered } from './games/Spiderman';
 import { splitfiction } from './games/SplitFiction';
 import { starWarsOutlaws } from './games/StarWarsOutlaws';
 import { stray } from './games/Stray';
+import { thecallistoprotocol } from './games/TheCallistoProtocol';
 import { theLastOfUs } from './games/TheLastOfUsI';
 import { tloucomplete } from './games/TheLastOfUsComplete';
 import { leftbehind } from './games/TheLastOfUsLeftBehind';
 import { theLastOfUsPart2 } from './games/TheLastOfUsPart2';
 import { theLastOfUsPartI } from './games/TheLastOfUsPartI';
+import { theouterworlds2 } from './games/TheOuterWorlds2';
 import { tombraidertrilogy } from './games/TombRaiderTrilogy';
 import { tonyHawk12 } from './games/TonyHawk1+2';
 import { tonyHawk3Plus4 } from './games/TonyHawk3+4';
@@ -258,6 +261,7 @@ export const games = {
 'Mortal Kombat 11 [2019]': mortalkombat11,
 'Mortal Kombat Legacy Kollection [2025]': mklegacy,
 'Monster Hunter Wilds [2025]': monsterhunter,
+'NBA 2k25 [2024]': nba2k25,
 'Ninja Gaiden 4 [2025]': ninja4,
 'NFL 25 [2024]': nfl25,
 'NFL College Football 2k26 [2025]': nflCollegeFootball2026,
@@ -291,11 +295,13 @@ export const games = {
 'Split Fiction [2025]': splitfiction,
 'Star Wars Outlaws [2024]': starWarsOutlaws,
 'Stray [2022]': stray,
+'The Callisto Protocol [2022]': thecallistoprotocol,
 'The Last Of Us I [2013]': theLastOfUs,
 'The Last Of Us Left Behind [2015]': leftbehind,
 'The Last Of Us Part I [2022]': theLastOfUsPartI,
 'The Last Of Us Part II [2020]': theLastOfUsPart2,
 'The Last Of Us Complete [2025]': tloucomplete,
+'The Outer Worlds 2 [2025]': theouterworlds2,
 'Tomb Raider Definitive Survivor Trilogy [2021]': tombraidertrilogy,
 'Tony Hawk 1+2 [2020]': tonyHawk12,
 'Tony Hawk 3+4 [2025]': tonyHawk3Plus4,
