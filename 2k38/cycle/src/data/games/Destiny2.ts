@@ -38,7 +38,7 @@ export const destiny2 = {
     ],
   },
   UnitedStates: {
-    'September 2025': [
+    'October 2025': [
       { edition: 'Year Of Prophecy Ultimate Edition', price: 66.99, discount: 33, currency: '$' },
       { edition: 'Year Of Prophecy', price: 55.99, discount: 30, currency: '$' },
     ],
