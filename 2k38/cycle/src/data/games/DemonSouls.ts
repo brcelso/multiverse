@@ -3,6 +3,7 @@ export const demonsouls = {
 
   Brazil: {
     'October 2025': [
+      { edition: 'Deluxe Edition', price: 256.45, discount: 50, currency: 'R$', exchangeTax2: 5.69 },
       { edition: 'Standard Edition', price: 159.26, discount: 60, currency: 'R$', exchangeTax2: 2.27 },
     ],
     'September 2025': [
@@ -20,18 +21,10 @@ export const demonsouls = {
       { edition: 'Standard Edition', price: 349.90, currency: 'R$', exchangeTax2: 4.99 },
     ],
   },
-
-  UnitedStates: {
-    'August 2025': [
-      { edition: 'Standard Edition', price: 28.39, discount: 58, currency: '$' },
-    ],
-    'November 2020': [
-      { edition: 'Deluxe Edition', price: 89.99, currency: '$' },
-      { edition: 'Standard Edition', price: 69.99, currency: '$' },
-    ],
-  },
-
   Europe: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 49.99, discount: 50, currency: '€' },
+    ],
     'August 2025': [
       { edition: 'Standard Edition', price: 39.99, discount: 50, currency: '€' },
     ],
@@ -40,14 +33,28 @@ export const demonsouls = {
       { edition: 'Standard Edition', price: 79.99, currency: '€' },
     ],
   },
-
   UnitedKingdom: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 44.99, discount: 50, currency: '£' },
+    ],
     'August 2025': [
       { edition: 'Standard Edition', price: 34.99, discount: 50, currency: '£' },
     ],
     'November 2020': [
       { edition: 'Deluxe Edition', price: 89.99, currency: '£' },
       { edition: 'Standard Edition', price: 69.99, currency: '£' },
+    ],
+  },
+  UnitedStates: {
+    'October 2025': [
+      { edition: 'Deluxe Edition', price: 44.99, discount: 50, currency: '$' },
+    ],
+    'August 2025': [
+      { edition: 'Standard Edition', price: 28.39, discount: 58, currency: '$' },
+    ],
+    'November 2020': [
+      { edition: 'Deluxe Edition', price: 89.99, currency: '$' },
+      { edition: 'Standard Edition', price: 69.99, currency: '$' },
     ],
   },
 };
