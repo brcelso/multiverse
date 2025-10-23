@@ -34,6 +34,7 @@ import { clairObscurExpedition33 } from './games/ClairObscur33';
 import { codbo6 } from './games/CODBO6';
 import { cod7 } from './games/COD7';
 import { codcoldwar } from './games/CallOfDutyColdWar';
+import { codwwii } from './games/CallOfDutyWWII';
 import { crash4ItsAboutTime } from './games/Crash4';
 import { crashTrilogy } from './games/CrashTrilogy';
 import { cronos } from './games/CronosTheNewDawn';
@@ -207,6 +208,7 @@ export const games = {
 'Call Of Duty Cold War [2020]': codcoldwar,
 'Call of Duty Modern Warfare II [2022]': callOfDutyModernWarfareII,
 'Call of Duty Modern Warfare III [2023]': callOfDutyModernWarfareIII,
+'Call of Duty WWII [2017]': codwwii,
 'Clair Obscur Expedition 33 [2025]': clairObscurExpedition33,
 'Crash 4 About Time [2020]': crash4ItsAboutTime,
 'Crash Trilogy [2017]': crashTrilogy,
