@@ -82,6 +82,7 @@ import { horizonForbiddenWest } from './games/HorizonForbiddenWest';
 import { horizonZeroDawn } from './games/HorizonZeroDawn';
 import { indianajones } from './games/IndianaJones';
 import { legohorizon } from './games/LegoHorizon';
+import { lifeisstrange } from './games/LifeIsStrange';
 import { lostSoulAside } from './games/LostSoulAside';
 import { mafia } from './games/Mafia';
 import { marioKartWorldSW2 } from './games/MarioKartWorld';
@@ -258,6 +259,7 @@ export const games = {
 'Horizon Zero Dawn [2017]': horizonZeroDawn,
 'Indiana Jones and The Great Circle [2025]': indianajones,
 'Lego Horizon Adventures [2025]': legohorizon,
+'Life Is Strange Remastered Collection [2022]': lifeisstrange,
 'Lost Soul Aside [2025]': lostSoulAside,
 'Mafia The Old Country [2025]': mafia,
 'Mario Kart World [2025]': marioKartWorldSW2,
