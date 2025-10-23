@@ -22,6 +22,7 @@ import { assassinsCreedBlackFlag } from './games/AssassinsCreedBlackFlag';
 import { assassinsCreedMirage } from './games/AssassinsCreedMirage';
 import { astroBot } from './games/AstroBot';
 import { baldursgate3 } from './games/BaldursGate3';
+import { batman } from './games/Batman';
 import { beyondtwosouls } from './games/BeyondTwoSouls';
 import { bf4 } from './games/Battlefield4';
 import { bf6 } from './games/Battlefield6';
@@ -197,6 +198,7 @@ export const games = {
 'Assassins Creed Mirage [2023]': assassinsCreedMirage, 
 'Astro Bot [2024]': astroBot,
 'Baldurs Gate 3 [2023]': baldursgate3,
+'Batman Arkham [2015]': batman,
 'Battlefield 4 [2013]': bf4,
 'Battlefield 6 [2025]': bf6,
 'Beyond Two Souls [2016]': beyondtwosouls,
