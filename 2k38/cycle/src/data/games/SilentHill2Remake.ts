@@ -2,6 +2,15 @@ export const silentHill2Remake = {
   launchDate: '2024-08-10',
 
   Brazil: {
+    'October 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 199.75,
+        discount: 50,
+        currency: 'R$',
+        basePrice: 399.5,
+        exchangeTax: 4.99,
+      },
     'July 2025': [
       {
         edition: 'Standard Edition',
@@ -95,8 +104,128 @@ export const silentHill2Remake = {
       },
     ],
   },
-
+  Europe: {
+    'October 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 39.99,
+        discount: 50,
+        currency: '€',
+      },
+    'June 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 47.99,
+        discount: 40,
+        currency: '€',
+      },
+    ],
+    'May 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 51.99,
+        discount: 35,
+        currency: '€',
+      },
+    ],
+    'March 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 48.99,
+        discount: 30,
+        currency: '€',
+      },
+    ],
+    'February 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 63.99,
+        discount: 20,
+        currency: '€',
+      },
+    ],
+    'January 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 55.99,
+        discount: 20,
+        currency: '€',
+      },
+    ],
+    'October 2024': [
+      {
+        edition: 'Deluxe Edition',
+        price: 79.99,
+        currency: '€',
+      },
+      {
+        edition: 'Standard Edition',
+        price: 69.99,
+        currency: '€',
+      },
+    ],
+  },
+  UnitedKingdom: {
+    'October 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 34.99,
+        discount: 50,
+        currency: '£',
+      },
+    'June 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 41.99,
+        discount: 40,
+        currency: '£',
+      },
+    ],
+    'May 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 45.49,
+        discount: 35,
+        currency: '£',
+      },
+    ],
+    'March 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 41.99,
+        discount: 30,
+        currency: '£',
+      },
+    ],
+    'January 2025': [
+      {
+        edition: 'Standard Edition',
+        price: 47.99,
+        discount: 20,
+        currency: '£',
+      },
+    ],
+    'October 2024': [
+      {
+        edition: 'Deluxe Edition',
+        price: 69.99,
+        currency: '£',
+      },
+      {
+        edition: 'Standard Edition',
+        price: 59.99,
+        currency: '£',
+      },
+    ],
+  },
   UnitedStates: {
+    'October 2025': [
+      {
+        edition: 'Deluxe Edition',
+        price: 39.99,
+        discount: 50,
+        currency: '$',
+      },
     'July 2025': [
       {
         edition: 'Standard Edition',
@@ -163,108 +292,6 @@ export const silentHill2Remake = {
         edition: 'Standard Edition',
         price: 69.99,
         currency: '$',
-      },
-    ],
-  },
-
-  Europe: {
-    'June 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 47.99,
-        discount: 40,
-        currency: '€',
-      },
-    ],
-    'May 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 51.99,
-        discount: 35,
-        currency: '€',
-      },
-    ],
-    'March 2025': [
-      {
-        edition: 'Standard Edition',
-        price: 48.99,
-        discount: 30,
-        currency: '€',
-      },
-    ],
-    'February 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 63.99,
-        discount: 20,
-        currency: '€',
-      },
-    ],
-    'January 2025': [
-      {
-        edition: 'Standard Edition',
-        price: 55.99,
-        discount: 20,
-        currency: '€',
-      },
-    ],
-    'October 2024': [
-      {
-        edition: 'Deluxe Edition',
-        price: 79.99,
-        currency: '€',
-      },
-      {
-        edition: 'Standard Edition',
-        price: 69.99,
-        currency: '€',
-      },
-    ],
-  },
-
-  UnitedKingdom: {
-    'June 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 41.99,
-        discount: 40,
-        currency: '£',
-      },
-    ],
-    'May 2025': [
-      {
-        edition: 'Deluxe Edition',
-        price: 45.49,
-        discount: 35,
-        currency: '£',
-      },
-    ],
-    'March 2025': [
-      {
-        edition: 'Standard Edition',
-        price: 41.99,
-        discount: 30,
-        currency: '£',
-      },
-    ],
-    'January 2025': [
-      {
-        edition: 'Standard Edition',
-        price: 47.99,
-        discount: 20,
-        currency: '£',
-      },
-    ],
-    'October 2024': [
-      {
-        edition: 'Deluxe Edition',
-        price: 69.99,
-        currency: '£',
-      },
-      {
-        edition: 'Standard Edition',
-        price: 59.99,
-        currency: '£',
       },
     ],
   },
