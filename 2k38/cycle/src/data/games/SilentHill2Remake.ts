@@ -10,6 +10,7 @@ export const silentHill2Remake = {
         basePrice: 399.5,
         exchangeTax: 4.99,
       },
+    ],
     'July 2025': [
       {
         edition: 'Standard Edition',
