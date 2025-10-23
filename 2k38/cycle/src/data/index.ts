@@ -103,6 +103,7 @@ import { residentevil } from './games/ResidentEvil';
 import { residentevil2 } from './games/ResidentEvil2';
 import { residentevil3 } from './games/ResidentEvil3';
 import { residentevil4 } from './games/ResidentEvil4';
+import { residentevil4old } from './games/ResidentEvil4old';
 import { residentevil5 } from './games/ResidentEvil5';
 import { residentevil6 } from './games/ResidentEvil6';
 import { residentevil7 } from './games/ResidentEvil7';
@@ -274,6 +275,7 @@ export const games = {
 'Resident Evil [2015]': residentevil,
 'Resident Evil 2 [2019]': residentevil2,
 'Resident Evil 3 [2020]': residentevil3,
+'Resident Evil 4 [2016]': residentevil4old,
 'Resident Evil 4 [2023]': residentevil4,
 'Resident Evil 5 [2016]': residentevil5,
 'Resident Evil 6 [2016]': residentevil6,
