@@ -1,6 +1,5 @@
 export const silentHill2Remake = {
   launchDate: '2024-08-10',
-
   Brazil: {
     'October 2025': [
       {
