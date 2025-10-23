@@ -28,11 +28,11 @@ import { bf6 } from './games/Battlefield6';
 import { blackMythWukong } from './games/BlackMythWukong';
 import { bloodborne } from './games/Bloodborne';
 import { borderlands4 } from './games/Borderlands4';
+import { callOfDutyModernWarfareII } from './games/CallOfDutyModernWarfareII';
 import { callOfDutyModernWarfareIII } from './games/CallOfDutyModernWarfareIII';
 import { clairObscurExpedition33 } from './games/ClairObscur33';
 import { codbo6 } from './games/CODBO6';
 import { cod7 } from './games/COD7';
-import { codmwii } from './games/CODMWII';
 import { codcoldwar } from './games/CallOfDutyColdWar';
 import { crash4ItsAboutTime } from './games/Crash4';
 import { crashTrilogy } from './games/CrashTrilogy';
@@ -200,7 +200,7 @@ export const games = {
 'Call Of Duty Black Ops 6 [2024]': codbo6,
 'Call Of Duty Black Ops 7 [2025]': cod7,
 'Call Of Duty Cold War [2020]': codcoldwar,
-'Call of Duty Modern Warfare II [2022]': codmwii,
+'Call of Duty Modern Warfare II [2022]': callOfDutyModernWarfareII,
 'Call of Duty Modern Warfare III [2023]': callOfDutyModernWarfareIII,
 'Clair Obscur Expedition 33 [2025]': clairObscurExpedition33,
 'Crash 4 About Time [2020]': crash4ItsAboutTime,
