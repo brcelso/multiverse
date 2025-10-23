@@ -1,6 +1,9 @@
 export const hellisus = {
   launchDate: '2025-09-04',
   Brazil: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: "Deluxe Edition", price: 237.95, discount: 20, currency: 'R$', exchangeTax2: 3.71 },
+    ],
     'September 2025': [
       { platform: "Xbox", edition: "Deluxe Edition", price: 455.90, totalIncrease: 53, currency: 'R$', exchangeTax2: 3.71 },
       { platform: "Xbox", edition: "Standard Edition", price: 339.90, totalIncrease: 52.5, currency: 'R$', exchangeTax2: 3.70 },
@@ -20,18 +23,27 @@ export const hellisus = {
     ],
   },
   Europe: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: "Deluxe Edition", price: 63.99, discount: 20, currency: '€' },
+    ],
     'February 2025': [
       { platform: "Playstation 5 | Xbox", edition: "Deluxe Edition", price: 79.99, currency: '€' },
       { platform: "Playstation 5 | Xbox", edition: "Standard Edition", price: 59.99, currency: '€' },
     ],
   },
   UnitedKingdom: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: "Deluxe Edition", price: 51.99, discount: 20, currency: '£' },
+    ],
     'February 2025': [
       { platform: "Playstation 5 | Xbox", edition: "Deluxe Edition", price: 64.99, currency: '£' },
       { platform: "Playstation 5 | Xbox", edition: "Standard Edition", price: 49.99, currency: '£' },
     ],
   },
   UnitedStates: {
+    'October 2025': [
+      { platform: "Playstation 5", edition: "Deluxe Edition", price: 63.99, discount: 20, currency: '$' },
+    ],
     'February 2025': [
       { platform: "Playstation 5 | Xbox", edition: "Deluxe Edition", price: 79.99, currency: '$' },
       { platform: "Playstation 5 | Xbox", edition: "Standard Edition", price: 59.99, currency: '$' },
