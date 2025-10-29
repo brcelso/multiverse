@@ -8,6 +8,8 @@ export const residentevil9 = {
   },
   Brazil: {
     'October 2025': [
+      { platform: "Steam", edition: "Deluxe Edition", price: 273.23, currency: 'R$', discount: 22, exchangeTax: 3.41 },
+      { platform: "Steam", edition: "Deluxe Edition", price: 310.49, currency: 'R$', discount: 11, exchangeTax: 3.88 },
       { platform: "Steam", edition: "Standard Edition", price: 234.07, currency: 'R$', discount: 22, exchangeTax: 3.34 },
       { platform: "Steam", edition: "Standard Edition", price: 265.99, currency: 'R$', discount: 11, exchangeTax: 3.80 },
       { platform: "Playstation", edition: "Deluxe Edition", price: 399.90, currency: 'R$', exchangeTax: 4.99 },
