@@ -2,39 +2,45 @@ export const residentevil9 = {
   launchDate: '2026-02-27',
   Argentina: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 99.99, currency: '$' },
-      { edition: "Standard Edition", price: 84.99, currency: '$' },
+      { platform: "Playstation", edition: "Deluxe Edition", price: 79.99, currency: '$' },
+      { platform: "Playstation", edition: "Standard Edition", price: 69.99, currency: '$' },
     ],
   },
   Brazil: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 665.90, currency: 'R$', exchangeTax: 6.66 },
-      { edition: "Standard Edition", price: 565.90, currency: 'R$', exchangeTax: 6.66 },
-      { platform: "Switch", edition: "Standard Edition", price: 339.00, currency: 'R$', exchangeTax: 6.66 },
+      { platform: "Playstation", edition: "Deluxe Edition", price: 399.90, currency: 'R$', exchangeTax: 4.99 },
+      { platform: "Playstation", edition: "Standard Edition", price: 339.90, currency: 'R$', exchangeTax: 4.84 },
+      { platform: "Steam", edition: "Deluxe Edition", price: 349.90, currency: 'R$', exchangeTax: 4.37 },
+      { platform: "Steam", edition: "Standard Edition", price: 299.00, currency: 'R$', exchangeTax: 4.27 },
+      { platform: "Switch", edition: "Standard Edition", price: 339.00, currency: 'R$', exchangeTax: 4.84 },
     ],
   },
   Europe: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 89.99, currency: '€' },
-      { edition: "Standard Edition", price: 79.99, currency: '€' },
+      { platform: "Playstation", edition: "Deluxe Edition", price: 89.99, currency: '€' },
+      { platform: "Playstation", edition: "Standard Edition", price: 79.99, currency: '€' },
+      { platform: "Steam", edition: "Deluxe Edition", price: 79.99, currency: '€' },
+      { platform: "Steam", edition: "Standard Edition", price: 69.99, currency: '€' },
     ],
   },
   Japan: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 9980, currency: '¥' },
-      { edition: "Standard Edition", price: 8980, currency: '¥' },
+      { platform: "Playstation", edition: "Deluxe Edition", price: 9990, currency: '¥' },
+      { platform: "Playstation", edition: "Standard Edition", price: 8990, currency: '¥' },
     ],
   },
   UnitedKingdom: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 79.99, currency: '£' },
-      { edition: "Standard Edition", price: 69.99, currency: '£' },
+      { platform: "Playstation", edition: "Deluxe Edition", price: 74.99, currency: '£' },
+      { platform: "Playstation", edition: "Standard Edition", price: 64.99, currency: '£' },
+      { platform: "Steam", edition: "Deluxe Edition", price: 69.99, currency: '£' },
+      { platform: "Steam", edition: "Standard Edition", price: 59.99, currency: '£' },
     ],
   },
   UnitedStates: {
     'October 2025': [
-      { edition: "Deluxe Edition", price: 99.99, currency: '$' },
-      { edition: "Standard Edition", price: 84.99, currency: '$' },
+      { platform: "Playstation | Steam", edition: "Deluxe Edition", price: 79.99, currency: '$' },
+      { platform: "Playstation | Steam", edition: "Standard Edition", price: 69.99, currency: '$' },
     ],
   },
 };
