@@ -1,6 +1,9 @@
 export const monsterhunter = {
   launchDate: '2025-02-28',
   Brazil: {
+    'October 2025': [
+      { edition: "Standard Edition", price: 86.90, discount: 74, currency: 'R$', exchangeTax2: 1.24 },
+    ],
     'September 2025': [
       { edition: "Deluxe Premium Edition", price: 384.65, discount: 30, currency: 'R$', exchangeTax2: 4.99 },
       { edition: "Deluxe Edition", price: 298.83, discount: 30, currency: 'R$', exchangeTax2: 4.74 },
@@ -42,9 +45,9 @@ export const monsterhunter = {
   },
   UnitedStates: {
     'September 2025': [
-      { edition: "Deluxe Premium Edition", price: 76.99, discount: 30, currency: '€' },
-      { edition: "Deluxe Edition", price: 62.99, discount: 30, currency: '€' },
-      { edition: "Standard Edition", price: 48.99, discount: 30, currency: '€' },
+      { edition: "Deluxe Premium Edition", price: 76.99, discount: 30, currency: '$' },
+      { edition: "Deluxe Edition", price: 62.99, discount: 30, currency: '$' },
+      { edition: "Standard Edition", price: 48.99, discount: 30, currency: '$' },
     ],
     'February 2025': [
       { edition: "Deluxe Premium Edition", price: 109.99, currency: '$' },
