@@ -1,11 +1,5 @@
 export const mgs3 = {
   launchDate: '2025-08-28',
-  Japan: {
-    'June 2025': [
-      { edition: "Deluxe Edition", price: 9980, currency: '¥' },
-      { edition: "Standard Edition", price: 8980, currency: '¥' },
-    ],
-  },
   Brazil: {
     'October 2025': [
       { edition: "Deluxe Edition", price: 364.72, discount: 20, currency: 'R$', exchangeTax2: 5.69 },
@@ -27,6 +21,15 @@ export const mgs3 = {
     'June 2025': [
       { edition: "Deluxe Edition", price: 89.99, currency: '€' },
       { edition: "Standard Edition", price: 79.99, currency: '€' },
+    ],
+  },
+  Japan: {
+    'October 2025': [
+      { edition: "Deluxe Edition", price: 7832, currency: '¥', discount: 20 },
+    ],
+    'June 2025': [
+      { edition: "Deluxe Edition", price: 9790, currency: '¥' },
+      { edition: "Standard Edition", price: 8980, currency: '¥' },
     ],
   },
   UnitedKingdom: {
