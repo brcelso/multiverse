@@ -90,6 +90,12 @@ export const theLastOfUsPartI = {
       { platform: "Playstation 5", edition: 'Standard Edition', price: 79.99, currency: '€' },
     ],
   },
+  Japan: {
+    'September 2022': [
+      { platform: "Playstation 5", edition: 'Deluxe Edition', price: 9790, currency: '¥' },
+      { platform: "Playstation 5", edition: 'Standard Edition', price: 8690, currency: '¥' },
+    ],
+  },
   Paraguay: {
     'August 2025': [
       { platform: "Playstation 5", edition: 'Standard Edition', price: 42, currency: '$', discount: 40 },
