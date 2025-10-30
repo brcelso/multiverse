@@ -1,11 +1,5 @@
 export const tloucomplete = {
   launchDate: '2025-04-10',
-
-  Japan: {
-    'April 2025': [
-      { edition: "Complete Edition", price: 11980, currency: '¥' },
-    ],
-  },
   Brazil: {
     'August 2025': [
       { edition: "Complete Edition", price: 455.92, discount: 20, currency: 'R$', exchangeTax: 5.69 },
@@ -25,7 +19,11 @@ export const tloucomplete = {
       { edition: "Complete Edition", price: 109.99, currency: '€' },
     ],
   },
-
+  Japan: {
+    'April 2025': [
+      { edition: "Complete Edition", price: 11980, currency: '¥' },
+    ],
+  },
   UnitedKingdom: {
     'August 2025': [
       { edition: "Complete Edition", price: 75.99, discount: 20, currency: '£' },
