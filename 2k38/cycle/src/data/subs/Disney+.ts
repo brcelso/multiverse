@@ -26,6 +26,12 @@ export const disney = {
       ],
     },
   Brazil: {
+    'October 2025': [
+      { price: 561.90, discount: 11, currency: 'R$', exchangeTax: 4.18,
+        edition: "Combo+ Yearly" },
+      { price: 393.90, currency: 'R$', exchangeTax: 4.18, 
+        edition: "Standard Ads Free Yearly" },
+      ],
     'September 2025': [
       { price: 19.90, currency: 'R$', exchangeTax2: 1.25, discount: 70,
         edition: "Combo+ Monthly 4 months" },
