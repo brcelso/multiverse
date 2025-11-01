@@ -54,14 +54,14 @@ export const armoredcore = {
       {
         platform: "Playstation",
         edition: 'Digital Deluxe Edition',
-        price: 399.5,
+        price: 399.90,
         currency: 'R$',
-        exchangeTax: 4.99,
+        exchangeTax: 5.71,
       },
       {
         platform: "Playstation",
         edition: 'Standard Edition',
-        price: 349.9,
+        price: 299.90,
         currency: 'R$',
         exchangeTax: 4.99,
       },
