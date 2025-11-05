@@ -24,6 +24,14 @@ export const stray = {
       { edition: 'Standard Edition', price: 29.99, currency: '€' },
     ],
   },
+  Japan: {
+    'October 2025': [
+      { edition: 'Standard Edition', price: 2112, discount: 40, currency: '¥' },
+    ],
+    'July 2022': [
+      { edition: 'Standard Edition', price: 3520, currency: '¥' },
+    ],
+  },
   UnitedKingdom: {
     'October 2025': [
       { edition: 'Standard Edition', price: 14.99, discount: 40, currency: '£' },
