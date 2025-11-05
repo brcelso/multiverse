@@ -6,7 +6,7 @@ export const stray = {
       { edition: 'Standard Edition', price: 47.99, discount: 40, currency: 'R$', exchangeTax: 2.66 },
     ],
     'January 2024': [
-      { edition: 'Standard Edition', price: 79.99, currency: 'R$', exchangeTax: 2.66 },
+      { edition: 'Standard Edition', price: 79.99, increase: 14.3, currency: 'R$', exchangeTax: 2.66 },
     ],
     'November 2023': [
       { edition: 'Standard Edition', price: 46.19, currency: 'R$', discount: 34, exchangeTax: 2.33 },
