@@ -1,8 +1,7 @@
 export const gtavi = {
-  launchDate: '2026-05-26',
-
+  launchDate: '2026-11-19',
   Brazil: {
-    'May 2026': [
+    'Novemeber 2026': [
       { edition: 'Super Deluxe Edition', price: 649.90, currency: 'R$', exchangeTax: 4.99 },
       { edition: 'Deluxe Edition', price: 499.90, currency: 'R$', exchangeTax: 5.00 },
       { edition: 'Standard Edition', price: 665.90, currency: 'R$', basePrice: 99.99, exchangeTax2: 6.66 },
@@ -12,7 +11,7 @@ export const gtavi = {
     ],
   },
   Europe: {
-    'May 2026': [
+    'November 2026': [
       { edition: 'Super Deluxe Edition', price: 129.99, currency: '€' },
       { edition: 'Deluxe Edition', price: 99.99, currency: '€' },
       { edition: 'Standard Edition', price: 79.99, currency: '€' },
@@ -20,7 +19,7 @@ export const gtavi = {
   },
   
   UnitedKingdom: {
-    'May 2026': [
+    'November 2026': [
       { edition: 'Super Deluxe Edition', price: 119.99, currency: '£' },
       { edition: 'Deluxe Edition', price: 89.99, currency: '£' },
       { edition: 'Standard Edition', price: 69.99, currency: '£' },
@@ -28,7 +27,7 @@ export const gtavi = {
   },
 
   UnitedStates: {
-    'May 2026': [
+    'November 2026': [
       { edition: 'Super Deluxe Edition', price: 129.99, currency: '$' },
       { edition: 'Deluxe Edition', price: 99.99, currency: '$' },
       { edition: 'Standard Edition', price: 69.99, currency: '$' },
