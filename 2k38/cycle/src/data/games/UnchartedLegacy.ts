@@ -14,8 +14,8 @@ export const unchartedlegacy = {
   },
   Europe: {
     'October 2025': [
-      { edition: 'Legacy Of Thieves Collection', price: 19.99, currency: '€', discount: 60 }
-      { edition: 'Nathan Drake Collection', price: 5.99, discount: 70, currency: '€', },
+      { edition: 'Legacy Of Thieves Collection', price: 19.99, currency: '€', discount: 60 },
+      { edition: 'Nathan Drake Collection', price: 5.99, discount: 70, currency: '€' },
     ],
     'October 2022': [
       { edition: 'Legacy Of Thieves Collection', price: 49.99, currency: '€' },
