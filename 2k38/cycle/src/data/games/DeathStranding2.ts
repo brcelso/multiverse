@@ -1,6 +1,5 @@
 export const deathStranding2OnTheBeach = {
   launchDate: '2025-06-22',
-
   Argentina: {
     'July 2025': [
       { edition: "Standard Edition", price: 60490, discount: 12, currency: 'ARS' },
@@ -21,6 +20,7 @@ export const deathStranding2OnTheBeach = {
       { edition: "Physical Media", price: 224.80, discount: 43.5, currency: 'R$', exchangeTax2: 3.59 }
     ],
     'June 2025': [
+      { edition: "Physical Media", price: 184.91, discount: 53.5, currency: 'R$', exchangeTax2: 2.64 },
       { edition: "Physical Media", price: 245.46, discount: 30, currency: 'R$', exchangeTax2: 3.59 },
       { edition: "Deluxe Edition", price: 449.90, increase: 12.5, currency: 'R$', exchangeTax2: 5.62 },
       { edition: "Standard Edition", price: 399.90, increase: 14.3, currency: 'R$', exchangeTax2: 5.71 },
