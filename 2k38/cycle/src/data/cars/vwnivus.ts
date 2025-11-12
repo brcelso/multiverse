@@ -28,6 +28,11 @@ export const vwNivus = {
     ],
   },
   Brazil: {
+    'November 2025': [
+      { edition: 'GTS 2025/2026', price: 184990, increase: 5, currency: 'R$' },
+      { edition: 'HighLine 2025/2026', price: 167990, increase: 5, currency: 'R$' },
+      { edition: 'ComfortLine 2025/2026', price: 152990, increase: 5, currency: 'R$' },
+    ],
     'August 2025': [
       { edition: 'ComfortLine 2025/2026', price: 131900, discount: 8, currency: 'R$', basePrice: 143490 },
       { edition: 'Sense', price: 115990, discount: 3.5, currency: 'R$' },
