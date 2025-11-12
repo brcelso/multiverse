@@ -89,6 +89,9 @@ export const ps5 = {
     ],
   },
   Japan: {
+    'November 2025': [
+      { edition: 'PS5 Digital', price: 55000, currency: '¥' },
+    ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 119980, currency: '¥' },
     ],
