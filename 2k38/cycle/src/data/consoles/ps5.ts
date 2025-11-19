@@ -101,9 +101,12 @@ export const ps5 = {
   UnitedKingdom: {
     'November 2025': [
       { edition: 'PS5 Pro', price: 609.99, currency: '£', discount: 13  },
+      { edition: 'PS5 Standard', price: 389.99, currency: '£', discount: 19 },
+      { edition: 'PS5 Digital', price: 294.99, currency: '£', discount: 25 },
     ],
     'September 2025': [
       { edition: 'PS5 Standard', price: 434.99, currency: '£', discount: 9.5 },
+      { edition: 'PS5 Digital w/ Disc Drive', price: 479.99, currency: '£' },
       { edition: 'PS5 Digital', price: 339.99, currency: '£', discount: 21 },
     ],
     'May 2025': [
@@ -115,20 +118,20 @@ export const ps5 = {
     ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 699.99, currency: '£' },
-      { edition: 'PS5 Digital w/ Disc Drive', price: 399, currency: '£', discount: 17 },
-      { edition: 'PS5 Digital', price: 309, currency: '£', discount: 20 },
+      { edition: 'PS5 Digital w/ Disc Drive', price: 399.99, currency: '£', discount: 17 },
+      { edition: 'PS5 Digital', price: 309.99, currency: '£', discount: 20 },
     ],
     'November 2023': [
-      { edition: 'PS5 Digital w/ Disc Drive', price: 479, currency: '£' },
-      { edition: 'PS5 Digital', price: 389, currency: '£' },
+      { edition: 'PS5 Digital w/ Disc Drive', price: 479.99, currency: '£' },
+      { edition: 'PS5 Digital', price: 389.99, currency: '£' },
     ],
     'August 2022': [
-      { edition: 'PS5 Standard[old]', price: 479, currency: '£', increase: 7 },
-      { edition: 'PS5 Digital[old]', price: 389, currency: '£', increase: 8.5 },
+      { edition: 'PS5 Standard[old]', price: 479.99, currency: '£', increase: 7 },
+      { edition: 'PS5 Digital[old]', price: 389.99, currency: '£', increase: 8.5 },
     ],
     'November 2020': [
-      { edition: 'PS5 Standard[old]', price: 449, currency: '£' },
-      { edition: 'PS5 Digital[old]', price: 359, currency: '£' },
+      { edition: 'PS5 Standard[old]', price: 449.99, currency: '£' },
+      { edition: 'PS5 Digital[old]', price: 359.99, currency: '£' },
     ],
   },
   UnitedStates: {
