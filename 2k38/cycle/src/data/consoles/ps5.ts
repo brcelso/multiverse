@@ -18,6 +18,9 @@ export const ps5 = {
     ],
   },
   Brazil: {
+    'November 2025': [
+      { edition: 'PS5 Digital', price: 2690, currency: 'R$', discount: 30 },
+    ],
     'June 2025': [
       { edition: 'PS5 Digital', price: 2826, currency: 'R$', discount: 25.6 },
       { edition: 'PS5 Digital', price: 2920.29, currency: 'R$', discount: 23.1 },
@@ -63,6 +66,11 @@ export const ps5 = {
     ],
   },
   Europe: {
+    'November 2025': [
+      { edition: 'PS5 Pro', price: 699.99, currency: '€', discount: 12.5 },
+      { edition: 'PS5 Standard[old]', price: 449.99, currency: '€', discount: 10 },
+      { edition: 'PS5 Digital', price: 349.99, currency: '€', discount: 30 },
+    ],
     'September 2025': [
       { edition: 'New PS5 Digital 825GB', price: 499.99, currency: '€'},
     ],
