@@ -19,7 +19,7 @@ export const ps5 = {
   },
   Brazil: {
     'November 2025': [
-      { edition: 'PS5 Digital', price: 2690, currency: 'R$', discount: 30, exchangeTax2: 5.39 },
+      { edition: 'PS5 Digital', price: 2682, currency: 'R$', discount: 30, exchangeTax2: 5.39 },
     ],
     'June 2025': [
       { edition: 'PS5 Digital', price: 2826, currency: 'R$', discount: 25.6 },
@@ -45,16 +45,16 @@ export const ps5 = {
     ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 6509.91, currency: 'R$', discount: 7 },
-      { edition: 'PS5 Pro', price: 6999.90, currency: 'R$', exchangeTax2: 10, exchangeTax3: 5.80},
+      { edition: 'PS5 Pro', price: 6999.90, currency: 'R$', exchangeTax2: 10, exchangeTax3: 5.80 },
     ],
     'November 2023': [
-      { edition: 'PS5 Digital', price: 3799, currency: 'R$',  exchangeTax2: 9.52, exchangeTax3: 4.90},
+      { edition: 'PS5 Digital', price: 3799, currency: 'R$',  exchangeTax2: 9.52, exchangeTax3: 4.90 },
       { edition: 'PS5 Digital[old]', price: 4499, currency: 'R$' },
       { edition: 'PS5 Standard[old]', price: 4999, currency: 'R$' },
     ],
     'November 2020': [
       { edition: 'PS5 Digital[old]', price: 4499, currency: 'R$', exchangeTax2: 11.27, exchangeTax3: 5.36 },
-      { edition: 'PS5 Standard[old]', price: 4999, currency: 'R$', exchangeTax2: 10, exchangeTax3: 5.36},
+      { edition: 'PS5 Standard[old]', price: 4999, currency: 'R$', exchangeTax2: 10, exchangeTax3: 5.36 },
     ],
   },
   Europe: {
@@ -72,7 +72,7 @@ export const ps5 = {
       { edition: 'PS5 Digital', price: 399.99, currency: '€', discount: 20 },
     ],
     'April 2025': [
-      { edition: 'PS5 Digital', price: 499.99, currency: '€', increase: 11.1, totalIncrease: 25},
+      { edition: 'PS5 Digital', price: 499.99, currency: '€', increase: 11.1, totalIncrease: 25 },
     ],
     'November 2024': [
       { edition: 'PS5 Pro', price: 799.99, currency: '€' },
@@ -118,7 +118,7 @@ export const ps5 = {
       { edition: 'PS5 Digital', price: 389, currency: '£' },
     ],
     'August 2022': [
-      { edition: 'PS5 Standard[old]', price: 479, currency: '£', increase: 7},
+      { edition: 'PS5 Standard[old]', price: 479, currency: '£', increase: 7 },
       { edition: 'PS5 Digital[old]', price: 389, currency: '£', increase: 8.5 },
     ],
     'November 2020': [
@@ -135,7 +135,7 @@ export const ps5 = {
     'August 2025': [
       { edition: 'PS5 Pro w/ Disc Drive', price: 829.99, currency: '$' },
       { edition: 'PS5 Pro', price: 749.99, currency: '$', increase: 7.3, totalIncrease: 50 },
-      { edition: 'PS5 Standard', price: 549.99, currency: '$', totalIncrease: 10},
+      { edition: 'PS5 Standard', price: 549.99, currency: '$', totalIncrease: 10 },
       { edition: 'PS5 Digital', price: 499.99, currency: '$', increase: 10, totalIncrease: 25 },
     ],
     'May 2025': [
