@@ -2,6 +2,7 @@ export const mgs3 = {
   launchDate: '2025-08-28',
   Brazil: {
     'November 2025': [
+      { edition: "Standard Edition", price: 198.13, discount: 51, currency: 'R$', exchangeTax2: 2.83 },
       { edition: "Standard Edition", price: 220, discount: 45, currency: 'R$', exchangeTax2: 3.14 },
     ],
     'October 2025': [
