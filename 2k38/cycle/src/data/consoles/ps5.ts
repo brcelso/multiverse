@@ -19,6 +19,8 @@ export const ps5 = {
   },
   Brazil: {
     'November 2025': [
+      { edition: 'PS5 Pro', price: 5249.91, currency: 'R$', discount: 25, exchangeTax2: 7, exchangeTax3: 8.08 },
+      { edition: 'PS5 Digital', price: 2549.10, currency: 'R$', discount: 33, exchangeTax2: 5.10, exchangeTax3: 6.38 },
       { edition: 'PS5 Digital', price: 2682, currency: 'R$', discount: 30, exchangeTax2: 5.39 },
     ],
     'June 2025': [
