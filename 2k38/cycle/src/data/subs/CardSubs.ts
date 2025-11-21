@@ -28,6 +28,9 @@ export const deluxeOrPremium = {
       { price: 76.99, currency: 'USD', edition: "Deluxe" }]
   },
   Brazil: {
+    'November 2025': [
+      { price: 463.57, discount: 33, currency: 'R$', basePrice: 109.99, exchangeTax: 4.32, edition: "Deluxe" }
+    ],
     'May 2025': [
       { price: 484.33, discount: 30, currency: 'R$', 
         realPrice: 605.62,
@@ -262,6 +265,9 @@ export const extra = {
       { price: 66.99, currency: 'USD', edition: "Extra" }]
   },
   Brazil: {
+    'November 2025': [
+      { price: 444.67, discount: 33, currency: 'R$', basePrice: 109.99, exchangeTax: 4.32, edition: "Deluxe" }
+    ],
     'May 2025 Days Of Play': [
       { price: 444.67, discount: 25, currency: 'R$', edition: "Extra", 
         basePrice: 80.99, exchangeTax: 5.49,
