@@ -49,20 +49,12 @@ export const appletv = {
       { price: 490, discount: 50, 
         currency: '¥', edition: "Apple TV+" },
       ],
-    'August 2025': [
-      { price: 900, increase: 11, totalIncrease: 100,
-        currency: '¥', edition: "Apple TV+" },
-      ],
-    'October 2023': [
-      { price: 8.99, increase: 29, totalIncrease: 80,
-        currency: '¥', edition: "Apple TV+" },
-      ],
     'October 2022': [
-      { price: 6.99, increase: 20, currency: '¥', 
-        edition: "Apple TV+" },
+      { price: 900, increase: 33, 
+        currency: '¥', edition: "Apple TV+" },
       ],
     'November 2019': [
-      { price: 4.99, currency: '¥', 
+      { price: 600, currency: '¥', 
         edition: "Apple TV+" },
       ],
       },
