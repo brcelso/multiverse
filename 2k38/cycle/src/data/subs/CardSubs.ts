@@ -205,7 +205,7 @@ export const deluxeOrPremium = {
     'December 2025': [
       { price: 214.99, increase: 34, currency: '$', edition: "Premium" }],
     'November 2025': [
-      { price: 107.19, discount: 33, currency: '$', edition: "Premium" },
+      { price: 107.19, discount: 33, currency: '$', edition: "Premium" }],
     'May 2025 Days of Play': [
       { price: 107.19, discount: 33, currency: '$', edition: "Premium" },
       { price: 49.99, currency: '$', edition: "Premium" },
@@ -250,7 +250,7 @@ export const extra = {
   launchDate: '2022-06-13',
   Argentina: {
     'November 2025': [
-      { price: 80.99, discount: 25, currency: 'USD', edition: "Extra" },
+      { price: 80.99, discount: 25, currency: 'USD', edition: "Extra" }],
     'May 2025': [
       { price: 80.99, discount: 25, currency: 'USD', edition: "Extra" },
       { price: 33.99, currency: 'USD', edition: "Extra" },
@@ -435,7 +435,8 @@ export const essential = {
     },
   Brazil: {
     'November 2025': [
-      { price: 463.57, discount: 33, currency: 'R$', basePrice: 109.99, exchangeTax: 4.32, edition: "Deluxe" }
+      { price: 359.90, currency: 'R$', edition: "Essential", 
+        basePrice: 64.99, exchangeTax: 5.53 },
     ],
     'May 2025 Days Of Play': [
       { price: 359.90, currency: 'R$', edition: "Essential", 
