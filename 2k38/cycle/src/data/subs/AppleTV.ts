@@ -50,7 +50,7 @@ export const appletv = {
         currency: '¥', edition: "Apple TV+" },
       ],
     'October 2022': [
-      { price: 900, increase: 33, 
+      { price: 900, increase: 50, 
         currency: '¥', edition: "Apple TV+" },
       ],
     'November 2019': [
