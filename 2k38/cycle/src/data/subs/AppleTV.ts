@@ -46,7 +46,7 @@ export const appletv = {
       },
     Japan: {
     'November 2025': [
-      { price: 490, discount: 50, 
+      { price: 450, discount: 50, 
         currency: '¥', edition: "Apple TV+" },
       ],
     'October 2022': [
