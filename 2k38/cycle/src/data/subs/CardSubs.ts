@@ -271,7 +271,10 @@ export const extra = {
   },
   Brazil: {
     'November 2025': [
-      { price: 444.67, discount: 33, currency: 'R$', basePrice: 109.99, exchangeTax: 4.32, edition: "Deluxe" }
+      { price: 444.67, discount: 25, currency: 'R$', edition: "Extra", 
+        basePrice: 80.99, exchangeTax: 5.49,
+        basePrice2: 101.24, exchangeTax2: 4.39,
+      },
     ],
     'May 2025 Days Of Play': [
       { price: 444.67, discount: 25, currency: 'R$', edition: "Extra", 
