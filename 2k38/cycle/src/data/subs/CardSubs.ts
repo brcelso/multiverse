@@ -249,7 +249,7 @@ export const deluxeOrPremium = {
 export const extra = {
   launchDate: '2022-06-13',
   Argentina: {
-    'May 2025': [
+    'November 2025': [
       { price: 80.99, discount: 25, currency: 'USD', edition: "Extra" },
     'May 2025': [
       { price: 80.99, discount: 25, currency: 'USD', edition: "Extra" },
