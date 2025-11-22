@@ -1,6 +1,10 @@
 export const appletv = {
   launchDate: '2019-11-01',
   Brazil: {
+    'November 2025': [
+      { price: 14.90, discount: 50, exchangeTax2: 1.14, 
+        currency: 'R$', edition: "Apple TV+" },
+      ],
     'August 2025': [
       { price: 29.90, increase: 30, exchangeTax: 2.30, exchangeTax2: 5.50, realPrice: 71.44,
         currency: 'R$', edition: "Apple TV+", totalIncrease: 200, },
