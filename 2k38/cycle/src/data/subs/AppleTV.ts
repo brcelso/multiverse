@@ -24,7 +24,7 @@ export const appletv = {
       },
     Europe: {
     'November 2025': [
-      { price: 5.99, discount: 54,
+      { price: 4.99, discount: 50,
         currency: '€', edition: "Apple TV+" },
       ],
     'August 2025': [
