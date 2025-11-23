@@ -435,8 +435,8 @@ export const essential = {
     },
   Brazil: {
     'November 2025': [
-      { price: 359.90, currency: 'R$', edition: "Essential", 
-        basePrice: 64.99, exchangeTax: 5.53 },
+      { price: 287.92, currency: 'R$', edition: "Essential", 
+        basePrice: 63.99, discount: 20, exchangeTax: 4.49 },
     ],
     'May 2025 Days Of Play': [
       { price: 359.90, currency: 'R$', edition: "Essential", 
