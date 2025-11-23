@@ -287,7 +287,7 @@ export const trips = {
   Brazil: {
     'August 2025': [
       {
-        edition: 'New York - Buenos Aires - 1 person',
+        edition: 'Brazil - Buenos Aires - 1 person',
         price: 1524.84,
         exchangeTax: 2.03,
         exchangeTax2: 5.5,
