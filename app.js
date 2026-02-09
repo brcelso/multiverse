@@ -154,64 +154,57 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1vkqc4wkgaXAZrZs_kWy8P8tMX8GullMy6hdWoKOt0pU/export?format=csv&gid=1653202204';
-    const PROXY_URL = 'https://api.allorigins.win/raw?url=';
 
-    const loadLiveData = () => {
-        updateStatus('Conectando à planilha...');
-        // Step 1: Try Direct Gviz (Best for CORS)
-        const GVIZ_URL = `https://docs.google.com/spreadsheets/d/1vkqc4wkgaXAZrZs_kWy8P8tMX8GullMy6hdWoKOt0pU/gviz/tq?tqx=out:csv&gid=1653202204&t=${new Date().getTime()}`;
-
-        Papa.parse(GVIZ_URL, {
-            download: true,
-            header: true,
-            dynamicTyping: true,
-            skipEmptyLines: true,
-            complete: (results) => {
-                if (results.data && results.data.length > 5) {
-                    processData(results.data, true);
-                } else {
-                    tryProxyLoad();
-                }
-            },
-            error: (err) => tryProxyLoad()
-        });
-    };
-
-    const tryProxyLoad = () => {
-        const url = `${PROXY_URL}${encodeURIComponent(SHEET_URL)}&t=${new Date().getTime()}`;
-        updateStatus('Tentando via Túnel...');
-
-        Papa.parse(url, {
-            download: true,
-            header: true,
-            dynamicTyping: true,
-            skipEmptyLines: true,
-            complete: (results) => {
-                if (results.data && results.data.length > 5) {
-                    processData(results.data, true);
-                } else {
-                    loadFallback("Online vazio");
-                }
-            },
-            error: (err) => loadFallback("CORS/Offline")
-        });
-    };
-
-    const loadFallback = (reason) => {
-        console.warn("Fallback reason:", reason);
-        if (typeof STOCK_DATA !== 'undefined' && Array.isArray(STOCK_DATA) && STOCK_DATA.length > 0) {
+    const loadLocalData = () => {
+        if (typeof STOCK_DATA !== 'undefined' && Array.isArray(STOCK_DATA)) {
             processData(STOCK_DATA, false);
-            statusText.title = "Motivo: " + reason;
+            updateStatus('● Banco de dados local carregado');
         } else {
-            updateStatus(`Erro: ${reason}. Abra pelo servidor ou use outro navegador.`, true);
+            updateStatus('Erro: Banco de dados local não encontrado.', true);
         }
     };
 
-    // Initialize
-    loadLiveData();
+    const syncWithMarket = () => {
+        updateStatus('Sincronizando com o mercado real...');
+        // Using the Gviz URL as a way to get the latest row from the published sheet if available
+        // or we can use a simpler approach to just simulate or fetch a price.
+        // For this project, we'll try to fetch from the general sheet again but ONLY on demand.
+        const SYNC_URL = `https://docs.google.com/spreadsheets/d/1vkqc4wkgaXAZrZs_kWy8P8tMX8GullMy6hdWoKOt0pU/gviz/tq?tqx=out:csv&gid=1653202204&t=${new Date().getTime()}`;
 
-    retryBtn.addEventListener('click', loadLiveData);
+        Papa.parse(SYNC_URL, {
+            download: true,
+            header: true,
+            dynamicTyping: true,
+            skipEmptyLines: true,
+            complete: (results) => {
+                if (results.data && results.data.length > 5) {
+                    // Merge live data with local data to avoid gaps
+                    const merged = [...STOCK_DATA];
+                    const existingDates = new Set(merged.map(d => d.Date));
+
+                    results.data.filter(row => row.Date).forEach(row => {
+                        if (!existingDates.has(row.Date)) {
+                            merged.push(row);
+                        }
+                    });
+
+                    processData(merged, true);
+                    updateStatus('● Sincronizado com sucesso! (Dados ao vivo adicionados)');
+                } else {
+                    updateStatus('Aviso: Nenhum dado novo encontrado na rede.', true);
+                }
+            },
+            error: (err) => {
+                updateStatus('Erro de conexão ao sincronizar. Tente mais tarde.', true);
+            }
+        });
+    };
+
+    // Initialize with local data first
+    loadLocalData();
+
+    document.getElementById('sync-btn').addEventListener('click', syncWithMarket);
+    retryBtn.addEventListener('click', syncWithMarket);
 
     document.querySelectorAll('.control-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {

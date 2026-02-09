@@ -37,10 +37,15 @@
 
         <div id="status-bar" class="status-bar glass-container"
             style="margin-bottom: 1rem; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-            <div id="status-text">Conectando...</div>
-            <button id="retry-btn"
-                style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 2px 10px; border-radius: 4px; cursor: pointer; display: none;">Tentar
-                Novamente</button>
+            <div id="status-text">Base de Dados Local Ativa</div>
+            <div class="status-actions">
+                <button id="sync-btn"
+                    style="background: rgba(0, 255, 136, 0.2); border: 1px solid rgba(0, 255, 136, 0.4); color: #00ff88; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">Sincronizar
+                    Agora</button>
+                <button id="retry-btn"
+                    style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 4px 12px; border-radius: 4px; cursor: pointer; display: none;">Tentar
+                    Novamente</button>
+            </div>
         </div>
 
         <section class="chart-section glass-container">
