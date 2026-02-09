@@ -1,0 +1,9 @@
+stock_data.csv
+stock_data.json
+stock_data_u8.json
+fix_data.ps1
+.gemini/
+.agent/
+node_modules/
+package-lock.json
+package.json

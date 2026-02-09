@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Dashboard - Premium Analysis</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <div class="background-blur"></div>
+    <main class="dashboard-container">
+        <header class="glass-container">
+            <div class="header-content">
+                <h1>Stock Visualizer</h1>
+                <p>Análise histórica de mercado (1992 - 2023)</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item" id="stat-max">
+                    <span class="label">Máxima Histórica</span>
+                    <span class="value">---</span>
+                </div>
+                <div class="stat-item" id="stat-min">
+                    <span class="label">Mínima Histórica</span>
+                    <span class="value">---</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="status-bar" class="status-bar glass-container"
+            style="margin-bottom: 1rem; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
+            <div id="status-text">Conectando...</div>
+            <button id="retry-btn"
+                style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 2px 10px; border-radius: 4px; cursor: pointer; display: none;">Tentar
+                Novamente</button>
+        </div>
+        <div class="chart-header">
+            <h2>Variação de Preço (Close)</h2>
+            <div class="chart-controls">
+                <button class="control-btn active" data-range="all">Tudo</button>
+                <button class="control-btn" data-range="last5">Últimos 5 Anos</button>
+                <button class="control-btn" data-range="last1">Último Ano</button>
+            </div>
+        </div>
+        <div class="chart-wrapper">
+            <canvas id="stockChart"></canvas>
+        </div>
+        </section>
+
+        <section class="volume-section glass-container">
+            <h2>Volume de Negociações</h2>
+            <div class="chart-wrapper-small">
+                <canvas id="volumeChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
