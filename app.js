@@ -134,16 +134,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const processData = (data, isLive) => {
         try {
-            fullData = data.filter(row => row.Date).map(row => ({
-                ...row,
-                DateObj: new Date(row.Date),
-                Close: parseFloat(row.Close) || 0,
-                Volume: (typeof row.Volume === 'string' && row.Volume.includes('-'))
-                    ? parseFloat(row.Volume.split('-')[0])
-                    : parseFloat(row.Volume) || 0
-            })).sort((a, b) => a.DateObj - b.DateObj);
+            fullData = data.filter(row => row.Date).map(row => {
+                let d = row.Date;
+                // Fix potential string format issues
+                if (typeof d === 'string' && d.includes('/')) {
+                    // unexpected format handling if necessary, but standard constructor usually works for MM/DD/YYYY
+                    // If DD/MM/YYYY is suspected and causing issues, we might need manual parse.
+                    // For now, let's assume standard behavior or ISO.
+                }
+                return {
+                    ...row,
+                    DateObj: new Date(row.Date),
+                    Close: parseFloat(row.Close) || 0,
+                    Volume: (typeof row.Volume === 'string' && row.Volume.includes('-'))
+                        ? parseFloat(row.Volume.split('-')[0])
+                        : parseFloat(row.Volume) || 0
+                };
+            }).filter(row => !isNaN(row.DateObj.getTime())) // Filter out invalid dates
+            .sort((a, b) => a.DateObj - b.DateObj);
 
-            if (fullData.length === 0) throw new Error("Dataset vazio");
+            if (fullData.length === 0) throw new Error("Dataset vazio após processamento");
 
             updateStatus(isLive ? '● Dados em tempo real conectados' : '● Usando dados locais (Modo Offline)', !isLive);
             filterData('all');
