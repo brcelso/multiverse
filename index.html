@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
-    <script src="data.js"></script>
+    <!-- Cache-buster added to ensure the latest data.js is loaded -->
+    <script src="data.js?v=20260209_v2"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <header class="glass-container">
             <div class="header-content">
                 <h1>Stock Visualizer</h1>
-                <p>Análise histórica de mercado (1992 - 2023)</p>
+                <p>Análise histórica de mercado (1992 - 2026)</p>
             </div>
             <div class="header-stats">
                 <div class="stat-item" id="stat-max">
@@ -41,17 +42,19 @@
                 style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 2px 10px; border-radius: 4px; cursor: pointer; display: none;">Tentar
                 Novamente</button>
         </div>
-        <div class="chart-header">
-            <h2>Variação de Preço (Close)</h2>
-            <div class="chart-controls">
-                <button class="control-btn active" data-range="all">Tudo</button>
-                <button class="control-btn" data-range="last5">Últimos 5 Anos</button>
-                <button class="control-btn" data-range="last1">Último Ano</button>
+
+        <section class="chart-section glass-container">
+            <div class="chart-header">
+                <h2>Variação de Preço (Close)</h2>
+                <div class="chart-controls">
+                    <button class="control-btn active" data-range="all">Tudo</button>
+                    <button class="control-btn" data-range="last5">Últimos 5 Anos</button>
+                    <button class="control-btn" data-range="last1">Último Ano</button>
+                </div>
             </div>
-        </div>
-        <div class="chart-wrapper">
-            <canvas id="stockChart"></canvas>
-        </div>
+            <div class="chart-wrapper">
+                <canvas id="stockChart"></canvas>
+            </div>
         </section>
 
         <section class="volume-section glass-container">
@@ -61,7 +64,7 @@
             </div>
         </section>
     </main>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260209"></script>
 </body>
 
 </html>
