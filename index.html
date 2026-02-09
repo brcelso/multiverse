@@ -4,70 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Dashboard - Premium Analysis</title>
+    <title>Ibovespa Premium Dashboard</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
-    <!-- Cache-buster: Renamed file to stock_db.js to match new deployment -->
-    <script src="stock_db.js?v=final_v5"></script>
+
+    <!-- DATA SOURCE: Standardized Stock Database -->
+    <!-- Cache-buster v=rebuild_1 ensures fresh load -->
+    <script src="stock_db.js?v=rebuild_1"></script>
 </head>
 
 <body>
-    <div class="background-blur"></div>
-    <main class="dashboard-container">
-        <header class="glass-container">
-            <div class="header-content">
-                <h1>Stock Visualizer</h1>
-                <p>Análise histórica de mercado (1992 - 2026)</p>
+
+    <div class="dashboard-container">
+        <header>
+            <div class="logo-area">
+                <h1>M U L T I V E R S E</h1>
+                <span class="subtitle">Market Intelligence</span>
             </div>
-            <div class="header-stats">
-                <div class="stat-item" id="stat-max">
-                    <span class="label">Máxima Histórica</span>
-                    <span class="value">---</span>
-                </div>
-                <div class="stat-item" id="stat-min">
-                    <span class="label">Mínima Histórica</span>
-                    <span class="value">---</span>
-                </div>
-            </div>
+            <div class="status-badge" id="status-badge">Requires JS</div>
         </header>
 
-        <div id="status-bar" class="status-bar glass-container"
-            style="margin-bottom: 1rem; padding: 0.5rem 1rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.9rem;">
-            <div id="status-text">Base de Dados Local Ativa</div>
-            <div class="status-actions">
-                <button id="sync-btn"
-                    style="background: rgba(0, 255, 136, 0.2); border: 1px solid rgba(0, 255, 136, 0.4); color: #00ff88; padding: 4px 12px; border-radius: 4px; cursor: pointer; font-weight: 600; transition: all 0.3s ease;">Sincronizar
-                    Agora</button>
-            </div>
-        </div>
-
-        <section class="chart-section glass-container">
-            <div class="chart-header">
-                <h2>Variação de Preço (Close)</h2>
-                <div class="chart-controls">
-                    <button class="control-btn active" data-range="all">Tudo</button>
-                    <button class="control-btn" data-range="last5">Últimos 5 Anos</button>
-                    <button class="control-btn" data-range="last1">Último Ano</button>
-                </div>
-            </div>
-            <div class="chart-wrapper">
-                <canvas id="stockChart"></canvas>
+        <section class="chart-section">
+            <div class="chart-container">
+                <canvas id="mainChart"></canvas>
             </div>
         </section>
 
-        <section class="volume-section glass-container">
-            <h2>Volume de Negociações</h2>
-            <div class="chart-wrapper-small">
-                <canvas id="volumeChart"></canvas>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Último Fechamento</h3>
+                <p id="last-close">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <h3>Data de Referência</h3>
+                <p id="last-date">Loading...</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Registros</h3>
+                <p id="total-records">Loading...</p>
             </div>
         </section>
-    </main>
-    <!-- Cache-buster updated to v2 -->
-    <script src="app.js?v=20260209_v2"></script>
+    </div>
+
+    <script src="app.js?v=rebuild_1"></script>
 </body>
 
 </html>
