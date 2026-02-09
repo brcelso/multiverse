@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadLocalData = () => {
         if (typeof STOCK_DATA !== 'undefined' && Array.isArray(STOCK_DATA)) {
             processData(STOCK_DATA, false);
-            updateStatus('● Banco de dados local carregado');
+            updateStatus('● Banco de dados local carregado (v4)');
         } else {
             updateStatus('Erro: Banco de dados local não encontrado.', true);
         }
